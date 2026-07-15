@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T20:28:12.559545+00:00",
+ "generated_at": "2026-07-15T20:47:01.820589+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -162,6 +162,13 @@
    }
   ],
   "completed": [
+   {
+    "number": 21,
+    "title": "Fast-resolution candidate lane (soon-closing markets, lower volume floor)",
+    "priority": "P1",
+    "side": "brain",
+    "in_progress": true
+   },
    {
     "number": 15,
     "title": "Kalshi authenticated client + encrypted credential storage",
