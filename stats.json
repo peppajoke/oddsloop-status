@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T19:50:27.707308+00:00",
+ "generated_at": "2026-07-15T20:17:26.204520+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -53,13 +53,6 @@
   ],
   "in_progress": [],
   "upcoming": [
-   {
-    "number": 2,
-    "title": "Add yes_bid/yes_ask to MarketSnapshot (contract v3)",
-    "priority": "P1",
-    "side": "brain",
-    "in_progress": false
-   },
    {
     "number": 3,
     "title": "Fill paper bets at the ask, not bid/ask mid",
@@ -159,13 +152,15 @@
     "priority": "P1",
     "side": "brain",
     "in_progress": false
+   },
+   {
+    "number": 2,
+    "title": "Add yes_bid/yes_ask to MarketSnapshot (contract v3)",
+    "priority": "P1",
+    "side": "brain",
+    "in_progress": true
    }
   ],
-  "open_questions": [
-   {
-    "number": 1,
-    "title": "Q: What is Justin's GitHub username, and when should he get collaborator access?"
-   }
-  ]
+  "open_questions": []
  }
 }
