@@ -1,0 +1,156 @@
+{
+ "generated_at": "2026-07-15T19:42:59.755386+00:00",
+ "summary": {
+  "paper_mode": true,
+  "bankroll_start": 10000.0,
+  "realized_pnl": 0,
+  "open_count": 1,
+  "open_stake": 10.17,
+  "settled_count": 0,
+  "win_rate": null,
+  "roi": null,
+  "brier_model": null,
+  "brier_market": null
+ },
+ "calibration": [],
+ "categories": [],
+ "active_bets": [
+  {
+   "ticker": "KXCITRINI-28JUL01",
+   "title": "Will the Citrini scenario happen? \u2014 Yes",
+   "category": "Elections",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.17,
+   "entry_price": 0.765,
+   "p_final": 0.214,
+   "edge": 0.021,
+   "confidence": 0.5,
+   "thesis": "Resolution requires at least 3 of 5 severe macro triggers before July 2028, which in practice requires one depression-scale correlated crisis: unemployment above 10% has occurred twice since WWII, S&P -30% drawdowns roughly three times in 25 years, and labor share below 50% has n",
+   "placed_at": "2026-07-15T19:14:23.385407+00:00"
+  }
+ ],
+ "history": [],
+ "work": {
+  "milestones": [
+   {
+    "title": "M1 \u2014 Honest data at scale (current)",
+    "body": "Mass exploration bets flowing daily with trustworthy measurement: ask-price fills, robust settlement, growing calibration + category profiles. Exit: 500+ settled bets, no known measurement biases."
+   },
+   {
+    "title": "M2 \u2014 Accuracy",
+    "body": "Use M1 data to make predictions measurably better: prompt/threshold tuning from calibration evidence, category-aware analysis, richer scraping (per- category sources, entity dossiers), drift monitoring. Exit: conviction-tier Brier beats market baseline on a sustained window."
+   },
+   {
+    "title": "M3 \u2014 Real-money readiness",
+    "body": "Everything in docs/MARKETS.md promotion criteria: 1,000+ settled bets, bootstrap-CI-positive conviction ROI after fees, out-of-sample calibration, per-category eligibility, cross-event correlation controls, minimum-stake Kalshi demo-API execution path. Exit: both humans sign off."
+   },
+   {
+    "title": "M4 \u2014 Expansion (not before M3)",
+    "body": "Polymarket ingestion \u2192 cross-venue signals; second-venue trading; automated threshold tuning."
+   }
+  ],
+  "in_progress": [],
+  "upcoming": [
+   {
+    "number": 2,
+    "title": "Add yes_bid/yes_ask to MarketSnapshot (contract v3)",
+    "priority": "P1",
+    "side": "brain",
+    "in_progress": false
+   },
+   {
+    "number": 3,
+    "title": "Fill paper bets at the ask, not bid/ask mid",
+    "priority": "P1",
+    "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 4,
+    "title": "Live-test advisor/adversary JSON reliability at scale",
+    "priority": "P1",
+    "side": "brain",
+    "in_progress": false
+   },
+   {
+    "number": 5,
+    "title": "Settlement robustness: finalization lag, voided markets, missing tickers",
+    "priority": "P1",
+    "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 6,
+    "title": "Broaden scraping: per-category data sources",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": false
+   },
+   {
+    "number": 7,
+    "title": "Entity/topic dossiers in the knowledge store",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": false
+   },
+   {
+    "number": 8,
+    "title": "Category-aware prompting + rules-ambiguity score",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": false
+   },
+   {
+    "number": 9,
+    "title": "Raise exploration throughput safely",
+    "priority": "P2",
+    "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 10,
+    "title": "Category profiles -> per-category policy multipliers",
+    "priority": "P2",
+    "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 11,
+    "title": "Drift monitoring on rolling Brier",
+    "priority": "P2",
+    "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 12,
+    "title": "Bootstrap CI + out-of-sample stats for promotion criteria",
+    "priority": "P3",
+    "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 13,
+    "title": "Cross-event correlated exposure control",
+    "priority": "P3",
+    "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 14,
+    "title": "Polymarket read-only ingestion (M4 - do not start before M3)",
+    "priority": "P3",
+    "side": "brain",
+    "in_progress": false
+   }
+  ],
+  "completed": [],
+  "open_questions": [
+   {
+    "number": 1,
+    "title": "Q: What is Justin's GitHub username, and when should he get collaborator access?"
+   }
+  ]
+ }
+}

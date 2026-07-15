@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>oddsloop status</title>
+<style>
+:root{
+  --surface:#fcfcfb; --surface-2:#f2f1ee; --border:#e3e1dc;
+  --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#8a8880;
+  --series-1:#2a78d6; --series-2:#1baf7a;
+  --good:#008300; --bad:#c22a29; --accent:#2a78d6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --surface:#1a1a19; --surface-2:#242422; --border:#3a3936;
+    --ink:#ffffff; --ink-2:#c3c2b7; --ink-3:#8a8880;
+    --series-1:#3987e5; --series-2:#199e70;
+    --good:#3fae3f; --bad:#e66767; --accent:#3987e5;
+  }
+}
+*{box-sizing:border-box;margin:0}
+body{background:var(--surface);color:var(--ink);font:15px/1.5 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:24px;max-width:1080px;margin:0 auto}
+header{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+h1{font-size:22px;letter-spacing:-.02em}
+.badge{font-size:11px;font-weight:700;letter-spacing:.08em;padding:2px 8px;border-radius:10px;background:var(--surface-2);border:1px solid var(--border);color:var(--ink-2)}
+.badge.paper{color:var(--good);border-color:var(--good)}
+#updated{color:var(--ink-3);font-size:13px;margin-bottom:18px}
+nav{display:flex;gap:4px;border-bottom:1px solid var(--border);margin-bottom:20px;flex-wrap:wrap}
+nav button{background:none;border:none;border-bottom:2px solid transparent;color:var(--ink-2);font:inherit;font-weight:600;padding:8px 14px;cursor:pointer}
+nav button.active{color:var(--ink);border-bottom-color:var(--accent)}
+nav button:hover{color:var(--ink)}
+.tab{display:none}.tab.active{display:block}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-bottom:24px}
+.tile{background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.tile .k{font-size:12px;color:var(--ink-2);margin-bottom:2px}
+.tile .v{font-size:22px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.tile .v.pos{color:var(--good)}.tile .v.neg{color:var(--bad)}
+h2{font-size:15px;margin:22px 0 10px;color:var(--ink)}
+.note{color:var(--ink-3);font-size:13px;padding:14px;border:1px dashed var(--border);border-radius:8px}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+th{color:var(--ink-2);text-align:left;font-weight:600;padding:6px 10px;border-bottom:1px solid var(--border);white-space:nowrap}
+td{padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+tr:hover td{background:var(--surface-2)}
+.num{text-align:right}th.num{text-align:right}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:9px;border:1px solid var(--border);color:var(--ink-2)}
+.pill.won{color:var(--good);border-color:var(--good)}
+.pill.lost{color:var(--bad);border-color:var(--bad)}
+.pill.P1{color:var(--bad);border-color:var(--bad)}
+details{cursor:pointer}details summary{color:var(--accent);font-size:12.5px}
+details p{color:var(--ink-2);font-size:13px;max-width:640px;padding-top:4px}
+.chart{margin:6px 0 4px}
+.legend{display:flex;gap:16px;font-size:12.5px;color:var(--ink-2);margin-bottom:8px}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.legend .l1::before{background:var(--series-1)}.legend .l2::before{background:var(--series-2)}
+.cal-row{display:grid;grid-template-columns:52px 1fr;align-items:center;gap:10px;margin-bottom:8px}
+.cal-lbl{font-size:12px;color:var(--ink-2);text-align:right}
+.cal-bars .bar{height:12px;border-radius:0 4px 4px 0;margin-bottom:2px;position:relative;min-width:2px}
+.cal-bars .bar.b1{background:var(--series-1)}.cal-bars .bar.b2{background:var(--series-2)}
+.cal-bars .bar .dl{position:absolute;left:calc(100% + 6px);top:-1px;font-size:11px;color:var(--ink-2);white-space:nowrap}
+.milestone{background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:12px 14px;margin-bottom:10px}
+.milestone b{display:block;margin-bottom:2px}
+.milestone p{color:var(--ink-2);font-size:13px}
+ul.worklist{list-style:none}
+ul.worklist li{padding:7px 2px;border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+ul.worklist .n{color:var(--ink-3);font-size:12px;min-width:34px}
+footer{margin-top:34px;color:var(--ink-3);font-size:12px}
+</style>
+</head>
+<body>
+<header><h1>oddsloop</h1><span class="badge paper">PAPER TRADING</span><span class="badge">Kalshi</span></header>
+<div id="updated">loading…</div>
+<nav id="tabs"></nav>
+<main id="main"></main>
+<footer>An autonomous prediction-market analysis loop. All bets are paper — no real money is traded. Figures include modeled exchange fees.</footer>
+<script>
+const TABS=["Overview","Active Bets","History","Work"];
+const $=(h)=>{const d=document.createElement("div");d.innerHTML=h;return d.firstElementChild};
+const esc=(s)=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money=(v)=>v==null?"—":(v<0?"−$":"$")+Math.abs(v).toFixed(2);
+const pct=(v,d=1)=>v==null?"—":(v*100).toFixed(d)+"%";
+const dt=(s)=>s?new Date(s).toLocaleString(undefined,{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"}):"—";
+
+function tile(k,v,cls=""){return `<div class="tile"><div class="k">${k}</div><div class="v ${cls}">${v}</div></div>`}
+function betRows(rows,settled){
+  return rows.map(r=>`<tr>
+    <td>${dt(settled?r.settled_at:r.placed_at)}</td>
+    <td><div>${esc(r.title)}</div><details><summary>thesis</summary><p>${esc(r.thesis)}</p></details></td>
+    <td><span class="pill">${r.side.toUpperCase()}</span> <span class="pill">${r.tier}</span></td>
+    <td class="num">${money(r.stake)}</td>
+    <td class="num">${r.entry_price.toFixed(2)}</td>
+    <td class="num">${r.p_final.toFixed(2)}</td>
+    <td class="num">${r.edge.toFixed(2)}</td>
+    ${settled?`<td><span class="pill ${r.won?"won":"lost"}">${r.won?"WON":"LOST"}</span></td><td class="num ${r.pnl>=0?"pos":"neg"}" style="color:var(--${r.pnl>=0?"good":"bad"})">${money(r.pnl)}</td>`:`<td class="num">${pct(r.confidence,0)}</td>`}
+  </tr>`).join("");
+}
+function betTable(rows,settled){
+  if(!rows.length)return `<div class="note">${settled?"No settled bets yet — history appears as markets resolve.":"No open positions right now."}</div>`;
+  const tail=settled?"<th>Outcome</th><th class=num>P&amp;L</th>":"<th class=num>Conf</th>";
+  return `<div class="tablewrap"><table><thead><tr><th>${settled?"Settled":"Placed"}</th><th>Market</th><th>Position</th><th class=num>Stake</th><th class=num>Entry</th><th class=num>Model P</th><th class=num>Edge</th>${tail}</tr></thead><tbody>${betRows(rows,settled)}</tbody></table></div>`;
+}
+function calChart(cal){
+  if(!cal.length)return `<div class="note">Calibration chart appears once bets settle: model-predicted probability vs. realized win rate per bucket.</div>`;
+  const rows=cal.map(b=>`<div class="cal-row"><div class="cal-lbl">${(b.predicted*100).toFixed(0)}%<br><span style="font-size:10px">n=${b.n}</span></div>
+    <div class="cal-bars">
+      <div class="bar b1" style="width:${b.predicted*100}%"><span class="dl">${pct(b.predicted,0)} predicted</span></div>
+      <div class="bar b2" style="width:${b.realized*100}%"><span class="dl">${pct(b.realized,0)} realized</span></div>
+    </div></div>`).join("");
+  return `<div class="legend"><span class="l1">Model predicted</span><span class="l2">Realized win rate</span></div><div class="chart">${rows}</div>`;
+}
+function catTable(cats){
+  if(!cats.length)return "";
+  return `<h2>Category performance</h2><div class="tablewrap"><table><thead><tr><th>Category</th><th class=num>Bets</th><th class=num>Win rate</th><th class=num>Brier (model)</th><th class=num>Brier (market)</th><th class=num>P&amp;L</th><th>Vs market</th></tr></thead><tbody>${
+    cats.map(c=>`<tr><td>${esc(c.category)}</td><td class=num>${c.n}</td><td class=num>${pct(c.win_rate)}</td><td class=num>${c.brier_model}</td><td class=num>${c.brier_market}</td><td class=num>${money(c.pnl)}</td><td>${c.beats_market?'<span class="pill won">BEATING</span>':'<span class="pill lost">BEHIND</span>'}</td></tr>`).join("")
+  }</tbody></table></div>`;
+}
+function workList(items,empty){
+  if(!items.length)return `<div class="note">${empty}</div>`;
+  return `<ul class="worklist">${items.map(t=>`<li><span class="n">#${t.number}</span><span class="pill ${t.priority}">${t.priority}</span><span class="pill">${t.side||"joint"}</span>${esc(t.title)}</li>`).join("")}</ul>`;
+}
+function render(d){
+  document.getElementById("updated").textContent="Last updated "+new Date(d.generated_at).toLocaleString();
+  const s=d.summary;
+  const bankroll=s.bankroll_start+s.realized_pnl;
+  const views={
+    "Overview":`<div class="tiles">
+      ${tile("Paper bankroll",money(bankroll))}
+      ${tile("Realized P&L",money(s.realized_pnl),s.realized_pnl>0?"pos":s.realized_pnl<0?"neg":"")}
+      ${tile("ROI (after fees)",pct(s.roi))}
+      ${tile("Open positions",s.open_count+" · "+money(s.open_stake))}
+      ${tile("Settled bets",s.settled_count)}
+      ${tile("Win rate",pct(s.win_rate))}
+      ${tile("Brier — model",s.brier_model??"—")}
+      ${tile("Brier — market",s.brier_market??"—")}
+    </div>
+    <h2>Calibration — predicted vs. realized</h2>${calChart(d.calibration)}
+    ${catTable(d.categories)}`,
+    "Active Bets":betTable(d.active_bets,false),
+    "History":betTable(d.history,true),
+    "Work":`<h2>Milestones</h2>${d.work.milestones.map(m=>`<div class="milestone"><b>${esc(m.title)}</b><p>${esc(m.body)}</p></div>`).join("")}
+      <h2>In progress</h2>${workList(d.work.in_progress,"Nothing claimed right now.")}
+      <h2>Upcoming</h2>${workList(d.work.upcoming,"Backlog is empty.")}
+      <h2>Completed</h2>${workList(d.work.completed,"Nothing completed yet — the project is young.")}
+      <h2>Open questions (awaiting the humans)</h2>${d.work.open_questions.length?`<ul class="worklist">${d.work.open_questions.map(q=>`<li><span class="n">#${q.number}</span>${esc(q.title)}</li>`).join("")}</ul>`:'<div class="note">No open questions.</div>'}`
+  };
+  const nav=document.getElementById("tabs"),main=document.getElementById("main");
+  const counts={"Active Bets":d.active_bets.length,"History":d.history.length};
+  TABS.forEach((t,i)=>{
+    const b=$(`<button ${i===0?'class="active"':""}>${t}${counts[t]!=null?` (${counts[t]})`:""}</button>`);
+    b.onclick=()=>{nav.querySelectorAll("button").forEach(x=>x.classList.remove("active"));b.classList.add("active");
+      main.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));main.children[i].classList.add("active")};
+    nav.appendChild(b);
+    const pane=$(`<section class="tab ${i===0?"active":""}"></section>`);pane.innerHTML=views[t];main.appendChild(pane);
+  });
+}
+fetch("stats.json?_="+Date.now()).then(r=>r.json()).then(render)
+  .catch(()=>{document.getElementById("updated").textContent="Could not load stats.json"});
+</script>
+</body>
+</html>
