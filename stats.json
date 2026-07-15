@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T19:46:26.863233+00:00",
+ "generated_at": "2026-07-15T19:50:27.707308+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -36,7 +36,7 @@
   "milestones": [
    {
     "title": "M1 \u2014 Honest data at scale (current)",
-    "body": "Mass exploration bets flowing daily with trustworthy measurement: ask-price fills, robust settlement, growing calibration + category profiles. Exit: 500+ settled bets, no known measurement biases."
+    "body": "Mass exploration bets flowing daily with trustworthy measurement: ask-price fills, robust settlement, growing calibration + category profiles. Exit: 500+ settled bets, no known measurement biases. **Path to the first sustained trading loop:** #2 + #3 (ask-price fills, so history isn't mid-priced) \u2192 #4 (assessment reliability) \u2192 #5 (settlement robustness) \u2192 #16 (first continuous ~24h session with settlements scored end-to-end). Credentials/auth (#15) done \u2014 read-only client, keychain storage."
    },
    {
     "title": "M2 \u2014 Accuracy",
@@ -79,6 +79,13 @@
     "title": "Settlement robustness: finalization lag, voided markets, missing tickers",
     "priority": "P1",
     "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 16,
+    "title": "First sustained paper-trading session (continuous /cycle, ~24h)",
+    "priority": "P1",
+    "side": "brain",
     "in_progress": false
    },
    {
@@ -145,7 +152,15 @@
     "in_progress": false
    }
   ],
-  "completed": [],
+  "completed": [
+   {
+    "number": 15,
+    "title": "Kalshi authenticated client + encrypted credential storage",
+    "priority": "P1",
+    "side": "brain",
+    "in_progress": false
+   }
+  ],
   "open_questions": [
    {
     "number": 1,
