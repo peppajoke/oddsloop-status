@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-15T20:17:26.204520+00:00",
+ "generated_at": "2026-07-15T20:24:36.501331+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
   "realized_pnl": 0,
-  "open_count": 1,
-  "open_stake": 10.17,
+  "open_count": 3,
+  "open_stake": 30.46,
   "settled_count": 0,
   "win_rate": null,
   "roi": null,
@@ -15,6 +15,36 @@
  "calibration": [],
  "categories": [],
  "active_bets": [
+  {
+   "ticker": "KXGREENTERRITORY-29",
+   "title": "Will the US take control of any part of Greenland? \u2014 Before January 21, 2029",
+   "category": "Politics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.16,
+   "entry_price": 0.78,
+   "p_final": 0.19,
+   "edge": 0.03,
+   "confidence": 0.5,
+   "thesis": "Broader wording than the purchase market \u2014 'acquires any part' plausibly includes non-purchase control \u2014 so it must price above the purchase contract. Still, every acquisition path (purchase, coercive agreement, military) faces the same Danish refusal, NATO politics, and strong U",
+   "placed_at": "2026-07-15T20:24:36.410060+00:00"
+  },
+  {
+   "ticker": "KXGREENLAND-29",
+   "title": "Will Trump buy at least part of Greenland? \u2014 Before January 20, 2029",
+   "category": "Politics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.13,
+   "entry_price": 0.825,
+   "p_final": 0.149,
+   "edge": 0.026,
+   "confidence": 0.55,
+   "thesis": "Resolution requires an actual PURCHASE from Denmark before January 2029. No negotiation exists, Denmark has refused categorically and repeatedly, Greenland's self-rule government would need to consent, and sovereign territorial purchases historically take years of treaty work eve",
+   "placed_at": "2026-07-15T20:24:36.409700+00:00"
+  },
   {
    "ticker": "KXCITRINI-28JUL01",
    "title": "Will the Citrini scenario happen? \u2014 Yes",
