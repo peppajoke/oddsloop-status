@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T20:24:36.501331+00:00",
+ "generated_at": "2026-07-15T20:25:31.113972+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -91,13 +91,6 @@
     "in_progress": false
    },
    {
-    "number": 4,
-    "title": "Live-test advisor/adversary JSON reliability at scale",
-    "priority": "P1",
-    "side": "brain",
-    "in_progress": false
-   },
-   {
     "number": 5,
     "title": "Settlement robustness: finalization lag, voided markets, missing tickers",
     "priority": "P1",
@@ -179,6 +172,13 @@
    {
     "number": 15,
     "title": "Kalshi authenticated client + encrypted credential storage",
+    "priority": "P1",
+    "side": "brain",
+    "in_progress": false
+   },
+   {
+    "number": 4,
+    "title": "Live-test advisor/adversary JSON reliability at scale",
     "priority": "P1",
     "side": "brain",
     "in_progress": false
