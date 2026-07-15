@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T21:09:50.346521+00:00",
+ "generated_at": "2026-07-15T21:41:02.311407+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -105,13 +105,6 @@
     "in_progress": false
    },
    {
-    "number": 8,
-    "title": "Category-aware prompting + rules-ambiguity score",
-    "priority": "P2",
-    "side": "brain",
-    "in_progress": false
-   },
-   {
     "number": 9,
     "title": "Raise exploration throughput safely",
     "priority": "P2",
@@ -170,6 +163,13 @@
     "in_progress": false
    },
    {
+    "number": 8,
+    "title": "Category-aware prompting + rules-ambiguity score",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": true
+   },
+   {
     "number": 7,
     "title": "Entity/topic dossiers in the knowledge store",
     "priority": "P2",
@@ -198,23 +198,6 @@
     "in_progress": true
    }
   ],
-  "open_questions": [
-   {
-    "number": 29,
-    "title": "Q: Approve proposed tasks \u2014 smart-flow detector, resolution-sniping track, batch settlement fetch, M3 dashboard privacy"
-   },
-   {
-    "number": 28,
-    "title": "Q: Who/what runs the trading loop when Jack's Claude session is closed?"
-   },
-   {
-    "number": 27,
-    "title": "Q: Enable required status checks (branch protection) on main?"
-   },
-   {
-    "number": 25,
-    "title": "Q: Should a calibration lane place tiny data-purchase bets at ~zero edge?"
-   }
-  ]
+  "open_questions": []
  }
 }
