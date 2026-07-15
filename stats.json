@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T20:25:31.113972+00:00",
+ "generated_at": "2026-07-15T20:28:12.559545+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -105,13 +105,6 @@
     "in_progress": false
    },
    {
-    "number": 6,
-    "title": "Broaden scraping: per-category data sources",
-    "priority": "P2",
-    "side": "brain",
-    "in_progress": false
-   },
-   {
     "number": 7,
     "title": "Entity/topic dossiers in the knowledge store",
     "priority": "P2",
@@ -175,6 +168,13 @@
     "priority": "P1",
     "side": "brain",
     "in_progress": false
+   },
+   {
+    "number": 6,
+    "title": "Broaden scraping: per-category data sources",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": true
    },
    {
     "number": 4,
