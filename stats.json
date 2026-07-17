@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T21:41:02.311407+00:00",
+ "generated_at": "2026-07-17T01:17:15.693493+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -81,15 +81,23 @@
     "body": "Polymarket ingestion \u2192 cross-venue signals; second-venue trading; automated threshold tuning."
    }
   ],
-  "in_progress": [],
-  "upcoming": [
+  "in_progress": [
+   {
+    "number": 37,
+    "title": "Low-latency resolution watcher daemon (Rust)",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": true
+   },
    {
     "number": 3,
     "title": "Fill paper bets at the ask, not bid/ask mid",
     "priority": "P1",
     "side": "body",
-    "in_progress": false
-   },
+    "in_progress": true
+   }
+  ],
+  "upcoming": [
    {
     "number": 5,
     "title": "Settlement robustness: finalization lag, voided markets, missing tickers",
@@ -102,6 +110,34 @@
     "title": "First sustained paper-trading session (continuous /cycle, ~24h)",
     "priority": "P1",
     "side": "brain",
+    "in_progress": false
+   },
+   {
+    "number": 35,
+    "title": "Prediction-level scoring: resolve and score every emitted prediction (no bet required)",
+    "priority": "P1",
+    "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 48,
+    "title": "Harden Body JSONL readers, supervisor coverage, settlement robustness (deep-review P1)",
+    "priority": "P1",
+    "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 50,
+    "title": "Betting-math seams: fees in gate+Kelly, drawdown vs deployment, dynamic bankroll, risk-gate exploration (deep-review P1)",
+    "priority": "P1",
+    "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 51,
+    "title": "Backup for data/ (overturns O5) + single-writer lock for decide/settle (deep-review blockers)",
+    "priority": "P1",
+    "side": "body",
     "in_progress": false
    },
    {
@@ -126,6 +162,20 @@
     "in_progress": false
    },
    {
+    "number": 14,
+    "title": "Polymarket read-only ingestion (M4 - do not start before M3)",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": false
+   },
+   {
+    "number": 38,
+    "title": "Batch settlement fetch (multi-ticker resolution polling)",
+    "priority": "P2",
+    "side": "body",
+    "in_progress": false
+   },
+   {
     "number": 12,
     "title": "Bootstrap CI + out-of-sample stats for promotion criteria",
     "priority": "P3",
@@ -138,16 +188,37 @@
     "priority": "P3",
     "side": "body",
     "in_progress": false
-   },
-   {
-    "number": 14,
-    "title": "Polymarket read-only ingestion (M4 - do not start before M3)",
-    "priority": "P3",
-    "side": "brain",
-    "in_progress": false
    }
   ],
   "completed": [
+   {
+    "number": 53,
+    "title": "Brain correctness minors: rules_check regexes, flow baseline, parse robustness (deep-review P2)",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": true
+   },
+   {
+    "number": 52,
+    "title": "Kalshi ingestion robustness: silent 1000-event truncation, poison-pill guard, retry/backoff, dead-book filter (deep-review P2)",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": false
+   },
+   {
+    "number": 49,
+    "title": "Brain data integrity: emit idempotency/dedup, reader hardening, atomic writes (deep-review P1)",
+    "priority": "P1",
+    "side": "brain",
+    "in_progress": false
+   },
+   {
+    "number": 36,
+    "title": "Smart-flow (steam) detector: anomalous price/volume moves as evidence",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": false
+   },
    {
     "number": 21,
     "title": "Fast-resolution candidate lane (soon-closing markets, lower volume floor)",
@@ -198,6 +269,23 @@
     "in_progress": true
    }
   ],
-  "open_questions": []
+  "open_questions": [
+   {
+    "number": 63,
+    "title": "Q: Resolution-watcher latency-penalty magnitude (fill-model slippage shape)"
+   },
+   {
+    "number": 56,
+    "title": "Q: Governance \u2014 branch protection now, guarded set for paper-mode files, untrusted issue text"
+   },
+   {
+    "number": 55,
+    "title": "Q: M3 promotion arithmetic may be unmeetable + calibration design (per-category maps, bin cliffs)"
+   },
+   {
+    "number": 54,
+    "title": "Q: Dual-loop divergence \u2014 declare a canonical loop + restore structural price-blindness"
+   }
+  ]
  }
 }
