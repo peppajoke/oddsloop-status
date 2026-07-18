@@ -49,6 +49,7 @@ body{
 .lead strong{color:var(--ink);font-weight:700}
 .muted{color:var(--ink-3)}
 .stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.numgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:24px}
 .stat{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;min-width:150px}
 .stat .n{font-size:clamp(24px,3.6vw,32px);font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
 .stat .l{font-size:12.5px;color:var(--ink-2);margin-top:6px}
@@ -225,8 +226,25 @@ kbd{font:600 11px ui-monospace,Menlo,monospace;background:var(--surface-3);borde
       <p class="bridge">The whole plan is to <b>earn trust with numbers</b> before risking anything real.</p>
     </section>
 
-    <!-- 8 STATUS -->
-    <section class="slide" aria-label="Slide 8: Live now" data-title="Live now">
+    <!-- 8 RAW NUMBERS -->
+    <section class="slide" aria-label="Slide 8: How it is going so far, the raw numbers" data-title="By the numbers">
+      <p class="eyebrow">How it’s going so far</p>
+      <h2>The raw numbers.</h2>
+      <p class="lead muted">Straight from the live scoreboard — no spin. Most bets are still open and get answered over the coming days, so the “result so far” is one early bet.</p>
+      <div class="numgrid">
+        <div class="stat"><div class="n" id="r-pred">—</div><div class="l">guesses checked</div></div>
+        <div class="stat"><div class="n" id="r-brier">—</div><div class="l">prediction score (lower is better)</div></div>
+        <div class="stat"><div class="n" id="r-bets">—</div><div class="l">practice bets placed</div></div>
+        <div class="stat"><div class="n" id="r-open">—</div><div class="l">still open</div></div>
+        <div class="stat"><div class="n" id="r-stake">—</div><div class="l">money riding right now</div></div>
+        <div class="stat"><div class="n" id="r-pnl">—</div><div class="l">result so far</div></div>
+        <div class="stat"><div class="n" id="r-settled">—</div><div class="l">bets finished</div></div>
+        <div class="stat"><div class="n" id="r-bankroll">—</div><div class="l">practice bankroll (fake)</div></div>
+      </div>
+    </section>
+
+    <!-- 9 STATUS -->
+    <section class="slide" aria-label="Slide 9: Live now" data-title="Live now">
       <p class="eyebrow">Status</p>
       <h2>It’s live — and you can watch it.</h2>
       <p class="lead">It’s running right now in practice mode, completely in the open: every bet, every result, and the scoreboard update automatically.</p>
@@ -325,9 +343,21 @@ kbd{font:600 11px ui-monospace,Menlo,monospace;background:var(--surface-3);borde
     var brier=(sum.prediction_brier!=null)?sum.prediction_brier:sum.brier_model;
     var bets=(sum.settled_count||0)+(sum.open_count||0)
              || ((d.history||[]).length+(d.active_bets||[]).length);
-    if(n){set('s-pred',n);set('s-pred2',n);set('s-pred3',n);set('s-pred4',n);}
-    if(brier!=null){var bs=(+brier).toFixed(3);set('s-brier',bs);set('s-brier2',bs);}
-    if(bets){set('s-bets',bets);set('s-bets3',bets);}
+    var bs=(brier!=null)?(+brier).toFixed(3):null;
+    if(n){set('s-pred',n);set('s-pred2',n);set('s-pred3',n);set('s-pred4',n);set('r-pred',n);}
+    if(bs!=null){set('s-brier',bs);set('s-brier2',bs);set('r-brier',bs);}
+    if(bets){set('s-bets',bets);set('s-bets3',bets);set('r-bets',bets);}
+    /* raw-numbers scoreboard */
+    function money(v){return (v<0?'-$':'$')+Math.abs(v).toLocaleString(undefined,{maximumFractionDigits:2});}
+    if(sum.open_count!=null)set('r-open',sum.open_count);
+    if(sum.settled_count!=null)set('r-settled',sum.settled_count);
+    if(sum.open_stake!=null)set('r-stake','$'+Math.round(sum.open_stake).toLocaleString());
+    if(sum.bankroll_start!=null)set('r-bankroll','$'+Math.round(sum.bankroll_start).toLocaleString());
+    if(sum.realized_pnl!=null){
+      var el=document.getElementById('r-pnl');
+      if(el){el.textContent=(sum.realized_pnl>=0?'+':'')+money(sum.realized_pnl);
+             el.style.color=sum.realized_pnl<0?'var(--bad)':'var(--good)';}
+    }
   }).catch(function(){});
 })();
 </script>
