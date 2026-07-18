@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-18T13:48:20.456283+00:00",
+ "generated_at": "2026-07-18T16:04:54.963780+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
   "realized_pnl": -10.36,
-  "open_count": 8,
-  "open_stake": 81.52,
+  "open_count": 15,
+  "open_stake": 356.97,
   "settled_count": 1,
   "win_rate": 0.0,
   "roi": -1.0,
@@ -31,6 +31,111 @@
   }
  ],
  "active_bets": [
+  {
+   "ticker": "KXHIGHNY-26JUL19-T80",
+   "title": "Will the **high temp in NYC** be <80\u00b0 on Jul 19, 2026? \u2014 79\u00b0 or below",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.55,
+   "entry_price": 0.22,
+   "p_final": 0.336,
+   "edge": 0.131,
+   "confidence": 0.55,
+   "thesis": "Central Park NWS forecast high for Jul 19 (Sunday) is 83F, Sunny. The >80 (>=81) market clears easily if the forecast verifies within 2F \u2014 sunny conditions make a big cool miss unlikely. Next-day horizon adds some error vs same-day, so not a lock.",
+   "placed_at": "2026-07-18T16:04:54.854840+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL18-T79",
+   "title": "Will the **high temp in LA** be >79\u00b0 on Jul 18, 2026? \u2014 80\u00b0 or above",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.46,
+   "entry_price": 0.35,
+   "p_final": 0.505,
+   "edge": 0.155,
+   "confidence": 0.5,
+   "thesis": "LAX forecast 77F; the >79 (>=80) market needs +3F above a marine-capped forecast \u2014 a low-probability warm tail for a coastal station.",
+   "placed_at": "2026-07-18T16:04:54.854409+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL18-B78.5",
+   "title": "Will the **high temp in LA** be 78-79\u00b0 on Jul 18, 2026? \u2014 78\u00b0 to 79\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.21,
+   "entry_price": 0.7,
+   "p_final": 0.261,
+   "edge": 0.044,
+   "confidence": 0.5,
+   "thesis": "LAX forecast 77F; the 78-79 band is 1-2F above forecast \u2014 possible on an early fog burn-off but against the marine cap.",
+   "placed_at": "2026-07-18T16:04:54.853960+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL18-B76.5",
+   "title": "Will the **high temp in LA** be 76-77\u00b0 on Jul 18, 2026? \u2014 76\u00b0 to 77\u00b0",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "conviction",
+   "stake": 199.79,
+   "fee": 13.15,
+   "entry_price": 0.06,
+   "p_final": 0.161,
+   "edge": 0.111,
+   "confidence": 0.6,
+   "thesis": "LAX NWS same-day forecast high Jul 18 is 77F under a marine-layer/fog pattern ('Patchy Fog then Partly Sunny'). Coastal SoCal summer highs are extremely predictable (marine cap), so the 76-77 on-forecast band carries unusually high probability \u2014 tight distribution, low variance.",
+   "placed_at": "2026-07-18T16:04:54.853492+00:00"
+  },
+  {
+   "ticker": "KXHIGHDEN-26JUL18-B95.5",
+   "title": "Will the **high temp in Denver** be 95-96\u00b0 on Jul 18, 2026? \u2014 95\u00b0 to 96\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.2,
+   "entry_price": 0.72,
+   "p_final": 0.256,
+   "edge": 0.039,
+   "confidence": 0.5,
+   "thesis": "Denver forecast 93F with a sharp warming trend (next-day high 97F, Sunny). The 95-96 band is 2-3F above forecast; the incoming ridge gives the warm side modest upside over a flat error model.",
+   "placed_at": "2026-07-18T16:04:54.853067+00:00"
+  },
+  {
+   "ticker": "KXHIGHDEN-26JUL18-B91.5",
+   "title": "Will the **high temp in Denver** be 91-92\u00b0 on Jul 18, 2026? \u2014 91\u00b0 to 92\u00b0",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.66,
+   "entry_price": 0.07,
+   "p_final": 0.096,
+   "edge": 0.031,
+   "confidence": 0.5,
+   "thesis": "Denver forecast 93F; the 91-92 band is 1-2F below forecast \u2014 plausible cool near-miss.",
+   "placed_at": "2026-07-18T16:04:54.852566+00:00"
+  },
+  {
+   "ticker": "KXHIGHDEN-26JUL18-B93.5",
+   "title": "Will the **high temp in Denver** be 93-94\u00b0 on Jul 18, 2026? \u2014 93\u00b0 to 94\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.43,
+   "entry_price": 0.39,
+   "p_final": 0.526,
+   "edge": 0.094,
+   "confidence": 0.55,
+   "thesis": "Denver Intl NWS same-day forecast high Jul 18 is 93F, Sunny. The 93-94 band is on the forecast center \u2014 modal outcome under clear skies (high insolation, reliable).",
+   "placed_at": "2026-07-18T16:04:54.852095+00:00"
+  },
   {
    "ticker": "KXHIGHAUS-26JUL18-B96.5",
    "title": "Will the **high temp in Austin** be 96-97\u00b0 on Jul 18, 2026? \u2014 96\u00b0 to 97\u00b0",
@@ -203,13 +308,6 @@
   ],
   "upcoming": [
    {
-    "number": 16,
-    "title": "First sustained paper-trading session (continuous /cycle, ~24h)",
-    "priority": "P1",
-    "side": "brain",
-    "in_progress": false
-   },
-   {
     "number": 9,
     "title": "Raise exploration throughput safely",
     "priority": "P2",
@@ -324,6 +422,13 @@
     "in_progress": true
    },
    {
+    "number": 16,
+    "title": "First sustained paper-trading session (continuous /cycle, ~24h)",
+    "priority": "P1",
+    "side": "brain",
+    "in_progress": false
+   },
+   {
     "number": 15,
     "title": "Kalshi authenticated client + encrypted credential storage",
     "priority": "P1",
@@ -402,6 +507,10 @@
    }
   ],
   "open_questions": [
+   {
+    "number": 94,
+    "title": "Q: Model under-confident in higher-probability bins (first calibration batch, n=24)"
+   },
    {
     "number": 91,
     "title": "Q: Longshot edge is maker-only \u2014 paper fill model must represent maker vs taker fills (blocks measuring #90)"
