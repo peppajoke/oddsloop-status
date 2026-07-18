@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-18T16:04:54.963780+00:00",
+ "generated_at": "2026-07-18T19:09:51.445259+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -507,6 +507,10 @@
    }
   ],
   "open_questions": [
+   {
+    "number": 95,
+    "title": "Q: Same-day weather markets are stale-forecast traps intraday \u2014 pipeline bet $200 conviction against a better-informed market"
+   },
    {
     "number": 94,
     "title": "Q: Model under-confident in higher-probability bins (first calibration batch, n=24)"
