@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-17T17:36:33.297621+00:00",
+ "generated_at": "2026-07-18T04:03:33.508404+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -98,6 +98,13 @@
   ],
   "in_progress": [
    {
+    "number": 38,
+    "title": "Batch settlement fetch (multi-ticker resolution polling)",
+    "priority": "P2",
+    "side": "body",
+    "in_progress": true
+   },
+   {
     "number": 37,
     "title": "Low-latency resolution watcher daemon (Rust)",
     "priority": "P2",
@@ -128,38 +135,10 @@
     "in_progress": false
    },
    {
-    "number": 11,
-    "title": "Drift monitoring on rolling Brier",
-    "priority": "P2",
-    "side": "body",
-    "in_progress": false
-   },
-   {
     "number": 14,
     "title": "Polymarket read-only ingestion (M4 - do not start before M3)",
     "priority": "P2",
     "side": "brain",
-    "in_progress": false
-   },
-   {
-    "number": 38,
-    "title": "Batch settlement fetch (multi-ticker resolution polling)",
-    "priority": "P2",
-    "side": "body",
-    "in_progress": false
-   },
-   {
-    "number": 12,
-    "title": "Bootstrap CI + out-of-sample stats for promotion criteria",
-    "priority": "P3",
-    "side": "body",
-    "in_progress": false
-   },
-   {
-    "number": 13,
-    "title": "Cross-event correlated exposure control",
-    "priority": "P3",
-    "side": "body",
     "in_progress": false
    },
    {
@@ -168,9 +147,23 @@
     "priority": "P3",
     "side": "",
     "in_progress": false
+   },
+   {
+    "number": 87,
+    "title": "Tighten entity-cap heuristic against weather-band false matches (#13 follow-up)",
+    "priority": "P3",
+    "side": "body",
+    "in_progress": false
    }
   ],
   "completed": [
+   {
+    "number": 90,
+    "title": "Longshot-bias structural signal (Brain)",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": true
+   },
    {
     "number": 53,
     "title": "Brain correctness minors: rules_check regexes, flow baseline, parse robustness (deep-review P2)",
@@ -242,6 +235,27 @@
     "in_progress": false
    },
    {
+    "number": 13,
+    "title": "Cross-event correlated exposure control",
+    "priority": "P3",
+    "side": "body",
+    "in_progress": true
+   },
+   {
+    "number": 12,
+    "title": "Bootstrap CI + out-of-sample stats for promotion criteria",
+    "priority": "P3",
+    "side": "body",
+    "in_progress": true
+   },
+   {
+    "number": 11,
+    "title": "Drift monitoring on rolling Brier",
+    "priority": "P2",
+    "side": "body",
+    "in_progress": true
+   },
+   {
     "number": 8,
     "title": "Category-aware prompting + rules-ambiguity score",
     "priority": "P2",
@@ -292,6 +306,10 @@
    }
   ],
   "open_questions": [
+   {
+    "number": 91,
+    "title": "Q: Longshot edge is maker-only \u2014 paper fill model must represent maker vs taker fills (blocks measuring #90)"
+   },
    {
     "number": 73,
     "title": "Q: Exploration tier is starving \u2014 0 bets in 2 cycles, only open bets settle in 2028-29; drop the fast-lane edge floor?"
