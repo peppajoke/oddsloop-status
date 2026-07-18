@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oddsloop — a self-improving prediction engine</title>
-<meta name="description" content="oddsloop forecasts prediction markets, challenges its own reasoning, and proves calibrated edge before risking a dollar.">
+<title>oddsloop — an AI that predicts, checks itself, and earns trust</title>
+<meta name="description" content="oddsloop makes honest guesses about real-world events, argues against itself, and proves it's right with fake money before risking anything real.">
 <style>
 :root{
   --surface:#fcfcfb; --surface-2:#f2f1ee; --surface-3:#eceae5; --border:#e3e1dc;
@@ -29,83 +29,65 @@ body{
 }
 .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#fff;padding:10px 16px;border-radius:0 0 8px 0;z-index:100}
 .skip:focus{left:0}
-
-/* ---- deck shell ---- */
 .deck{max-width:960px;margin:0 auto;padding:0 20px}
 .topbar{display:flex;align-items:center;gap:12px;padding:18px 0;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;font-size:19px}
 .logo .mark{width:26px;height:26px;flex:none}
 .tag{color:var(--ink-3);font-size:13px}
 .badge{margin-left:auto;font-size:11px;font-weight:700;letter-spacing:.08em;padding:3px 10px;border-radius:20px;border:1px solid var(--good);color:var(--good)}
-
-/* slides */
 .slides{position:relative}
 .slide{
   display:none;background:var(--surface-2);border:1px solid var(--border);border-radius:18px;
-  padding:clamp(24px,5vw,52px);box-shadow:var(--shadow);min-height:min(74vh,620px);
+  padding:clamp(22px,4.5vw,48px);box-shadow:var(--shadow);
 }
 .slide.active{display:block;animation:rise .5s cubic-bezier(.2,.7,.2,1)}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 .eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
-.slide h1{font-size:clamp(30px,6vw,52px);line-height:1.05;letter-spacing:-.03em;margin-bottom:18px}
-.slide h2{font-size:clamp(23px,4vw,34px);line-height:1.1;letter-spacing:-.02em;margin-bottom:20px}
-.lead{font-size:clamp(17px,2.4vw,21px);color:var(--ink-2);max-width:60ch}
+.slide h1{font-size:clamp(28px,5.4vw,48px);line-height:1.06;letter-spacing:-.03em;margin-bottom:18px}
+.slide h2{font-size:clamp(22px,3.8vw,32px);line-height:1.12;letter-spacing:-.02em;margin-bottom:18px}
+.lead{font-size:clamp(16px,2.2vw,20px);color:var(--ink-2);max-width:62ch}
 .lead strong{color:var(--ink);font-weight:700}
 .muted{color:var(--ink-3)}
-
-/* title slide live stats */
-.stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
 .stat{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;min-width:150px}
-.stat .n{font-size:clamp(26px,4vw,34px);font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+.stat .n{font-size:clamp(24px,3.6vw,32px);font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
 .stat .l{font-size:12.5px;color:var(--ink-2);margin-top:6px}
-
-/* generic cards / grid */
-.grid{display:grid;gap:14px;margin-top:26px}
+.grid{display:grid;gap:14px;margin-top:24px}
 .g2{grid-template-columns:1fr 1fr}
 .g3{grid-template-columns:repeat(3,1fr)}
 @media(max-width:640px){.g2,.g3{grid-template-columns:1fr}}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px}
 .card h3{font-size:16px;margin-bottom:6px;display:flex;align-items:center;gap:8px}
 .card p{font-size:14.5px;color:var(--ink-2)}
+.card ul{margin:6px 0 0;padding-left:0;list-style:none}
+.card li{font-size:14px;color:var(--ink-2);padding:5px 0 5px 22px;position:relative}
+.card li::before{content:"";position:absolute;left:2px;top:12px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.card.now li::before{background:var(--good)}
+.card.next li::before{background:var(--ink-3)}
 .dot{width:9px;height:9px;border-radius:50%;flex:none}
 .dot.brain{background:var(--brain)}.dot.body{background:var(--body)}
-
-/* interactive loop diagram */
-.loopwrap{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center;margin-top:24px}
+.loopwrap{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center;margin-top:22px}
 @media(max-width:720px){.loopwrap{grid-template-columns:1fr}}
 .steps{list-style:none;display:flex;flex-direction:column;gap:8px}
-.steps li{padding:0}
 .steps button{
   width:100%;text-align:left;display:flex;gap:12px;align-items:flex-start;
   background:var(--surface);border:1px solid var(--border);border-radius:11px;
-  padding:12px 14px;cursor:pointer;color:var(--ink);font:inherit;transition:border-color .2s,background .2s;
+  padding:11px 14px;cursor:pointer;color:var(--ink);font:inherit;transition:border-color .2s,background .2s;
 }
 .steps button:hover{border-color:var(--accent)}
 .steps button[aria-current="true"]{border-color:var(--accent);background:var(--surface-3);box-shadow:inset 3px 0 0 var(--accent)}
 .steps .idx{font-weight:800;font-variant-numeric:tabular-nums;color:var(--accent);min-width:20px}
 .steps .st{font-weight:700;font-size:14.5px}
-.steps .sd{font-size:13px;color:var(--ink-2);display:block;margin-top:2px}
-.diagram{aspect-ratio:1;width:100%;max-width:360px;margin:0 auto}
+.steps .sd{font-size:12.8px;color:var(--ink-2);display:block;margin-top:2px}
+.diagram{aspect-ratio:1;width:100%;max-width:340px;margin:0 auto}
 .diagram text{font-family:inherit}
-
-/* pills row */
 .pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
 .pill{font-size:13px;font-weight:600;padding:6px 12px;border-radius:20px;background:var(--surface);border:1px solid var(--border);color:var(--ink-2)}
 .pill b{color:var(--ink)}
-
-/* goals list */
-.goals{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:12px}
-.goals li{display:flex;gap:14px;align-items:flex-start;font-size:15.5px}
-.goals .chk{width:24px;height:24px;border-radius:50%;flex:none;display:grid;place-items:center;background:color-mix(in srgb,var(--good) 16%,transparent);color:var(--good);font-weight:800;font-size:13px}
-.goals .fut{background:var(--surface-3);color:var(--ink-3)}
-.goals b{color:var(--ink)}
-
-/* controls */
-.controls{display:flex;align-items:center;gap:14px;padding:18px 0 40px;position:sticky;bottom:0;background:linear-gradient(transparent,var(--surface) 40%)}
-.nav-btn{
-  display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--surface);
-  border:none;border-radius:24px;padding:11px 20px;font:inherit;font-weight:700;cursor:pointer;
-}
+.bridge{margin-top:20px;font-size:15px;color:var(--ink-2);border-left:3px solid var(--accent);padding-left:14px}
+.bridge b{color:var(--ink)}
+.controls{display:flex;align-items:center;gap:14px;padding:18px 0 8px;position:sticky;bottom:0;background:linear-gradient(transparent,var(--surface) 40%)}
+.nav-btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--surface);border:none;border-radius:24px;padding:11px 20px;font:inherit;font-weight:700;cursor:pointer}
 .nav-btn.ghost{background:var(--surface-2);color:var(--ink);border:1px solid var(--border)}
 .nav-btn:disabled{opacity:.4;cursor:not-allowed}
 .dots{display:flex;gap:8px;margin:0 auto}
@@ -126,122 +108,134 @@ kbd{font:600 11px ui-monospace,Menlo,monospace;background:var(--surface-3);borde
       <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="none" stroke="var(--brain)" stroke-width="3"/><path d="M16 3a13 13 0 0 1 0 26" fill="none" stroke="var(--body)" stroke-width="3" stroke-linecap="round"/><circle cx="16" cy="3" r="3" fill="var(--accent)"/></svg>
       oddsloop
     </span>
-    <span class="tag">self-improving prediction engine</span>
-    <span class="badge" id="mode">PAPER MODE</span>
+    <span class="tag">an AI that predicts, checks itself, and earns trust</span>
+    <span class="badge" id="mode">PRACTICE MODE</span>
   </div>
 
   <main class="slides" id="slide" aria-live="polite">
 
     <!-- 1 TITLE -->
     <section class="slide active" aria-label="Slide 1: Overview" data-title="What it is">
-      <p class="eyebrow">The pitch in one line</p>
-      <h1>An AI that forecasts markets, argues with itself, and&nbsp;proves&nbsp;its&nbsp;edge before risking a dollar.</h1>
-      <p class="lead">oddsloop reads real-world prediction markets, forms its own honest probability for each, then <strong>attacks its own reasoning</strong> like a skeptical trading desk. It only bets where the case survives — and every call is scored against reality so we know, with numbers, whether to trust it.</p>
+      <p class="eyebrow">The idea in one line</p>
+      <h1>An AI that predicts real-world events, argues with itself, and proves it’s right before risking real money.</h1>
+      <p class="lead">There are websites where people bet on whether real things will happen — <em>“will it hit 88° in New York today?”, “who wins the election?”</em> oddsloop makes its own honest guess at the odds, then <strong>argues against itself like a tough critic</strong>, and only bets when its case holds up. Every guess is checked against what actually happens — so we know if we can trust it.</p>
       <div class="stats" id="livestats">
-        <div class="stat"><div class="n" id="s-pred">—</div><div class="l">predictions scored</div></div>
-        <div class="stat"><div class="n" id="s-brier">—</div><div class="l">Brier score (lower = sharper)</div></div>
-        <div class="stat"><div class="n" id="s-bets">—</div><div class="l">paper bets placed</div></div>
+        <div class="stat"><div class="n" id="s-pred">—</div><div class="l">guesses checked so far</div></div>
+        <div class="stat"><div class="n" id="s-brier">—</div><div class="l">prediction score (lower is better)</div></div>
+        <div class="stat"><div class="n" id="s-bets">—</div><div class="l">practice bets placed</div></div>
       </div>
     </section>
 
     <!-- 2 OPPORTUNITY -->
     <section class="slide" aria-label="Slide 2: The opportunity" data-title="The opportunity">
       <p class="eyebrow">Why this exists</p>
-      <h2>Prediction markets price the future. Most people bet on a hunch.</h2>
-      <p class="lead">On markets like Kalshi, real money sets the odds on real questions — <em>“will NYC hit 88° today?”, “who wins the nomination?”</em>. Those prices are usually smart, but not always. The gap between a <strong>careful, calibrated forecast</strong> and a crowd’s guess is the opportunity.</p>
+      <h2>Sometimes the odds are wrong. A careful, honest guesser can spot it.</h2>
+      <p class="lead">On these betting sites, real money sets the odds on real questions. The crowd is usually right — but not always. The gap between a <strong>careful guess</strong> and a lazy one is the whole opportunity.</p>
       <div class="grid g3">
-        <div class="card"><h3>🎯 The edge</h3><p>Find markets where a disciplined estimate disagrees with the price — and the disagreement is <em>earned</em>, not wishful.</p></div>
-        <div class="card"><h3>🤖 The catch</h3><p>You can’t trust an AI that just <em>sounds</em> confident. Confidence has to be <em>proven</em> against outcomes first.</p></div>
-        <div class="card"><h3>🔁 The answer</h3><p>A loop that predicts, scores itself, and learns — betting fake money until the edge is real.</p></div>
+        <div class="card"><h3>🎯 The chance</h3><p>Find questions where a careful estimate disagrees with the odds — and the disagreement is <em>backed by evidence</em>, not wishful thinking.</p></div>
+        <div class="card"><h3>🤖 The catch</h3><p>You can’t trust an AI that just <em>sounds</em> sure of itself. It has to prove it’s right, again and again, first.</p></div>
+        <div class="card"><h3>🔁 The fix</h3><p>A cycle that guesses, grades itself, and improves — using fake money until it has truly earned trust.</p></div>
       </div>
     </section>
 
-    <!-- 3 HOW IT WORKS (interactive loop) -->
+    <!-- 3 HOW IT WORKS -->
     <section class="slide" aria-label="Slide 3: How it works" data-title="How it works">
-      <p class="eyebrow">The loop</p>
-      <h2>Six steps, running on repeat.</h2>
-      <p class="lead muted">Tap a step to see what it does. It runs continuously — data in, judgment, disciplined sizing, and a scorecard back out.</p>
+      <p class="eyebrow">The cycle</p>
+      <h2>Six steps, running over and over.</h2>
+      <p class="lead muted">Tap a step to see what it does. It never stops: information in, careful judgment, careful bets, and a report card back out.</p>
       <div class="loopwrap">
         <ol class="steps" id="steps">
-          <li><button data-i="0" aria-current="true"><span class="idx">1</span><span><span class="st">Scrape</span><span class="sd">Log every market and every odds move into local storage — the seed data.</span></span></button></li>
-          <li><button data-i="1"><span class="idx">2</span><span><span class="st">Forecast <span class="dot brain"></span></span><span class="sd">The Brain forms an independent probability from evidence — price-blind, no peeking at the market.</span></span></button></li>
-          <li><button data-i="2"><span class="idx">3</span><span><span class="st">Challenge <span class="dot brain"></span></span><span class="sd">The same AI attacks its own thesis as a blunt skeptic. Deviating from the market must be earned.</span></span></button></li>
-          <li><button data-i="3"><span class="idx">4</span><span><span class="st">Size <span class="dot body"></span></span><span class="sd">The Body does the money math — fee-adjusted edge, Kelly sizing, risk caps. No AI touches stakes.</span></span></button></li>
-          <li><button data-i="4"><span class="idx">5</span><span><span class="st">Measure <span class="dot body"></span></span><span class="sd">Every prediction is scored against what actually happened. Calibration is the report card.</span></span></button></li>
-          <li><button data-i="5"><span class="idx">6</span><span><span class="st">Learn</span><span class="sd">Results feed back in. Paper mode until the edge is statistically proven.</span></span></button></li>
+          <li><button data-i="0" aria-current="true"><span class="idx">1</span><span><span class="st">Watch</span><span class="sd">Track every market and record how the odds move — building a growing history to learn from.</span></span></button></li>
+          <li><button data-i="1"><span class="idx">2</span><span><span class="st">Guess <span class="dot brain"></span></span><span class="sd">Make an honest estimate of the real odds — before looking at the market’s price, so the price can’t bias it.</span></span></button></li>
+          <li><button data-i="2"><span class="idx">3</span><span><span class="st">Challenge <span class="dot brain"></span></span><span class="sd">Argue against its own guess like a tough critic. If the case doesn’t hold up, it walks away.</span></span></button></li>
+          <li><button data-i="3"><span class="idx">4</span><span><span class="st">Size the bet <span class="dot body"></span></span><span class="sd">Do the math on how much to bet — small, careful, with strict limits. Rules pick the number, not a hunch.</span></span></button></li>
+          <li><button data-i="4"><span class="idx">5</span><span><span class="st">Grade <span class="dot body"></span></span><span class="sd">Check every guess against what really happened. This is the report card.</span></span></button></li>
+          <li><button data-i="5"><span class="idx">6</span><span><span class="st">Improve</span><span class="sd">Feed the results back in and get sharper. Fake money only, until it’s proven.</span></span></button></li>
         </ol>
-        <svg class="diagram" id="diagram" viewBox="0 0 200 200" role="img" aria-label="A six-step cycle diagram: scrape, forecast, challenge, size, measure, learn.">
+        <svg class="diagram" id="diagram" viewBox="0 0 200 200" role="img" aria-label="A six-step cycle: watch, guess, challenge, size the bet, grade, improve.">
           <circle cx="100" cy="100" r="70" fill="none" stroke="var(--border)" stroke-width="1.5"/>
           <g id="nodes"></g>
-          <text id="dcenter" x="100" y="97" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Scrape</text>
+          <text id="dcenter" x="100" y="97" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Watch</text>
           <text id="dsub" x="100" y="114" text-anchor="middle" font-size="7.5" fill="var(--ink-3)">step 1 of 6</text>
         </svg>
       </div>
     </section>
 
-    <!-- 4 TWO BRAINS -->
-    <section class="slide" aria-label="Slide 4: The two-agent design" data-title="Two agents">
-      <p class="eyebrow">The design that makes it trustworthy</p>
-      <h2>Two separate agents. One can’t justify the other.</h2>
-      <p class="lead">The system is split on purpose, so the part that <em>wants</em> to bet can never quietly tune the part that <em>forecasts</em>.</p>
+    <!-- 4 TWO PARTS -->
+    <section class="slide" aria-label="Slide 4: Two separate parts" data-title="Two parts">
+      <p class="eyebrow">The design that keeps it honest</p>
+      <h2>Two separate parts. One can’t fool the other.</h2>
+      <p class="lead">The system is split on purpose, so the part that <em>wants</em> to bet can never quietly lean on the part that <em>guesses</em>.</p>
       <div class="grid g2">
-        <div class="card"><h3><span class="dot brain"></span> The Brain</h3><p>Gathers evidence and produces honest probabilities. Its job is to be <strong>right</strong>, not to be profitable. It never sees the sizing.</p></div>
-        <div class="card"><h3><span class="dot body"></span> The Body</h3><p>Takes those probabilities and does the cold math — edge after fees, position size, risk limits. Its job is <strong>discipline</strong>, not opinion.</p></div>
+        <div class="card"><h3><span class="dot brain"></span> The thinker</h3><p>Gathers information and makes honest guesses. Its only job is to be <strong>right</strong> — it never sees the money.</p></div>
+        <div class="card"><h3><span class="dot body"></span> The banker</h3><p>Takes those guesses and does the cold math — how big a bet, what the limits are. Its only job is <strong>discipline</strong>.</p></div>
       </div>
       <div class="pills">
-        <span class="pill"><b>AI judges.</b> Code sizes the money.</span>
-        <span class="pill"><b>Adversarial by default</b> — every thesis gets attacked.</span>
-        <span class="pill"><b>Fully transparent</b> — public live dashboard.</span>
+        <span class="pill"><b>The AI guesses.</b> Rules handle the money.</span>
+        <span class="pill"><b>It always argues against itself.</b></span>
+        <span class="pill"><b>Everything is public</b> — a live scoreboard.</span>
       </div>
     </section>
 
-    <!-- 5 CALIBRATION -->
-    <section class="slide" aria-label="Slide 5: Calibration is trust" data-title="Calibration">
-      <p class="eyebrow">How we know it works</p>
-      <h2>We don’t bet on confidence. We bet on <em>proven</em> calibration.</h2>
-      <p class="lead">Calibration means: when the model says <strong>70%</strong>, the thing should happen about <strong>70%</strong> of the time. We measure that on every single prediction — bet or not — with a <strong>Brier score</strong> (lower is sharper).</p>
+    <!-- 5 TRACK RECORD -->
+    <section class="slide" aria-label="Slide 5: Track record" data-title="Track record">
+      <p class="eyebrow">How we know it’s working</p>
+      <h2>We don’t trust confidence. We trust a track record.</h2>
+      <p class="lead">The test is simple: when it says something is <strong>70% likely</strong>, does it actually happen about <strong>70%</strong> of the time? We check that on <em>every</em> guess and keep score. A lower score means sharper guesses.</p>
       <div class="grid g2">
-        <div class="card"><h3 style="color:var(--good)">Live result</h3><p>The first real batch came back <strong>well-calibrated</strong> — and slightly <em>under</em>-confident, which is the safe direction. Current Brier: <b id="s-brier2">—</b> across <b id="s-pred2">—</b> scored predictions.</p></div>
-        <div class="card"><h3>Why weather first</h3><p>Weather markets resolve <strong>every day</strong> — the fastest possible feedback. Hundreds of scored outcomes per week means the loop learns quickly before touching slower, higher-stakes markets.</p></div>
+        <div class="card"><h3 style="color:var(--good)">So far, so good</h3><p>The first real batch of results came back <strong>reliable</strong> — its odds lined up with reality, and when unsure it leaned careful (the safe way to be wrong). Prediction score: <b id="s-brier2">—</b> across <b id="s-pred2">—</b> checked guesses (lower is better).</p></div>
+        <div class="card"><h3>Why weather first</h3><p>Weather questions get answered <strong>every single day</strong> — the fastest way to get graded. Hundreds of results a week means it learns quickly before moving to slower, bigger questions.</p></div>
       </div>
     </section>
 
     <!-- 6 DISCIPLINE -->
-    <section class="slide" aria-label="Slide 6: Discipline and risk" data-title="Discipline">
-      <p class="eyebrow">Risk, on purpose</p>
-      <h2>Boring where it counts.</h2>
-      <p class="lead">The interesting part is the judgment. The money part is deliberately mechanical and conservative.</p>
+    <section class="slide" aria-label="Slide 6: Discipline" data-title="Discipline">
+      <p class="eyebrow">Careful on purpose</p>
+      <h2>Boring where the money is.</h2>
+      <p class="lead">The clever part is the judgment. The money part is deliberately simple and cautious.</p>
       <div class="grid g3">
-        <div class="card"><h3>🧾 Fee-aware</h3><p>Edge is measured <em>after</em> trading fees. A thesis that only wins before costs doesn’t trade.</p></div>
-        <div class="card"><h3>📏 Sized by rule</h3><p>Fractional-Kelly stakes with hard caps on exposure and drawdown. No gut-sized bets.</p></div>
-        <div class="card"><h3>📄 Paper first</h3><p>Not one real dollar until calibration is proven. Paper mode is locked; no agent can flip it.</p></div>
+        <div class="card"><h3>🧾 Costs count</h3><p>It only bets when there’s a real advantage <em>after</em> fees. A bet that only wins before costs gets skipped.</p></div>
+        <div class="card"><h3>📏 Small and capped</h3><p>Every bet is sized by rule, kept small, with hard limits on how much can ride at once.</p></div>
+        <div class="card"><h3>📄 Practice first</h3><p>Not one real dollar until the track record proves it. Practice mode is locked — the AI can’t switch it off.</p></div>
       </div>
     </section>
 
-    <!-- 7 GOALS -->
-    <section class="slide" aria-label="Slide 7: Goals" data-title="Goals">
-      <p class="eyebrow">Where this goes</p>
-      <h2>The plan.</h2>
-      <ul class="goals">
-        <li><span class="chk">✓</span><span><b>Run a live, self-driving paper loop.</b> Done — scraping, forecasting, scoring, and publishing on repeat, right now.</span></li>
-        <li><span class="chk">✓</span><span><b>Prove calibration on fast-feedback markets.</b> First weather batch scored and well-calibrated.</span></li>
-        <li><span class="chk fut">→</span><span><b>Build the seed-data corpus.</b> Every market’s odds, logged over time — fuel for sharper models.</span></li>
-        <li><span class="chk fut">→</span><span><b>Expand categories.</b> From weather to politics, econ, and beyond as calibration holds.</span></li>
-        <li><span class="chk fut">→</span><span><b>Graduate to real capital</b> — only once the edge is statistically undeniable.</span></li>
-      </ul>
+    <!-- 7 CURRENT -> TARGET -->
+    <section class="slide" aria-label="Slide 7: Where it is and where it is going" data-title="Now → Next">
+      <p class="eyebrow">The honest status</p>
+      <h2>Where it is today. Where it’s headed.</h2>
+      <div class="grid g2">
+        <div class="card now"><h3>✅ Today</h3>
+          <ul>
+            <li>Running live, on its own, with <strong>fake money</strong></li>
+            <li><b id="s-pred4">—</b> guesses checked — reliable so far</li>
+            <li>Focused on weather (fast, daily feedback)</li>
+            <li>Recording every market’s odds into a growing history</li>
+          </ul>
+        </div>
+        <div class="card next"><h3>🎯 The target</h3>
+          <ul>
+            <li>A proven track record across many kinds of questions</li>
+            <li>Graduate to <strong>real money</strong> — small first, then scale up</li>
+            <li>Expand to politics, the economy, sports, and more</li>
+            <li>Sharper models trained on all that recorded history</li>
+          </ul>
+        </div>
+      </div>
+      <p class="bridge">The whole plan is to <b>earn trust with numbers</b> before risking anything real.</p>
     </section>
 
     <!-- 8 STATUS -->
-    <section class="slide" aria-label="Slide 8: Status" data-title="Live now">
+    <section class="slide" aria-label="Slide 8: Live now" data-title="Live now">
       <p class="eyebrow">Status</p>
       <h2>It’s live — and you can watch it.</h2>
-      <p class="lead">The loop is running in paper mode with full transparency: every bet, every outcome, and the calibration scorecard are public and update automatically.</p>
+      <p class="lead">It’s running right now in practice mode, completely in the open: every bet, every result, and the scoreboard update automatically.</p>
       <div class="stats">
-        <div class="stat"><div class="n" id="s-pred3">—</div><div class="l">predictions scored</div></div>
-        <div class="stat"><div class="n" id="s-bets3">—</div><div class="l">paper bets</div></div>
-        <div class="stat"><div class="n"><span style="color:var(--good)">●</span> live</div><div class="l">paper protocol</div></div>
+        <div class="stat"><div class="n" id="s-pred3">—</div><div class="l">guesses checked</div></div>
+        <div class="stat"><div class="n" id="s-bets3">—</div><div class="l">practice bets</div></div>
+        <div class="stat"><div class="n"><span style="color:var(--good)">●</span> live</div><div class="l">running now</div></div>
       </div>
-      <p class="lead" style="margin-top:30px">See it working → <a class="link" href="./index.html">the live dashboard</a></p>
+      <p class="lead" style="margin-top:28px">See it working → <a class="link" href="./index.html">the live scoreboard</a></p>
     </section>
 
   </main>
@@ -252,7 +246,7 @@ kbd{font:600 11px ui-monospace,Menlo,monospace;background:var(--surface-3);borde
     <span class="count" id="count"></span>
     <button class="nav-btn" id="next" aria-label="Next slide">Next →</button>
   </div>
-  <p class="tag" style="text-align:center;padding-bottom:30px">Use <kbd>←</kbd> <kbd>→</kbd> arrow keys to move through the deck.</p>
+  <p class="tag" style="text-align:center;padding:8px 0 30px">Use the <kbd>←</kbd> <kbd>→</kbd> arrow keys, or the buttons, to move through the deck.</p>
 </div>
 
 <script>
@@ -275,20 +269,19 @@ kbd{font:600 11px ui-monospace,Menlo,monospace;background:var(--surface-3);borde
     dots.forEach(function(d,k){d.setAttribute('aria-current',k===i?'true':'false')});
     prev.disabled=i===0; next.disabled=i===slides.length-1;
     count.textContent=(i+1)+' / '+slides.length;
-    var act=slides[i]; act.setAttribute('tabindex','-1');
+    slides[i].setAttribute('tabindex','-1');
   }
   prev.addEventListener('click',function(){go(i-1)});
   next.addEventListener('click',function(){go(i+1)});
   document.addEventListener('keydown',function(e){
-    if(e.key==='ArrowRight')go(i+1);
-    else if(e.key==='ArrowLeft')go(i-1);
+    if(e.key==='ArrowRight'||e.key==='Right')go(i+1);
+    else if(e.key==='ArrowLeft'||e.key==='Left')go(i-1);
   });
   go(0);
 
-  /* interactive loop diagram */
   var steps=[].slice.call(document.querySelectorAll('#steps button'));
-  var labels=[['Scrape','log every market'],['Forecast','honest probability'],['Challenge','attack the thesis'],
-              ['Size','fee-aware Kelly'],['Measure','score vs reality'],['Learn','feed it back']];
+  var labels=[['Watch','build a history'],['Guess','honest odds'],['Challenge','argue against it'],
+              ['Size the bet','small & capped'],['Grade','check vs reality'],['Improve','get sharper']];
   var nodes=document.getElementById('nodes'), dcenter=document.getElementById('dcenter'), dsub=document.getElementById('dsub');
   var N=6, cx=100, cy=100, R=70, cur=0, timer;
   for(var k=0;k<N;k++){
@@ -297,7 +290,6 @@ kbd{font:600 11px ui-monospace,Menlo,monospace;background:var(--surface-3);borde
     var c=document.createElementNS('http://www.w3.org/2000/svg','circle');
     c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',15);
     c.setAttribute('fill','var(--surface)');c.setAttribute('stroke','var(--border)');c.setAttribute('stroke-width','2');
-    c.setAttribute('data-node',k);
     var t=document.createElementNS('http://www.w3.org/2000/svg','text');
     t.setAttribute('x',x);t.setAttribute('y',y+4);t.setAttribute('text-anchor','middle');
     t.setAttribute('font-size','11');t.setAttribute('font-weight','800');t.setAttribute('fill','var(--ink-2)');
@@ -321,27 +313,22 @@ kbd{font:600 11px ui-monospace,Menlo,monospace;background:var(--surface-3);borde
     b.addEventListener('mouseenter',function(){stop();light(+b.dataset.i)});
   });
   function start(){ if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
-    timer=setInterval(function(){light((cur+1)%N)},1700); }
+    timer=setInterval(function(){light((cur+1)%N)},1900); }
   function stop(){clearInterval(timer)}
   light(0); start();
 
-  /* live stats from the dashboard feed */
   function set(id,v){var e=document.getElementById(id);if(e)e.textContent=v;}
   fetch('./stats.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
     var sum=d.summary||{};
-    /* prediction-level calibration is the real signal (every scored prediction,
-       not just settled bets); fall back to bet-level if absent. */
     var pcal=Array.isArray(d.prediction_calibration)?d.prediction_calibration:[];
     var n=sum.predictions_scored || pcal.reduce(function(a,b){return a+(b.n||0)},0);
     var brier=(sum.prediction_brier!=null)?sum.prediction_brier:sum.brier_model;
     var bets=(sum.settled_count||0)+(sum.open_count||0)
              || ((d.history||[]).length+(d.active_bets||[]).length);
-    if(n){set('s-pred',n);set('s-pred2',n);set('s-pred3',n);}
+    if(n){set('s-pred',n);set('s-pred2',n);set('s-pred3',n);set('s-pred4',n);}
     if(brier!=null){var bs=(+brier).toFixed(3);set('s-brier',bs);set('s-brier2',bs);}
     if(bets){set('s-bets',bets);set('s-bets3',bets);}
-  }).catch(function(){
-    /* graceful: leave dashes, deck still reads fine */
-  });
+  }).catch(function(){});
 })();
 </script>
 </body>
