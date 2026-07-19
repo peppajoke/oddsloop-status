@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-19T17:14:24.642790+00:00",
+ "generated_at": "2026-07-19T17:34:37.362707+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
   "realized_pnl": -208.91,
-  "open_count": 42,
-  "open_stake": 630.21,
+  "open_count": 45,
+  "open_stake": 661.2,
   "settled_count": 12,
   "win_rate": 0.583,
   "roi": -0.6402,
@@ -91,6 +91,51 @@
   }
  ],
  "active_bets": [
+  {
+   "ticker": "KXMIDTERMVOTETURN-PA10-340000",
+   "title": "Will the total vote count for all participants in Pennsylvania 10 House General Election be above 340000? \u2014 Above 340K",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.33,
+   "entry_price": 0.54,
+   "p_final": 0.458,
+   "edge": 0.042,
+   "confidence": 0.47,
+   "thesis": "Resolves YES if total votes in the PA-10 House general election exceed 340,000. PA-10 (Harrisburg/York area) sees ~280-290k total votes in a midterm; 340k is presidential-year turnout territory (~360k). A midterm clearing 340k would require an unusually high-turnout year. Fade th",
+   "placed_at": "2026-07-19T17:34:37.230437+00:00"
+  },
+  {
+   "ticker": "KXALBUMRELEASE-26-2CH",
+   "title": "Will 2 Chainz release a new album in 2026?",
+   "category": "",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.33,
+   "entry_price": 0.54,
+   "p_final": 0.521,
+   "edge": 0.021,
+   "confidence": 0.41,
+   "thesis": "Resolves YES if 2 Chainz releases a new album in 2026. He is a prolific, active artist who has put out albums/projects at roughly a yearly cadence for over a decade. For an active rapper, P(a new album in a given calendar year) is high. Slight YES over the 0.50.",
+   "placed_at": "2026-07-19T17:34:37.229342+00:00"
+  },
+  {
+   "ticker": "KXSHOWENDFAMILYGUY-30",
+   "title": "Will there be an announcement that Family Guy is ending? \u2014 Before 2030",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.33,
+   "entry_price": 0.54,
+   "p_final": 0.444,
+   "edge": 0.056,
+   "confidence": 0.51,
+   "thesis": "Resolves YES if there's an announcement that Family Guy is ending/cancelled/entering its final season before Jan 2030. Fox's long-running animated tentpoles are famously durable \u2014 The Simpsons has run 35+ years with no end announced, and Family Guy (since 1999) remains a syndicat",
+   "placed_at": "2026-07-19T17:34:37.228137+00:00"
+  },
   {
    "ticker": "KXUSACOMPANYSTAKE-27JAN01-PDW",
    "title": "Will any part of the United States federal government take a stake of above 0% in Performance Drone Works?",
