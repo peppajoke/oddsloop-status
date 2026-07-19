@@ -1,42 +1,57 @@
 {
- "generated_at": "2026-07-19T10:43:44.597050+00:00",
+ "generated_at": "2026-07-19T11:13:47.485283+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
-  "realized_pnl": -10.36,
-  "open_count": 28,
-  "open_stake": 493.24,
-  "settled_count": 1,
-  "win_rate": 0.0,
-  "roi": -1.0,
-  "brier_model": 0.2401,
-  "brier_market": 0.2401,
-  "predictions_scored": 24,
-  "prediction_brier": 0.1208,
-  "prediction_log_loss": 0.3769
+  "realized_pnl": -21.9,
+  "open_count": 23,
+  "open_stake": 441.62,
+  "settled_count": 6,
+  "win_rate": 0.5,
+  "roi": -0.3533,
+  "brier_model": 0.1046,
+  "brier_market": 0.0985,
+  "predictions_scored": 33,
+  "prediction_brier": 0.1177,
+  "prediction_log_loss": 0.3707
  },
  "calibration": [
   {
-   "predicted": 0.49,
+   "predicted": 0.096,
    "realized": 0.0,
+   "n": 1
+  },
+  {
+   "predicted": 0.482,
+   "realized": 0.0,
+   "n": 2
+  },
+  {
+   "predicted": 0.741,
+   "realized": 1.0,
+   "n": 2
+  },
+  {
+   "predicted": 0.861,
+   "realized": 1.0,
    "n": 1
   }
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.058,
+   "predicted": 0.062,
    "realized": 0.0,
-   "n": 7
+   "n": 10
   },
   {
-   "predicted": 0.129,
+   "predicted": 0.131,
    "realized": 0.0,
-   "n": 4
-  },
-  {
-   "predicted": 0.225,
-   "realized": 0.2,
    "n": 5
+  },
+  {
+   "predicted": 0.238,
+   "realized": 0.222,
+   "n": 9
   },
   {
    "predicted": 0.35,
@@ -49,19 +64,19 @@
    "n": 3
   },
   {
-   "predicted": 0.506,
+   "predicted": 0.513,
    "realized": 1.0,
-   "n": 2
+   "n": 3
   }
  ],
  "categories": [
   {
    "category": "Climate and Weather",
-   "n": 1,
-   "win_rate": 0.0,
-   "brier_model": 0.2401,
-   "brier_market": 0.2401,
-   "pnl": -10.36,
+   "n": 6,
+   "win_rate": 0.5,
+   "brier_model": 0.1046,
+   "brier_market": 0.0985,
+   "pnl": -21.9,
    "beats_market": false
   }
  ],
@@ -322,51 +337,6 @@
    "placed_at": "2026-07-18T16:04:54.853492+00:00"
   },
   {
-   "ticker": "KXHIGHDEN-26JUL18-B95.5",
-   "title": "Will the **high temp in Denver** be 95-96\u00b0 on Jul 18, 2026? \u2014 95\u00b0 to 96\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.2,
-   "entry_price": 0.72,
-   "p_final": 0.256,
-   "edge": 0.039,
-   "confidence": 0.5,
-   "thesis": "Denver forecast 93F with a sharp warming trend (next-day high 97F, Sunny). The 95-96 band is 2-3F above forecast; the incoming ridge gives the warm side modest upside over a flat error model.",
-   "placed_at": "2026-07-18T16:04:54.853067+00:00"
-  },
-  {
-   "ticker": "KXHIGHDEN-26JUL18-B91.5",
-   "title": "Will the **high temp in Denver** be 91-92\u00b0 on Jul 18, 2026? \u2014 91\u00b0 to 92\u00b0",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.66,
-   "entry_price": 0.07,
-   "p_final": 0.096,
-   "edge": 0.031,
-   "confidence": 0.5,
-   "thesis": "Denver forecast 93F; the 91-92 band is 1-2F below forecast \u2014 plausible cool near-miss.",
-   "placed_at": "2026-07-18T16:04:54.852566+00:00"
-  },
-  {
-   "ticker": "KXHIGHDEN-26JUL18-B93.5",
-   "title": "Will the **high temp in Denver** be 93-94\u00b0 on Jul 18, 2026? \u2014 93\u00b0 to 94\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.43,
-   "entry_price": 0.39,
-   "p_final": 0.526,
-   "edge": 0.094,
-   "confidence": 0.55,
-   "thesis": "Denver Intl NWS same-day forecast high Jul 18 is 93F, Sunny. The 93-94 band is on the forecast center \u2014 modal outcome under clear skies (high insolation, reliable).",
-   "placed_at": "2026-07-18T16:04:54.852095+00:00"
-  },
-  {
    "ticker": "KXHIGHAUS-26JUL18-B96.5",
    "title": "Will the **high temp in Austin** be 96-97\u00b0 on Jul 18, 2026? \u2014 96\u00b0 to 97\u00b0",
    "category": "Climate and Weather",
@@ -410,36 +380,6 @@
    "confidence": 0.5,
    "thesis": "Chicago Midway forecast high Jul 18 is 90F but with 'Chance Showers and Thunderstorms' and a front passing (next-day high collapses to 80F). Frontal timing/convection adds strong downside risk to the high, so max <=88 (this T89 under-market) is a live ~1-in-3 outcome \u2014 the value ",
    "placed_at": "2026-07-18T13:47:55.555209+00:00"
-  },
-  {
-   "ticker": "KXHIGHPHIL-26JUL18-B84.5",
-   "title": "Will the **high temp in Philadelphia** be 84-85\u00b0 on Jul 18, 2026? \u2014 84\u00b0 to 85\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.12,
-   "entry_price": 0.84,
-   "p_final": 0.139,
-   "edge": 0.026,
-   "confidence": 0.5,
-   "thesis": "Philadelphia forecast 88F; the 84-85 band is 3-4F below forecast \u2014 a meaningful miss required. Smoke helps the under-case but 4F below a same-day forecast is a ~1.5 sigma event.",
-   "placed_at": "2026-07-18T13:47:55.554554+00:00"
-  },
-  {
-   "ticker": "KXHIGHPHIL-26JUL18-B86.5",
-   "title": "Will the **high temp in Philadelphia** be 86-87\u00b0 on Jul 18, 2026? \u2014 86\u00b0 to 87\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.21,
-   "entry_price": 0.7,
-   "p_final": 0.262,
-   "edge": 0.043,
-   "confidence": 0.55,
-   "thesis": "NWS forecast high for Philadelphia Intl Jul 18 is 88F with smoke. The 86-87 band is 1-2F below forecast; smoke suppression could pull the realized high down toward this band, giving it modest upside vs a naive symmetric error model.",
-   "placed_at": "2026-07-18T13:47:55.554102+00:00"
   },
   {
    "ticker": "KXGREENTERRITORY-29",
@@ -488,6 +428,101 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXHIGHDEN-26JUL18-B95.5",
+   "title": "Will the **high temp in Denver** be 95-96\u00b0 on Jul 18, 2026? \u2014 95\u00b0 to 96\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.2,
+   "entry_price": 0.72,
+   "p_final": 0.256,
+   "edge": 0.039,
+   "confidence": 0.5,
+   "thesis": "Denver forecast 93F with a sharp warming trend (next-day high 97F, Sunny). The 95-96 band is 2-3F above forecast; the incoming ridge gives the warm side modest upside over a flat error model.",
+   "placed_at": "2026-07-18T16:04:54.853067+00:00",
+   "won": true,
+   "payout": 13.89,
+   "pnl": 3.69,
+   "settled_at": "2026-07-19T11:13:47.095979+00:00"
+  },
+  {
+   "ticker": "KXHIGHDEN-26JUL18-B91.5",
+   "title": "Will the **high temp in Denver** be 91-92\u00b0 on Jul 18, 2026? \u2014 91\u00b0 to 92\u00b0",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.66,
+   "entry_price": 0.07,
+   "p_final": 0.096,
+   "edge": 0.031,
+   "confidence": 0.5,
+   "thesis": "Denver forecast 93F; the 91-92 band is 1-2F below forecast \u2014 plausible cool near-miss.",
+   "placed_at": "2026-07-18T16:04:54.852566+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.66,
+   "settled_at": "2026-07-19T11:13:47.095743+00:00"
+  },
+  {
+   "ticker": "KXHIGHDEN-26JUL18-B93.5",
+   "title": "Will the **high temp in Denver** be 93-94\u00b0 on Jul 18, 2026? \u2014 93\u00b0 to 94\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.43,
+   "entry_price": 0.39,
+   "p_final": 0.526,
+   "edge": 0.094,
+   "confidence": 0.55,
+   "thesis": "Denver Intl NWS same-day forecast high Jul 18 is 93F, Sunny. The 93-94 band is on the forecast center \u2014 modal outcome under clear skies (high insolation, reliable).",
+   "placed_at": "2026-07-18T16:04:54.852095+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.43,
+   "settled_at": "2026-07-19T11:13:47.095469+00:00"
+  },
+  {
+   "ticker": "KXHIGHPHIL-26JUL18-B84.5",
+   "title": "Will the **high temp in Philadelphia** be 84-85\u00b0 on Jul 18, 2026? \u2014 84\u00b0 to 85\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.12,
+   "entry_price": 0.84,
+   "p_final": 0.139,
+   "edge": 0.026,
+   "confidence": 0.5,
+   "thesis": "Philadelphia forecast 88F; the 84-85 band is 3-4F below forecast \u2014 a meaningful miss required. Smoke helps the under-case but 4F below a same-day forecast is a ~1.5 sigma event.",
+   "placed_at": "2026-07-18T13:47:55.554554+00:00",
+   "won": true,
+   "payout": 11.9,
+   "pnl": 1.78,
+   "settled_at": "2026-07-19T11:13:47.094927+00:00"
+  },
+  {
+   "ticker": "KXHIGHPHIL-26JUL18-B86.5",
+   "title": "Will the **high temp in Philadelphia** be 86-87\u00b0 on Jul 18, 2026? \u2014 86\u00b0 to 87\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.21,
+   "entry_price": 0.7,
+   "p_final": 0.262,
+   "edge": 0.043,
+   "confidence": 0.55,
+   "thesis": "NWS forecast high for Philadelphia Intl Jul 18 is 88F with smoke. The 86-87 band is 1-2F below forecast; smoke suppression could pull the realized high down toward this band, giving it modest upside vs a naive symmetric error model.",
+   "placed_at": "2026-07-18T13:47:55.554102+00:00",
+   "won": true,
+   "payout": 14.29,
+   "pnl": 4.08,
+   "settled_at": "2026-07-19T11:13:47.091432+00:00"
+  },
   {
    "ticker": "KXHIGHDEN-26JUL17-B92.5",
    "title": "Will the **high temp in Denver** be 92-93\u00b0 on Jul 17, 2026? \u2014 92\u00b0 to 93\u00b0",
