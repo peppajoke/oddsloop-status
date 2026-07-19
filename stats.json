@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-07-19T11:13:59.459965+00:00",
+ "generated_at": "2026-07-19T11:43:50.479109+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
-  "realized_pnl": -21.9,
-  "open_count": 23,
-  "open_stake": 441.62,
-  "settled_count": 6,
-  "win_rate": 0.5,
-  "roi": -0.3533,
-  "brier_model": 0.1046,
-  "brier_market": 0.0985,
-  "predictions_scored": 33,
-  "prediction_brier": 0.1177,
-  "prediction_log_loss": 0.3707
+  "realized_pnl": -226.94,
+  "open_count": 20,
+  "open_stake": 208.01,
+  "settled_count": 9,
+  "win_rate": 0.444,
+  "roi": -0.7678,
+  "brier_model": 0.1616,
+  "brier_market": 0.1675,
+  "predictions_scored": 36,
+  "prediction_brier": 0.1308,
+  "prediction_log_loss": 0.4015
  },
  "calibration": [
   {
@@ -22,14 +22,19 @@
    "n": 1
   },
   {
-   "predicted": 0.482,
+   "predicted": 0.161,
    "realized": 0.0,
-   "n": 2
+   "n": 1
   },
   {
-   "predicted": 0.741,
-   "realized": 1.0,
-   "n": 2
+   "predicted": 0.486,
+   "realized": 0.333,
+   "n": 3
+  },
+  {
+   "predicted": 0.74,
+   "realized": 0.667,
+   "n": 3
   },
   {
    "predicted": 0.861,
@@ -44,14 +49,14 @@
    "n": 10
   },
   {
-   "predicted": 0.131,
+   "predicted": 0.136,
    "realized": 0.0,
-   "n": 5
+   "n": 6
   },
   {
-   "predicted": 0.238,
-   "realized": 0.222,
-   "n": 9
+   "predicted": 0.24,
+   "realized": 0.3,
+   "n": 10
   },
   {
    "predicted": 0.35,
@@ -64,20 +69,20 @@
    "n": 3
   },
   {
-   "predicted": 0.513,
-   "realized": 1.0,
-   "n": 3
+   "predicted": 0.511,
+   "realized": 0.75,
+   "n": 4
   }
  ],
  "categories": [
   {
    "category": "Climate and Weather",
-   "n": 6,
-   "win_rate": 0.5,
-   "brier_model": 0.1046,
-   "brier_market": 0.0985,
-   "pnl": -21.9,
-   "beats_market": false
+   "n": 9,
+   "win_rate": 0.444,
+   "brier_model": 0.1616,
+   "brier_market": 0.1675,
+   "pnl": -226.94,
+   "beats_market": true
   }
  ],
  "active_bets": [
@@ -292,51 +297,6 @@
    "placed_at": "2026-07-18T16:04:54.854840+00:00"
   },
   {
-   "ticker": "KXHIGHLAX-26JUL18-T79",
-   "title": "Will the **high temp in LA** be >79\u00b0 on Jul 18, 2026? \u2014 80\u00b0 or above",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.46,
-   "entry_price": 0.35,
-   "p_final": 0.505,
-   "edge": 0.155,
-   "confidence": 0.5,
-   "thesis": "LAX forecast 77F; the >79 (>=80) market needs +3F above a marine-capped forecast \u2014 a low-probability warm tail for a coastal station.",
-   "placed_at": "2026-07-18T16:04:54.854409+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL18-B78.5",
-   "title": "Will the **high temp in LA** be 78-79\u00b0 on Jul 18, 2026? \u2014 78\u00b0 to 79\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.21,
-   "entry_price": 0.7,
-   "p_final": 0.261,
-   "edge": 0.044,
-   "confidence": 0.5,
-   "thesis": "LAX forecast 77F; the 78-79 band is 1-2F above forecast \u2014 possible on an early fog burn-off but against the marine cap.",
-   "placed_at": "2026-07-18T16:04:54.853960+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL18-B76.5",
-   "title": "Will the **high temp in LA** be 76-77\u00b0 on Jul 18, 2026? \u2014 76\u00b0 to 77\u00b0",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "conviction",
-   "stake": 199.79,
-   "fee": 13.15,
-   "entry_price": 0.06,
-   "p_final": 0.161,
-   "edge": 0.111,
-   "confidence": 0.6,
-   "thesis": "LAX NWS same-day forecast high Jul 18 is 77F under a marine-layer/fog pattern ('Patchy Fog then Partly Sunny'). Coastal SoCal summer highs are extremely predictable (marine cap), so the 76-77 on-forecast band carries unusually high probability \u2014 tight distribution, low variance.",
-   "placed_at": "2026-07-18T16:04:54.853492+00:00"
-  },
-  {
    "ticker": "KXHIGHAUS-26JUL18-B96.5",
    "title": "Will the **high temp in Austin** be 96-97\u00b0 on Jul 18, 2026? \u2014 96\u00b0 to 97\u00b0",
    "category": "Climate and Weather",
@@ -428,6 +388,63 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXHIGHLAX-26JUL18-T79",
+   "title": "Will the **high temp in LA** be >79\u00b0 on Jul 18, 2026? \u2014 80\u00b0 or above",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.46,
+   "entry_price": 0.35,
+   "p_final": 0.505,
+   "edge": 0.155,
+   "confidence": 0.5,
+   "thesis": "LAX forecast 77F; the >79 (>=80) market needs +3F above a marine-capped forecast \u2014 a low-probability warm tail for a coastal station.",
+   "placed_at": "2026-07-18T16:04:54.854409+00:00",
+   "won": true,
+   "payout": 28.57,
+   "pnl": 18.11,
+   "settled_at": "2026-07-19T11:43:50.034516+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL18-B78.5",
+   "title": "Will the **high temp in LA** be 78-79\u00b0 on Jul 18, 2026? \u2014 78\u00b0 to 79\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.21,
+   "entry_price": 0.7,
+   "p_final": 0.261,
+   "edge": 0.044,
+   "confidence": 0.5,
+   "thesis": "LAX forecast 77F; the 78-79 band is 1-2F above forecast \u2014 possible on an early fog burn-off but against the marine cap.",
+   "placed_at": "2026-07-18T16:04:54.853960+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.21,
+   "settled_at": "2026-07-19T11:43:50.034099+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL18-B76.5",
+   "title": "Will the **high temp in LA** be 76-77\u00b0 on Jul 18, 2026? \u2014 76\u00b0 to 77\u00b0",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "conviction",
+   "stake": 199.79,
+   "fee": 13.15,
+   "entry_price": 0.06,
+   "p_final": 0.161,
+   "edge": 0.111,
+   "confidence": 0.6,
+   "thesis": "LAX NWS same-day forecast high Jul 18 is 77F under a marine-layer/fog pattern ('Patchy Fog then Partly Sunny'). Coastal SoCal summer highs are extremely predictable (marine cap), so the 76-77 on-forecast band carries unusually high probability \u2014 tight distribution, low variance.",
+   "placed_at": "2026-07-18T16:04:54.853492+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -212.94,
+   "settled_at": "2026-07-19T11:43:50.033218+00:00"
+  },
   {
    "ticker": "KXHIGHDEN-26JUL18-B95.5",
    "title": "Will the **high temp in Denver** be 95-96\u00b0 on Jul 18, 2026? \u2014 95\u00b0 to 96\u00b0",
