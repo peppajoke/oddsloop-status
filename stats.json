@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-07-19T11:43:50.479109+00:00",
+ "generated_at": "2026-07-19T12:13:53.531268+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
-  "realized_pnl": -226.94,
-  "open_count": 20,
-  "open_stake": 208.01,
-  "settled_count": 9,
-  "win_rate": 0.444,
-  "roi": -0.7678,
-  "brier_model": 0.1616,
-  "brier_market": 0.1675,
-  "predictions_scored": 36,
-  "prediction_brier": 0.1308,
-  "prediction_log_loss": 0.4015
+  "realized_pnl": -208.91,
+  "open_count": 17,
+  "open_stake": 177.28,
+  "settled_count": 12,
+  "win_rate": 0.583,
+  "roi": -0.6402,
+  "brier_model": 0.1493,
+  "brier_market": 0.1612,
+  "predictions_scored": 53,
+  "prediction_brier": 0.1424,
+  "prediction_log_loss": 0.4295
  },
  "calibration": [
   {
@@ -32,56 +32,61 @@
    "n": 3
   },
   {
-   "predicted": 0.74,
-   "realized": 0.667,
-   "n": 3
-  },
-  {
-   "predicted": 0.861,
+   "predicted": 0.504,
    "realized": 1.0,
    "n": 1
+  },
+  {
+   "predicted": 0.74,
+   "realized": 0.75,
+   "n": 4
+  },
+  {
+   "predicted": 0.855,
+   "realized": 1.0,
+   "n": 2
   }
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.062,
+   "predicted": 0.058,
    "realized": 0.0,
+   "n": 14
+  },
+  {
+   "predicted": 0.138,
+   "realized": 0.1,
    "n": 10
   },
   {
-   "predicted": 0.136,
-   "realized": 0.0,
-   "n": 6
+   "predicted": 0.248,
+   "realized": 0.214,
+   "n": 14
   },
   {
-   "predicted": 0.24,
-   "realized": 0.3,
-   "n": 10
+   "predicted": 0.332,
+   "realized": 0.6,
+   "n": 5
   },
   {
-   "predicted": 0.35,
-   "realized": 0.333,
-   "n": 3
+   "predicted": 0.452,
+   "realized": 0.6,
+   "n": 5
   },
   {
-   "predicted": 0.43,
-   "realized": 0.667,
-   "n": 3
-  },
-  {
-   "predicted": 0.511,
-   "realized": 0.75,
-   "n": 4
+   "predicted": 0.513,
+   "realized": 0.6,
+   "n": 5
   }
  ],
  "categories": [
   {
    "category": "Climate and Weather",
-   "n": 9,
-   "win_rate": 0.444,
-   "brier_model": 0.1616,
-   "brier_market": 0.1675,
-   "pnl": -226.94,
+   "n": 12,
+   "win_rate": 0.583,
+   "brier_model": 0.1493,
+   "brier_market": 0.1612,
+   "pnl": -208.91,
    "beats_market": true
   }
  ],
@@ -297,51 +302,6 @@
    "placed_at": "2026-07-18T16:04:54.854840+00:00"
   },
   {
-   "ticker": "KXHIGHAUS-26JUL18-B96.5",
-   "title": "Will the **high temp in Austin** be 96-97\u00b0 on Jul 18, 2026? \u2014 96\u00b0 to 97\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.22,
-   "entry_price": 0.69,
-   "p_final": 0.261,
-   "edge": 0.054,
-   "confidence": 0.55,
-   "thesis": "Austin forecast 94F with a slight warming trend into the weekend (95F next two days). The 96-97 band is 2-3F above forecast; the warming trend gives it modest upside over a flat error model.",
-   "placed_at": "2026-07-18T13:47:55.556898+00:00"
-  },
-  {
-   "ticker": "KXHIGHAUS-26JUL18-T97",
-   "title": "Will the **high temp in Austin** be >97\u00b0 on Jul 18, 2026? \u2014 98\u00b0 or above",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.12,
-   "entry_price": 0.83,
-   "p_final": 0.151,
-   "edge": 0.034,
-   "confidence": 0.5,
-   "thesis": "Austin Bergstrom forecast high Jul 18 is 94F under a stable summer pattern (adjacent days 95F). The >97 (>=98) market needs +4F above a reliable, stable forecast \u2014 a low-probability warm tail.",
-   "placed_at": "2026-07-18T13:47:55.556471+00:00"
-  },
-  {
-   "ticker": "KXHIGHCHI-26JUL18-T89",
-   "title": "Will the high temp in Chicago be <89\u00b0 on Jul 18, 2026? \u2014 88\u00b0 or below",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.39,
-   "entry_price": 0.44999999999999996,
-   "p_final": 0.496,
-   "edge": 0.059,
-   "confidence": 0.5,
-   "thesis": "Chicago Midway forecast high Jul 18 is 90F but with 'Chance Showers and Thunderstorms' and a front passing (next-day high collapses to 80F). Frontal timing/convection adds strong downside risk to the high, so max <=88 (this T89 under-market) is a live ~1-in-3 outcome \u2014 the value ",
-   "placed_at": "2026-07-18T13:47:55.555209+00:00"
-  },
-  {
    "ticker": "KXGREENTERRITORY-29",
    "title": "Will the US take control of any part of Greenland? \u2014 Before January 21, 2029",
    "category": "Politics",
@@ -388,6 +348,63 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXHIGHAUS-26JUL18-B96.5",
+   "title": "Will the **high temp in Austin** be 96-97\u00b0 on Jul 18, 2026? \u2014 96\u00b0 to 97\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.22,
+   "entry_price": 0.69,
+   "p_final": 0.261,
+   "edge": 0.054,
+   "confidence": 0.55,
+   "thesis": "Austin forecast 94F with a slight warming trend into the weekend (95F next two days). The 96-97 band is 2-3F above forecast; the warming trend gives it modest upside over a flat error model.",
+   "placed_at": "2026-07-18T13:47:55.556898+00:00",
+   "won": true,
+   "payout": 14.49,
+   "pnl": 4.27,
+   "settled_at": "2026-07-19T12:13:53.122183+00:00"
+  },
+  {
+   "ticker": "KXHIGHAUS-26JUL18-T97",
+   "title": "Will the **high temp in Austin** be >97\u00b0 on Jul 18, 2026? \u2014 98\u00b0 or above",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.12,
+   "entry_price": 0.83,
+   "p_final": 0.151,
+   "edge": 0.034,
+   "confidence": 0.5,
+   "thesis": "Austin Bergstrom forecast high Jul 18 is 94F under a stable summer pattern (adjacent days 95F). The >97 (>=98) market needs +4F above a reliable, stable forecast \u2014 a low-probability warm tail.",
+   "placed_at": "2026-07-18T13:47:55.556471+00:00",
+   "won": true,
+   "payout": 12.05,
+   "pnl": 1.93,
+   "settled_at": "2026-07-19T12:13:53.121308+00:00"
+  },
+  {
+   "ticker": "KXHIGHCHI-26JUL18-T89",
+   "title": "Will the high temp in Chicago be <89\u00b0 on Jul 18, 2026? \u2014 88\u00b0 or below",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.39,
+   "entry_price": 0.44999999999999996,
+   "p_final": 0.496,
+   "edge": 0.059,
+   "confidence": 0.5,
+   "thesis": "Chicago Midway forecast high Jul 18 is 90F but with 'Chance Showers and Thunderstorms' and a front passing (next-day high collapses to 80F). Frontal timing/convection adds strong downside risk to the high, so max <=88 (this T89 under-market) is a live ~1-in-3 outcome \u2014 the value ",
+   "placed_at": "2026-07-18T13:47:55.555209+00:00",
+   "won": true,
+   "payout": 22.22,
+   "pnl": 11.83,
+   "settled_at": "2026-07-19T12:13:53.119808+00:00"
+  },
   {
    "ticker": "KXHIGHLAX-26JUL18-T79",
    "title": "Will the **high temp in LA** be >79\u00b0 on Jul 18, 2026? \u2014 80\u00b0 or above",
