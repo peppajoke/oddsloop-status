@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-19T19:14:39.143594+00:00",
+ "generated_at": "2026-07-19T19:31:30.707390+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
   "realized_pnl": -208.91,
-  "open_count": 46,
-  "open_stake": 671.56,
+  "open_count": 47,
+  "open_stake": 681.82,
   "settled_count": 12,
   "win_rate": 0.583,
   "roi": -0.6402,
@@ -91,6 +91,21 @@
   }
  ],
  "active_bets": [
+  {
+   "ticker": "KXIPOOPENAI-27MAR01",
+   "title": "When will OpenAI IPO? \u2014 Before Mar 1, 2027",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.26,
+   "entry_price": 0.64,
+   "p_final": 0.369,
+   "edge": 0.026,
+   "confidence": 0.45,
+   "thesis": "Resolves YES if OpenAI IPOs before Mar 1, 2027. OpenAI is a capped-profit entity under a nonprofit; an IPO requires major corporate restructuring (a PBC/for-profit conversion that was still contested in 2024-2025) plus the usual multi-quarter IPO process. ~18 months is aggressive",
+   "placed_at": "2026-07-19T19:31:30.576191+00:00"
+  },
   {
    "ticker": "KXTRUMPSAYCOMPANY-26AUG01-GOOG",
    "title": "Will Trump say \"Google / GOOG / GOOGL\" before Aug 1, 2026?",
