@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-19T15:44:14.201938+00:00",
+ "generated_at": "2026-07-19T16:10:31.386812+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
   "realized_pnl": -208.91,
-  "open_count": 37,
-  "open_stake": 386.76,
+  "open_count": 39,
+  "open_stake": 599.22,
   "settled_count": 12,
   "win_rate": 0.583,
   "roi": -0.6402,
@@ -91,6 +91,36 @@
   }
  ],
  "active_bets": [
+  {
+   "ticker": "KXNFLWINS-27SEA-11",
+   "title": "Will the Seattle pro football team win at least 11 games this season? \u2014 11+ wins",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.33,
+   "entry_price": 0.54,
+   "p_final": 0.47,
+   "edge": 0.03,
+   "confidence": 0.38,
+   "thesis": "The Seahawks have been an ~8-9 win team; 11+ wins in a 17-game season is a clear step above baseline. For a team with a Vegas win total near 8.5, P(>=11 wins) is historically ~25-30%. The 0.50 mid on thin volume looks rich.",
+   "placed_at": "2026-07-19T16:09:48.857076+00:00"
+  },
+  {
+   "ticker": "KXOPENAIBANKPUBLIC-28JAN01-SFX",
+   "title": "Will Stifel Financial take OpenAI public before Jan 1, 2028?",
+   "category": "",
+   "side": "no",
+   "tier": "conviction",
+   "stake": 195.82,
+   "fee": 6.31,
+   "entry_price": 0.54,
+   "p_final": 0.35,
+   "edge": 0.15,
+   "confidence": 0.68,
+   "thesis": "Resolves YES only if Stifel Financial serves as a lead underwriter for an OpenAI US IPO before Jan 2028. Two independent long-shots: (a) OpenAI IPO before 2028 is itself uncertain given its capped-profit structure, and (b) even conditional on an IPO, lead-underwriter/bookrunner r",
+   "placed_at": "2026-07-19T16:09:48.854826+00:00"
+  },
   {
    "ticker": "KXHIGHAUS-26JUL20-B97.5",
    "title": "Will the **high temp in Austin** be 97-98\u00b0 on Jul 20, 2026? \u2014 97\u00b0 to 98\u00b0",
