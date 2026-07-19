@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-19T18:44:34.530158+00:00",
+ "generated_at": "2026-07-19T18:54:05.796552+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
   "realized_pnl": -208.91,
-  "open_count": 45,
-  "open_stake": 661.2,
+  "open_count": 46,
+  "open_stake": 671.56,
   "settled_count": 12,
   "win_rate": 0.583,
   "roi": -0.6402,
@@ -91,6 +91,21 @@
   }
  ],
  "active_bets": [
+  {
+   "ticker": "KXTRUMPSAYCOMPANY-26AUG01-GOOG",
+   "title": "Will Trump say \"Google / GOOG / GOOGL\" before Aug 1, 2026?",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.36,
+   "entry_price": 0.49,
+   "p_final": 0.549,
+   "edge": 0.089,
+   "confidence": 0.59,
+   "thesis": "Resolves YES if Trump says 'Google' (or GOOG/GOOGL) before Aug 1, 2026 \u2014 a ~2-week window. Trump references Google regularly (antitrust actions, 'search bias/rigged' complaints, big-tech attacks), so over two weeks at least one mention is likely. Less of a lock than 'Fox News' (w",
+   "placed_at": "2026-07-19T18:54:05.662790+00:00"
+  },
   {
    "ticker": "KXMIDTERMVOTETURN-PA10-340000",
    "title": "Will the total vote count for all participants in Pennsylvania 10 House General Election be above 340000? \u2014 Above 340K",
