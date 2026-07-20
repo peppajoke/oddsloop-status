@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-20T17:05:22.671489+00:00",
+ "generated_at": "2026-07-20T17:35:26.280961+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -1333,6 +1333,13 @@
   ],
   "in_progress": [
    {
+    "number": 108,
+    "title": "task: add conviction_enabled flag in policy.decide (side:body)",
+    "priority": "P2",
+    "side": "body",
+    "in_progress": true
+   },
+   {
     "number": 97,
     "title": "Split exploration_min_edge: 0.00 for fast-lane markets, keep 0.02 for long-dated",
     "priority": "P1",
@@ -1367,13 +1374,6 @@
     "title": "Polymarket read-only ingestion (M4 - do not start before M3)",
     "priority": "P2",
     "side": "brain",
-    "in_progress": false
-   },
-   {
-    "number": 108,
-    "title": "task: add conviction_enabled flag in policy.decide (side:body)",
-    "priority": "P2",
-    "side": "body",
     "in_progress": false
    },
    {
