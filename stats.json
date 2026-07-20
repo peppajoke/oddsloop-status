@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-20T14:17:23.343044+00:00",
+ "generated_at": "2026-07-20T14:47:27.990183+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -1160,13 +1160,6 @@
     "in_progress": false
    },
    {
-    "number": 98,
-    "title": "Add Tier.VOID for voided/scratched Kalshi markets (refund treatment, excluded from scoring)",
-    "priority": "P2",
-    "side": "body",
-    "in_progress": false
-   },
-   {
     "number": 108,
     "title": "task: add conviction_enabled flag in policy.decide (side:body)",
     "priority": "P2",
@@ -1189,6 +1182,13 @@
    }
   ],
   "completed": [
+   {
+    "number": 98,
+    "title": "Add Tier.VOID for voided/scratched Kalshi markets (refund treatment, excluded from scoring)",
+    "priority": "P2",
+    "side": "body",
+    "in_progress": false
+   },
    {
     "number": 90,
     "title": "Longshot-bias structural signal (Brain)",
