@@ -1,35 +1,40 @@
 {
- "generated_at": "2026-07-20T11:46:57.395725+00:00",
+ "generated_at": "2026-07-20T12:17:01.769480+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
-  "realized_pnl": -257.01,
-  "open_count": 41,
-  "open_stake": 618.79,
-  "settled_count": 18,
-  "win_rate": 0.444,
-  "roi": -0.6601,
-  "brier_model": 0.1378,
-  "brier_market": 0.139,
-  "predictions_scored": 71,
-  "prediction_brier": 0.127,
-  "prediction_log_loss": 0.3907
+  "realized_pnl": -236.7,
+  "open_count": 33,
+  "open_stake": 535.0,
+  "settled_count": 26,
+  "win_rate": 0.462,
+  "roi": -0.5003,
+  "brier_model": 0.1484,
+  "brier_market": 0.1588,
+  "predictions_scored": 95,
+  "prediction_brier": 0.1252,
+  "prediction_log_loss": 0.3836
  },
  "calibration": [
   {
-   "predicted": 0.064,
+   "predicted": 0.066,
    "realized": 0.0,
-   "n": 4
+   "n": 5
   },
   {
-   "predicted": 0.161,
+   "predicted": 0.135,
    "realized": 0.0,
+   "n": 3
+  },
+  {
+   "predicted": 0.336,
+   "realized": 1.0,
    "n": 1
   },
   {
-   "predicted": 0.486,
-   "realized": 0.333,
-   "n": 3
+   "predicted": 0.483,
+   "realized": 0.5,
+   "n": 4
   },
   {
    "predicted": 0.527,
@@ -37,9 +42,9 @@
    "n": 3
   },
   {
-   "predicted": 0.683,
-   "realized": 1.0,
-   "n": 1
+   "predicted": 0.641,
+   "realized": 0.75,
+   "n": 4
   },
   {
    "predicted": 0.74,
@@ -54,24 +59,24 @@
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.055,
+   "predicted": 0.051,
    "realized": 0.0,
-   "n": 21
+   "n": 31
   },
   {
-   "predicted": 0.138,
-   "realized": 0.071,
-   "n": 14
+   "predicted": 0.144,
+   "realized": 0.105,
+   "n": 19
   },
   {
-   "predicted": 0.249,
-   "realized": 0.222,
-   "n": 18
+   "predicted": 0.245,
+   "realized": 0.227,
+   "n": 22
   },
   {
-   "predicted": 0.329,
+   "predicted": 0.343,
    "realized": 0.5,
-   "n": 6
+   "n": 10
   },
   {
    "predicted": 0.455,
@@ -79,28 +84,28 @@
    "n": 7
   },
   {
-   "predicted": 0.513,
-   "realized": 0.6,
-   "n": 5
+   "predicted": 0.515,
+   "realized": 0.5,
+   "n": 6
   }
  ],
  "categories": [
   {
    "category": "Climate and Weather",
-   "n": 12,
-   "win_rate": 0.583,
-   "brier_model": 0.1493,
-   "brier_market": 0.1612,
-   "pnl": -208.91,
+   "n": 13,
+   "win_rate": 0.615,
+   "brier_model": 0.1718,
+   "brier_market": 0.1956,
+   "pnl": -174.01,
    "beats_market": true
   },
   {
    "category": "uncategorized",
-   "n": 6,
-   "win_rate": 0.167,
-   "brier_model": 0.1148,
-   "brier_market": 0.0947,
-   "pnl": -48.1,
+   "n": 13,
+   "win_rate": 0.308,
+   "brier_model": 0.1251,
+   "brier_market": 0.1219,
+   "pnl": -62.69,
    "beats_market": false
   }
  ],
@@ -556,126 +561,6 @@
    "placed_at": "2026-07-19T14:54:58.917561+00:00"
   },
   {
-   "ticker": "KXHIGHAUS-26JUL19-B95.5",
-   "title": "Will the **high temp in Austin** be 95-96\u00b0 on Jul 19, 2026? \u2014 95\u00b0 to 96\u00b0",
-   "category": "",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.31,
-   "entry_price": 0.56,
-   "p_final": 0.398,
-   "edge": 0.047,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Austin is 95\u00b0F (Mostly Sunny). Band 95-96\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-18T23:11:17.680537+00:00"
-  },
-  {
-   "ticker": "KXHIGHAUS-26JUL19-T93",
-   "title": "Will the **high temp in Austin** be <93\u00b0 on Jul 19, 2026? \u2014 92\u00b0 or below",
-   "category": "",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.63,
-   "entry_price": 0.11,
-   "p_final": 0.129,
-   "edge": 0.024,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Austin is 95\u00b0F (Mostly Sunny). Band <=92\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-18T23:11:17.679350+00:00"
-  },
-  {
-   "ticker": "KXHIGHCHI-26JUL19-B80.5",
-   "title": "Will the high temp in Chicago be 80-81\u00b0 on Jul 19, 2026? \u2014 80\u00b0 to 81\u00b0",
-   "category": "",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.31,
-   "entry_price": 0.56,
-   "p_final": 0.398,
-   "edge": 0.047,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Chicago is 80\u00b0F (Smoke). Band 80-81\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-18T23:11:17.677159+00:00"
-  },
-  {
-   "ticker": "KXHIGHCHI-26JUL19-T78",
-   "title": "Will the high temp in Chicago be <78\u00b0 on Jul 19, 2026? \u2014 77\u00b0 or below",
-   "category": "",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.64,
-   "entry_price": 0.09,
-   "p_final": 0.114,
-   "edge": 0.029,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Chicago is 80\u00b0F (Smoke). Band <=77\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-18T23:11:17.676052+00:00"
-  },
-  {
-   "ticker": "KXHIGHMIA-26JUL19-T95",
-   "title": "Will the **high temp in Miami** be >95\u00b0 on Jul 19, 2026? \u2014 96\u00b0 or above",
-   "category": "",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.68,
-   "entry_price": 0.04,
-   "p_final": 0.073,
-   "edge": 0.043,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Miami is 93\u00b0F (Mostly Sunny then Slight Chance Showers And Thunderstorms). Band >=96\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-18T23:11:17.668839+00:00"
-  },
-  {
-   "ticker": "KXHIGHMIA-26JUL19-B92.5",
-   "title": "Will the **high temp in Miami** be 92-93\u00b0 on Jul 19, 2026? \u2014 92\u00b0 to 93\u00b0",
-   "category": "",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.43,
-   "entry_price": 0.39,
-   "p_final": 0.526,
-   "edge": 0.089,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Miami is 93\u00b0F (Mostly Sunny then Slight Chance Showers And Thunderstorms). Band 92-93\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-18T23:11:17.667835+00:00"
-  },
-  {
-   "ticker": "KXHIGHNY-26JUL19-B80.5",
-   "title": "Will the **high temp in NYC** be 80-81\u00b0 on Jul 19, 2026? \u2014 80\u00b0 to 81\u00b0",
-   "category": "",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.24,
-   "entry_price": 0.6599999999999999,
-   "p_final": 0.323,
-   "edge": 0.022,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for New York is 81\u00b0F (Sunny). Band 80-81\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-18T23:11:17.663693+00:00"
-  },
-  {
-   "ticker": "KXHIGHNY-26JUL19-T80",
-   "title": "Will the **high temp in NYC** be <80\u00b0 on Jul 19, 2026? \u2014 79\u00b0 or below",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.55,
-   "entry_price": 0.22,
-   "p_final": 0.336,
-   "edge": 0.131,
-   "confidence": 0.55,
-   "thesis": "Central Park NWS forecast high for Jul 19 (Sunday) is 83F, Sunny. The >80 (>=81) market clears easily if the forecast verifies within 2F \u2014 sunny conditions make a big cool miss unlikely. Next-day horizon adds some error vs same-day, so not a lock.",
-   "placed_at": "2026-07-18T16:04:54.854840+00:00"
-  },
-  {
    "ticker": "KXGREENTERRITORY-29",
    "title": "Will the US take control of any part of Greenland? \u2014 Before January 21, 2029",
    "category": "Politics",
@@ -722,6 +607,158 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXHIGHAUS-26JUL19-B95.5",
+   "title": "Will the **high temp in Austin** be 95-96\u00b0 on Jul 19, 2026? \u2014 95\u00b0 to 96\u00b0",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.31,
+   "entry_price": 0.56,
+   "p_final": 0.398,
+   "edge": 0.047,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Austin is 95\u00b0F (Mostly Sunny). Band 95-96\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-18T23:11:17.680537+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.31,
+   "settled_at": "2026-07-20T12:17:01.297450+00:00"
+  },
+  {
+   "ticker": "KXHIGHAUS-26JUL19-T93",
+   "title": "Will the **high temp in Austin** be <93\u00b0 on Jul 19, 2026? \u2014 92\u00b0 or below",
+   "category": "",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.63,
+   "entry_price": 0.11,
+   "p_final": 0.129,
+   "edge": 0.024,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Austin is 95\u00b0F (Mostly Sunny). Band <=92\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-18T23:11:17.679350+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.63,
+   "settled_at": "2026-07-20T12:17:01.296949+00:00"
+  },
+  {
+   "ticker": "KXHIGHCHI-26JUL19-B80.5",
+   "title": "Will the high temp in Chicago be 80-81\u00b0 on Jul 19, 2026? \u2014 80\u00b0 to 81\u00b0",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.31,
+   "entry_price": 0.56,
+   "p_final": 0.398,
+   "edge": 0.047,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Chicago is 80\u00b0F (Smoke). Band 80-81\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-18T23:11:17.677159+00:00",
+   "won": true,
+   "payout": 17.86,
+   "pnl": 7.55,
+   "settled_at": "2026-07-20T12:17:01.296525+00:00"
+  },
+  {
+   "ticker": "KXHIGHCHI-26JUL19-T78",
+   "title": "Will the high temp in Chicago be <78\u00b0 on Jul 19, 2026? \u2014 77\u00b0 or below",
+   "category": "",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.64,
+   "entry_price": 0.09,
+   "p_final": 0.114,
+   "edge": 0.029,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Chicago is 80\u00b0F (Smoke). Band <=77\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-18T23:11:17.676052+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.64,
+   "settled_at": "2026-07-20T12:17:01.296142+00:00"
+  },
+  {
+   "ticker": "KXHIGHMIA-26JUL19-T95",
+   "title": "Will the **high temp in Miami** be >95\u00b0 on Jul 19, 2026? \u2014 96\u00b0 or above",
+   "category": "",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.68,
+   "entry_price": 0.04,
+   "p_final": 0.073,
+   "edge": 0.043,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Miami is 93\u00b0F (Mostly Sunny then Slight Chance Showers And Thunderstorms). Band >=96\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-18T23:11:17.668839+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.68,
+   "settled_at": "2026-07-20T12:17:01.295749+00:00"
+  },
+  {
+   "ticker": "KXHIGHMIA-26JUL19-B92.5",
+   "title": "Will the **high temp in Miami** be 92-93\u00b0 on Jul 19, 2026? \u2014 92\u00b0 to 93\u00b0",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.43,
+   "entry_price": 0.39,
+   "p_final": 0.526,
+   "edge": 0.089,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Miami is 93\u00b0F (Mostly Sunny then Slight Chance Showers And Thunderstorms). Band 92-93\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-18T23:11:17.667835+00:00",
+   "won": true,
+   "payout": 25.64,
+   "pnl": 15.21,
+   "settled_at": "2026-07-20T12:17:01.295264+00:00"
+  },
+  {
+   "ticker": "KXHIGHNY-26JUL19-B80.5",
+   "title": "Will the **high temp in NYC** be 80-81\u00b0 on Jul 19, 2026? \u2014 80\u00b0 to 81\u00b0",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.24,
+   "entry_price": 0.6599999999999999,
+   "p_final": 0.323,
+   "edge": 0.022,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for New York is 81\u00b0F (Sunny). Band 80-81\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-18T23:11:17.663693+00:00",
+   "won": true,
+   "payout": 15.15,
+   "pnl": 4.91,
+   "settled_at": "2026-07-20T12:17:01.294822+00:00"
+  },
+  {
+   "ticker": "KXHIGHNY-26JUL19-T80",
+   "title": "Will the **high temp in NYC** be <80\u00b0 on Jul 19, 2026? \u2014 79\u00b0 or below",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.55,
+   "entry_price": 0.22,
+   "p_final": 0.336,
+   "edge": 0.131,
+   "confidence": 0.55,
+   "thesis": "Central Park NWS forecast high for Jul 19 (Sunday) is 83F, Sunny. The >80 (>=81) market clears easily if the forecast verifies within 2F \u2014 sunny conditions make a big cool miss unlikely. Next-day horizon adds some error vs same-day, so not a lock.",
+   "placed_at": "2026-07-18T16:04:54.854840+00:00",
+   "won": true,
+   "payout": 45.45,
+   "pnl": 34.9,
+   "settled_at": "2026-07-20T12:17:01.293787+00:00"
+  },
   {
    "ticker": "KXHIGHLAX-26JUL19-B77.5",
    "title": "Will the **high temp in LA** be 77-78\u00b0 on Jul 19, 2026? \u2014 77\u00b0 to 78\u00b0",
