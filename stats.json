@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-20T22:05:55.567504+00:00",
+ "generated_at": "2026-07-20T22:35:58.953871+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -1333,13 +1333,6 @@
   ],
   "in_progress": [
    {
-    "number": 108,
-    "title": "task: add conviction_enabled flag in policy.decide (side:body)",
-    "priority": "P2",
-    "side": "body",
-    "in_progress": true
-   },
-   {
     "number": 97,
     "title": "Split exploration_min_edge: 0.00 for fast-lane markets, keep 0.02 for long-dated",
     "priority": "P1",
@@ -1392,6 +1385,13 @@
    }
   ],
   "completed": [
+   {
+    "number": 108,
+    "title": "task: add conviction_enabled flag in policy.decide (side:body)",
+    "priority": "P2",
+    "side": "body",
+    "in_progress": true
+   },
    {
     "number": 98,
     "title": "Add Tier.VOID for voided/scratched Kalshi markets (refund treatment, excluded from scoring)",
