@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-07-20T11:16:52.963650+00:00",
+ "generated_at": "2026-07-20T11:46:57.395725+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
-  "realized_pnl": -235.96,
-  "open_count": 43,
-  "open_stake": 639.84,
-  "settled_count": 16,
-  "win_rate": 0.5,
-  "roi": -0.6407,
-  "brier_model": 0.135,
-  "brier_market": 0.1401,
-  "predictions_scored": 65,
-  "prediction_brier": 0.132,
-  "prediction_log_loss": 0.4034
+  "realized_pnl": -257.01,
+  "open_count": 41,
+  "open_stake": 618.79,
+  "settled_count": 18,
+  "win_rate": 0.444,
+  "roi": -0.6601,
+  "brier_model": 0.1378,
+  "brier_market": 0.139,
+  "predictions_scored": 71,
+  "prediction_brier": 0.127,
+  "prediction_log_loss": 0.3907
  },
  "calibration": [
   {
-   "predicted": 0.071,
+   "predicted": 0.064,
    "realized": 0.0,
-   "n": 3
+   "n": 4
   },
   {
    "predicted": 0.161,
@@ -32,9 +32,9 @@
    "n": 3
   },
   {
-   "predicted": 0.508,
-   "realized": 0.5,
-   "n": 2
+   "predicted": 0.527,
+   "realized": 0.333,
+   "n": 3
   },
   {
    "predicted": 0.683,
@@ -54,9 +54,9 @@
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.056,
+   "predicted": 0.055,
    "realized": 0.0,
-   "n": 18
+   "n": 21
   },
   {
    "predicted": 0.138,
@@ -64,9 +64,9 @@
    "n": 14
   },
   {
-   "predicted": 0.251,
-   "realized": 0.25,
-   "n": 16
+   "predicted": 0.249,
+   "realized": 0.222,
+   "n": 18
   },
   {
    "predicted": 0.329,
@@ -74,9 +74,9 @@
    "n": 6
   },
   {
-   "predicted": 0.458,
-   "realized": 0.667,
-   "n": 6
+   "predicted": 0.455,
+   "realized": 0.714,
+   "n": 7
   },
   {
    "predicted": 0.513,
@@ -96,11 +96,11 @@
   },
   {
    "category": "uncategorized",
-   "n": 4,
-   "win_rate": 0.25,
-   "brier_model": 0.0922,
-   "brier_market": 0.0769,
-   "pnl": -27.05,
+   "n": 6,
+   "win_rate": 0.167,
+   "brier_model": 0.1148,
+   "brier_market": 0.0947,
+   "pnl": -48.1,
    "beats_market": false
   }
  ],
@@ -616,36 +616,6 @@
    "placed_at": "2026-07-18T23:11:17.676052+00:00"
   },
   {
-   "ticker": "KXHIGHLAX-26JUL19-B77.5",
-   "title": "Will the **high temp in LA** be 77-78\u00b0 on Jul 19, 2026? \u2014 77\u00b0 to 78\u00b0",
-   "category": "",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.35,
-   "entry_price": 0.51,
-   "p_final": 0.436,
-   "edge": 0.059,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Los Angeles is 77\u00b0F (Patchy Fog then Mostly Cloudy). Band 77-78\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-18T23:11:17.670810+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL19-B73.5",
-   "title": "Will the **high temp in LA** be 73-74\u00b0 on Jul 19, 2026? \u2014 73\u00b0 to 74\u00b0",
-   "category": "",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.7,
-   "entry_price": 0.01,
-   "p_final": 0.042,
-   "edge": 0.032,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Los Angeles is 77\u00b0F (Patchy Fog then Mostly Cloudy). Band 73-74\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-18T23:11:17.669791+00:00"
-  },
-  {
    "ticker": "KXHIGHMIA-26JUL19-T95",
    "title": "Will the **high temp in Miami** be >95\u00b0 on Jul 19, 2026? \u2014 96\u00b0 or above",
    "category": "",
@@ -752,6 +722,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXHIGHLAX-26JUL19-B77.5",
+   "title": "Will the **high temp in LA** be 77-78\u00b0 on Jul 19, 2026? \u2014 77\u00b0 to 78\u00b0",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.35,
+   "entry_price": 0.51,
+   "p_final": 0.436,
+   "edge": 0.059,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Los Angeles is 77\u00b0F (Patchy Fog then Mostly Cloudy). Band 77-78\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-18T23:11:17.670810+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.35,
+   "settled_at": "2026-07-20T11:46:56.833895+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL19-B73.5",
+   "title": "Will the **high temp in LA** be 73-74\u00b0 on Jul 19, 2026? \u2014 73\u00b0 to 74\u00b0",
+   "category": "",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.7,
+   "entry_price": 0.01,
+   "p_final": 0.042,
+   "edge": 0.032,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-19 high for Los Angeles is 77\u00b0F (Patchy Fog then Mostly Cloudy). Band 73-74\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-18T23:11:17.669791+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.7,
+   "settled_at": "2026-07-20T11:46:56.831638+00:00"
+  },
   {
    "ticker": "KXHIGHDEN-26JUL19-T100",
    "title": "Will the **high temp in Denver** be >100\u00b0 on Jul 19, 2026? \u2014 101\u00b0 or above",
