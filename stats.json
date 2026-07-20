@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-20T20:05:42.149564+00:00",
+ "generated_at": "2026-07-20T20:35:45.321351+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -1347,6 +1347,13 @@
     "in_progress": true
    },
    {
+    "number": 66,
+    "title": "Joint: Settlement.entry_price docstring now stale after ask-based fills (PR #64 finding)",
+    "priority": "P3",
+    "side": "",
+    "in_progress": true
+   },
+   {
     "number": 37,
     "title": "Low-latency resolution watcher daemon (Rust)",
     "priority": "P2",
@@ -1374,13 +1381,6 @@
     "title": "Polymarket read-only ingestion (M4 - do not start before M3)",
     "priority": "P2",
     "side": "brain",
-    "in_progress": false
-   },
-   {
-    "number": 66,
-    "title": "Joint: Settlement.entry_price docstring now stale after ask-based fills (PR #64 finding)",
-    "priority": "P3",
-    "side": "",
     "in_progress": false
    },
    {
@@ -1562,6 +1562,10 @@
    }
   ],
   "open_questions": [
+   {
+    "number": 111,
+    "title": "Q: Brain task proposals \u2014 auto_forecast sigma fix, zoneinfo offsets, per-category evidence"
+   },
    {
     "number": 95,
     "title": "Q: Same-day weather markets are stale-forecast traps intraday \u2014 pipeline bet $200 conviction against a better-informed market"
