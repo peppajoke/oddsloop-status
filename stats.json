@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-07-21T11:07:22.144367+00:00",
+ "generated_at": "2026-07-21T11:37:25.504433+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
-  "realized_pnl": -299.85,
-  "open_count": 41,
-  "open_stake": 618.39,
-  "settled_count": 32,
-  "win_rate": 0.375,
-  "roi": -0.5591,
-  "brier_model": 0.147,
-  "brier_market": 0.1526,
-  "predictions_scored": 107,
-  "prediction_brier": 0.1208,
-  "prediction_log_loss": 0.3723
+  "realized_pnl": -309.87,
+  "open_count": 37,
+  "open_stake": 576.54,
+  "settled_count": 36,
+  "win_rate": 0.389,
+  "roi": -0.536,
+  "brier_model": 0.1374,
+  "brier_market": 0.1435,
+  "predictions_scored": 113,
+  "prediction_brier": 0.1237,
+  "prediction_log_loss": 0.3819
  },
  "calibration": [
   {
-   "predicted": 0.065,
+   "predicted": 0.068,
    "realized": 0.0,
-   "n": 6
+   "n": 8
   },
   {
    "predicted": 0.122,
@@ -42,14 +42,14 @@
    "n": 4
   },
   {
-   "predicted": 0.652,
-   "realized": 0.6,
-   "n": 5
+   "predicted": 0.645,
+   "realized": 0.667,
+   "n": 6
   },
   {
-   "predicted": 0.74,
-   "realized": 0.75,
-   "n": 4
+   "predicted": 0.737,
+   "realized": 0.8,
+   "n": 5
   },
   {
    "predicted": 0.855,
@@ -59,24 +59,24 @@
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.051,
+   "predicted": 0.052,
    "realized": 0.0,
-   "n": 35
+   "n": 38
   },
   {
-   "predicted": 0.14,
-   "realized": 0.087,
-   "n": 23
+   "predicted": 0.138,
+   "realized": 0.125,
+   "n": 24
   },
   {
-   "predicted": 0.244,
-   "realized": 0.217,
-   "n": 23
+   "predicted": 0.246,
+   "realized": 0.208,
+   "n": 24
   },
   {
-   "predicted": 0.337,
-   "realized": 0.5,
-   "n": 12
+   "predicted": 0.342,
+   "realized": 0.462,
+   "n": 13
   },
   {
    "predicted": 0.452,
@@ -101,11 +101,11 @@
   },
   {
    "category": "uncategorized",
-   "n": 19,
-   "win_rate": 0.211,
-   "brier_model": 0.1301,
-   "brier_market": 0.1232,
-   "pnl": -125.84,
+   "n": 23,
+   "win_rate": 0.261,
+   "brier_model": 0.1181,
+   "brier_market": 0.114,
+   "pnl": -135.86,
    "beats_market": false
   }
  ],
@@ -546,66 +546,6 @@
    "placed_at": "2026-07-19T14:54:58.938568+00:00"
   },
   {
-   "ticker": "KXHIGHLAX-26JUL20-B79.5",
-   "title": "Will the **high temp in LA** be 79-80\u00b0 on Jul 20, 2026? \u2014 79\u00b0 to 80\u00b0",
-   "category": "",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.21,
-   "entry_price": 0.7,
-   "p_final": 0.275,
-   "edge": 0.029,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Los Angeles is 77\u00b0F (Patchy Fog then Partly Sunny). Band 79-80\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-19T14:54:58.931768+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL20-B77.5",
-   "title": "Will the **high temp in LA** be 77-78\u00b0 on Jul 20, 2026? \u2014 77\u00b0 to 78\u00b0",
-   "category": "",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.31,
-   "entry_price": 0.5700000000000001,
-   "p_final": 0.395,
-   "edge": 0.045,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Los Angeles is 77\u00b0F (Patchy Fog then Partly Sunny). Band 77-78\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-19T14:54:58.930916+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL20-B75.5",
-   "title": "Will the **high temp in LA** be 75-76\u00b0 on Jul 20, 2026? \u2014 75\u00b0 to 76\u00b0",
-   "category": "",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.67,
-   "entry_price": 0.05,
-   "p_final": 0.088,
-   "edge": 0.048,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Los Angeles is 77\u00b0F (Patchy Fog then Partly Sunny). Band 75-76\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-19T14:54:58.930046+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL20-B73.5",
-   "title": "Will the **high temp in LA** be 73-74\u00b0 on Jul 20, 2026? \u2014 73\u00b0 to 74\u00b0",
-   "category": "",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.66,
-   "entry_price": 0.06,
-   "p_final": 0.068,
-   "edge": 0.023,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Los Angeles is 77\u00b0F (Patchy Fog then Partly Sunny). Band 73-74\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-19T14:54:58.929176+00:00"
-  },
-  {
    "ticker": "KXHIGHMIA-26JUL20-B95.5",
    "title": "Will the **high temp in Miami** be 95-96\u00b0 on Jul 20, 2026? \u2014 95\u00b0 to 96\u00b0",
    "category": "",
@@ -727,6 +667,82 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXHIGHLAX-26JUL20-B79.5",
+   "title": "Will the **high temp in LA** be 79-80\u00b0 on Jul 20, 2026? \u2014 79\u00b0 to 80\u00b0",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.21,
+   "entry_price": 0.7,
+   "p_final": 0.275,
+   "edge": 0.029,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Los Angeles is 77\u00b0F (Patchy Fog then Partly Sunny). Band 79-80\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-19T14:54:58.931768+00:00",
+   "won": true,
+   "payout": 14.29,
+   "pnl": 4.08,
+   "settled_at": "2026-07-21T11:37:25.035989+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL20-B77.5",
+   "title": "Will the **high temp in LA** be 77-78\u00b0 on Jul 20, 2026? \u2014 77\u00b0 to 78\u00b0",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.31,
+   "entry_price": 0.5700000000000001,
+   "p_final": 0.395,
+   "edge": 0.045,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Los Angeles is 77\u00b0F (Patchy Fog then Partly Sunny). Band 77-78\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-19T14:54:58.930916+00:00",
+   "won": true,
+   "payout": 17.54,
+   "pnl": 7.23,
+   "settled_at": "2026-07-21T11:37:25.035326+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL20-B75.5",
+   "title": "Will the **high temp in LA** be 75-76\u00b0 on Jul 20, 2026? \u2014 75\u00b0 to 76\u00b0",
+   "category": "",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.67,
+   "entry_price": 0.05,
+   "p_final": 0.088,
+   "edge": 0.048,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Los Angeles is 77\u00b0F (Patchy Fog then Partly Sunny). Band 75-76\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-19T14:54:58.930046+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.67,
+   "settled_at": "2026-07-21T11:37:25.034345+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL20-B73.5",
+   "title": "Will the **high temp in LA** be 73-74\u00b0 on Jul 20, 2026? \u2014 73\u00b0 to 74\u00b0",
+   "category": "",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.66,
+   "entry_price": 0.06,
+   "p_final": 0.068,
+   "edge": 0.023,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Los Angeles is 77\u00b0F (Patchy Fog then Partly Sunny). Band 73-74\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-19T14:54:58.929176+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.66,
+   "settled_at": "2026-07-21T11:37:25.030380+00:00"
+  },
   {
    "ticker": "KXHIGHDEN-26JUL20-T102",
    "title": "Will the **high temp in Denver** be >102\u00b0 on Jul 20, 2026? \u2014 103\u00b0 or above",
