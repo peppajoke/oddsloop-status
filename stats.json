@@ -1,30 +1,30 @@
 {
- "generated_at": "2026-07-21T11:06:19.943931+00:00",
+ "generated_at": "2026-07-21T11:07:22.144367+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
-  "realized_pnl": -236.7,
-  "open_count": 47,
-  "open_stake": 681.54,
-  "settled_count": 26,
-  "win_rate": 0.462,
-  "roi": -0.5003,
-  "brier_model": 0.1484,
-  "brier_market": 0.1588,
-  "predictions_scored": 95,
-  "prediction_brier": 0.1252,
-  "prediction_log_loss": 0.3836
+  "realized_pnl": -299.85,
+  "open_count": 41,
+  "open_stake": 618.39,
+  "settled_count": 32,
+  "win_rate": 0.375,
+  "roi": -0.5591,
+  "brier_model": 0.147,
+  "brier_market": 0.1526,
+  "predictions_scored": 107,
+  "prediction_brier": 0.1208,
+  "prediction_log_loss": 0.3723
  },
  "calibration": [
   {
-   "predicted": 0.066,
+   "predicted": 0.065,
    "realized": 0.0,
-   "n": 5
+   "n": 6
   },
   {
-   "predicted": 0.135,
+   "predicted": 0.122,
    "realized": 0.0,
-   "n": 3
+   "n": 6
   },
   {
    "predicted": 0.336,
@@ -37,14 +37,14 @@
    "n": 4
   },
   {
-   "predicted": 0.527,
-   "realized": 0.333,
-   "n": 3
+   "predicted": 0.536,
+   "realized": 0.25,
+   "n": 4
   },
   {
-   "predicted": 0.641,
-   "realized": 0.75,
-   "n": 4
+   "predicted": 0.652,
+   "realized": 0.6,
+   "n": 5
   },
   {
    "predicted": 0.74,
@@ -61,27 +61,27 @@
   {
    "predicted": 0.051,
    "realized": 0.0,
-   "n": 31
+   "n": 35
   },
   {
-   "predicted": 0.144,
-   "realized": 0.105,
-   "n": 19
+   "predicted": 0.14,
+   "realized": 0.087,
+   "n": 23
   },
   {
-   "predicted": 0.245,
-   "realized": 0.227,
-   "n": 22
+   "predicted": 0.244,
+   "realized": 0.217,
+   "n": 23
   },
   {
-   "predicted": 0.343,
+   "predicted": 0.337,
    "realized": 0.5,
-   "n": 10
+   "n": 12
   },
   {
-   "predicted": 0.455,
-   "realized": 0.714,
-   "n": 7
+   "predicted": 0.452,
+   "realized": 0.75,
+   "n": 8
   },
   {
    "predicted": 0.515,
@@ -101,11 +101,11 @@
   },
   {
    "category": "uncategorized",
-   "n": 13,
-   "win_rate": 0.308,
-   "brier_model": 0.1251,
-   "brier_market": 0.1219,
-   "pnl": -62.69,
+   "n": 19,
+   "win_rate": 0.211,
+   "brier_model": 0.1301,
+   "brier_market": 0.1232,
+   "pnl": -125.84,
    "beats_market": false
   }
  ],
@@ -546,51 +546,6 @@
    "placed_at": "2026-07-19T14:54:58.938568+00:00"
   },
   {
-   "ticker": "KXHIGHDEN-26JUL20-T102",
-   "title": "Will the **high temp in Denver** be >102\u00b0 on Jul 20, 2026? \u2014 103\u00b0 or above",
-   "category": "",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.65,
-   "entry_price": 0.08,
-   "p_final": 0.107,
-   "edge": 0.032,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Denver is 100\u00b0F (Sunny). Band >=103\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-19T14:54:58.937675+00:00"
-  },
-  {
-   "ticker": "KXHIGHDEN-26JUL20-B99.5",
-   "title": "Will the **high temp in Denver** be 99-100\u00b0 on Jul 20, 2026? \u2014 99\u00b0 to 100\u00b0",
-   "category": "",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.35,
-   "entry_price": 0.51,
-   "p_final": 0.436,
-   "edge": 0.059,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Denver is 100\u00b0F (Sunny). Band 99-100\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-19T14:54:58.935958+00:00"
-  },
-  {
-   "ticker": "KXHIGHDEN-26JUL20-B97.5",
-   "title": "Will the **high temp in Denver** be 97-98\u00b0 on Jul 20, 2026? \u2014 97\u00b0 to 98\u00b0",
-   "category": "",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.63,
-   "entry_price": 0.1,
-   "p_final": 0.111,
-   "edge": 0.025,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Denver is 100\u00b0F (Sunny). Band 97-98\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-19T14:54:58.935064+00:00"
-  },
-  {
    "ticker": "KXHIGHLAX-26JUL20-B79.5",
    "title": "Will the **high temp in LA** be 79-80\u00b0 on Jul 20, 2026? \u2014 79\u00b0 to 80\u00b0",
    "category": "",
@@ -726,51 +681,6 @@
    "placed_at": "2026-07-19T14:54:58.922109+00:00"
   },
   {
-   "ticker": "KXHIGHPHIL-26JUL20-T89",
-   "title": "Will the **high temp in Philadelphia** be >89\u00b0 on Jul 20, 2026? \u2014 90\u00b0 or above",
-   "category": "",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.67,
-   "entry_price": 0.05,
-   "p_final": 0.06,
-   "edge": 0.02,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Philadelphia is 86\u00b0F (Sunny). Band >=90\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-19T14:54:58.919901+00:00"
-  },
-  {
-   "ticker": "KXHIGHPHIL-26JUL20-B88.5",
-   "title": "Will the **high temp in Philadelphia** be 88-89\u00b0 on Jul 20, 2026? \u2014 88\u00b0 to 89\u00b0",
-   "category": "",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.62,
-   "entry_price": 0.12,
-   "p_final": 0.11,
-   "edge": 0.025,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Philadelphia is 86\u00b0F (Sunny). Band 88-89\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-19T14:54:58.919127+00:00"
-  },
-  {
-   "ticker": "KXHIGHPHIL-26JUL20-B84.5",
-   "title": "Will the **high temp in Philadelphia** be 84-85\u00b0 on Jul 20, 2026? \u2014 84\u00b0 to 85\u00b0",
-   "category": "",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.23,
-   "entry_price": 0.6799999999999999,
-   "p_final": 0.301,
-   "edge": 0.023,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Philadelphia is 86\u00b0F (Sunny). Band 84-85\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-19T14:54:58.917561+00:00"
-  },
-  {
    "ticker": "KXGREENTERRITORY-29",
    "title": "Will the US take control of any part of Greenland? \u2014 Before January 21, 2029",
    "category": "Politics",
@@ -817,6 +727,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXHIGHDEN-26JUL20-T102",
+   "title": "Will the **high temp in Denver** be >102\u00b0 on Jul 20, 2026? \u2014 103\u00b0 or above",
+   "category": "",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.65,
+   "entry_price": 0.08,
+   "p_final": 0.107,
+   "edge": 0.032,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Denver is 100\u00b0F (Sunny). Band >=103\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-19T14:54:58.937675+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.65,
+   "settled_at": "2026-07-21T11:07:21.617552+00:00"
+  },
+  {
+   "ticker": "KXHIGHDEN-26JUL20-B99.5",
+   "title": "Will the **high temp in Denver** be 99-100\u00b0 on Jul 20, 2026? \u2014 99\u00b0 to 100\u00b0",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.35,
+   "entry_price": 0.51,
+   "p_final": 0.436,
+   "edge": 0.059,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Denver is 100\u00b0F (Sunny). Band 99-100\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-19T14:54:58.935958+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.35,
+   "settled_at": "2026-07-21T11:07:21.616970+00:00"
+  },
+  {
+   "ticker": "KXHIGHDEN-26JUL20-B97.5",
+   "title": "Will the **high temp in Denver** be 97-98\u00b0 on Jul 20, 2026? \u2014 97\u00b0 to 98\u00b0",
+   "category": "",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.63,
+   "entry_price": 0.1,
+   "p_final": 0.111,
+   "edge": 0.025,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Denver is 100\u00b0F (Sunny). Band 97-98\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-19T14:54:58.935064+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.63,
+   "settled_at": "2026-07-21T11:07:21.616138+00:00"
+  },
+  {
+   "ticker": "KXHIGHPHIL-26JUL20-T89",
+   "title": "Will the **high temp in Philadelphia** be >89\u00b0 on Jul 20, 2026? \u2014 90\u00b0 or above",
+   "category": "",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.67,
+   "entry_price": 0.05,
+   "p_final": 0.06,
+   "edge": 0.02,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Philadelphia is 86\u00b0F (Sunny). Band >=90\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-19T14:54:58.919901+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.67,
+   "settled_at": "2026-07-21T11:07:21.615040+00:00"
+  },
+  {
+   "ticker": "KXHIGHPHIL-26JUL20-B88.5",
+   "title": "Will the **high temp in Philadelphia** be 88-89\u00b0 on Jul 20, 2026? \u2014 88\u00b0 to 89\u00b0",
+   "category": "",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.62,
+   "entry_price": 0.12,
+   "p_final": 0.11,
+   "edge": 0.025,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Philadelphia is 86\u00b0F (Sunny). Band 88-89\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-19T14:54:58.919127+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.62,
+   "settled_at": "2026-07-21T11:07:21.613707+00:00"
+  },
+  {
+   "ticker": "KXHIGHPHIL-26JUL20-B84.5",
+   "title": "Will the **high temp in Philadelphia** be 84-85\u00b0 on Jul 20, 2026? \u2014 84\u00b0 to 85\u00b0",
+   "category": "",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.23,
+   "entry_price": 0.6799999999999999,
+   "p_final": 0.301,
+   "edge": 0.023,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-20 high for Philadelphia is 86\u00b0F (Sunny). Band 84-85\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-19T14:54:58.917561+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.23,
+   "settled_at": "2026-07-21T11:07:21.610327+00:00"
+  },
   {
    "ticker": "KXHIGHAUS-26JUL19-B95.5",
    "title": "Will the **high temp in Austin** be 95-96\u00b0 on Jul 19, 2026? \u2014 95\u00b0 to 96\u00b0",
