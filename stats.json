@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-21T04:06:36.921502+00:00",
+ "generated_at": "2026-07-21T04:36:39.857909+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
@@ -1333,6 +1333,20 @@
   ],
   "in_progress": [
    {
+    "number": 117,
+    "title": "brain: economics evidence adapter for the advisor (release calendar + latest prints)",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": true
+   },
+   {
+    "number": 115,
+    "title": "auto_forecast: fix MAE\u2192sigma conversion; then fit sigma empirically from market.db",
+    "priority": "P2",
+    "side": "brain",
+    "in_progress": true
+   },
+   {
     "number": 97,
     "title": "Split exploration_min_edge: 0.00 for fast-lane markets, keep 0.02 for long-dated",
     "priority": "P1",
@@ -1381,6 +1395,13 @@
     "title": "Tighten entity-cap heuristic against weather-band false matches (#13 follow-up)",
     "priority": "P3",
     "side": "body",
+    "in_progress": false
+   },
+   {
+    "number": 116,
+    "title": "candidates: zoneinfo per-station timezones for the same-day filter (replace hardcoded July/DST offsets)",
+    "priority": "P3",
+    "side": "brain",
     "in_progress": false
    }
   ],
@@ -1562,18 +1583,6 @@
    }
   ],
   "open_questions": [
-   {
-    "number": 111,
-    "title": "Q: Brain task proposals \u2014 auto_forecast sigma fix, zoneinfo offsets, per-category evidence"
-   },
-   {
-    "number": 95,
-    "title": "Q: Same-day weather markets are stale-forecast traps intraday \u2014 pipeline bet $200 conviction against a better-informed market"
-   },
-   {
-    "number": 94,
-    "title": "Q: Model under-confident in higher-probability bins (first calibration batch, n=24)"
-   },
    {
     "number": 91,
     "title": "Q: Longshot edge is maker-only \u2014 paper fill model must represent maker vs taker fills (blocks measuring #90)"
