@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-23T18:44:55.059040+00:00",
+ "generated_at": "2026-07-23T19:13:24.460730+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
   "realized_pnl": -335.36,
-  "open_count": 81,
-  "open_stake": 1033.36,
+  "open_count": 82,
+  "open_stake": 1044.04,
   "settled_count": 80,
   "win_rate": 0.375,
   "roi": -0.323,
@@ -110,6 +110,21 @@
   }
  ],
  "active_bets": [
+  {
+   "ticker": "KXHIGHMIA-26JUL24-T94",
+   "title": "Will the **high temp in Miami** be >94\u00b0 on Jul 24, 2026? \u2014 95\u00b0 or above",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.68,
+   "entry_price": 0.04,
+   "p_final": 0.077,
+   "edge": 0.042,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Miami is 92\u00b0F (Chance Showers And Thunderstorms). Band >=95\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-23T19:13:24.336938+00:00"
+  },
   {
    "ticker": "KXHIGHDEN-26JUL24-B89.5",
    "title": "Will the **high temp in Denver** be 89-90\u00b0 on Jul 24, 2026? \u2014 89\u00b0 to 90\u00b0",
