@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-23T17:44:48.062796+00:00",
+ "generated_at": "2026-07-23T18:13:18.216996+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
   "realized_pnl": -335.36,
-  "open_count": 80,
-  "open_stake": 1022.68,
+  "open_count": 81,
+  "open_stake": 1033.36,
   "settled_count": 80,
   "win_rate": 0.375,
   "roi": -0.323,
@@ -110,6 +110,21 @@
   }
  ],
  "active_bets": [
+  {
+   "ticker": "KXHIGHDEN-26JUL24-B89.5",
+   "title": "Will the **high temp in Denver** be 89-90\u00b0 on Jul 24, 2026? \u2014 89\u00b0 to 90\u00b0",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.68,
+   "entry_price": 0.04,
+   "p_final": 0.039,
+   "edge": 0.004,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Denver is 95\u00b0F (Sunny). Band 89-90\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-23T18:13:18.092449+00:00"
+  },
   {
    "ticker": "KXHIGHAUS-26JUL24-B99.5",
    "title": "Will the **high temp in Austin** be 99-100\u00b0 on Jul 24, 2026? \u2014 99\u00b0 to 100\u00b0",
