@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-07-23T11:14:00.758076+00:00",
+ "generated_at": "2026-07-23T11:44:04.427763+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
-  "realized_pnl": -218.2,
-  "open_count": 59,
-  "open_stake": 803.57,
-  "settled_count": 65,
-  "win_rate": 0.415,
-  "roi": -0.2475,
-  "brier_model": 0.1518,
-  "brier_market": 0.155,
-  "predictions_scored": 178,
-  "prediction_brier": 0.1325,
-  "prediction_log_loss": 0.4098
+  "realized_pnl": -249.76,
+  "open_count": 56,
+  "open_stake": 772.01,
+  "settled_count": 68,
+  "win_rate": 0.397,
+  "roi": -0.2735,
+  "brier_model": 0.1517,
+  "brier_market": 0.1539,
+  "predictions_scored": 183,
+  "prediction_brier": 0.1318,
+  "prediction_log_loss": 0.4082
  },
  "calibration": [
   {
@@ -22,9 +22,9 @@
    "n": 14
   },
   {
-   "predicted": 0.131,
-   "realized": 0.2,
-   "n": 15
+   "predicted": 0.129,
+   "realized": 0.176,
+   "n": 17
   },
   {
    "predicted": 0.336,
@@ -42,9 +42,9 @@
    "n": 7
   },
   {
-   "predicted": 0.66,
-   "realized": 0.786,
-   "n": 14
+   "predicted": 0.659,
+   "realized": 0.733,
+   "n": 15
   },
   {
    "predicted": 0.732,
@@ -64,19 +64,19 @@
    "n": 57
   },
   {
-   "predicted": 0.138,
-   "realized": 0.175,
+   "predicted": 0.137,
+   "realized": 0.163,
+   "n": 43
+  },
+  {
+   "predicted": 0.245,
+   "realized": 0.2,
    "n": 40
   },
   {
-   "predicted": 0.244,
-   "realized": 0.205,
-   "n": 39
-  },
-  {
    "predicted": 0.336,
-   "realized": 0.333,
-   "n": 24
+   "realized": 0.36,
+   "n": 25
   },
   {
    "predicted": 0.445,
@@ -92,11 +92,11 @@
  "categories": [
   {
    "category": "Climate and Weather",
-   "n": 32,
-   "win_rate": 0.531,
-   "brier_model": 0.1636,
-   "brier_market": 0.1744,
-   "pnl": -105.54,
+   "n": 35,
+   "win_rate": 0.486,
+   "brier_model": 0.1625,
+   "brier_market": 0.1707,
+   "pnl": -137.1,
    "beats_market": true
   },
   {
@@ -696,51 +696,6 @@
    "placed_at": "2026-07-21T15:06:39.717970+00:00"
   },
   {
-   "ticker": "KXHIGHLAX-26JUL22-T82",
-   "title": "Will the **high temp in LA** be >82\u00b0 on Jul 22, 2026? \u2014 83\u00b0 or above",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.63,
-   "entry_price": 0.11,
-   "p_final": 0.118,
-   "edge": 0.028,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-22 high for Los Angeles is 80\u00b0F (Sunny). Band >=83\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-21T15:06:39.707470+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL22-B81.5",
-   "title": "Will the **high temp in LA** be 81-82\u00b0 on Jul 22, 2026? \u2014 81\u00b0 to 82\u00b0",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.65,
-   "entry_price": 0.08,
-   "p_final": 0.11,
-   "edge": 0.04,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-22 high for Los Angeles is 80\u00b0F (Sunny). Band 81-82\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-21T15:06:39.705743+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL22-B77.5",
-   "title": "Will the **high temp in LA** be 77-78\u00b0 on Jul 22, 2026? \u2014 77\u00b0 to 78\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.28,
-   "entry_price": 0.61,
-   "p_final": 0.347,
-   "edge": 0.053,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-22 high for Los Angeles is 80\u00b0F (Sunny). Band 77-78\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-21T15:06:39.702412+00:00"
-  },
-  {
    "ticker": "KXHIGHMIA-26JUL22-T95",
    "title": "Will the **high temp in Miami** be >95\u00b0 on Jul 22, 2026? \u2014 96\u00b0 or above",
    "category": "Climate and Weather",
@@ -997,6 +952,63 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXHIGHLAX-26JUL22-T82",
+   "title": "Will the **high temp in LA** be >82\u00b0 on Jul 22, 2026? \u2014 83\u00b0 or above",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.63,
+   "entry_price": 0.11,
+   "p_final": 0.118,
+   "edge": 0.028,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-22 high for Los Angeles is 80\u00b0F (Sunny). Band >=83\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-21T15:06:39.707470+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.63,
+   "settled_at": "2026-07-23T11:44:03.850875+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL22-B81.5",
+   "title": "Will the **high temp in LA** be 81-82\u00b0 on Jul 22, 2026? \u2014 81\u00b0 to 82\u00b0",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.65,
+   "entry_price": 0.08,
+   "p_final": 0.11,
+   "edge": 0.04,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-22 high for Los Angeles is 80\u00b0F (Sunny). Band 81-82\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-21T15:06:39.705743+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.65,
+   "settled_at": "2026-07-23T11:44:03.849682+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL22-B77.5",
+   "title": "Will the **high temp in LA** be 77-78\u00b0 on Jul 22, 2026? \u2014 77\u00b0 to 78\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.28,
+   "entry_price": 0.61,
+   "p_final": 0.347,
+   "edge": 0.053,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-22 high for Los Angeles is 80\u00b0F (Sunny). Band 77-78\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-21T15:06:39.702412+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.28,
+   "settled_at": "2026-07-23T11:44:03.847825+00:00"
+  },
   {
    "ticker": "KXHIGHDEN-26JUL22-B94.5",
    "title": "Will the **high temp in Denver** be 94-95\u00b0 on Jul 22, 2026? \u2014 94\u00b0 to 95\u00b0",
