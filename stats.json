@@ -1,30 +1,30 @@
 {
- "generated_at": "2026-07-24T11:14:50.788255+00:00",
+ "generated_at": "2026-07-24T11:16:53.194197+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
-  "realized_pnl": -335.36,
-  "open_count": 82,
-  "open_stake": 1044.04,
-  "settled_count": 80,
-  "win_rate": 0.375,
-  "roi": -0.323,
-  "brier_model": 0.1482,
-  "brier_market": 0.1485,
-  "predictions_scored": 205,
-  "prediction_brier": 0.1292,
-  "prediction_log_loss": 0.4006
+  "realized_pnl": -363.29,
+  "open_count": 76,
+  "open_stake": 981.26,
+  "settled_count": 86,
+  "win_rate": 0.372,
+  "roi": -0.3299,
+  "brier_model": 0.1479,
+  "brier_market": 0.1484,
+  "predictions_scored": 216,
+  "prediction_brier": 0.1294,
+  "prediction_log_loss": 0.4003
  },
  "calibration": [
   {
    "predicted": 0.07,
    "realized": 0.0,
-   "n": 17
+   "n": 18
   },
   {
-   "predicted": 0.132,
-   "realized": 0.15,
-   "n": 20
+   "predicted": 0.13,
+   "realized": 0.136,
+   "n": 22
   },
   {
    "predicted": 0.336,
@@ -42,14 +42,14 @@
    "n": 8
   },
   {
-   "predicted": 0.66,
-   "realized": 0.688,
-   "n": 16
+   "predicted": 0.654,
+   "realized": 0.722,
+   "n": 18
   },
   {
    "predicted": 0.734,
-   "realized": 0.8,
-   "n": 10
+   "realized": 0.727,
+   "n": 11
   },
   {
    "predicted": 0.85,
@@ -61,22 +61,22 @@
   {
    "predicted": 0.054,
    "realized": 0.015,
-   "n": 65
+   "n": 68
   },
   {
-   "predicted": 0.138,
-   "realized": 0.143,
-   "n": 49
+   "predicted": 0.137,
+   "realized": 0.132,
+   "n": 53
   },
   {
-   "predicted": 0.246,
-   "realized": 0.205,
-   "n": 44
+   "predicted": 0.247,
+   "realized": 0.239,
+   "n": 46
   },
   {
-   "predicted": 0.335,
-   "realized": 0.407,
-   "n": 27
+   "predicted": 0.339,
+   "realized": 0.379,
+   "n": 29
   },
   {
    "predicted": 0.449,
@@ -92,11 +92,11 @@
  "categories": [
   {
    "category": "Climate and Weather",
-   "n": 47,
-   "win_rate": 0.426,
-   "brier_model": 0.1538,
-   "brier_market": 0.1571,
-   "pnl": -222.7,
+   "n": 53,
+   "win_rate": 0.415,
+   "brier_model": 0.1527,
+   "brier_market": 0.156,
+   "pnl": -250.63,
    "beats_market": true
   },
   {
@@ -996,36 +996,6 @@
    "placed_at": "2026-07-22T15:08:34.037155+00:00"
   },
   {
-   "ticker": "KXHIGHDEN-26JUL23-T89",
-   "title": "Will the **high temp in Denver** be >89\u00b0 on Jul 23, 2026? \u2014 90\u00b0 or above",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.66,
-   "entry_price": 0.06,
-   "p_final": 0.115,
-   "edge": 0.065,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Denver is 88\u00b0F (Partly Sunny then Chance Showers And Thunderstorms). Band >=90\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:34.035066+00:00"
-  },
-  {
-   "ticker": "KXHIGHDEN-26JUL23-B86.5",
-   "title": "Will the **high temp in Denver** be 86-87\u00b0 on Jul 23, 2026? \u2014 86\u00b0 to 87\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.32,
-   "entry_price": 0.55,
-   "p_final": 0.399,
-   "edge": 0.056,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Denver is 88\u00b0F (Partly Sunny then Chance Showers And Thunderstorms). Band 86-87\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:34.030988+00:00"
-  },
-  {
    "ticker": "KXHIGHLAX-26JUL23-B85.5",
    "title": "Will the **high temp in LA** be 85-86\u00b0 on Jul 23, 2026? \u2014 85\u00b0 to 86\u00b0",
    "category": "Climate and Weather",
@@ -1084,66 +1054,6 @@
    "confidence": 0.5,
    "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Miami is 93\u00b0F (Chance Showers And Thunderstorms). Band 92-93\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
    "placed_at": "2026-07-22T15:08:34.012995+00:00"
-  },
-  {
-   "ticker": "KXHIGHPHIL-26JUL23-B83.5",
-   "title": "Will the **high temp in Philadelphia** be 83-84\u00b0 on Jul 23, 2026? \u2014 83\u00b0 to 84\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.21,
-   "entry_price": 0.71,
-   "p_final": 0.272,
-   "edge": 0.028,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Philadelphia is 81\u00b0F (Sunny). Band 83-84\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:33.993452+00:00"
-  },
-  {
-   "ticker": "KXHIGHPHIL-26JUL23-B81.5",
-   "title": "Will the **high temp in Philadelphia** be 81-82\u00b0 on Jul 23, 2026? \u2014 81\u00b0 to 82\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.28,
-   "entry_price": 0.6,
-   "p_final": 0.38,
-   "edge": 0.04,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Philadelphia is 81\u00b0F (Sunny). Band 81-82\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:33.991182+00:00"
-  },
-  {
-   "ticker": "KXHIGHPHIL-26JUL23-B79.5",
-   "title": "Will the **high temp in Philadelphia** be 79-80\u00b0 on Jul 23, 2026? \u2014 79\u00b0 to 80\u00b0",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.63,
-   "entry_price": 0.1,
-   "p_final": 0.11,
-   "edge": 0.04,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Philadelphia is 81\u00b0F (Sunny). Band 79-80\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:33.989142+00:00"
-  },
-  {
-   "ticker": "KXHIGHPHIL-26JUL23-T79",
-   "title": "Will the **high temp in Philadelphia** be <79\u00b0 on Jul 23, 2026? \u2014 78\u00b0 or below",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.68,
-   "entry_price": 0.04,
-   "p_final": 0.073,
-   "edge": 0.043,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Philadelphia is 81\u00b0F (Sunny). Band <=78\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:33.986877+00:00"
   },
   {
    "ticker": "KXIPOOPENAI-27MAR01",
@@ -1342,6 +1252,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXHIGHDEN-26JUL23-T89",
+   "title": "Will the **high temp in Denver** be >89\u00b0 on Jul 23, 2026? \u2014 90\u00b0 or above",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.66,
+   "entry_price": 0.06,
+   "p_final": 0.115,
+   "edge": 0.065,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Denver is 88\u00b0F (Partly Sunny then Chance Showers And Thunderstorms). Band >=90\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:34.035066+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.66,
+   "settled_at": "2026-07-24T11:16:52.611379+00:00"
+  },
+  {
+   "ticker": "KXHIGHDEN-26JUL23-B86.5",
+   "title": "Will the **high temp in Denver** be 86-87\u00b0 on Jul 23, 2026? \u2014 86\u00b0 to 87\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.32,
+   "entry_price": 0.55,
+   "p_final": 0.399,
+   "edge": 0.056,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Denver is 88\u00b0F (Partly Sunny then Chance Showers And Thunderstorms). Band 86-87\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:34.030988+00:00",
+   "won": true,
+   "payout": 18.18,
+   "pnl": 7.86,
+   "settled_at": "2026-07-24T11:16:52.610123+00:00"
+  },
+  {
+   "ticker": "KXHIGHPHIL-26JUL23-B83.5",
+   "title": "Will the **high temp in Philadelphia** be 83-84\u00b0 on Jul 23, 2026? \u2014 83\u00b0 to 84\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.21,
+   "entry_price": 0.71,
+   "p_final": 0.272,
+   "edge": 0.028,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Philadelphia is 81\u00b0F (Sunny). Band 83-84\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:33.993452+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.21,
+   "settled_at": "2026-07-24T11:16:52.608437+00:00"
+  },
+  {
+   "ticker": "KXHIGHPHIL-26JUL23-B81.5",
+   "title": "Will the **high temp in Philadelphia** be 81-82\u00b0 on Jul 23, 2026? \u2014 81\u00b0 to 82\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.28,
+   "entry_price": 0.6,
+   "p_final": 0.38,
+   "edge": 0.04,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Philadelphia is 81\u00b0F (Sunny). Band 81-82\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:33.991182+00:00",
+   "won": true,
+   "payout": 16.67,
+   "pnl": 6.39,
+   "settled_at": "2026-07-24T11:16:52.607177+00:00"
+  },
+  {
+   "ticker": "KXHIGHPHIL-26JUL23-B79.5",
+   "title": "Will the **high temp in Philadelphia** be 79-80\u00b0 on Jul 23, 2026? \u2014 79\u00b0 to 80\u00b0",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.63,
+   "entry_price": 0.1,
+   "p_final": 0.11,
+   "edge": 0.04,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Philadelphia is 81\u00b0F (Sunny). Band 79-80\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:33.989142+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.63,
+   "settled_at": "2026-07-24T11:16:52.601907+00:00"
+  },
+  {
+   "ticker": "KXHIGHPHIL-26JUL23-T79",
+   "title": "Will the **high temp in Philadelphia** be <79\u00b0 on Jul 23, 2026? \u2014 78\u00b0 or below",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.68,
+   "entry_price": 0.04,
+   "p_final": 0.073,
+   "edge": 0.043,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Philadelphia is 81\u00b0F (Sunny). Band <=78\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:33.986877+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.68,
+   "settled_at": "2026-07-24T11:16:52.598223+00:00"
+  },
   {
    "ticker": "KXHIGHAUS-26JUL22-B105.5",
    "title": "Will the **high temp in Austin** be 105-106\u00b0 on Jul 22, 2026? \u2014 105\u00b0 to 106\u00b0",
