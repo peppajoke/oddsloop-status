@@ -1,30 +1,30 @@
 {
- "generated_at": "2026-07-24T12:14:56.635216+00:00",
+ "generated_at": "2026-07-24T12:16:59.978255+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
-  "realized_pnl": -384.13,
-  "open_count": 74,
-  "open_stake": 960.42,
-  "settled_count": 88,
-  "win_rate": 0.364,
-  "roi": -0.3424,
-  "brier_model": 0.1511,
-  "brier_market": 0.151,
-  "predictions_scored": 222,
-  "prediction_brier": 0.1292,
-  "prediction_log_loss": 0.3996
+  "realized_pnl": -431.0,
+  "open_count": 68,
+  "open_stake": 897.68,
+  "settled_count": 94,
+  "win_rate": 0.351,
+  "roi": -0.3638,
+  "brier_model": 0.1514,
+  "brier_market": 0.1506,
+  "predictions_scored": 242,
+  "prediction_brier": 0.1281,
+  "prediction_log_loss": 0.3967
  },
  "calibration": [
   {
-   "predicted": 0.07,
+   "predicted": 0.071,
    "realized": 0.0,
-   "n": 18
+   "n": 19
   },
   {
    "predicted": 0.129,
-   "realized": 0.13,
-   "n": 23
+   "realized": 0.12,
+   "n": 25
   },
   {
    "predicted": 0.336,
@@ -42,9 +42,9 @@
    "n": 8
   },
   {
-   "predicted": 0.654,
-   "realized": 0.722,
-   "n": 18
+   "predicted": 0.651,
+   "realized": 0.667,
+   "n": 21
   },
   {
    "predicted": 0.735,
@@ -60,23 +60,23 @@
  "prediction_calibration": [
   {
    "predicted": 0.055,
-   "realized": 0.014,
-   "n": 70
+   "realized": 0.013,
+   "n": 75
   },
   {
-   "predicted": 0.136,
-   "realized": 0.13,
+   "predicted": 0.137,
+   "realized": 0.117,
+   "n": 60
+  },
+  {
+   "predicted": 0.249,
+   "realized": 0.241,
    "n": 54
   },
   {
-   "predicted": 0.247,
-   "realized": 0.245,
-   "n": 49
-  },
-  {
-   "predicted": 0.339,
-   "realized": 0.379,
-   "n": 29
+   "predicted": 0.341,
+   "realized": 0.424,
+   "n": 33
   },
   {
    "predicted": 0.449,
@@ -92,11 +92,11 @@
  "categories": [
   {
    "category": "Climate and Weather",
-   "n": 55,
-   "win_rate": 0.4,
-   "brier_model": 0.1576,
-   "brier_market": 0.1599,
-   "pnl": -271.47,
+   "n": 61,
+   "win_rate": 0.377,
+   "brier_model": 0.1574,
+   "brier_market": 0.1584,
+   "pnl": -318.34,
    "beats_market": true
   },
   {
@@ -936,96 +936,6 @@
    "placed_at": "2026-07-22T22:36:23.408435+00:00"
   },
   {
-   "ticker": "KXHIGHAUS-26JUL23-B99.5",
-   "title": "Will the **high temp in Austin** be 99-100\u00b0 on Jul 23, 2026? \u2014 99\u00b0 to 100\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.3,
-   "entry_price": 0.5800000000000001,
-   "p_final": 0.395,
-   "edge": 0.045,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Austin is 99\u00b0F (Sunny). Band 99-100\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:34.053700+00:00"
-  },
-  {
-   "ticker": "KXHIGHAUS-26JUL23-T97",
-   "title": "Will the **high temp in Austin** be <97\u00b0 on Jul 23, 2026? \u2014 96\u00b0 or below",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.66,
-   "entry_price": 0.06,
-   "p_final": 0.092,
-   "edge": 0.037,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Austin is 99\u00b0F (Sunny). Band <=96\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:34.049532+00:00"
-  },
-  {
-   "ticker": "KXHIGHCHI-26JUL23-B78.5",
-   "title": "Will the high temp in Chicago be 78-79\u00b0 on Jul 23, 2026? \u2014 78\u00b0 to 79\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.26,
-   "entry_price": 0.63,
-   "p_final": 0.346,
-   "edge": 0.029,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Chicago is 78\u00b0F (Sunny). Band 78-79\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:34.041281+00:00"
-  },
-  {
-   "ticker": "KXHIGHCHI-26JUL23-T76",
-   "title": "Will the high temp in Chicago be <76\u00b0 on Jul 23, 2026? \u2014 75\u00b0 or below",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.64,
-   "entry_price": 0.09,
-   "p_final": 0.103,
-   "edge": 0.033,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Chicago is 78\u00b0F (Sunny). Band <=75\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:34.037155+00:00"
-  },
-  {
-   "ticker": "KXHIGHMIA-26JUL23-B94.5",
-   "title": "Will the **high temp in Miami** be 94-95\u00b0 on Jul 23, 2026? \u2014 94\u00b0 to 95\u00b0",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.6,
-   "entry_price": 0.15,
-   "p_final": 0.159,
-   "edge": 0.024,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Miami is 93\u00b0F (Chance Showers And Thunderstorms). Band 94-95\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:34.014977+00:00"
-  },
-  {
-   "ticker": "KXHIGHMIA-26JUL23-B92.5",
-   "title": "Will the **high temp in Miami** be 92-93\u00b0 on Jul 23, 2026? \u2014 92\u00b0 to 93\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.28,
-   "entry_price": 0.6,
-   "p_final": 0.368,
-   "edge": 0.037,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Miami is 93\u00b0F (Chance Showers And Thunderstorms). Band 92-93\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-22T15:08:34.012995+00:00"
-  },
-  {
    "ticker": "KXIPOOPENAI-27MAR01",
    "title": "When will OpenAI IPO? \u2014 Before Mar 1, 2027",
    "category": "Economics",
@@ -1222,6 +1132,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXHIGHAUS-26JUL23-B99.5",
+   "title": "Will the **high temp in Austin** be 99-100\u00b0 on Jul 23, 2026? \u2014 99\u00b0 to 100\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.3,
+   "entry_price": 0.5800000000000001,
+   "p_final": 0.395,
+   "edge": 0.045,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Austin is 99\u00b0F (Sunny). Band 99-100\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:34.053700+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.3,
+   "settled_at": "2026-07-24T12:16:59.455788+00:00"
+  },
+  {
+   "ticker": "KXHIGHAUS-26JUL23-T97",
+   "title": "Will the **high temp in Austin** be <97\u00b0 on Jul 23, 2026? \u2014 96\u00b0 or below",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.66,
+   "entry_price": 0.06,
+   "p_final": 0.092,
+   "edge": 0.037,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Austin is 99\u00b0F (Sunny). Band <=96\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:34.049532+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.66,
+   "settled_at": "2026-07-24T12:16:59.454632+00:00"
+  },
+  {
+   "ticker": "KXHIGHCHI-26JUL23-B78.5",
+   "title": "Will the high temp in Chicago be 78-79\u00b0 on Jul 23, 2026? \u2014 78\u00b0 to 79\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.26,
+   "entry_price": 0.63,
+   "p_final": 0.346,
+   "edge": 0.029,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Chicago is 78\u00b0F (Sunny). Band 78-79\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:34.041281+00:00",
+   "won": true,
+   "payout": 15.87,
+   "pnl": 5.61,
+   "settled_at": "2026-07-24T12:16:59.453082+00:00"
+  },
+  {
+   "ticker": "KXHIGHCHI-26JUL23-T76",
+   "title": "Will the high temp in Chicago be <76\u00b0 on Jul 23, 2026? \u2014 75\u00b0 or below",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.64,
+   "entry_price": 0.09,
+   "p_final": 0.103,
+   "edge": 0.033,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Chicago is 78\u00b0F (Sunny). Band <=75\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:34.037155+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.64,
+   "settled_at": "2026-07-24T12:16:59.451270+00:00"
+  },
+  {
+   "ticker": "KXHIGHMIA-26JUL23-B94.5",
+   "title": "Will the **high temp in Miami** be 94-95\u00b0 on Jul 23, 2026? \u2014 94\u00b0 to 95\u00b0",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.6,
+   "entry_price": 0.15,
+   "p_final": 0.159,
+   "edge": 0.024,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Miami is 93\u00b0F (Chance Showers And Thunderstorms). Band 94-95\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:34.014977+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.6,
+   "settled_at": "2026-07-24T12:16:59.449193+00:00"
+  },
+  {
+   "ticker": "KXHIGHMIA-26JUL23-B92.5",
+   "title": "Will the **high temp in Miami** be 92-93\u00b0 on Jul 23, 2026? \u2014 92\u00b0 to 93\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.28,
+   "entry_price": 0.6,
+   "p_final": 0.368,
+   "edge": 0.037,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-23 high for Miami is 93\u00b0F (Chance Showers And Thunderstorms). Band 92-93\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-22T15:08:34.012995+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.28,
+   "settled_at": "2026-07-24T12:16:59.446463+00:00"
+  },
   {
    "ticker": "KXHIGHLAX-26JUL23-B85.5",
    "title": "Will the **high temp in LA** be 85-86\u00b0 on Jul 23, 2026? \u2014 85\u00b0 to 86\u00b0",
