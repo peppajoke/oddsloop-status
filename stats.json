@@ -1,30 +1,30 @@
 {
- "generated_at": "2026-07-25T11:21:26.478000+00:00",
+ "generated_at": "2026-07-25T11:51:29.733707+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 10000.0,
-  "realized_pnl": -519.81,
-  "open_count": 57,
-  "open_stake": 782.55,
-  "settled_count": 105,
-  "win_rate": 0.333,
-  "roi": -0.3999,
-  "brier_model": 0.1471,
-  "brier_market": 0.1463,
-  "predictions_scored": 253,
-  "prediction_brier": 0.1273,
-  "prediction_log_loss": 0.3945
+  "realized_pnl": -349.1,
+  "open_count": 51,
+  "open_stake": 719.36,
+  "settled_count": 111,
+  "win_rate": 0.342,
+  "roi": -0.2561,
+  "brier_model": 0.15,
+  "brier_market": 0.1498,
+  "predictions_scored": 259,
+  "prediction_brier": 0.129,
+  "prediction_log_loss": 0.4018
  },
  "calibration": [
   {
-   "predicted": 0.07,
-   "realized": 0.0,
-   "n": 24
+   "predicted": 0.069,
+   "realized": 0.037,
+   "n": 27
   },
   {
-   "predicted": 0.13,
-   "realized": 0.115,
-   "n": 26
+   "predicted": 0.132,
+   "realized": 0.111,
+   "n": 27
   },
   {
    "predicted": 0.298,
@@ -42,14 +42,14 @@
    "n": 5
   },
   {
-   "predicted": 0.551,
-   "realized": 0.25,
-   "n": 8
+   "predicted": 0.556,
+   "realized": 0.333,
+   "n": 9
   },
   {
-   "predicted": 0.652,
-   "realized": 0.636,
-   "n": 22
+   "predicted": 0.654,
+   "realized": 0.652,
+   "n": 23
   },
   {
    "predicted": 0.735,
@@ -65,13 +65,13 @@
  "prediction_calibration": [
   {
    "predicted": 0.056,
-   "realized": 0.013,
-   "n": 80
+   "realized": 0.024,
+   "n": 83
   },
   {
-   "predicted": 0.137,
-   "realized": 0.115,
-   "n": 61
+   "predicted": 0.138,
+   "realized": 0.113,
+   "n": 62
   },
   {
    "predicted": 0.251,
@@ -79,14 +79,14 @@
    "n": 58
   },
   {
-   "predicted": 0.341,
-   "realized": 0.441,
-   "n": 34
+   "predicted": 0.34,
+   "realized": 0.429,
+   "n": 35
   },
   {
-   "predicted": 0.449,
-   "realized": 0.692,
-   "n": 13
+   "predicted": 0.446,
+   "realized": 0.643,
+   "n": 14
   },
   {
    "predicted": 0.514,
@@ -97,11 +97,11 @@
  "categories": [
   {
    "category": "Climate and Weather",
-   "n": 72,
-   "win_rate": 0.347,
-   "brier_model": 0.1502,
-   "brier_market": 0.151,
-   "pnl": -407.15,
+   "n": 78,
+   "win_rate": 0.359,
+   "brier_model": 0.1541,
+   "brier_market": 0.1556,
+   "pnl": -236.44,
    "beats_market": true
   },
   {
@@ -294,96 +294,6 @@
    "confidence": 0.5,
    "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Chicago is 80\u00b0F (Mostly Sunny). Band <=77\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
    "placed_at": "2026-07-23T15:13:01.405053+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL24-T87",
-   "title": "Will the **high temp in LA** be >87\u00b0 on Jul 24, 2026? \u2014 88\u00b0 or above",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.68,
-   "entry_price": 0.04,
-   "p_final": 0.053,
-   "edge": 0.023,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band >=88\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-23T15:13:01.391207+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL24-B86.5",
-   "title": "Will the **high temp in LA** be 86-87\u00b0 on Jul 24, 2026? \u2014 86\u00b0 to 87\u00b0",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.67,
-   "entry_price": 0.05,
-   "p_final": 0.077,
-   "edge": 0.037,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band 86-87\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-23T15:13:01.388480+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL24-B84.5",
-   "title": "Will the **high temp in LA** be 84-85\u00b0 on Jul 24, 2026? \u2014 84\u00b0 to 85\u00b0",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.59,
-   "entry_price": 0.16,
-   "p_final": 0.177,
-   "edge": 0.027,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band 84-85\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-23T15:13:01.385793+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL24-B82.5",
-   "title": "Will the **high temp in LA** be 82-83\u00b0 on Jul 24, 2026? \u2014 82\u00b0 to 83\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.33,
-   "entry_price": 0.54,
-   "p_final": 0.406,
-   "edge": 0.058,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band 82-83\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-23T15:13:01.383071+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL24-B80.5",
-   "title": "Will the **high temp in LA** be 80-81\u00b0 on Jul 24, 2026? \u2014 80\u00b0 to 81\u00b0",
-   "category": "Climate and Weather",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.25,
-   "entry_price": 0.65,
-   "p_final": 0.3,
-   "edge": 0.055,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band 80-81\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-23T15:13:01.380355+00:00"
-  },
-  {
-   "ticker": "KXHIGHLAX-26JUL24-T80",
-   "title": "Will the **high temp in LA** be <80\u00b0 on Jul 24, 2026? \u2014 79\u00b0 or below",
-   "category": "Climate and Weather",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.67,
-   "entry_price": 0.05,
-   "p_final": 0.047,
-   "edge": 0.007,
-   "confidence": 0.5,
-   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band <=79\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
-   "placed_at": "2026-07-23T15:13:01.377689+00:00"
   },
   {
    "ticker": "KXHIGHMIA-26JUL24-B93.5",
@@ -972,6 +882,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXHIGHLAX-26JUL24-T87",
+   "title": "Will the **high temp in LA** be >87\u00b0 on Jul 24, 2026? \u2014 88\u00b0 or above",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.68,
+   "entry_price": 0.04,
+   "p_final": 0.053,
+   "edge": 0.023,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band >=88\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-23T15:13:01.391207+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.68,
+   "settled_at": "2026-07-25T11:51:29.283647+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL24-B86.5",
+   "title": "Will the **high temp in LA** be 86-87\u00b0 on Jul 24, 2026? \u2014 86\u00b0 to 87\u00b0",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.67,
+   "entry_price": 0.05,
+   "p_final": 0.077,
+   "edge": 0.037,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band 86-87\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-23T15:13:01.388480+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.67,
+   "settled_at": "2026-07-25T11:51:29.282285+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL24-B84.5",
+   "title": "Will the **high temp in LA** be 84-85\u00b0 on Jul 24, 2026? \u2014 84\u00b0 to 85\u00b0",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.59,
+   "entry_price": 0.16,
+   "p_final": 0.177,
+   "edge": 0.027,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band 84-85\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-23T15:13:01.385793+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.59,
+   "settled_at": "2026-07-25T11:51:29.281028+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL24-B82.5",
+   "title": "Will the **high temp in LA** be 82-83\u00b0 on Jul 24, 2026? \u2014 82\u00b0 to 83\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.33,
+   "entry_price": 0.54,
+   "p_final": 0.406,
+   "edge": 0.058,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band 82-83\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-23T15:13:01.383071+00:00",
+   "won": true,
+   "payout": 18.52,
+   "pnl": 8.19,
+   "settled_at": "2026-07-25T11:51:29.279393+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL24-B80.5",
+   "title": "Will the **high temp in LA** be 80-81\u00b0 on Jul 24, 2026? \u2014 80\u00b0 to 81\u00b0",
+   "category": "Climate and Weather",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.25,
+   "entry_price": 0.65,
+   "p_final": 0.3,
+   "edge": 0.055,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band 80-81\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-23T15:13:01.380355+00:00",
+   "won": true,
+   "payout": 15.38,
+   "pnl": 5.13,
+   "settled_at": "2026-07-25T11:51:29.277311+00:00"
+  },
+  {
+   "ticker": "KXHIGHLAX-26JUL24-T80",
+   "title": "Will the **high temp in LA** be <80\u00b0 on Jul 24, 2026? \u2014 79\u00b0 or below",
+   "category": "Climate and Weather",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.67,
+   "entry_price": 0.05,
+   "p_final": 0.047,
+   "edge": 0.007,
+   "confidence": 0.5,
+   "thesis": "Automated next-day forecast: NWS 2026-07-24 high for Los Angeles is 84\u00b0F (Mostly Sunny). Band <=79\u00b0 probability under a N(mu, 3.0\u00b0F) one-day forecast-error model.",
+   "placed_at": "2026-07-23T15:13:01.377689+00:00",
+   "won": true,
+   "payout": 200.0,
+   "pnl": 189.33,
+   "settled_at": "2026-07-25T11:51:29.275467+00:00"
+  },
   {
    "ticker": "KXHIGHDEN-26JUL24-B89.5",
    "title": "Will the **high temp in Denver** be 89-90\u00b0 on Jul 24, 2026? \u2014 89\u00b0 to 90\u00b0",
