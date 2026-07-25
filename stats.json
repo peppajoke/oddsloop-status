@@ -1,12 +1,17 @@
 {
- "generated_at": "2026-07-25T13:22:35.594550+00:00",
+ "generated_at": "2026-07-25T13:24:07.844976+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
   "realized_pnl": 0,
+  "total_fees": 1395.33,
   "open_count": 4865,
   "open_stake": 26256.15,
   "settled_count": 0,
+  "m1_settled_gate": 500,
+  "m1_progress": 0.0,
+  "calibration_min_sample": 30,
+  "accuracy_vs_profitability": "No settled bets yet \u2014 accuracy/profitability split appears once bets resolve.",
   "win_rate": null,
   "roi": null,
   "brier_model": null,
