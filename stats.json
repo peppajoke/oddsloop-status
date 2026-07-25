@@ -1,28 +1,58 @@
 {
- "generated_at": "2026-07-25T20:05:34.402816+00:00",
+ "generated_at": "2026-07-25T20:36:34.988186+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": 0,
+  "realized_pnl": -0.92,
   "total_fees": 1430.89,
-  "open_count": 4992,
-  "open_stake": 26926.71,
-  "settled_count": 0,
+  "open_count": 4990,
+  "open_stake": 26916.36,
+  "settled_count": 2,
   "m1_settled_gate": 500,
-  "m1_progress": 0.0,
+  "m1_progress": 0.004,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "No settled bets yet \u2014 accuracy/profitability split appears once bets resolve.",
-  "win_rate": null,
-  "roi": null,
-  "brier_model": null,
-  "brier_market": null,
-  "predictions_scored": 0,
-  "prediction_brier": null,
-  "prediction_log_loss": null
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.2408 trails the market's 0.2305. On profitability, realized ROI is -8.9% (P&L $-0.92). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1430.89 in fees across 4992 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.5,
+  "roi": -0.0889,
+  "brier_model": 0.2408,
+  "brier_market": 0.2305,
+  "predictions_scored": 2,
+  "prediction_brier": 0.2408,
+  "prediction_log_loss": 0.6747
  },
- "calibration": [],
- "prediction_calibration": [],
- "categories": [],
+ "calibration": [
+  {
+   "predicted": 0.481,
+   "realized": 0.5,
+   "n": 2,
+   "low_sample": true
+  }
+ ],
+ "prediction_calibration": [
+  {
+   "predicted": 0.49,
+   "realized": 1.0,
+   "n": 1,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.529,
+   "realized": 1.0,
+   "n": 1,
+   "low_sample": true
+  }
+ ],
+ "categories": [
+  {
+   "category": "Sports",
+   "n": 2,
+   "win_rate": 0.5,
+   "brier_model": 0.2408,
+   "brier_market": 0.2305,
+   "pnl": -0.92,
+   "beats_market": false
+  }
+ ],
  "active_bets": [
   {
    "ticker": "KXNFLGAME-26SEP14DENKC-KC",
@@ -4943,21 +4973,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.13; faded 0.12 toward 0.5 \u2192 0.18. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:03:33.152558+00:00"
-  },
-  {
-   "ticker": "KXPGAROUNDSCORE-3MO26R3-HMAT67",
-   "title": "3M Open: Round 3 Scores \u2014 R3: Hideki Matsuyama under 67.5 strokes",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.17,
-   "entry_price": 0.53,
-   "p_final": 0.49,
-   "edge": 0.0,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.49; faded 0.12 toward 0.5 \u2192 0.49. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:03:33.083871+00:00"
   },
   {
    "ticker": "KXHOUSETURNOUT-26NOV03-100",
@@ -11438,21 +11453,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.81; faded 0.12 toward 0.5 \u2192 0.78. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:03:05.002111+00:00"
-  },
-  {
-   "ticker": "KXPGAROUNDSCORE-3MO26R3-SSCH66",
-   "title": "3M Open: Round 3 Scores \u2014 R3: Scottie Scheffler under 66.5 strokes",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.18,
-   "entry_price": 0.49,
-   "p_final": 0.529,
-   "edge": 0.001,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.53; faded 0.12 toward 0.5 \u2192 0.53. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:03:04.951120+00:00"
   },
   {
    "ticker": "KXVAPRIMARY-01D26-STAY",
@@ -74905,7 +74905,46 @@
    "placed_at": "2026-07-15T19:14:23.385407+00:00"
   }
  ],
- "history": [],
+ "history": [
+  {
+   "ticker": "KXPGAROUNDSCORE-3MO26R3-HMAT67",
+   "title": "3M Open: Round 3 Scores \u2014 R3: Hideki Matsuyama under 67.5 strokes",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.17,
+   "entry_price": 0.53,
+   "p_final": 0.49,
+   "edge": 0.0,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.49; faded 0.12 toward 0.5 \u2192 0.49. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:03:33.083871+00:00",
+   "won": true,
+   "payout": 9.43,
+   "pnl": 4.26,
+   "settled_at": "2026-07-25T20:36:04.558918+00:00"
+  },
+  {
+   "ticker": "KXPGAROUNDSCORE-3MO26R3-SSCH66",
+   "title": "3M Open: Round 3 Scores \u2014 R3: Scottie Scheffler under 66.5 strokes",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.18,
+   "entry_price": 0.49,
+   "p_final": 0.529,
+   "edge": 0.001,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.53; faded 0.12 toward 0.5 \u2192 0.53. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:03:04.951120+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.18,
+   "settled_at": "2026-07-25T20:36:04.555401+00:00"
+  }
+ ],
  "work": {
   "milestones": [
    {
