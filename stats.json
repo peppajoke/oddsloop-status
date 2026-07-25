@@ -1,38 +1,62 @@
 {
- "generated_at": "2026-07-25T22:09:38.346963+00:00",
+ "generated_at": "2026-07-25T22:40:38.519584+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -6.12,
+  "realized_pnl": 8.6,
   "total_fees": 1442.59,
-  "open_count": 5030,
-  "open_stake": 27127.86,
-  "settled_count": 3,
+  "open_count": 5021,
+  "open_stake": 27080.08,
+  "settled_count": 12,
   "m1_settled_gate": 500,
-  "m1_progress": 0.006,
+  "m1_progress": 0.024,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.2226 trails the market's 0.2212. On profitability, realized ROI is -39.4% (P&L $-6.12). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1442.59 in fees across 5033 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.333,
-  "roi": -0.3936,
-  "brier_model": 0.2226,
-  "brier_market": 0.2212,
-  "predictions_scored": 3,
-  "prediction_brier": 0.2226,
-  "prediction_log_loss": 0.6381
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1503 beats the market's 0.1512. On profitability, realized ROI is 13.6% (P&L $8.60). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1442.59 in fees across 5033 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.167,
+  "roi": 0.1358,
+  "brier_model": 0.1503,
+  "brier_market": 0.1512,
+  "predictions_scored": 12,
+  "prediction_brier": 0.1503,
+  "prediction_log_loss": 0.4742
  },
  "calibration": [
   {
-   "predicted": 0.464,
-   "realized": 0.333,
+   "predicted": 0.066,
+   "realized": 0.2,
+   "n": 5,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.125,
+   "realized": 0.0,
    "n": 3,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.47,
+   "realized": 0.25,
+   "n": 4,
    "low_sample": true
   }
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.49,
-   "realized": 1.0,
-   "n": 1,
+   "predicted": 0.066,
+   "realized": 0.2,
+   "n": 5,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.125,
+   "realized": 0.0,
+   "n": 3,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.488,
+   "realized": 0.5,
+   "n": 2,
    "low_sample": true
   },
   {
@@ -45,12 +69,12 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 3,
-   "win_rate": 0.333,
-   "brier_model": 0.2226,
-   "brier_market": 0.2212,
-   "pnl": -6.12,
-   "beats_market": false
+   "n": 12,
+   "win_rate": 0.167,
+   "brier_model": 0.1503,
+   "brier_market": 0.1512,
+   "pnl": 8.6,
+   "beats_market": true
   }
  ],
  "active_bets": [
@@ -970,21 +994,6 @@
    "placed_at": "2026-07-25T18:42:58.657413+00:00"
   },
   {
-   "ticker": "KXPGAR3LEAD-3MO26-DMCC",
-   "title": "3M Open End of Round 3 Leader \u2014 Denny McCarthy",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.05,
-   "p_final": 0.051,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T18:42:58.589096+00:00"
-  },
-  {
    "ticker": "KXBNBMAXY-BNB-26DEC31-64000",
    "title": "How high will BNB get in 2026? \u2014 Above $640.00",
    "category": "Crypto",
@@ -1013,21 +1022,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.55; faded 0.12 toward 0.5 \u2192 0.54. Category: Mentions. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T18:42:58.446145+00:00"
-  },
-  {
-   "ticker": "KXPGAR3LEAD-3MO26-MBRE",
-   "title": "3M Open End of Round 3 Leader \u2014 Michael Brennan",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.16,
-   "p_final": 0.154,
-   "edge": 0.009,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T18:42:58.362723+00:00"
   },
   {
    "ticker": "KXBTCY-27JAN0100-T20000.00",
@@ -1225,21 +1219,6 @@
    "placed_at": "2026-07-25T17:41:52.067240+00:00"
   },
   {
-   "ticker": "KXPGAR3LEAD-3MO26-BHAR",
-   "title": "3M Open End of Round 3 Leader \u2014 Brian Harman",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.04,
-   "p_final": 0.047,
-   "edge": 0.012,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T17:41:51.997258+00:00"
-  },
-  {
    "ticker": "KXWNBAMENTION-26JUL25SPNCOO-AIRB",
    "title": "What will the announcers say during Team Spoon vs Team Coop Women's Professional Basketball Game \u2014 Airball / Airballs / Airballed",
    "category": "Mentions",
@@ -1283,21 +1262,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.17; faded 0.12 toward 0.5 \u2192 0.21. Category: Crypto. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T17:41:51.770414+00:00"
-  },
-  {
-   "ticker": "KXPGAR3LEAD-3MO26-HMAT",
-   "title": "3M Open End of Round 3 Leader \u2014 Hideki Matsuyama",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.06,
-   "p_final": 0.066,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T17:41:51.698269+00:00"
   },
   {
    "ticker": "KXCPIYOY-26JUL-T3.1",
@@ -12430,21 +12394,6 @@
    "placed_at": "2026-07-25T13:03:03.613469+00:00"
   },
   {
-   "ticker": "KXPGAR3LEAD-3MO26-BKOH",
-   "title": "3M Open End of Round 3 Leader \u2014 Ben Kohles",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.12,
-   "p_final": 0.12,
-   "edge": 0.01,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.11; faded 0.12 toward 0.5 \u2192 0.16. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:03:03.557505+00:00"
-  },
-  {
    "ticker": "KX2028RRUN-28-TGAB",
    "title": "Who will run for the 2028 Republican presidential nomination? \u2014 Tulsi Gabbard",
    "category": "Elections",
@@ -22330,21 +22279,6 @@
    "placed_at": "2026-07-25T13:02:27.991863+00:00"
   },
   {
-   "ticker": "KXPGAR3LEAD-3MO26-CPHI",
-   "title": "3M Open End of Round 3 Leader \u2014 Chandler Phillips",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.08,
-   "p_final": 0.081,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:27.950543+00:00"
-  },
-  {
    "ticker": "KXVOTELAKE-28-BCAS",
    "title": "Which Senators will vote for Kari Lake? \u2014 Bill Cassidy",
    "category": "Politics",
@@ -25898,21 +25832,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.85; faded 0.12 toward 0.5 \u2192 0.81. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:16.779970+00:00"
-  },
-  {
-   "ticker": "KXPGAR3LEAD-3MO26-JKOI",
-   "title": "3M Open End of Round 3 Leader \u2014 Jackson Koivun",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.08,
-   "p_final": 0.086,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.13. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:16.732105+00:00"
   },
   {
    "ticker": "KXTARIFFBILL-27JAN01",
@@ -30145,21 +30064,6 @@
    "placed_at": "2026-07-25T13:02:04.783179+00:00"
   },
   {
-   "ticker": "KXPGAR3LEAD-3MO26-EGRI",
-   "title": "3M Open End of Round 3 Leader \u2014 Emiliano Grillo",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.1,
-   "p_final": 0.1,
-   "edge": 0.01,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.09; faded 0.12 toward 0.5 \u2192 0.14. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:04.747295+00:00"
-  },
-  {
    "ticker": "KXTRUMPMOJTABA-26DEC-26DEC",
    "title": "Will Trump talk to Mojtaba Khamenei? \u2014 Before Jan 1, 2027",
    "category": "Politics",
@@ -33863,21 +33767,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.47; faded 0.12 toward 0.5 \u2192 0.47. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:01:55.950971+00:00"
-  },
-  {
-   "ticker": "KXPGAR3LEAD-3MO26-MKIM",
-   "title": "3M Open End of Round 3 Leader \u2014 Michael Kim",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.18,
-   "entry_price": 0.49,
-   "p_final": 0.485,
-   "edge": 0.0,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.48; faded 0.12 toward 0.5 \u2192 0.49. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:55.909233+00:00"
   },
   {
    "ticker": "KXPARDONSTRUMP-26JUL-17",
@@ -75506,6 +75395,177 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXPGAR3LEAD-3MO26-DMCC",
+   "title": "3M Open End of Round 3 Leader \u2014 Denny McCarthy",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.05,
+   "p_final": 0.051,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T18:42:58.589096+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-25T22:40:07.920252+00:00"
+  },
+  {
+   "ticker": "KXPGAR3LEAD-3MO26-MBRE",
+   "title": "3M Open End of Round 3 Leader \u2014 Michael Brennan",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.16,
+   "p_final": 0.154,
+   "edge": 0.009,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T18:42:58.362723+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-07-25T22:40:07.919958+00:00"
+  },
+  {
+   "ticker": "KXPGAR3LEAD-3MO26-BHAR",
+   "title": "3M Open End of Round 3 Leader \u2014 Brian Harman",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.04,
+   "p_final": 0.047,
+   "edge": 0.012,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T17:41:51.997258+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-25T22:40:07.919581+00:00"
+  },
+  {
+   "ticker": "KXPGAR3LEAD-3MO26-HMAT",
+   "title": "3M Open End of Round 3 Leader \u2014 Hideki Matsuyama",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.06,
+   "p_final": 0.066,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T17:41:51.698269+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-25T22:40:07.918935+00:00"
+  },
+  {
+   "ticker": "KXPGAR3LEAD-3MO26-BKOH",
+   "title": "3M Open End of Round 3 Leader \u2014 Ben Kohles",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.12,
+   "p_final": 0.12,
+   "edge": 0.01,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.11; faded 0.12 toward 0.5 \u2192 0.16. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:03:03.557505+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.31,
+   "settled_at": "2026-07-25T22:40:07.916269+00:00"
+  },
+  {
+   "ticker": "KXPGAR3LEAD-3MO26-CPHI",
+   "title": "3M Open End of Round 3 Leader \u2014 Chandler Phillips",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.08,
+   "p_final": 0.081,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:27.950543+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-25T22:40:07.913198+00:00"
+  },
+  {
+   "ticker": "KXPGAR3LEAD-3MO26-JKOI",
+   "title": "3M Open End of Round 3 Leader \u2014 Jackson Koivun",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.08,
+   "p_final": 0.086,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.13. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:16.732105+00:00",
+   "won": true,
+   "payout": 62.5,
+   "pnl": 57.17,
+   "settled_at": "2026-07-25T22:40:07.911631+00:00"
+  },
+  {
+   "ticker": "KXPGAR3LEAD-3MO26-EGRI",
+   "title": "3M Open End of Round 3 Leader \u2014 Emiliano Grillo",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.1,
+   "p_final": 0.1,
+   "edge": 0.01,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.09; faded 0.12 toward 0.5 \u2192 0.14. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:04.747295+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-07-25T22:40:07.909734+00:00"
+  },
+  {
+   "ticker": "KXPGAR3LEAD-3MO26-MKIM",
+   "title": "3M Open End of Round 3 Leader \u2014 Michael Kim",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.18,
+   "entry_price": 0.49,
+   "p_final": 0.485,
+   "edge": 0.0,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.48; faded 0.12 toward 0.5 \u2192 0.49. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:55.909233+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.18,
+   "settled_at": "2026-07-25T22:40:07.906193+00:00"
+  },
   {
    "ticker": "KXPGAROUNDSCORE-3MO26R3-JKOI68",
    "title": "3M Open: Round 3 Scores \u2014 R3: Jackson Koivun under 68.5 strokes",
