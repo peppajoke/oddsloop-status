@@ -1,30 +1,30 @@
 {
- "generated_at": "2026-07-25T21:07:36.378412+00:00",
+ "generated_at": "2026-07-25T21:38:37.348039+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -0.92,
+  "realized_pnl": -6.12,
   "total_fees": 1436.92,
-  "open_count": 5011,
-  "open_stake": 27027.39,
-  "settled_count": 2,
+  "open_count": 5010,
+  "open_stake": 27022.19,
+  "settled_count": 3,
   "m1_settled_gate": 500,
-  "m1_progress": 0.004,
+  "m1_progress": 0.006,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.2408 trails the market's 0.2305. On profitability, realized ROI is -8.9% (P&L $-0.92). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1436.92 in fees across 5013 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.5,
-  "roi": -0.0889,
-  "brier_model": 0.2408,
-  "brier_market": 0.2305,
-  "predictions_scored": 2,
-  "prediction_brier": 0.2408,
-  "prediction_log_loss": 0.6747
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.2226 trails the market's 0.2212. On profitability, realized ROI is -39.4% (P&L $-6.12). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1436.92 in fees across 5013 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.333,
+  "roi": -0.3936,
+  "brier_model": 0.2226,
+  "brier_market": 0.2212,
+  "predictions_scored": 3,
+  "prediction_brier": 0.2226,
+  "prediction_log_loss": 0.6381
  },
  "calibration": [
   {
-   "predicted": 0.481,
-   "realized": 0.5,
-   "n": 2,
+   "predicted": 0.464,
+   "realized": 0.333,
+   "n": 3,
    "low_sample": true
   }
  ],
@@ -36,20 +36,20 @@
    "low_sample": true
   },
   {
-   "predicted": 0.529,
+   "predicted": 0.549,
    "realized": 1.0,
-   "n": 1,
+   "n": 2,
    "low_sample": true
   }
  ],
  "categories": [
   {
    "category": "Sports",
-   "n": 2,
-   "win_rate": 0.5,
-   "brier_model": 0.2408,
-   "brier_market": 0.2305,
-   "pnl": -0.92,
+   "n": 3,
+   "win_rate": 0.333,
+   "brier_model": 0.2226,
+   "brier_market": 0.2212,
+   "pnl": -6.12,
    "beats_market": false
   }
  ],
@@ -1688,21 +1688,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.43; faded 0.12 toward 0.5 \u2192 0.44. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T14:38:13.358919+00:00"
-  },
-  {
-   "ticker": "KXPGAROUNDSCORE-3MO26R3-JKOI68",
-   "title": "3M Open: Round 3 Scores \u2014 R3: Jackson Koivun under 68.5 strokes",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.44999999999999996,
-   "p_final": 0.568,
-   "edge": 0.002,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.57; faded 0.12 toward 0.5 \u2192 0.56. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T14:38:13.300048+00:00"
   },
   {
    "ticker": "KXNBATRADE-27FEB12-KLEONARD2",
@@ -75221,6 +75206,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXPGAROUNDSCORE-3MO26R3-JKOI68",
+   "title": "3M Open: Round 3 Scores \u2014 R3: Jackson Koivun under 68.5 strokes",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.44999999999999996,
+   "p_final": 0.568,
+   "edge": 0.002,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.57; faded 0.12 toward 0.5 \u2192 0.56. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T14:38:13.300048+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.2,
+   "settled_at": "2026-07-25T21:38:06.519104+00:00"
+  },
   {
    "ticker": "KXPGAROUNDSCORE-3MO26R3-HMAT67",
    "title": "3M Open: Round 3 Scores \u2014 R3: Hideki Matsuyama under 67.5 strokes",
