@@ -1,30 +1,30 @@
 {
- "generated_at": "2026-07-25T22:47:30.402307+00:00",
+ "generated_at": "2026-07-25T23:11:38.419009+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": 8.6,
+  "realized_pnl": 3.28,
   "total_fees": 1447.06,
-  "open_count": 5037,
-  "open_stake": 27164.55,
-  "settled_count": 12,
+  "open_count": 5036,
+  "open_stake": 27159.23,
+  "settled_count": 13,
   "m1_settled_gate": 500,
-  "m1_progress": 0.024,
+  "m1_progress": 0.026,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1503 beats the market's 0.1512. On profitability, realized ROI is 13.6% (P&L $8.60). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1447.06 in fees across 5049 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.167,
-  "roi": 0.1358,
-  "brier_model": 0.1503,
-  "brier_market": 0.1512,
-  "predictions_scored": 12,
-  "prediction_brier": 0.1503,
-  "prediction_log_loss": 0.4742
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1392 beats the market's 0.1402. On profitability, realized ROI is 4.8% (P&L $3.28). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1447.06 in fees across 5049 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.154,
+  "roi": 0.0478,
+  "brier_model": 0.1392,
+  "brier_market": 0.1402,
+  "predictions_scored": 13,
+  "prediction_brier": 0.1392,
+  "prediction_log_loss": 0.4442
  },
  "calibration": [
   {
-   "predicted": 0.066,
-   "realized": 0.2,
-   "n": 5,
+   "predicted": 0.068,
+   "realized": 0.167,
+   "n": 6,
    "low_sample": true
   },
   {
@@ -42,9 +42,9 @@
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.066,
-   "realized": 0.2,
-   "n": 5,
+   "predicted": 0.068,
+   "realized": 0.167,
+   "n": 6,
    "low_sample": true
   },
   {
@@ -69,11 +69,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 12,
-   "win_rate": 0.167,
-   "brier_model": 0.1503,
-   "brier_market": 0.1512,
-   "pnl": 8.6,
+   "n": 13,
+   "win_rate": 0.154,
+   "brier_model": 0.1392,
+   "brier_market": 0.1402,
+   "pnl": 3.28,
    "beats_market": true
   }
  ],
@@ -3137,21 +3137,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.34; faded 0.12 toward 0.5 \u2192 0.36. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:03:44.751123+00:00"
-  },
-  {
-   "ticker": "KXCS2-BBS2F26-G2",
-   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 G2",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.09,
-   "p_final": 0.081,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:03:44.687438+00:00"
   },
   {
    "ticker": "KXWNBANEXTTEAM-27CCLARK22-LA",
@@ -75635,6 +75620,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXCS2-BBS2F26-G2",
+   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 G2",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.09,
+   "p_final": 0.081,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:03:44.687438+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-07-25T23:11:09.945227+00:00"
+  },
   {
    "ticker": "KXPGAR3LEAD-3MO26-DMCC",
    "title": "3M Open End of Round 3 Leader \u2014 Denny McCarthy",
