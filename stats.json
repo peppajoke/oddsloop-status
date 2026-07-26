@@ -1,30 +1,30 @@
 {
- "generated_at": "2026-07-26T22:28:07.104334+00:00",
+ "generated_at": "2026-07-26T22:59:10.341398+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -50.44,
+  "realized_pnl": -60.48,
   "total_fees": 1531.15,
-  "open_count": 5272,
-  "open_stake": 28405.26,
-  "settled_count": 85,
+  "open_count": 5268,
+  "open_stake": 28384.35,
+  "settled_count": 89,
   "m1_settled_gate": 500,
-  "m1_progress": 0.17,
+  "m1_progress": 0.178,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1524 trails the market's 0.1500. On profitability, realized ROI is -11.6% (P&L $-50.44). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1531.15 in fees across 5357 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1533 trails the market's 0.1512. On profitability, realized ROI is -13.2% (P&L $-60.48). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1531.15 in fees across 5357 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
   "win_rate": 0.247,
-  "roi": -0.1155,
-  "brier_model": 0.1524,
-  "brier_market": 0.15,
-  "predictions_scored": 82,
-  "prediction_brier": 0.1524,
-  "prediction_log_loss": 0.4753
+  "roi": -0.1324,
+  "brier_model": 0.1533,
+  "brier_market": 0.1512,
+  "predictions_scored": 86,
+  "prediction_brier": 0.1533,
+  "prediction_log_loss": 0.4769
  },
  "calibration": [
   {
-   "predicted": 0.066,
-   "realized": 0.125,
-   "n": 16,
+   "predicted": 0.068,
+   "realized": 0.118,
+   "n": 17,
    "low_sample": true
   },
   {
@@ -40,23 +40,23 @@
    "low_sample": true
   },
   {
-   "predicted": 0.352,
-   "realized": 0.333,
-   "n": 15,
+   "predicted": 0.353,
+   "realized": 0.312,
+   "n": 16,
    "low_sample": true
   },
   {
-   "predicted": 0.442,
-   "realized": 0.591,
-   "n": 22,
+   "predicted": 0.445,
+   "realized": 0.583,
+   "n": 24,
    "low_sample": true
   }
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.061,
-   "realized": 0.167,
-   "n": 12,
+   "predicted": 0.064,
+   "realized": 0.154,
+   "n": 13,
    "low_sample": true
   },
   {
@@ -78,21 +78,21 @@
    "low_sample": true
   },
   {
-   "predicted": 0.451,
-   "realized": 0.625,
-   "n": 8,
+   "predicted": 0.456,
+   "realized": 0.556,
+   "n": 9,
    "low_sample": true
   },
   {
-   "predicted": 0.563,
-   "realized": 0.429,
-   "n": 14,
-   "low_sample": true
-  },
-  {
-   "predicted": 0.635,
+   "predicted": 0.562,
    "realized": 0.4,
-   "n": 5,
+   "n": 15,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.633,
+   "realized": 0.5,
+   "n": 6,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 33,
-   "win_rate": 0.212,
-   "brier_model": 0.1428,
-   "brier_market": 0.1442,
-   "pnl": 40.59,
+   "n": 37,
+   "win_rate": 0.216,
+   "brier_model": 0.146,
+   "brier_market": 0.1476,
+   "pnl": 30.55,
    "beats_market": true
   },
   {
@@ -7469,21 +7469,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.86; faded 0.12 toward 0.5 \u2192 0.82. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:03:43.656464+00:00"
-  },
-  {
-   "ticker": "KXPERLIGA1GAME-26JUL26COMALI-ALI",
-   "title": "Comerciantes U. vs Alianza Lima",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.18,
-   "entry_price": 0.51,
-   "p_final": 0.49,
-   "edge": 0.0,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.49; faded 0.12 toward 0.5 \u2192 0.49. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:03:43.585109+00:00"
   },
   {
    "ticker": "KXWNBAPLAYOFF-26-CHI",
@@ -20806,21 +20791,6 @@
    "placed_at": "2026-07-25T13:02:47.384151+00:00"
   },
   {
-   "ticker": "KXGOLFNEXTWIN-SSCH-3MO",
-   "title": "Scottie Scheffler: Next Tournament Win \u2014 3M Open",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.09,
-   "p_final": 0.095,
-   "edge": 0.01,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.14. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:47.326839+00:00"
-  },
-  {
    "ticker": "KXMIPRIMARY-12D26-RTLA",
    "title": "MI-12 Democratic nominee? \u2014 Rashida Tlaib",
    "category": "Elections",
@@ -30209,21 +30179,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.62; faded 0.12 toward 0.5 \u2192 0.61. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:16.291537+00:00"
-  },
-  {
-   "ticker": "KXECULPGAME-26JUL26OREIND-IND",
-   "title": "Orense vs Ind. del Valle",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.22,
-   "entry_price": 0.38,
-   "p_final": 0.621,
-   "edge": 0.004,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.62; faded 0.12 toward 0.5 \u2192 0.61. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:16.252708+00:00"
   },
   {
    "ticker": "KXBILLS-EVFEE",
@@ -77791,21 +77746,6 @@
    "placed_at": "2026-07-25T12:51:43.147051+00:00"
   },
   {
-   "ticker": "KXMLBGAME-26JUL261605LAASF-SF",
-   "title": "Los Angeles A vs San Francisco",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.19,
-   "entry_price": 0.45999999999999996,
-   "p_final": 0.544,
-   "edge": 0.001,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.55; faded 0.12 toward 0.5 \u2192 0.54. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.145607+00:00"
-  },
-  {
    "ticker": "KXWTI-26JUL2714-T90.49",
    "title": "Oil Price (WTI) on Jul 27, 2026? \u2014 Above $90.49",
    "category": "Commodities",
@@ -79217,6 +79157,82 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXPERLIGA1GAME-26JUL26COMALI-ALI",
+   "title": "Comerciantes U. vs Alianza Lima",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.18,
+   "entry_price": 0.51,
+   "p_final": 0.49,
+   "edge": 0.0,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.49; faded 0.12 toward 0.5 \u2192 0.49. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:03:43.585109+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.18,
+   "settled_at": "2026-07-26T22:58:41.322552+00:00"
+  },
+  {
+   "ticker": "KXGOLFNEXTWIN-SSCH-3MO",
+   "title": "Scottie Scheffler: Next Tournament Win \u2014 3M Open",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.09,
+   "p_final": 0.095,
+   "edge": 0.01,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.14. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:47.326839+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-07-26T22:58:41.317434+00:00"
+  },
+  {
+   "ticker": "KXECULPGAME-26JUL26OREIND-IND",
+   "title": "Orense vs Ind. del Valle",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.22,
+   "entry_price": 0.38,
+   "p_final": 0.621,
+   "edge": 0.004,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.62; faded 0.12 toward 0.5 \u2192 0.61. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:16.252708+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.22,
+   "settled_at": "2026-07-26T22:58:41.312942+00:00"
+  },
+  {
+   "ticker": "KXMLBGAME-26JUL261605LAASF-SF",
+   "title": "Los Angeles A vs San Francisco",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.19,
+   "entry_price": 0.45999999999999996,
+   "p_final": 0.544,
+   "edge": 0.001,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.55; faded 0.12 toward 0.5 \u2192 0.54. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.145607+00:00",
+   "won": true,
+   "payout": 10.87,
+   "pnl": 5.68,
+   "settled_at": "2026-07-26T22:58:41.294358+00:00"
+  },
   {
    "ticker": "KXARGPREMDIVGAME-26JUL26ELPCAI-ELP",
    "title": "Estudiantes La Plata vs Independiente Avellaneda",
