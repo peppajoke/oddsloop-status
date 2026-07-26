@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-26T16:15:36.651267+00:00",
+ "generated_at": "2026-07-26T16:46:38.640273+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": 55.65,
+  "realized_pnl": 47.03,
   "total_fees": 1497.42,
-  "open_count": 5189,
-  "open_stake": 27966.8,
-  "settled_count": 42,
+  "open_count": 5183,
+  "open_stake": 27935.41,
+  "settled_count": 48,
   "m1_settled_gate": 500,
-  "m1_progress": 0.084,
+  "m1_progress": 0.096,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1440 trails the market's 0.1421. On profitability, realized ROI is 27.4% (P&L $55.65). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1497.42 in fees across 5231 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.262,
-  "roi": 0.2735,
-  "brier_model": 0.144,
-  "brier_market": 0.1421,
-  "predictions_scored": 39,
-  "prediction_brier": 0.144,
-  "prediction_log_loss": 0.4586
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1484 trails the market's 0.1458. On profitability, realized ROI is 20.1% (P&L $47.03). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1497.42 in fees across 5231 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.271,
+  "roi": 0.201,
+  "brier_model": 0.1484,
+  "brier_market": 0.1458,
+  "predictions_scored": 45,
+  "prediction_brier": 0.1484,
+  "prediction_log_loss": 0.4688
  },
  "calibration": [
   {
@@ -34,21 +34,21 @@
    "low_sample": true
   },
   {
-   "predicted": 0.235,
+   "predicted": 0.247,
    "realized": 0.0,
-   "n": 2,
+   "n": 4,
    "low_sample": true
   },
   {
-   "predicted": 0.398,
-   "realized": 1.0,
-   "n": 1,
+   "predicted": 0.369,
+   "realized": 0.333,
+   "n": 3,
    "low_sample": true
   },
   {
-   "predicted": 0.448,
-   "realized": 0.727,
-   "n": 11,
+   "predicted": 0.444,
+   "realized": 0.769,
+   "n": 13,
    "low_sample": true
   }
  ],
@@ -66,21 +66,33 @@
    "low_sample": true
   },
   {
-   "predicted": 0.398,
+   "predicted": 0.258,
+   "realized": 0.0,
+   "n": 2,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.359,
+   "realized": 0.5,
+   "n": 2,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.451,
+   "realized": 0.833,
+   "n": 6,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.563,
+   "realized": 0.286,
+   "n": 7,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.611,
    "realized": 1.0,
    "n": 1,
-   "low_sample": true
-  },
-  {
-   "predicted": 0.458,
-   "realized": 0.8,
-   "n": 5,
-   "low_sample": true
-  },
-  {
-   "predicted": 0.561,
-   "realized": 0.333,
-   "n": 6,
    "low_sample": true
   },
   {
@@ -114,11 +126,11 @@
   },
   {
    "category": "Mentions",
-   "n": 12,
-   "win_rate": 0.417,
-   "brier_model": 0.1559,
-   "brier_market": 0.1493,
-   "pnl": -5.01,
+   "n": 18,
+   "win_rate": 0.389,
+   "brier_model": 0.1629,
+   "brier_market": 0.1561,
+   "pnl": -13.63,
    "beats_market": false
   }
  ],
@@ -2074,21 +2086,6 @@
    "placed_at": "2026-07-26T01:50:31.634962+00:00"
   },
   {
-   "ticker": "KXWNBAMENTION-26JUL25SPNCOO-TRAV",
-   "title": "What will the announcers say during Team Spoon vs Team Coop Women's Professional Basketball Game \u2014 Travel / Travels / Traveled",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.26,
-   "entry_price": 0.28,
-   "p_final": 0.282,
-   "edge": 0.007,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.28; faded 0.12 toward 0.5 \u2192 0.30. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T01:50:31.561910+00:00"
-  },
-  {
    "ticker": "KXMLBGAME-26JUL261920NYYPHI-NYY",
    "title": "New York Y vs Philadelphia",
    "category": "Sports",
@@ -2342,21 +2339,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.34; faded 0.12 toward 0.5 \u2192 0.36. Category: Politics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T00:49:35.919063+00:00"
-  },
-  {
-   "ticker": "KXWNBAMENTION-26JUL25SPNCOO-TRAD",
-   "title": "What will the announcers say during Team Spoon vs Team Coop Women's Professional Basketball Game \u2014 Trade / Traded",
-   "category": "Mentions",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.19,
-   "entry_price": 0.45999999999999996,
-   "p_final": 0.577,
-   "edge": 0.003,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.58; faded 0.12 toward 0.5 \u2192 0.57. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T00:49:35.849594+00:00"
   },
   {
    "ticker": "KXFED-26SEP-T3.50",
@@ -2732,36 +2714,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T22:47:29.686053+00:00"
-  },
-  {
-   "ticker": "KXWNBAMENTION-26JUL25SPNCOO-CARE",
-   "title": "What will the announcers say during Team Spoon vs Team Coop Women's Professional Basketball Game \u2014 Career High",
-   "category": "Mentions",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.22,
-   "entry_price": 0.39,
-   "p_final": 0.611,
-   "edge": 0.004,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.61; faded 0.12 toward 0.5 \u2192 0.60. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T22:47:29.615223+00:00"
-  },
-  {
-   "ticker": "KXMLBMENTION-26JUL25SDMIA-ERRO",
-   "title": "What will the announcers say during San Diego vs Miami Professional Baseball Game \u2014 Error",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.24,
-   "p_final": 0.234,
-   "edge": 0.009,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.22; faded 0.12 toward 0.5 \u2192 0.26. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T22:47:29.555902+00:00"
   },
   {
    "ticker": "KXFEDMENTION-26JUL-RENO",
@@ -3529,21 +3481,6 @@
    "placed_at": "2026-07-25T19:44:08.770138+00:00"
   },
   {
-   "ticker": "KXWNBAMENTION-26JUL25SPNCOO-BUZZ",
-   "title": "What will the announcers say during Team Spoon vs Team Coop Women's Professional Basketball Game \u2014 Buzzer",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.42,
-   "p_final": 0.418,
-   "edge": 0.003,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.41; faded 0.12 toward 0.5 \u2192 0.42. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T19:44:08.699857+00:00"
-  },
-  {
    "ticker": "KXFED-27JAN-T3.50",
    "title": "Fed funds rate after Jan 2027 meeting? \u2014 Above 3.50%",
    "category": "Economics",
@@ -3902,21 +3839,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.03; faded 0.12 toward 0.5 \u2192 0.09. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T17:41:52.067240+00:00"
-  },
-  {
-   "ticker": "KXWNBAMENTION-26JUL25SPNCOO-AIRB",
-   "title": "What will the announcers say during Team Spoon vs Team Coop Women's Professional Basketball Game \u2014 Airball / Airballs / Airballed",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.32,
-   "p_final": 0.321,
-   "edge": 0.006,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.32; faded 0.12 toward 0.5 \u2192 0.34. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T17:41:51.914664+00:00"
   },
   {
    "ticker": "KXGDPYEAR-29-B2.3",
@@ -77960,6 +77882,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXWNBAMENTION-26JUL25SPNCOO-TRAV",
+   "title": "What will the announcers say during Team Spoon vs Team Coop Women's Professional Basketball Game \u2014 Travel / Travels / Traveled",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.26,
+   "entry_price": 0.28,
+   "p_final": 0.282,
+   "edge": 0.007,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.28; faded 0.12 toward 0.5 \u2192 0.30. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T01:50:31.561910+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.26,
+   "settled_at": "2026-07-26T16:46:08.202184+00:00"
+  },
+  {
+   "ticker": "KXWNBAMENTION-26JUL25SPNCOO-TRAD",
+   "title": "What will the announcers say during Team Spoon vs Team Coop Women's Professional Basketball Game \u2014 Trade / Traded",
+   "category": "Mentions",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.19,
+   "entry_price": 0.45999999999999996,
+   "p_final": 0.577,
+   "edge": 0.003,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.58; faded 0.12 toward 0.5 \u2192 0.57. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T00:49:35.849594+00:00",
+   "won": true,
+   "payout": 10.87,
+   "pnl": 5.68,
+   "settled_at": "2026-07-26T16:46:08.201567+00:00"
+  },
+  {
+   "ticker": "KXWNBAMENTION-26JUL25SPNCOO-CARE",
+   "title": "What will the announcers say during Team Spoon vs Team Coop Women's Professional Basketball Game \u2014 Career High",
+   "category": "Mentions",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.22,
+   "entry_price": 0.39,
+   "p_final": 0.611,
+   "edge": 0.004,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.61; faded 0.12 toward 0.5 \u2192 0.60. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T22:47:29.615223+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.22,
+   "settled_at": "2026-07-26T16:46:08.200894+00:00"
+  },
+  {
+   "ticker": "KXMLBMENTION-26JUL25SDMIA-ERRO",
+   "title": "What will the announcers say during San Diego vs Miami Professional Baseball Game \u2014 Error",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.24,
+   "p_final": 0.234,
+   "edge": 0.009,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.22; faded 0.12 toward 0.5 \u2192 0.26. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T22:47:29.555902+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-26T16:46:08.200343+00:00"
+  },
+  {
+   "ticker": "KXWNBAMENTION-26JUL25SPNCOO-BUZZ",
+   "title": "What will the announcers say during Team Spoon vs Team Coop Women's Professional Basketball Game \u2014 Buzzer",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.42,
+   "p_final": 0.418,
+   "edge": 0.003,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.41; faded 0.12 toward 0.5 \u2192 0.42. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T19:44:08.699857+00:00",
+   "won": true,
+   "payout": 11.9,
+   "pnl": 6.69,
+   "settled_at": "2026-07-26T16:46:08.199555+00:00"
+  },
+  {
+   "ticker": "KXWNBAMENTION-26JUL25SPNCOO-AIRB",
+   "title": "What will the announcers say during Team Spoon vs Team Coop Women's Professional Basketball Game \u2014 Airball / Airballs / Airballed",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.32,
+   "p_final": 0.321,
+   "edge": 0.006,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.32; faded 0.12 toward 0.5 \u2192 0.34. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T17:41:51.914664+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.24,
+   "settled_at": "2026-07-26T16:46:08.198061+00:00"
+  },
   {
    "ticker": "KXBERNIEMENTION-26JUL26-OIL",
    "title": "What will Bernie say during Face the Nation? \u2014 Oil / Gas / Gasoline",
