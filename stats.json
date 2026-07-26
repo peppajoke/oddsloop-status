@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-26T21:07:59.548524+00:00",
+ "generated_at": "2026-07-26T21:26:02.430075+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -34.73,
+  "realized_pnl": -45.24,
   "total_fees": 1524.39,
-  "open_count": 5248,
-  "open_stake": 28279.21,
-  "settled_count": 82,
+  "open_count": 5246,
+  "open_stake": 28268.7,
+  "settled_count": 84,
   "m1_settled_gate": 500,
-  "m1_progress": 0.164,
+  "m1_progress": 0.168,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1537 trails the market's 0.1512. On profitability, realized ROI is -8.2% (P&L $-34.73). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1524.39 in fees across 5330 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.256,
-  "roi": -0.0821,
-  "brier_model": 0.1537,
-  "brier_market": 0.1512,
-  "predictions_scored": 79,
-  "prediction_brier": 0.1537,
-  "prediction_log_loss": 0.4777
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1518 trails the market's 0.1493. On profitability, realized ROI is -10.5% (P&L $-45.24). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1524.39 in fees across 5330 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.25,
+  "roi": -0.1047,
+  "brier_model": 0.1518,
+  "brier_market": 0.1493,
+  "predictions_scored": 81,
+  "prediction_brier": 0.1518,
+  "prediction_log_loss": 0.4739
  },
  "calibration": [
   {
@@ -34,9 +34,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.253,
-   "realized": 0.091,
-   "n": 11,
+   "predicted": 0.256,
+   "realized": 0.077,
+   "n": 13,
    "low_sample": true
   },
   {
@@ -66,9 +66,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.253,
+   "predicted": 0.258,
    "realized": 0.0,
-   "n": 7,
+   "n": 8,
    "low_sample": true
   },
   {
@@ -96,9 +96,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.748,
-   "realized": 0.75,
-   "n": 4,
+   "predicted": 0.746,
+   "realized": 0.8,
+   "n": 5,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 30,
-   "win_rate": 0.233,
-   "brier_model": 0.1454,
-   "brier_market": 0.1468,
-   "pnl": 56.3,
+   "n": 32,
+   "win_rate": 0.219,
+   "brier_model": 0.1411,
+   "brier_market": 0.1423,
+   "pnl": 45.79,
    "beats_market": true
   },
   {
@@ -20924,21 +20924,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.57; faded 0.12 toward 0.5 \u2192 0.56. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:45.708221+00:00"
-  },
-  {
-   "ticker": "KXBRASILEIROGAME-26JUL26BAHCOR-COR",
-   "title": "Bahia vs Corinthians",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.29,
-   "p_final": 0.291,
-   "edge": 0.006,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.29; faded 0.12 toward 0.5 \u2192 0.31. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:45.662467+00:00"
   },
   {
    "ticker": "SENATENJ-26-D",
@@ -77551,21 +77536,6 @@
    "placed_at": "2026-07-25T12:51:43.134503+00:00"
   },
   {
-   "ticker": "KXMLBGAME-26JUL261410COLMIL-MIL",
-   "title": "Colorado vs Milwaukee",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.26,
-   "entry_price": 0.26,
-   "p_final": 0.738,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.133178+00:00"
-  },
-  {
    "ticker": "KXWTI-26JUL2714-T84.49",
    "title": "Oil Price (WTI) on Jul 27, 2026? \u2014 Above $84.49",
    "category": "Commodities",
@@ -78857,6 +78827,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXBRASILEIROGAME-26JUL26BAHCOR-COR",
+   "title": "Bahia vs Corinthians",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.29,
+   "p_final": 0.291,
+   "edge": 0.006,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.29; faded 0.12 toward 0.5 \u2192 0.31. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:45.662467+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.25,
+   "settled_at": "2026-07-26T21:25:32.629170+00:00"
+  },
+  {
+   "ticker": "KXMLBGAME-26JUL261410COLMIL-MIL",
+   "title": "Colorado vs Milwaukee",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.26,
+   "entry_price": 0.26,
+   "p_final": 0.738,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.133178+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.26,
+   "settled_at": "2026-07-26T21:25:32.609818+00:00"
+  },
   {
    "ticker": "KXATP-26ESTORI-BLO",
    "title": "ATP Estoril Winner \u2014 Alexander Blockx",
