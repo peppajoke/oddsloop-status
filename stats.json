@@ -1,30 +1,30 @@
 {
- "generated_at": "2026-07-26T23:09:57.519022+00:00",
+ "generated_at": "2026-07-26T23:30:12.808765+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -60.48,
+  "realized_pnl": -65.81,
   "total_fees": 1536.75,
-  "open_count": 5291,
-  "open_stake": 28504.95,
-  "settled_count": 89,
+  "open_count": 5290,
+  "open_stake": 28499.62,
+  "settled_count": 90,
   "m1_settled_gate": 500,
-  "m1_progress": 0.178,
+  "m1_progress": 0.18,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1533 trails the market's 0.1512. On profitability, realized ROI is -13.2% (P&L $-60.48). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1536.75 in fees across 5380 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.247,
-  "roi": -0.1324,
-  "brier_model": 0.1533,
-  "brier_market": 0.1512,
-  "predictions_scored": 86,
-  "prediction_brier": 0.1533,
-  "prediction_log_loss": 0.4769
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1516 trails the market's 0.1495. On profitability, realized ROI is -14.3% (P&L $-65.81). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1536.75 in fees across 5380 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.244,
+  "roi": -0.1425,
+  "brier_model": 0.1516,
+  "brier_market": 0.1495,
+  "predictions_scored": 87,
+  "prediction_brier": 0.1516,
+  "prediction_log_loss": 0.4722
  },
  "calibration": [
   {
    "predicted": 0.068,
-   "realized": 0.118,
-   "n": 17,
+   "realized": 0.111,
+   "n": 18,
    "low_sample": true
   },
   {
@@ -108,9 +108,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.918,
+   "predicted": 0.92,
    "realized": 1.0,
-   "n": 4,
+   "n": 5,
    "low_sample": true
   }
  ],
@@ -122,6 +122,15 @@
    "brier_model": 0.146,
    "brier_market": 0.1476,
    "pnl": 30.55,
+   "beats_market": true
+  },
+  {
+   "category": "Entertainment",
+   "n": 1,
+   "win_rate": 0.0,
+   "brier_model": 0.005,
+   "brier_market": 0.0064,
+   "pnl": -5.33,
    "beats_market": true
   },
   {
@@ -71491,21 +71500,6 @@
    "placed_at": "2026-07-25T12:51:45.041435+00:00"
   },
   {
-   "ticker": "KXRANKLISTSONGSPOTUSA-26AUG01-MOR",
-   "title": "Artist(s) with a #1 Song on Spotify USA: July \u2014 Morgan Wallen",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.07999999999999996,
-   "p_final": 0.929,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.94; faded 0.12 toward 0.5 \u2192 0.89. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:45.035104+00:00"
-  },
-  {
    "ticker": "KXBALLONDOR-26-HKAN",
    "title": "Who will win the Ballon d'Or in 2026? \u2014 Harry Kane",
    "category": "Sports",
@@ -79502,6 +79496,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXRANKLISTSONGSPOTUSA-26AUG01-MOR",
+   "title": "Artist(s) with a #1 Song on Spotify USA: July \u2014 Morgan Wallen",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.07999999999999996,
+   "p_final": 0.929,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.94; faded 0.12 toward 0.5 \u2192 0.89. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:45.035104+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-26T23:29:41.502240+00:00"
+  },
   {
    "ticker": "KXPERLIGA1GAME-26JUL26COMALI-ALI",
    "title": "Comerciantes U. vs Alianza Lima",
