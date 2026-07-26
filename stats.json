@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-26T22:08:58.900301+00:00",
+ "generated_at": "2026-07-26T22:28:07.104334+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -45.24,
+  "realized_pnl": -50.44,
   "total_fees": 1531.15,
-  "open_count": 5273,
-  "open_stake": 28410.46,
-  "settled_count": 84,
+  "open_count": 5272,
+  "open_stake": 28405.26,
+  "settled_count": 85,
   "m1_settled_gate": 500,
-  "m1_progress": 0.168,
+  "m1_progress": 0.17,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1518 trails the market's 0.1493. On profitability, realized ROI is -10.5% (P&L $-45.24). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1531.15 in fees across 5357 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.25,
-  "roi": -0.1047,
-  "brier_model": 0.1518,
-  "brier_market": 0.1493,
-  "predictions_scored": 81,
-  "prediction_brier": 0.1518,
-  "prediction_log_loss": 0.4739
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1524 trails the market's 0.1500. On profitability, realized ROI is -11.6% (P&L $-50.44). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1531.15 in fees across 5357 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.247,
+  "roi": -0.1155,
+  "brier_model": 0.1524,
+  "brier_market": 0.15,
+  "predictions_scored": 82,
+  "prediction_brier": 0.1524,
+  "prediction_log_loss": 0.4753
  },
  "calibration": [
   {
@@ -47,8 +47,8 @@
   },
   {
    "predicted": 0.442,
-   "realized": 0.619,
-   "n": 21,
+   "realized": 0.591,
+   "n": 22,
    "low_sample": true
   }
  ],
@@ -78,9 +78,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.452,
-   "realized": 0.714,
-   "n": 7,
+   "predicted": 0.451,
+   "realized": 0.625,
+   "n": 8,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 32,
-   "win_rate": 0.219,
-   "brier_model": 0.1411,
-   "brier_market": 0.1423,
-   "pnl": 45.79,
+   "n": 33,
+   "win_rate": 0.212,
+   "brier_model": 0.1428,
+   "brier_market": 0.1442,
+   "pnl": 40.59,
    "beats_market": true
   },
   {
@@ -4874,21 +4874,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.26; faded 0.12 toward 0.5 \u2192 0.29. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T20:45:19.426218+00:00"
-  },
-  {
-   "ticker": "KXARGPREMDIVGAME-26JUL26ELPCAI-ELP",
-   "title": "Estudiantes La Plata vs Independiente Avellaneda",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.45,
-   "p_final": 0.447,
-   "edge": 0.002,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.45; faded 0.12 toward 0.5 \u2192 0.45. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T20:45:19.362350+00:00"
   },
   {
    "ticker": "KXTLN-26AUGGEN-9.0",
@@ -79232,6 +79217,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXARGPREMDIVGAME-26JUL26ELPCAI-ELP",
+   "title": "Estudiantes La Plata vs Independiente Avellaneda",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.45,
+   "p_final": 0.447,
+   "edge": 0.002,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.45; faded 0.12 toward 0.5 \u2192 0.45. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T20:45:19.362350+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.2,
+   "settled_at": "2026-07-26T22:27:36.167868+00:00"
+  },
   {
    "ticker": "KXBRASILEIROGAME-26JUL26BAHCOR-COR",
    "title": "Bahia vs Corinthians",
