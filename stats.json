@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-26T16:02:48.018138+00:00",
+ "generated_at": "2026-07-26T16:15:36.651267+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": 39.09,
+  "realized_pnl": 55.65,
   "total_fees": 1497.42,
-  "open_count": 5195,
-  "open_stake": 27998.17,
-  "settled_count": 36,
+  "open_count": 5189,
+  "open_stake": 27966.8,
+  "settled_count": 42,
   "m1_settled_gate": 500,
-  "m1_progress": 0.072,
+  "m1_progress": 0.084,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1243 trails the market's 0.1232. On profitability, realized ROI is 22.8% (P&L $39.09). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1497.42 in fees across 5231 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.194,
-  "roi": 0.2278,
-  "brier_model": 0.1243,
-  "brier_market": 0.1232,
-  "predictions_scored": 33,
-  "prediction_brier": 0.1243,
-  "prediction_log_loss": 0.4169
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1440 trails the market's 0.1421. On profitability, realized ROI is 27.4% (P&L $55.65). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1497.42 in fees across 5231 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.262,
+  "roi": 0.2735,
+  "brier_model": 0.144,
+  "brier_market": 0.1421,
+  "predictions_scored": 39,
+  "prediction_brier": 0.144,
+  "prediction_log_loss": 0.4586
  },
  "calibration": [
   {
@@ -34,9 +34,21 @@
    "low_sample": true
   },
   {
-   "predicted": 0.462,
-   "realized": 0.625,
-   "n": 8,
+   "predicted": 0.235,
+   "realized": 0.0,
+   "n": 2,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.398,
+   "realized": 1.0,
+   "n": 1,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.448,
+   "realized": 0.727,
+   "n": 11,
    "low_sample": true
   }
  ],
@@ -54,15 +66,27 @@
    "low_sample": true
   },
   {
-   "predicted": 0.487,
-   "realized": 0.667,
-   "n": 3,
+   "predicted": 0.398,
+   "realized": 1.0,
+   "n": 1,
    "low_sample": true
   },
   {
-   "predicted": 0.554,
-   "realized": 0.4,
+   "predicted": 0.458,
+   "realized": 0.8,
    "n": 5,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.561,
+   "realized": 0.333,
+   "n": 6,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.765,
+   "realized": 1.0,
+   "n": 2,
    "low_sample": true
   },
   {
@@ -90,11 +114,11 @@
   },
   {
    "category": "Mentions",
-   "n": 6,
-   "win_rate": 0.167,
-   "brier_model": 0.0592,
-   "brier_market": 0.0524,
-   "pnl": -21.57,
+   "n": 12,
+   "win_rate": 0.417,
+   "brier_model": 0.1559,
+   "brier_market": 0.1493,
+   "pnl": -5.01,
    "beats_market": false
   }
  ],
@@ -385,36 +409,6 @@
    "placed_at": "2026-07-26T14:00:55.574733+00:00"
   },
   {
-   "ticker": "KXBERNIEMENTION-26JUL26-OIL",
-   "title": "What will Bernie say during Face the Nation? \u2014 Oil / Gas / Gasoline",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.41,
-   "p_final": 0.402,
-   "edge": 0.002,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.40; faded 0.12 toward 0.5 \u2192 0.41. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T14:00:55.512082+00:00"
-  },
-  {
-   "ticker": "KXBERNIEMENTION-26JUL26-ELEC",
-   "title": "What will Bernie say during Face the Nation? \u2014 Election",
-   "category": "Mentions",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.25,
-   "p_final": 0.758,
-   "edge": 0.007,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.77; faded 0.12 toward 0.5 \u2192 0.73. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T14:00:55.450485+00:00"
-  },
-  {
    "ticker": "KXBERNIEMENTION-26JUL26-SOCI",
    "title": "What will Bernie say during Face the Nation? \u2014 Socialist / Socialism",
    "category": "Mentions",
@@ -458,21 +452,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Economics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T14:00:55.253221+00:00"
-  },
-  {
-   "ticker": "KXBERNIEMENTION-26JUL26-AI",
-   "title": "What will Bernie say during Face the Nation? \u2014 AI / Artificial Intelligence",
-   "category": "Mentions",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.42000000000000004,
-   "p_final": 0.598,
-   "edge": 0.002,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.60; faded 0.12 toward 0.5 \u2192 0.59. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T14:00:55.190021+00:00"
   },
   {
    "ticker": "KXWTI-26NOV03-T110.99",
@@ -970,21 +949,6 @@
    "placed_at": "2026-07-26T09:57:28.470090+00:00"
   },
   {
-   "ticker": "KXBERNIEMENTION-26JUL26-AFFO",
-   "title": "What will Bernie say during Face the Nation? \u2014 Afford / Affordable / Affordability",
-   "category": "Mentions",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.24,
-   "p_final": 0.772,
-   "edge": 0.008,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.78; faded 0.12 toward 0.5 \u2192 0.75. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T08:56:40.027909+00:00"
-  },
-  {
    "ticker": "KXWTI-26NOV03-T100.99",
    "title": "Oil Price (WTI) on Election Day (November 3, 2026)? \u2014 $101 or above",
    "category": "Commodities",
@@ -1090,21 +1054,6 @@
    "placed_at": "2026-07-26T07:55:52.120750+00:00"
   },
   {
-   "ticker": "KXBERNIEMENTION-26JUL26-ISRA",
-   "title": "What will Bernie say during Face the Nation? \u2014 Israel / Netanyahu",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.43,
-   "p_final": 0.427,
-   "edge": 0.002,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.42; faded 0.12 toward 0.5 \u2192 0.43. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T07:55:52.050293+00:00"
-  },
-  {
    "ticker": "KXAAAGASW-26JUL27-4.116",
    "title": "US gas prices this week \u2014 Above 4.116",
    "category": "Economics",
@@ -1163,21 +1112,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Economics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T07:55:51.752915+00:00"
-  },
-  {
-   "ticker": "KXBERNIEMENTION-26JUL26-ZOHR",
-   "title": "What will Bernie say during Face the Nation? \u2014 Zohran / Mamdani",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.41,
-   "p_final": 0.398,
-   "edge": 0.003,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.40; faded 0.12 toward 0.5 \u2192 0.41. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T06:55:04.640913+00:00"
   },
   {
    "ticker": "KXTRUMPSAYCOMPANY-26AUG01-CHAT",
@@ -78026,6 +77960,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXBERNIEMENTION-26JUL26-OIL",
+   "title": "What will Bernie say during Face the Nation? \u2014 Oil / Gas / Gasoline",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.41,
+   "p_final": 0.402,
+   "edge": 0.002,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.40; faded 0.12 toward 0.5 \u2192 0.41. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T14:00:55.512082+00:00",
+   "won": true,
+   "payout": 12.2,
+   "pnl": 6.99,
+   "settled_at": "2026-07-26T16:15:05.810611+00:00"
+  },
+  {
+   "ticker": "KXBERNIEMENTION-26JUL26-ELEC",
+   "title": "What will Bernie say during Face the Nation? \u2014 Election",
+   "category": "Mentions",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.25,
+   "p_final": 0.758,
+   "edge": 0.007,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.77; faded 0.12 toward 0.5 \u2192 0.73. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T14:00:55.450485+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-26T16:15:05.810336+00:00"
+  },
+  {
+   "ticker": "KXBERNIEMENTION-26JUL26-AI",
+   "title": "What will Bernie say during Face the Nation? \u2014 AI / Artificial Intelligence",
+   "category": "Mentions",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.42000000000000004,
+   "p_final": 0.598,
+   "edge": 0.002,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.60; faded 0.12 toward 0.5 \u2192 0.59. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T14:00:55.190021+00:00",
+   "won": true,
+   "payout": 11.9,
+   "pnl": 6.69,
+   "settled_at": "2026-07-26T16:15:05.810053+00:00"
+  },
+  {
+   "ticker": "KXBERNIEMENTION-26JUL26-AFFO",
+   "title": "What will Bernie say during Face the Nation? \u2014 Afford / Affordable / Affordability",
+   "category": "Mentions",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.24,
+   "p_final": 0.772,
+   "edge": 0.008,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.78; faded 0.12 toward 0.5 \u2192 0.75. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T08:56:40.027909+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-26T16:15:05.809691+00:00"
+  },
+  {
+   "ticker": "KXBERNIEMENTION-26JUL26-ISRA",
+   "title": "What will Bernie say during Face the Nation? \u2014 Israel / Netanyahu",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.43,
+   "p_final": 0.427,
+   "edge": 0.002,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.42; faded 0.12 toward 0.5 \u2192 0.43. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T07:55:52.050293+00:00",
+   "won": true,
+   "payout": 11.63,
+   "pnl": 6.43,
+   "settled_at": "2026-07-26T16:15:05.809345+00:00"
+  },
+  {
+   "ticker": "KXBERNIEMENTION-26JUL26-ZOHR",
+   "title": "What will Bernie say during Face the Nation? \u2014 Zohran / Mamdani",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.41,
+   "p_final": 0.398,
+   "edge": 0.003,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.40; faded 0.12 toward 0.5 \u2192 0.41. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T06:55:04.640913+00:00",
+   "won": true,
+   "payout": 12.2,
+   "pnl": 6.99,
+   "settled_at": "2026-07-26T16:15:05.808447+00:00"
+  },
   {
    "ticker": "KXWORLDNEWSMENTION-26JUL25-IRAN",
    "title": "What will the reporters say during ABC World News Tonight? \u2014 Iran (3+ times)",
