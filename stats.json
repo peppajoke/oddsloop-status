@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-26T19:21:52.622915+00:00",
+ "generated_at": "2026-07-26T19:52:53.958214+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -29.73,
+  "realized_pnl": -34.73,
   "total_fees": 1511.42,
-  "open_count": 5201,
-  "open_stake": 28031.88,
-  "settled_count": 79,
+  "open_count": 5198,
+  "open_stake": 28016.24,
+  "settled_count": 82,
   "m1_settled_gate": 500,
-  "m1_progress": 0.158,
+  "m1_progress": 0.164,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1517 trails the market's 0.1486. On profitability, realized ROI is -7.3% (P&L $-29.73). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1511.42 in fees across 5280 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.253,
-  "roi": -0.0728,
-  "brier_model": 0.1517,
-  "brier_market": 0.1486,
-  "predictions_scored": 76,
-  "prediction_brier": 0.1517,
-  "prediction_log_loss": 0.4736
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1537 trails the market's 0.1512. On profitability, realized ROI is -8.2% (P&L $-34.73). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1511.42 in fees across 5280 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.256,
+  "roi": -0.0821,
+  "brier_model": 0.1537,
+  "brier_market": 0.1512,
+  "predictions_scored": 79,
+  "prediction_brier": 0.1537,
+  "prediction_log_loss": 0.4777
  },
  "calibration": [
   {
@@ -28,9 +28,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.131,
+   "predicted": 0.133,
    "realized": 0.0,
-   "n": 15,
+   "n": 16,
    "low_sample": true
   },
   {
@@ -40,15 +40,15 @@
    "low_sample": true
   },
   {
-   "predicted": 0.349,
-   "realized": 0.286,
-   "n": 14,
+   "predicted": 0.352,
+   "realized": 0.333,
+   "n": 15,
    "low_sample": true
   },
   {
-   "predicted": 0.44,
-   "realized": 0.65,
-   "n": 20,
+   "predicted": 0.442,
+   "realized": 0.619,
+   "n": 21,
    "low_sample": true
   }
  ],
@@ -60,9 +60,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.129,
+   "predicted": 0.131,
    "realized": 0.0,
-   "n": 13,
+   "n": 14,
    "low_sample": true
   },
   {
@@ -84,15 +84,15 @@
    "low_sample": true
   },
   {
-   "predicted": 0.566,
-   "realized": 0.385,
-   "n": 13,
+   "predicted": 0.563,
+   "realized": 0.429,
+   "n": 14,
    "low_sample": true
   },
   {
-   "predicted": 0.642,
-   "realized": 0.5,
-   "n": 4,
+   "predicted": 0.635,
+   "realized": 0.4,
+   "n": 5,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 27,
-   "win_rate": 0.222,
-   "brier_model": 0.1387,
-   "brier_market": 0.139,
-   "pnl": 61.3,
+   "n": 30,
+   "win_rate": 0.233,
+   "brier_model": 0.1454,
+   "brier_market": 0.1468,
+   "pnl": 56.3,
    "beats_market": true
   },
   {
@@ -269,21 +269,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.79; faded 0.12 toward 0.5 \u2192 0.75. Category: Financials. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T19:05:43.701567+00:00"
-  },
-  {
-   "ticker": "KXATP-26ESTORI-BLO",
-   "title": "ATP Estoril Winner \u2014 Alexander Blockx",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.19,
-   "entry_price": 0.47,
-   "p_final": 0.607,
-   "edge": 0.003,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.61; faded 0.12 toward 0.5 \u2192 0.60. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T19:05:43.635002+00:00"
   },
   {
    "ticker": "KXNCAAMBAPRANK-26W1R1-FLA",
@@ -3301,21 +3286,6 @@
    "placed_at": "2026-07-25T22:47:30.123414+00:00"
   },
   {
-   "ticker": "KXATP-26ESTORI-VAN",
-   "title": "ATP Estoril Winner \u2014 Luca Van Assche",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.15,
-   "entry_price": 0.5900000000000001,
-   "p_final": 0.529,
-   "edge": 0.001,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.53; faded 0.12 toward 0.5 \u2192 0.53. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T22:47:30.062896+00:00"
-  },
-  {
    "ticker": "KXWTAGRANDSLAM-26-JOV",
    "title": "Who will win a WTA Grand Slam in 2026? \u2014 Iva Jovic",
    "category": "Sports",
@@ -4214,21 +4184,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.17; faded 0.12 toward 0.5 \u2192 0.21. Category: Mentions. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T19:44:08.448058+00:00"
-  },
-  {
-   "ticker": "KXCS2GAME-26JUL261330TS100T-100T",
-   "title": "Spirit vs. 100 Thieves",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.15,
-   "p_final": 0.155,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T19:44:08.385229+00:00"
   },
   {
    "ticker": "KXNETFLIXTOPVIEWSTV-26JUL27-6",
@@ -78152,6 +78107,63 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXATP-26ESTORI-BLO",
+   "title": "ATP Estoril Winner \u2014 Alexander Blockx",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.19,
+   "entry_price": 0.47,
+   "p_final": 0.607,
+   "edge": 0.003,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.61; faded 0.12 toward 0.5 \u2192 0.60. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T19:05:43.635002+00:00",
+   "won": true,
+   "payout": 10.64,
+   "pnl": 5.45,
+   "settled_at": "2026-07-26T19:52:24.023650+00:00"
+  },
+  {
+   "ticker": "KXATP-26ESTORI-VAN",
+   "title": "ATP Estoril Winner \u2014 Luca Van Assche",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.15,
+   "entry_price": 0.5900000000000001,
+   "p_final": 0.529,
+   "edge": 0.001,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.53; faded 0.12 toward 0.5 \u2192 0.53. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T22:47:30.062896+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.15,
+   "settled_at": "2026-07-26T19:52:24.021460+00:00"
+  },
+  {
+   "ticker": "KXCS2GAME-26JUL261330TS100T-100T",
+   "title": "Spirit vs. 100 Thieves",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.15,
+   "p_final": 0.155,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T19:44:08.385229+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-07-26T19:52:24.018868+00:00"
+  },
   {
    "ticker": "KXBERNIEMENTION-26JUL26-SOCI",
    "title": "What will Bernie say during Face the Nation? \u2014 Socialist / Socialism",
