@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T23:30:54.738430+00:00",
+ "generated_at": "2026-07-27T23:49:53.559188+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -726.23,
+  "realized_pnl": -736.74,
   "total_fees": 1626.95,
-  "open_count": 5271,
-  "open_stake": 28394.87,
-  "settled_count": 428,
+  "open_count": 5269,
+  "open_stake": 28384.36,
+  "settled_count": 430,
   "m1_settled_gate": 500,
-  "m1_progress": 0.856,
+  "m1_progress": 0.86,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1403 beats the market's 0.1407. On profitability, realized ROI is -32.3% (P&L $-726.23). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.222,
-  "roi": -0.3229,
-  "brier_model": 0.1403,
-  "brier_market": 0.1407,
-  "predictions_scored": 425,
-  "prediction_brier": 0.1403,
-  "prediction_log_loss": 0.4359
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1400 beats the market's 0.1405. On profitability, realized ROI is -32.6% (P&L $-736.74). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.221,
+  "roi": -0.326,
+  "brier_model": 0.14,
+  "brier_market": 0.1405,
+  "predictions_scored": 427,
+  "prediction_brier": 0.14,
+  "prediction_log_loss": 0.4353
  },
  "calibration": [
   {
@@ -28,9 +28,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.14,
-   "realized": 0.083,
-   "n": 84,
+   "predicted": 0.141,
+   "realized": 0.082,
+   "n": 85,
    "low_sample": false
   },
   {
@@ -40,9 +40,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.353,
-   "realized": 0.28,
-   "n": 75,
+   "predicted": 0.352,
+   "realized": 0.276,
+   "n": 76,
    "low_sample": false
   },
   {
@@ -72,9 +72,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.138,
-   "realized": 0.086,
-   "n": 58,
+   "predicted": 0.139,
+   "realized": 0.085,
+   "n": 59,
    "low_sample": false
   },
   {
@@ -102,9 +102,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.642,
-   "realized": 0.706,
-   "n": 34,
+   "predicted": 0.643,
+   "realized": 0.714,
+   "n": 35,
    "low_sample": false
   },
   {
@@ -174,11 +174,11 @@
   },
   {
    "category": "Politics",
-   "n": 3,
-   "win_rate": 0.333,
-   "brier_model": 0.143,
-   "brier_market": 0.1415,
-   "pnl": -5.7,
+   "n": 4,
+   "win_rate": 0.25,
+   "brier_model": 0.1149,
+   "brier_market": 0.1133,
+   "pnl": -11.0,
    "beats_market": false
   },
   {
@@ -210,11 +210,11 @@
   },
   {
    "category": "Financials",
-   "n": 3,
-   "win_rate": 0.667,
-   "brier_model": 0.286,
-   "brier_market": 0.25,
-   "pnl": 10.08,
+   "n": 4,
+   "win_rate": 0.5,
+   "brier_model": 0.2409,
+   "brier_market": 0.2316,
+   "pnl": 4.87,
    "beats_market": false
   }
  ],
@@ -4703,21 +4703,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.51; faded 0.12 toward 0.5 \u2192 0.51. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T22:08:57.131129+00:00"
-  },
-  {
-   "ticker": "KXINXDUD-26JUL27H1600-T7411.98",
-   "title": "S&P 500 Daily Up/Down \u2014 Above 7411.98",
-   "category": "Financials",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.42000000000000004,
-   "p_final": 0.675,
-   "edge": 0.005,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.68; faded 0.12 toward 0.5 \u2192 0.66. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T22:08:56.914728+00:00"
   },
   {
    "ticker": "KXNCAAFWINS-26MISS-9",
@@ -44770,21 +44755,6 @@
    "placed_at": "2026-07-25T13:01:44.130167+00:00"
   },
   {
-   "ticker": "KXTRUMPNUMSTATES-26AUG01-E9",
-   "title": "How many states will Trump visit in Jul 2026? \u2014 9",
-   "category": "Politics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.17,
-   "p_final": 0.174,
-   "edge": 0.009,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.17; faded 0.12 toward 0.5 \u2192 0.20. Category: Politics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:44.102124+00:00"
-  },
-  {
    "ticker": "KXREDISTRICTING-26-KS",
    "title": "Which states will redistrict before the midterms? \u2014 Kansas",
    "category": "Elections",
@@ -79286,6 +79256,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXINXDUD-26JUL27H1600-T7411.98",
+   "title": "S&P 500 Daily Up/Down \u2014 Above 7411.98",
+   "category": "Financials",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.42000000000000004,
+   "p_final": 0.675,
+   "edge": 0.005,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.68; faded 0.12 toward 0.5 \u2192 0.66. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T22:08:56.914728+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.21,
+   "settled_at": "2026-07-27T23:49:24.429270+00:00"
+  },
+  {
+   "ticker": "KXTRUMPNUMSTATES-26AUG01-E9",
+   "title": "How many states will Trump visit in Jul 2026? \u2014 9",
+   "category": "Politics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.17,
+   "p_final": 0.174,
+   "edge": 0.009,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.17; faded 0.12 toward 0.5 \u2192 0.20. Category: Politics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:44.102124+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-07-27T23:49:24.408418+00:00"
+  },
   {
    "ticker": "KXLOVEISLANDUKRANK-26AUG31R3-JULO",
    "title": "Love Island UK S13: 3rd place couple \u2014 Julia and Lorenzo",
