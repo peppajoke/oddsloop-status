@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T01:12:23.632518+00:00",
+ "generated_at": "2026-07-27T01:34:30.770700+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -384.9,
+  "realized_pnl": -376.36,
   "total_fees": 1558.81,
-  "open_count": 5225,
-  "open_stake": 28158.68,
-  "settled_count": 233,
+  "open_count": 5217,
+  "open_stake": 28116.64,
+  "settled_count": 241,
   "m1_settled_gate": 500,
-  "m1_progress": 0.466,
+  "m1_progress": 0.482,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1397 beats the market's 0.1408. On profitability, realized ROI is -31.7% (P&L $-384.90). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1558.81 in fees across 5458 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.223,
-  "roi": -0.3175,
-  "brier_model": 0.1397,
-  "brier_market": 0.1408,
-  "predictions_scored": 232,
-  "prediction_brier": 0.1391,
-  "prediction_log_loss": 0.4345
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1433 beats the market's 0.1442. On profitability, realized ROI is -30.0% (P&L $-376.36). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1558.81 in fees across 5458 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.228,
+  "roi": -0.3,
+  "brier_model": 0.1433,
+  "brier_market": 0.1442,
+  "predictions_scored": 238,
+  "prediction_brier": 0.1433,
+  "prediction_log_loss": 0.4437
  },
  "calibration": [
   {
@@ -29,26 +29,26 @@
   },
   {
    "predicted": 0.137,
-   "realized": 0.041,
-   "n": 49,
+   "realized": 0.04,
+   "n": 50,
    "low_sample": false
   },
   {
-   "predicted": 0.25,
-   "realized": 0.184,
-   "n": 38,
+   "predicted": 0.252,
+   "realized": 0.214,
+   "n": 42,
    "low_sample": false
   },
   {
-   "predicted": 0.352,
-   "realized": 0.283,
-   "n": 46,
+   "predicted": 0.35,
+   "realized": 0.292,
+   "n": 48,
    "low_sample": false
   },
   {
    "predicted": 0.451,
-   "realized": 0.56,
-   "n": 50,
+   "realized": 0.549,
+   "n": 51,
    "low_sample": false
   }
  ],
@@ -61,26 +61,26 @@
   },
   {
    "predicted": 0.136,
-   "realized": 0.05,
-   "n": 40,
+   "realized": 0.049,
+   "n": 41,
    "low_sample": false
   },
   {
-   "predicted": 0.248,
-   "realized": 0.194,
-   "n": 31,
+   "predicted": 0.25,
+   "realized": 0.219,
+   "n": 32,
    "low_sample": false
   },
   {
-   "predicted": 0.348,
-   "realized": 0.214,
-   "n": 28,
+   "predicted": 0.346,
+   "realized": 0.241,
+   "n": 29,
    "low_sample": true
   },
   {
-   "predicted": 0.456,
-   "realized": 0.536,
-   "n": 28,
+   "predicted": 0.457,
+   "realized": 0.517,
+   "n": 29,
    "low_sample": true
   },
   {
@@ -96,9 +96,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.744,
-   "realized": 0.875,
-   "n": 8,
+   "predicted": 0.741,
+   "realized": 0.8,
+   "n": 10,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 180,
-   "win_rate": 0.211,
-   "brier_model": 0.1352,
-   "brier_market": 0.1379,
-   "pnl": -288.54,
+   "n": 188,
+   "win_rate": 0.218,
+   "brier_model": 0.1399,
+   "brier_market": 0.1424,
+   "pnl": -280.0,
    "beats_market": true
   },
   {
@@ -4300,21 +4300,6 @@
    "placed_at": "2026-07-26T07:55:52.340405+00:00"
   },
   {
-   "ticker": "KXLIGAMXSCORE-26JUL26NCXMON-NCX1MON2",
-   "title": "Club Necaxa vs CF Monterrey: Correct Score \u2014 CF Monterrey wins 2-1",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.11,
-   "p_final": 0.116,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.11; faded 0.12 toward 0.5 \u2192 0.15. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T07:55:52.269893+00:00"
-  },
-  {
    "ticker": "KXWNBAWINS-26TOR-15",
    "title": "Women's Pro Basketball: Toronto Tempo Total Wins \u2014 15+ wins",
    "category": "Sports",
@@ -4930,21 +4915,6 @@
    "placed_at": "2026-07-26T02:51:34.895392+00:00"
   },
   {
-   "ticker": "KXLIGAEXPGAME-26JUL26TAPCAH-CAH",
-   "title": "Tapatio vs Cruz Azul Hidalgo",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.31,
-   "p_final": 0.301,
-   "edge": 0.006,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.30; faded 0.12 toward 0.5 \u2192 0.32. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T02:51:34.769429+00:00"
-  },
-  {
    "ticker": "KXPRESOUTCOME-28NOV07-AOCJVANR",
    "title": "2028 Presidential race: exact outcome \u2014 JD Vance defeats AOC",
    "category": "Elections",
@@ -5513,21 +5483,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.94; faded 0.12 toward 0.5 \u2192 0.88. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T23:48:34.404540+00:00"
-  },
-  {
-   "ticker": "KXBOXING-26JUL26GONZALMORENO-MORENO",
-   "title": "Arnold Gonzalez vs Emiliano Moreno",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.26,
-   "entry_price": 0.26,
-   "p_final": 0.738,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T23:48:34.341744+00:00"
   },
   {
    "ticker": "KXCLOSESTGOVERNOR-27JAN20-WI",
@@ -19000,21 +18955,6 @@
    "placed_at": "2026-07-25T13:02:55.981634+00:00"
   },
   {
-   "ticker": "KXNASCARCHALLENGE-26-TGIL",
-   "title": "NASCAR In-Season Challenge Winner \u2014 Todd Gilliland",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.3,
-   "p_final": 0.29,
-   "edge": 0.005,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.29; faded 0.12 toward 0.5 \u2192 0.31. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:55.932401+00:00"
-  },
-  {
    "ticker": "KXHOUSERACE-MD01-26-D",
    "title": "MD-01 House winner? \u2014 Dan Schwartz",
    "category": "Elections",
@@ -20888,21 +20828,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:49.265733+00:00"
-  },
-  {
-   "ticker": "KXLIGAMXGAME-26JUL26NCXMON-TIE",
-   "title": "Necaxa vs Monterrey \u2014 Tie",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.24,
-   "p_final": 0.242,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.27. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:49.217615+00:00"
   },
   {
    "ticker": "KXGOVAK-26-BWAL",
@@ -23558,21 +23483,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:38.624556+00:00"
-  },
-  {
-   "ticker": "KXNASCARCHALLENGE-26-RBLA",
-   "title": "NASCAR In-Season Challenge Winner \u2014 Ryan Blaney",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.29000000000000004,
-   "p_final": 0.719,
-   "edge": 0.006,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.72; faded 0.12 toward 0.5 \u2192 0.70. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:38.579822+00:00"
   },
   {
    "ticker": "KXGOVKSNOMR-26-VS",
@@ -29813,21 +29723,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:17.270207+00:00"
-  },
-  {
-   "ticker": "KXLIGAMXGAME-26JUL26NCXMON-NCX",
-   "title": "Necaxa vs Monterrey",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.3,
-   "p_final": 0.301,
-   "edge": 0.006,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.29; faded 0.12 toward 0.5 \u2192 0.32. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:17.224791+00:00"
   },
   {
    "ticker": "KXWHVISIT-27-AAHM",
@@ -52043,21 +51938,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.94; faded 0.12 toward 0.5 \u2192 0.89. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:01:29.137640+00:00"
-  },
-  {
-   "ticker": "KXLIGAMXGAME-26JUL26NCXMON-MON",
-   "title": "Necaxa vs Monterrey",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.19,
-   "entry_price": 0.48,
-   "p_final": 0.476,
-   "edge": 0.001,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.47; faded 0.12 toward 0.5 \u2192 0.48. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:29.111495+00:00"
   },
   {
    "ticker": "KXTRUMPMEETING-27JAN01-NPXIV",
@@ -78521,6 +78401,158 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLIGAMXSCORE-26JUL26NCXMON-NCX1MON2",
+   "title": "Club Necaxa vs CF Monterrey: Correct Score \u2014 CF Monterrey wins 2-1",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.11,
+   "p_final": 0.116,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.11; faded 0.12 toward 0.5 \u2192 0.15. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T07:55:52.269893+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-07-27T01:33:59.941644+00:00"
+  },
+  {
+   "ticker": "KXLIGAEXPGAME-26JUL26TAPCAH-CAH",
+   "title": "Tapatio vs Cruz Azul Hidalgo",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.31,
+   "p_final": 0.301,
+   "edge": 0.006,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.30; faded 0.12 toward 0.5 \u2192 0.32. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T02:51:34.769429+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.25,
+   "settled_at": "2026-07-27T01:33:59.939950+00:00"
+  },
+  {
+   "ticker": "KXBOXING-26JUL26GONZALMORENO-MORENO",
+   "title": "Arnold Gonzalez vs Emiliano Moreno",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.26,
+   "entry_price": 0.26,
+   "p_final": 0.738,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T23:48:34.341744+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.26,
+   "settled_at": "2026-07-27T01:33:59.937847+00:00"
+  },
+  {
+   "ticker": "KXNASCARCHALLENGE-26-TGIL",
+   "title": "NASCAR In-Season Challenge Winner \u2014 Todd Gilliland",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.3,
+   "p_final": 0.29,
+   "edge": 0.005,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.29; faded 0.12 toward 0.5 \u2192 0.31. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:55.932401+00:00",
+   "won": true,
+   "payout": 16.67,
+   "pnl": 11.42,
+   "settled_at": "2026-07-27T01:33:59.933908+00:00"
+  },
+  {
+   "ticker": "KXLIGAMXGAME-26JUL26NCXMON-TIE",
+   "title": "Necaxa vs Monterrey \u2014 Tie",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.24,
+   "p_final": 0.242,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.27. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:49.217615+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-27T01:33:59.930904+00:00"
+  },
+  {
+   "ticker": "KXNASCARCHALLENGE-26-RBLA",
+   "title": "NASCAR In-Season Challenge Winner \u2014 Ryan Blaney",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.29000000000000004,
+   "p_final": 0.719,
+   "edge": 0.006,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.72; faded 0.12 toward 0.5 \u2192 0.70. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:38.579822+00:00",
+   "won": true,
+   "payout": 17.24,
+   "pnl": 11.99,
+   "settled_at": "2026-07-27T01:33:59.927821+00:00"
+  },
+  {
+   "ticker": "KXLIGAMXGAME-26JUL26NCXMON-NCX",
+   "title": "Necaxa vs Monterrey",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.3,
+   "p_final": 0.301,
+   "edge": 0.006,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.29; faded 0.12 toward 0.5 \u2192 0.32. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:17.224791+00:00",
+   "won": true,
+   "payout": 16.67,
+   "pnl": 11.42,
+   "settled_at": "2026-07-27T01:33:59.922888+00:00"
+  },
+  {
+   "ticker": "KXLIGAMXGAME-26JUL26NCXMON-MON",
+   "title": "Necaxa vs Monterrey",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.19,
+   "entry_price": 0.48,
+   "p_final": 0.476,
+   "edge": 0.001,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.47; faded 0.12 toward 0.5 \u2192 0.48. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:29.111495+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.19,
+   "settled_at": "2026-07-27T01:33:59.912794+00:00"
+  },
   {
    "ticker": "KXBRASILEIROGAME-26JUL26CRVIT-VIT",
    "title": "Remo vs Vitoria",
