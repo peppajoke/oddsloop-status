@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T13:28:38.745331+00:00",
+ "generated_at": "2026-07-27T13:59:44.665545+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -385.93,
+  "realized_pnl": -396.4,
   "total_fees": 1602.13,
-  "open_count": 5327,
-  "open_stake": 28698.92,
-  "settled_count": 285,
+  "open_count": 5325,
+  "open_stake": 28688.45,
+  "settled_count": 287,
   "m1_settled_gate": 500,
-  "m1_progress": 0.57,
+  "m1_progress": 0.574,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1518 beats the market's 0.1522. On profitability, realized ROI is -26.0% (P&L $-385.93). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1602.13 in fees across 5612 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.246,
-  "roi": -0.2597,
-  "brier_model": 0.1518,
-  "brier_market": 0.1522,
-  "predictions_scored": 282,
-  "prediction_brier": 0.1518,
-  "prediction_log_loss": 0.463
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1516 beats the market's 0.1519. On profitability, realized ROI is -26.5% (P&L $-396.40). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1602.13 in fees across 5612 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.244,
+  "roi": -0.2649,
+  "brier_model": 0.1516,
+  "brier_market": 0.1519,
+  "predictions_scored": 284,
+  "prediction_brier": 0.1516,
+  "prediction_log_loss": 0.4627
  },
  "calibration": [
   {
@@ -41,8 +41,8 @@
   },
   {
    "predicted": 0.354,
-   "realized": 0.333,
-   "n": 60,
+   "realized": 0.323,
+   "n": 62,
    "low_sample": false
   },
   {
@@ -73,8 +73,8 @@
   },
   {
    "predicted": 0.349,
-   "realized": 0.286,
-   "n": 35,
+   "realized": 0.278,
+   "n": 36,
    "low_sample": false
   },
   {
@@ -91,8 +91,8 @@
   },
   {
    "predicted": 0.639,
-   "realized": 0.6,
-   "n": 25,
+   "realized": 0.615,
+   "n": 26,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 212,
-   "win_rate": 0.241,
-   "brier_model": 0.1507,
-   "brier_market": 0.1526,
-   "pnl": -262.85,
+   "n": 214,
+   "win_rate": 0.238,
+   "brier_model": 0.1504,
+   "brier_market": 0.1523,
+   "pnl": -273.32,
    "beats_market": true
   },
   {
@@ -6544,21 +6544,6 @@
    "placed_at": "2026-07-26T04:53:27.791040+00:00"
   },
   {
-   "ticker": "KXLOLGAME-26JUL270600FOXYGENGA-GENGA",
-   "title": "BNK FearX Youth vs. Gen.G Global Academy",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.33,
-   "p_final": 0.33,
-   "edge": 0.005,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.33; faded 0.12 toward 0.5 \u2192 0.35. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T04:53:27.608690+00:00"
-  },
-  {
    "ticker": "KXNETFLIXRANKSHOWGLOBAL2-26JUL27-IWI",
    "title": "#2 Global Netflix Show this week? \u2014 I Will Find You: Limited Series",
    "category": "Entertainment",
@@ -8102,21 +8087,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.14. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T20:45:18.357642+00:00"
-  },
-  {
-   "ticker": "KXLOLGAME-26JUL270600FOXYGENGA-FOXY",
-   "title": "BNK FearX Youth vs. Gen.G Global Academy",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.23,
-   "entry_price": 0.36,
-   "p_final": 0.641,
-   "edge": 0.004,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.65; faded 0.12 toward 0.5 \u2192 0.63. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T20:45:18.280181+00:00"
   },
   {
    "ticker": "KXINXU-26JUL27H1600-T7379.9999",
@@ -80060,6 +80030,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLOLGAME-26JUL270600FOXYGENGA-GENGA",
+   "title": "BNK FearX Youth vs. Gen.G Global Academy",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.33,
+   "p_final": 0.33,
+   "edge": 0.005,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.33; faded 0.12 toward 0.5 \u2192 0.35. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T04:53:27.608690+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.24,
+   "settled_at": "2026-07-27T13:59:14.131389+00:00"
+  },
+  {
+   "ticker": "KXLOLGAME-26JUL270600FOXYGENGA-FOXY",
+   "title": "BNK FearX Youth vs. Gen.G Global Academy",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.23,
+   "entry_price": 0.36,
+   "p_final": 0.641,
+   "edge": 0.004,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.65; faded 0.12 toward 0.5 \u2192 0.63. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T20:45:18.280181+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.23,
+   "settled_at": "2026-07-27T13:59:14.127007+00:00"
+  },
   {
    "ticker": "KXAAAGASW-26JUL27-4.100",
    "title": "US gas prices this week \u2014 Above 4.100",
