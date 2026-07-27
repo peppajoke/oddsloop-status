@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T17:24:40.148176+00:00",
+ "generated_at": "2026-07-27T17:37:06.097538+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -475.15,
+  "realized_pnl": -480.39,
   "total_fees": 1614.73,
-  "open_count": 5342,
-  "open_stake": 28778.35,
-  "settled_count": 314,
+  "open_count": 5341,
+  "open_stake": 28773.11,
+  "settled_count": 315,
   "m1_settled_gate": 500,
-  "m1_progress": 0.628,
+  "m1_progress": 0.63,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1468 beats the market's 0.1469. On profitability, realized ROI is -29.0% (P&L $-475.15). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1614.73 in fees across 5656 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.236,
-  "roi": -0.2899,
-  "brier_model": 0.1468,
-  "brier_market": 0.1469,
-  "predictions_scored": 311,
-  "prediction_brier": 0.1468,
-  "prediction_log_loss": 0.4503
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1466 beats the market's 0.1468. On profitability, realized ROI is -29.2% (P&L $-480.39). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1614.73 in fees across 5656 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.235,
+  "roi": -0.2922,
+  "brier_model": 0.1466,
+  "brier_market": 0.1468,
+  "predictions_scored": 312,
+  "prediction_brier": 0.1466,
+  "prediction_log_loss": 0.4501
  },
  "calibration": [
   {
@@ -41,8 +41,8 @@
   },
   {
    "predicted": 0.353,
-   "realized": 0.312,
-   "n": 64,
+   "realized": 0.308,
+   "n": 65,
    "low_sample": false
   },
   {
@@ -90,9 +90,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.642,
-   "realized": 0.63,
-   "n": 27,
+   "predicted": 0.643,
+   "realized": 0.643,
+   "n": 28,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 214,
-   "win_rate": 0.238,
-   "brier_model": 0.1504,
-   "brier_market": 0.1523,
-   "pnl": -273.32,
+   "n": 215,
+   "win_rate": 0.237,
+   "brier_model": 0.1502,
+   "brier_market": 0.1521,
+   "pnl": -278.56,
    "beats_market": true
   },
   {
@@ -8435,21 +8435,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Companies. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T21:46:28.156807+00:00"
-  },
-  {
-   "ticker": "KXVALORANTMAP-26JUL271400KCG2-1-G2",
-   "title": "Karmine Corp GC vs. G2 Gozen: Map 1",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.33999999999999997,
-   "p_final": 0.67,
-   "edge": 0.005,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.68; faded 0.12 toward 0.5 \u2192 0.65. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T21:46:28.097355+00:00"
   },
   {
    "ticker": "KXNETFLIXRANKMOVIEGLOBAL-26JUL27-72H",
@@ -80303,6 +80288,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXVALORANTMAP-26JUL271400KCG2-1-G2",
+   "title": "Karmine Corp GC vs. G2 Gozen: Map 1",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.33999999999999997,
+   "p_final": 0.67,
+   "edge": 0.005,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.68; faded 0.12 toward 0.5 \u2192 0.65. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T21:46:28.097355+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.24,
+   "settled_at": "2026-07-27T17:36:35.732572+00:00"
+  },
   {
    "ticker": "KXCHINAAI-26JUL27-ALIB",
    "title": "Best Chinese AI Company this week \u2014 Alibaba",
