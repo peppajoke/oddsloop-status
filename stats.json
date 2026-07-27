@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T18:38:21.371397+00:00",
+ "generated_at": "2026-07-27T19:09:29.841932+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -485.59,
+  "realized_pnl": -481.5,
   "total_fees": 1618.3,
-  "open_count": 5352,
-  "open_stake": 28831.48,
-  "settled_count": 316,
+  "open_count": 5351,
+  "open_stake": 28826.31,
+  "settled_count": 317,
   "m1_settled_gate": 500,
-  "m1_progress": 0.632,
+  "m1_progress": 0.634,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1467 beats the market's 0.1470. On profitability, realized ROI is -29.4% (P&L $-485.59). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1618.30 in fees across 5668 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.234,
-  "roi": -0.2944,
-  "brier_model": 0.1467,
-  "brier_market": 0.147,
-  "predictions_scored": 313,
-  "prediction_brier": 0.1467,
-  "prediction_log_loss": 0.4504
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1471 beats the market's 0.1472. On profitability, realized ROI is -29.1% (P&L $-481.50). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1618.30 in fees across 5668 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.237,
+  "roi": -0.291,
+  "brier_model": 0.1471,
+  "brier_market": 0.1472,
+  "predictions_scored": 314,
+  "prediction_brier": 0.1471,
+  "prediction_log_loss": 0.4513
  },
  "calibration": [
   {
@@ -47,8 +47,8 @@
   },
   {
    "predicted": 0.45,
-   "realized": 0.536,
-   "n": 69,
+   "realized": 0.543,
+   "n": 70,
    "low_sample": false
   }
  ],
@@ -79,8 +79,8 @@
   },
   {
    "predicted": 0.454,
-   "realized": 0.564,
-   "n": 39,
+   "realized": 0.575,
+   "n": 40,
    "low_sample": false
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 216,
-   "win_rate": 0.236,
-   "brier_model": 0.1503,
-   "brier_market": 0.1523,
-   "pnl": -283.76,
+   "n": 217,
+   "win_rate": 0.24,
+   "brier_model": 0.1508,
+   "brier_market": 0.1526,
+   "pnl": -279.67,
    "beats_market": true
   },
   {
@@ -6080,21 +6080,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.09; faded 0.12 toward 0.5 \u2192 0.14. Category: Crypto. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T19:05:42.790130+00:00"
-  },
-  {
-   "ticker": "KXMLBRFI-26JUL271435SEATEX",
-   "title": "Seattle vs Texas: First Inning Run \u2014 Yes",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.17,
-   "entry_price": 0.54,
-   "p_final": 0.48,
-   "edge": 0.0,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.48; faded 0.12 toward 0.5 \u2192 0.48. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T19:05:42.722853+00:00"
   },
   {
    "ticker": "KXNFLWINS-27WAS-9",
@@ -80453,6 +80438,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXMLBRFI-26JUL271435SEATEX",
+   "title": "Seattle vs Texas: First Inning Run \u2014 Yes",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.17,
+   "entry_price": 0.54,
+   "p_final": 0.48,
+   "edge": 0.0,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.48; faded 0.12 toward 0.5 \u2192 0.48. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T19:05:42.722853+00:00",
+   "won": true,
+   "payout": 9.26,
+   "pnl": 4.09,
+   "settled_at": "2026-07-27T19:09:00.622778+00:00"
+  },
   {
    "ticker": "KXVALORANTMAP-26JUL271400KCG2-2-G2",
    "title": "Karmine Corp GC vs. G2 Gozen: Map 2",
