@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T02:13:16.894892+00:00",
+ "generated_at": "2026-07-27T02:36:34.189130+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -369.37,
+  "realized_pnl": -377.84,
   "total_fees": 1564.53,
-  "open_count": 5237,
-  "open_stake": 28222.15,
-  "settled_count": 242,
+  "open_count": 5231,
+  "open_stake": 28190.94,
+  "settled_count": 248,
   "m1_settled_gate": 500,
-  "m1_progress": 0.484,
+  "m1_progress": 0.496,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1444 beats the market's 0.1451. On profitability, realized ROI is -29.3% (P&L $-369.37). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1564.53 in fees across 5479 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.231,
-  "roi": -0.2932,
-  "brier_model": 0.1444,
-  "brier_market": 0.1451,
-  "predictions_scored": 239,
-  "prediction_brier": 0.1444,
-  "prediction_log_loss": 0.4461
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1464 beats the market's 0.1471. On profitability, realized ROI is -29.3% (P&L $-377.84). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1564.53 in fees across 5479 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.234,
+  "roi": -0.2927,
+  "brier_model": 0.1464,
+  "brier_market": 0.1471,
+  "predictions_scored": 249,
+  "prediction_brier": 0.1457,
+  "prediction_log_loss": 0.4499
  },
  "calibration": [
   {
@@ -46,9 +46,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.451,
-   "realized": 0.549,
-   "n": 51,
+   "predicted": 0.449,
+   "realized": 0.526,
+   "n": 57,
    "low_sample": false
   }
  ],
@@ -66,33 +66,33 @@
    "low_sample": false
   },
   {
-   "predicted": 0.25,
-   "realized": 0.219,
-   "n": 32,
+   "predicted": 0.249,
+   "realized": 0.206,
+   "n": 34,
    "low_sample": false
   },
   {
-   "predicted": 0.346,
-   "realized": 0.241,
-   "n": 29,
+   "predicted": 0.347,
+   "realized": 0.233,
+   "n": 30,
+   "low_sample": false
+  },
+  {
+   "predicted": 0.453,
+   "realized": 0.515,
+   "n": 33,
+   "low_sample": false
+  },
+  {
+   "predicted": 0.557,
+   "realized": 0.458,
+   "n": 24,
    "low_sample": true
   },
   {
-   "predicted": 0.457,
-   "realized": 0.517,
-   "n": 29,
-   "low_sample": true
-  },
-  {
-   "predicted": 0.556,
-   "realized": 0.409,
-   "n": 22,
-   "low_sample": true
-  },
-  {
-   "predicted": 0.643,
-   "realized": 0.6,
-   "n": 20,
+   "predicted": 0.642,
+   "realized": 0.619,
+   "n": 21,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 189,
-   "win_rate": 0.222,
-   "brier_model": 0.1414,
-   "brier_market": 0.1435,
-   "pnl": -273.01,
+   "n": 195,
+   "win_rate": 0.226,
+   "brier_model": 0.144,
+   "brier_market": 0.1462,
+   "pnl": -281.48,
    "beats_market": true
   },
   {
@@ -4675,21 +4675,6 @@
    "placed_at": "2026-07-26T07:55:51.908491+00:00"
   },
   {
-   "ticker": "KXMLBTOTAL-26JUL261920NYYPHI-9",
-   "title": "New York Y vs Philadelphia: Total Runs \u2014 Over 8.5 runs scored",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.45,
-   "p_final": 0.447,
-   "edge": 0.002,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.45; faded 0.12 toward 0.5 \u2192 0.45. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T07:55:51.825767+00:00"
-  },
-  {
    "ticker": "KXAAAGASW-26JUL27-4.102",
    "title": "US gas prices this week \u2014 Above 4.102",
    "category": "Economics",
@@ -4793,21 +4778,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.03; faded 0.12 toward 0.5 \u2192 0.09. Category: Crypto. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T05:54:15.536870+00:00"
-  },
-  {
-   "ticker": "KXMLBSPREAD-26JUL261920NYYPHI-PHI2",
-   "title": "New York Y vs Philadelphia: Spread \u2014 Philadelphia wins by over 1.5 runs",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.43,
-   "p_final": 0.427,
-   "edge": 0.002,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.42; faded 0.12 toward 0.5 \u2192 0.43. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T05:54:15.466078+00:00"
   },
   {
    "ticker": "KXBRENTD-26JUL2717-T90.50",
@@ -4928,21 +4898,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.91; faded 0.12 toward 0.5 \u2192 0.86. Category: Companies. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T04:53:27.791040+00:00"
-  },
-  {
-   "ticker": "KXMLBTOTAL-26JUL261920NYYPHI-8",
-   "title": "New York Y vs Philadelphia: Total Runs \u2014 Over 7.5 runs scored",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.19,
-   "entry_price": 0.45999999999999996,
-   "p_final": 0.544,
-   "edge": 0.001,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.55; faded 0.12 toward 0.5 \u2192 0.54. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T04:53:27.669936+00:00"
   },
   {
    "ticker": "KXLOLGAME-26JUL270600FOXYGENGA-GENGA",
@@ -5483,21 +5438,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.05; faded 0.12 toward 0.5 \u2192 0.10. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T01:50:31.634962+00:00"
-  },
-  {
-   "ticker": "KXMLBGAME-26JUL261920NYYPHI-NYY",
-   "title": "New York Y vs Philadelphia",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.41,
-   "p_final": 0.408,
-   "edge": 0.003,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.41; faded 0.12 toward 0.5 \u2192 0.42. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T01:50:31.499281+00:00"
   },
   {
    "ticker": "KXSOLMAXMON-SOL-26JUL31-8500",
@@ -10583,21 +10523,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.94; faded 0.12 toward 0.5 \u2192 0.89. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:03:35.252798+00:00"
-  },
-  {
-   "ticker": "KXECULPGAME-26JUL26BSCLDU-BSC",
-   "title": "Barcelona vs LDU Quito",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.44,
-   "p_final": 0.437,
-   "edge": 0.002,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.43; faded 0.12 toward 0.5 \u2192 0.44. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:03:35.192334+00:00"
   },
   {
    "ticker": "SENATENM-26-R",
@@ -77155,21 +77080,6 @@
    "placed_at": "2026-07-25T12:51:43.160691+00:00"
   },
   {
-   "ticker": "KXMLBGAME-26JUL261920NYYPHI-PHI",
-   "title": "New York Y vs Philadelphia",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.42000000000000004,
-   "p_final": 0.587,
-   "edge": 0.003,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.59; faded 0.12 toward 0.5 \u2192 0.58. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.159180+00:00"
-  },
-  {
    "ticker": "KXWTI-26JUL2714-T89.99",
    "title": "Oil Price (WTI) on Jul 27, 2026? \u2014 Above $89.99",
    "category": "Commodities",
@@ -78701,6 +78611,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXMLBTOTAL-26JUL261920NYYPHI-9",
+   "title": "New York Y vs Philadelphia: Total Runs \u2014 Over 8.5 runs scored",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.45,
+   "p_final": 0.447,
+   "edge": 0.002,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.45; faded 0.12 toward 0.5 \u2192 0.45. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T07:55:51.825767+00:00",
+   "won": true,
+   "payout": 11.11,
+   "pnl": 5.91,
+   "settled_at": "2026-07-27T02:36:05.728040+00:00"
+  },
+  {
+   "ticker": "KXMLBSPREAD-26JUL261920NYYPHI-PHI2",
+   "title": "New York Y vs Philadelphia: Spread \u2014 Philadelphia wins by over 1.5 runs",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.43,
+   "p_final": 0.427,
+   "edge": 0.002,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.42; faded 0.12 toward 0.5 \u2192 0.43. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T05:54:15.466078+00:00",
+   "won": true,
+   "payout": 11.63,
+   "pnl": 6.43,
+   "settled_at": "2026-07-27T02:36:05.726262+00:00"
+  },
+  {
+   "ticker": "KXMLBTOTAL-26JUL261920NYYPHI-8",
+   "title": "New York Y vs Philadelphia: Total Runs \u2014 Over 7.5 runs scored",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.19,
+   "entry_price": 0.45999999999999996,
+   "p_final": 0.544,
+   "edge": 0.001,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.55; faded 0.12 toward 0.5 \u2192 0.54. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T04:53:27.669936+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.19,
+   "settled_at": "2026-07-27T02:36:05.724405+00:00"
+  },
+  {
+   "ticker": "KXMLBGAME-26JUL261920NYYPHI-NYY",
+   "title": "New York Y vs Philadelphia",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.41,
+   "p_final": 0.408,
+   "edge": 0.003,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.41; faded 0.12 toward 0.5 \u2192 0.42. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T01:50:31.499281+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.21,
+   "settled_at": "2026-07-27T02:36:05.722020+00:00"
+  },
+  {
+   "ticker": "KXECULPGAME-26JUL26BSCLDU-BSC",
+   "title": "Barcelona vs LDU Quito",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.44,
+   "p_final": 0.437,
+   "edge": 0.002,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.43; faded 0.12 toward 0.5 \u2192 0.44. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:03:35.192334+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.2,
+   "settled_at": "2026-07-27T02:36:05.718014+00:00"
+  },
+  {
+   "ticker": "KXMLBGAME-26JUL261920NYYPHI-PHI",
+   "title": "New York Y vs Philadelphia",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.42000000000000004,
+   "p_final": 0.587,
+   "edge": 0.003,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.59; faded 0.12 toward 0.5 \u2192 0.58. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.159180+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.21,
+   "settled_at": "2026-07-27T02:36:05.692859+00:00"
+  },
   {
    "ticker": "KXLMBGAME-26JUL261600RDACAL-CAL",
    "title": "Rieleros de Aguascalientes vs Caliente de Durango",
