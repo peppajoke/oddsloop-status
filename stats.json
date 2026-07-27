@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T12:20:46.342836+00:00",
+ "generated_at": "2026-07-27T12:26:32.774628+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -380.72,
+  "realized_pnl": -373.43,
   "total_fees": 1600.81,
-  "open_count": 5334,
-  "open_stake": 28735.79,
-  "settled_count": 274,
+  "open_count": 5333,
+  "open_stake": 28730.58,
+  "settled_count": 275,
   "m1_settled_gate": 500,
-  "m1_progress": 0.548,
+  "m1_progress": 0.55,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1512 beats the market's 0.1518. On profitability, realized ROI is -26.7% (P&L $-380.72). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1600.81 in fees across 5608 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.245,
-  "roi": -0.2667,
-  "brier_model": 0.1512,
-  "brier_market": 0.1518,
-  "predictions_scored": 271,
-  "prediction_brier": 0.1512,
-  "prediction_log_loss": 0.4624
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1519 beats the market's 0.1525. On profitability, realized ROI is -26.1% (P&L $-373.43). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1600.81 in fees across 5608 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.247,
+  "roi": -0.2606,
+  "brier_model": 0.1519,
+  "brier_market": 0.1525,
+  "predictions_scored": 272,
+  "prediction_brier": 0.1519,
+  "prediction_log_loss": 0.4641
  },
  "calibration": [
   {
@@ -40,9 +40,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.353,
-   "realized": 0.333,
-   "n": 57,
+   "predicted": 0.354,
+   "realized": 0.345,
+   "n": 58,
    "low_sample": false
   },
   {
@@ -90,9 +90,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.643,
-   "realized": 0.609,
-   "n": 23,
+   "predicted": 0.641,
+   "realized": 0.583,
+   "n": 24,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 210,
-   "win_rate": 0.238,
-   "brier_model": 0.1496,
-   "brier_market": 0.1516,
-   "pnl": -264.93,
+   "n": 211,
+   "win_rate": 0.242,
+   "brier_model": 0.1506,
+   "brier_market": 0.1526,
+   "pnl": -257.64,
    "beats_market": true
   },
   {
@@ -6203,21 +6203,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.66; faded 0.12 toward 0.5 \u2192 0.64. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T09:57:28.710306+00:00"
-  },
-  {
-   "ticker": "KXLOLGAME-26JUL270545NST1-T1",
-   "title": "Nongshim Red Force vs. T1",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.4,
-   "p_final": 0.602,
-   "edge": 0.003,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.60; faded 0.12 toward 0.5 \u2192 0.59. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T09:57:28.545646+00:00"
   },
   {
    "ticker": "KXWTI-26JUL2714-T93.49",
@@ -80156,6 +80141,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLOLGAME-26JUL270545NST1-T1",
+   "title": "Nongshim Red Force vs. T1",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.4,
+   "p_final": 0.602,
+   "edge": 0.003,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.60; faded 0.12 toward 0.5 \u2192 0.59. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T09:57:28.545646+00:00",
+   "won": true,
+   "payout": 12.5,
+   "pnl": 7.29,
+   "settled_at": "2026-07-27T12:26:03.225208+00:00"
+  },
   {
    "ticker": "KXMLBMENTION-26JUL26NYYPHI-DRAF",
    "title": "What will the announcers say during New York Y vs Philadelphia Professional Baseball Game \u2014 Draft / Drafted",
