@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T10:19:15.509190+00:00",
+ "generated_at": "2026-07-27T10:22:21.209899+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -356.05,
+  "realized_pnl": -361.29,
   "total_fees": 1593.7,
-  "open_count": 5320,
-  "open_stake": 28661.76,
-  "settled_count": 262,
+  "open_count": 5319,
+  "open_stake": 28656.52,
+  "settled_count": 263,
   "m1_settled_gate": 500,
-  "m1_progress": 0.524,
+  "m1_progress": 0.526,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1510 beats the market's 0.1516. On profitability, realized ROI is -26.1% (P&L $-356.05). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1593.70 in fees across 5582 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.244,
-  "roi": -0.2609,
-  "brier_model": 0.151,
-  "brier_market": 0.1516,
-  "predictions_scored": 259,
-  "prediction_brier": 0.151,
-  "prediction_log_loss": 0.4623
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1508 beats the market's 0.1514. On profitability, realized ROI is -26.4% (P&L $-361.29). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1593.70 in fees across 5582 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.243,
+  "roi": -0.2638,
+  "brier_model": 0.1508,
+  "brier_market": 0.1514,
+  "predictions_scored": 260,
+  "prediction_brier": 0.1508,
+  "prediction_log_loss": 0.462
  },
  "calibration": [
   {
@@ -40,9 +40,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.354,
-   "realized": 0.327,
-   "n": 55,
+   "predicted": 0.353,
+   "realized": 0.321,
+   "n": 56,
    "low_sample": false
   },
   {
@@ -90,9 +90,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.641,
-   "realized": 0.591,
-   "n": 22,
+   "predicted": 0.643,
+   "realized": 0.609,
+   "n": 23,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 209,
-   "win_rate": 0.239,
-   "brier_model": 0.1498,
-   "brier_market": 0.1518,
-   "pnl": -259.69,
+   "n": 210,
+   "win_rate": 0.238,
+   "brier_model": 0.1496,
+   "brier_market": 0.1516,
+   "pnl": -264.93,
    "beats_market": true
   },
   {
@@ -5558,21 +5558,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Politics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T15:01:48.211731+00:00"
-  },
-  {
-   "ticker": "KXLOLGAME-26JUL270415T1DK-T1",
-   "title": "T1 vs. Dplus KIA",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.32999999999999996,
-   "p_final": 0.67,
-   "edge": 0.005,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.68; faded 0.12 toward 0.5 \u2192 0.65. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T15:01:48.134833+00:00"
   },
   {
    "ticker": "KXBRENTD-26JUL2717-T91.50",
@@ -79946,6 +79931,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLOLGAME-26JUL270415T1DK-T1",
+   "title": "T1 vs. Dplus KIA",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.32999999999999996,
+   "p_final": 0.67,
+   "edge": 0.005,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.68; faded 0.12 toward 0.5 \u2192 0.65. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T15:01:48.134833+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.24,
+   "settled_at": "2026-07-27T10:21:50.654898+00:00"
+  },
   {
    "ticker": "KXLOLGAME-26JUL270330GENKT-KT",
    "title": "Gen.G vs. KT Rolster",
