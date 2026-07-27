@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T01:34:30.770700+00:00",
+ "generated_at": "2026-07-27T02:05:32.719728+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -376.36,
+  "realized_pnl": -369.37,
   "total_fees": 1558.81,
-  "open_count": 5217,
-  "open_stake": 28116.64,
-  "settled_count": 241,
+  "open_count": 5216,
+  "open_stake": 28111.43,
+  "settled_count": 242,
   "m1_settled_gate": 500,
-  "m1_progress": 0.482,
+  "m1_progress": 0.484,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1433 beats the market's 0.1442. On profitability, realized ROI is -30.0% (P&L $-376.36). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1558.81 in fees across 5458 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.228,
-  "roi": -0.3,
-  "brier_model": 0.1433,
-  "brier_market": 0.1442,
-  "predictions_scored": 238,
-  "prediction_brier": 0.1433,
-  "prediction_log_loss": 0.4437
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1444 beats the market's 0.1451. On profitability, realized ROI is -29.3% (P&L $-369.37). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1558.81 in fees across 5458 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.231,
+  "roi": -0.2932,
+  "brier_model": 0.1444,
+  "brier_market": 0.1451,
+  "predictions_scored": 239,
+  "prediction_brier": 0.1444,
+  "prediction_log_loss": 0.4461
  },
  "calibration": [
   {
@@ -41,8 +41,8 @@
   },
   {
    "predicted": 0.35,
-   "realized": 0.292,
-   "n": 48,
+   "realized": 0.306,
+   "n": 49,
    "low_sample": false
   },
   {
@@ -91,8 +91,8 @@
   },
   {
    "predicted": 0.643,
-   "realized": 0.632,
-   "n": 19,
+   "realized": 0.6,
+   "n": 20,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 188,
-   "win_rate": 0.218,
-   "brier_model": 0.1399,
-   "brier_market": 0.1424,
-   "pnl": -280.0,
+   "n": 189,
+   "win_rate": 0.222,
+   "brier_model": 0.1414,
+   "brier_market": 0.1435,
+   "pnl": -273.01,
    "beats_market": true
   },
   {
@@ -5228,21 +5228,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.11; faded 0.12 toward 0.5 \u2192 0.16. Category: Mentions. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T01:50:31.307832+00:00"
-  },
-  {
-   "ticker": "KXLMBGAME-26JUL261600RDACAL-CAL",
-   "title": "Rieleros de Aguascalientes vs Caliente de Durango",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.41000000000000003,
-   "p_final": 0.641,
-   "edge": 0.004,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.65; faded 0.12 toward 0.5 \u2192 0.63. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T01:50:31.237153+00:00"
   },
   {
    "ticker": "KXNETFLIXTOPVIEWSMOVIE-26JUL27-25",
@@ -78401,6 +78386,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLMBGAME-26JUL261600RDACAL-CAL",
+   "title": "Rieleros de Aguascalientes vs Caliente de Durango",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.41000000000000003,
+   "p_final": 0.641,
+   "edge": 0.004,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.65; faded 0.12 toward 0.5 \u2192 0.63. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T01:50:31.237153+00:00",
+   "won": true,
+   "payout": 12.2,
+   "pnl": 6.99,
+   "settled_at": "2026-07-27T02:05:02.280861+00:00"
+  },
   {
    "ticker": "KXLIGAMXSCORE-26JUL26NCXMON-NCX1MON2",
    "title": "Club Necaxa vs CF Monterrey: Correct Score \u2014 CF Monterrey wins 2-1",
