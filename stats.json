@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T18:25:38.642973+00:00",
+ "generated_at": "2026-07-27T18:38:21.371397+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -480.39,
+  "realized_pnl": -485.59,
   "total_fees": 1618.3,
-  "open_count": 5353,
-  "open_stake": 28836.68,
-  "settled_count": 315,
+  "open_count": 5352,
+  "open_stake": 28831.48,
+  "settled_count": 316,
   "m1_settled_gate": 500,
-  "m1_progress": 0.63,
+  "m1_progress": 0.632,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1466 beats the market's 0.1468. On profitability, realized ROI is -29.2% (P&L $-480.39). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1618.30 in fees across 5668 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.235,
-  "roi": -0.2922,
-  "brier_model": 0.1466,
-  "brier_market": 0.1468,
-  "predictions_scored": 312,
-  "prediction_brier": 0.1466,
-  "prediction_log_loss": 0.4501
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1467 beats the market's 0.1470. On profitability, realized ROI is -29.4% (P&L $-485.59). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1618.30 in fees across 5668 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.234,
+  "roi": -0.2944,
+  "brier_model": 0.1467,
+  "brier_market": 0.147,
+  "predictions_scored": 313,
+  "prediction_brier": 0.1467,
+  "prediction_log_loss": 0.4504
  },
  "calibration": [
   {
@@ -47,8 +47,8 @@
   },
   {
    "predicted": 0.45,
-   "realized": 0.544,
-   "n": 68,
+   "realized": 0.536,
+   "n": 69,
    "low_sample": false
   }
  ],
@@ -84,10 +84,10 @@
    "low_sample": false
   },
   {
-   "predicted": 0.554,
-   "realized": 0.483,
-   "n": 29,
-   "low_sample": true
+   "predicted": 0.555,
+   "realized": 0.5,
+   "n": 30,
+   "low_sample": false
   },
   {
    "predicted": 0.643,
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 215,
-   "win_rate": 0.237,
-   "brier_model": 0.1502,
-   "brier_market": 0.1521,
-   "pnl": -278.56,
+   "n": 216,
+   "win_rate": 0.236,
+   "brier_model": 0.1503,
+   "brier_market": 0.1523,
+   "pnl": -283.76,
    "beats_market": true
   },
   {
@@ -8825,21 +8825,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.90; faded 0.12 toward 0.5 \u2192 0.85. Category: Economics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T20:45:18.539642+00:00"
-  },
-  {
-   "ticker": "KXVALORANTMAP-26JUL271400KCG2-2-G2",
-   "title": "Karmine Corp GC vs. G2 Gozen: Map 2",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.43999999999999995,
-   "p_final": 0.583,
-   "edge": 0.002,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.58; faded 0.12 toward 0.5 \u2192 0.57. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T20:45:18.479310+00:00"
   },
   {
    "ticker": "KXBTCD-26JUL3117-T67999.99",
@@ -80468,6 +80453,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXVALORANTMAP-26JUL271400KCG2-2-G2",
+   "title": "Karmine Corp GC vs. G2 Gozen: Map 2",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.43999999999999995,
+   "p_final": 0.583,
+   "edge": 0.002,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.58; faded 0.12 toward 0.5 \u2192 0.57. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T20:45:18.479310+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.2,
+   "settled_at": "2026-07-27T18:37:51.520910+00:00"
+  },
   {
    "ticker": "KXVALORANTMAP-26JUL271400KCG2-1-G2",
    "title": "Karmine Corp GC vs. G2 Gozen: Map 1",
