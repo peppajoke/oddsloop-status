@@ -1,68 +1,68 @@
 {
- "generated_at": "2026-07-27T14:30:49.202850+00:00",
+ "generated_at": "2026-07-27T15:01:52.346300+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -396.4,
+  "realized_pnl": -395.23,
   "total_fees": 1605.19,
-  "open_count": 5336,
-  "open_stake": 28746.51,
-  "settled_count": 287,
+  "open_count": 5328,
+  "open_stake": 28704.35,
+  "settled_count": 295,
   "m1_settled_gate": 500,
-  "m1_progress": 0.574,
+  "m1_progress": 0.59,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1516 beats the market's 0.1519. On profitability, realized ROI is -26.5% (P&L $-396.40). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1605.19 in fees across 5623 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1520 beats the market's 0.1522. On profitability, realized ROI is -25.7% (P&L $-395.23). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1605.19 in fees across 5623 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
   "win_rate": 0.244,
-  "roi": -0.2649,
-  "brier_model": 0.1516,
-  "brier_market": 0.1519,
-  "predictions_scored": 284,
-  "prediction_brier": 0.1516,
-  "prediction_log_loss": 0.4627
+  "roi": -0.2569,
+  "brier_model": 0.152,
+  "brier_market": 0.1522,
+  "predictions_scored": 292,
+  "prediction_brier": 0.152,
+  "prediction_log_loss": 0.4641
  },
  "calibration": [
   {
-   "predicted": 0.067,
-   "realized": 0.038,
-   "n": 53,
+   "predicted": 0.068,
+   "realized": 0.036,
+   "n": 55,
    "low_sample": false
   },
   {
-   "predicted": 0.139,
-   "realized": 0.07,
-   "n": 57,
+   "predicted": 0.138,
+   "realized": 0.085,
+   "n": 59,
    "low_sample": false
   },
   {
    "predicted": 0.251,
-   "realized": 0.204,
-   "n": 49,
+   "realized": 0.196,
+   "n": 51,
    "low_sample": false
   },
   {
    "predicted": 0.354,
-   "realized": 0.323,
-   "n": 62,
+   "realized": 0.317,
+   "n": 63,
    "low_sample": false
   },
   {
-   "predicted": 0.449,
-   "realized": 0.54,
-   "n": 63,
+   "predicted": 0.45,
+   "realized": 0.547,
+   "n": 64,
    "low_sample": false
   }
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.067,
-   "realized": 0.047,
-   "n": 43,
+   "predicted": 0.068,
+   "realized": 0.045,
+   "n": 44,
    "low_sample": false
   },
   {
    "predicted": 0.136,
-   "realized": 0.065,
-   "n": 46,
+   "realized": 0.064,
+   "n": 47,
    "low_sample": false
   },
   {
@@ -72,15 +72,15 @@
    "low_sample": false
   },
   {
-   "predicted": 0.349,
-   "realized": 0.278,
-   "n": 36,
+   "predicted": 0.35,
+   "realized": 0.27,
+   "n": 37,
    "low_sample": false
   },
   {
-   "predicted": 0.453,
-   "realized": 0.528,
-   "n": 36,
+   "predicted": 0.454,
+   "realized": 0.541,
+   "n": 37,
    "low_sample": false
   },
   {
@@ -97,20 +97,20 @@
   },
   {
    "predicted": 0.74,
-   "realized": 0.75,
+   "realized": 0.786,
+   "n": 14,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.853,
+   "realized": 0.833,
    "n": 12,
    "low_sample": true
   },
   {
-   "predicted": 0.852,
-   "realized": 0.909,
-   "n": 11,
-   "low_sample": true
-  },
-  {
-   "predicted": 0.934,
+   "predicted": 0.932,
    "realized": 1.0,
-   "n": 10,
+   "n": 11,
    "low_sample": true
   }
  ],
@@ -126,12 +126,21 @@
   },
   {
    "category": "Entertainment",
-   "n": 1,
+   "n": 3,
    "win_rate": 0.0,
-   "brier_model": 0.005,
-   "brier_market": 0.0064,
-   "pnl": -5.33,
+   "brier_model": 0.0477,
+   "brier_market": 0.0478,
+   "pnl": -15.85,
    "beats_market": true
+  },
+  {
+   "category": "Politics",
+   "n": 3,
+   "win_rate": 0.333,
+   "brier_model": 0.143,
+   "brier_market": 0.1415,
+   "pnl": -5.7,
+   "beats_market": false
   },
   {
    "category": "Mentions",
@@ -140,6 +149,15 @@
    "brier_model": 0.159,
    "brier_market": 0.1549,
    "pnl": -109.82,
+   "beats_market": false
+  },
+  {
+   "category": "Science and Technology",
+   "n": 3,
+   "win_rate": 0.333,
+   "brier_model": 0.2525,
+   "brier_market": 0.2469,
+   "pnl": 17.39,
    "beats_market": false
   },
   {
@@ -77374,21 +77392,6 @@
    "placed_at": "2026-07-25T12:51:43.341034+00:00"
   },
   {
-   "ticker": "KXLIUKELIMINATIONW-26JUL31-SAMR",
-   "title": "Love Island UK S13 \u00b7 Eliminations Before August \u2014 Samraj",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.29000000000000004,
-   "p_final": 0.71,
-   "edge": 0.005,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.71; faded 0.12 toward 0.5 \u2192 0.69. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.338430+00:00"
-  },
-  {
    "ticker": "KXGDP-26JUL30-T1.5",
    "title": "US GDP growth in Q2 2026? \u2014 Above 1.5%",
    "category": "Economics",
@@ -77417,21 +77420,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.93; faded 0.12 toward 0.5 \u2192 0.88. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.332808+00:00"
-  },
-  {
-   "ticker": "KXLIUKELIMINATIONW-26JUL31-MIC",
-   "title": "Love Island UK S13 \u00b7 Eliminations Before August \u2014 Mica",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.22999999999999998,
-   "p_final": 0.768,
-   "edge": 0.007,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.78; faded 0.12 toward 0.5 \u2192 0.74. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.330186+00:00"
   },
   {
    "ticker": "KXGDP-26JUL30-T2.0",
@@ -78649,21 +78637,6 @@
    "placed_at": "2026-07-25T12:51:43.168500+00:00"
   },
   {
-   "ticker": "KXTECHRANKLISTAICODE-26JUL27-KIMI",
-   "title": "Top Coding AI this week \u2014 Kimi",
-   "category": "Science and Technology",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.08999999999999997,
-   "p_final": 0.914,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.93; faded 0.12 toward 0.5 \u2192 0.87. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.166923+00:00"
-  },
-  {
    "ticker": "KXNETFLIXRANKMOVIE-26JUL27-72H",
    "title": "Top US Netflix Movie this week? \u2014 72 HOURS",
    "category": "Entertainment",
@@ -78859,21 +78832,6 @@
    "placed_at": "2026-07-25T12:51:43.144187+00:00"
   },
   {
-   "ticker": "KXTRUMPPHOTO-26JUL26-4",
-   "title": "How many days will Trump be photographed this week? (7/20-7/26)  \u2014 4",
-   "category": "Politics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.12,
-   "p_final": 0.126,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.11; faded 0.12 toward 0.5 \u2192 0.16. Category: Politics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.142768+00:00"
-  },
-  {
    "ticker": "KXTRUMPSAY-26JUL27-GOLD",
    "title": "What will Trump say this week? \u2014 Golden Dome",
    "category": "Mentions",
@@ -78887,21 +78845,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Mentions. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.141353+00:00"
-  },
-  {
-   "ticker": "KXTECHRANKLISTAICODE-26JUL27-CLAU",
-   "title": "Top Coding AI this week \u2014 Claude",
-   "category": "Science and Technology",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.1,
-   "p_final": 0.095,
-   "edge": 0.01,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.09; faded 0.12 toward 0.5 \u2192 0.14. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.139964+00:00"
   },
   {
    "ticker": "KXRT-PIN-70",
@@ -78962,21 +78905,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.92; faded 0.12 toward 0.5 \u2192 0.86. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.131851+00:00"
-  },
-  {
-   "ticker": "KXTRUMPPHOTO-26JUL26-5",
-   "title": "How many days will Trump be photographed this week? (7/20-7/26)  \u2014 5",
-   "category": "Politics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.4,
-   "p_final": 0.398,
-   "edge": 0.003,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.40; faded 0.12 toward 0.5 \u2192 0.41. Category: Politics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.130553+00:00"
   },
   {
    "ticker": "KXTRUMPSAY-26JUL27-STUP",
@@ -79084,21 +79012,6 @@
    "placed_at": "2026-07-25T12:51:43.119238+00:00"
   },
   {
-   "ticker": "KXTRUMPPHOTO-26JUL26-6",
-   "title": "How many days will Trump be photographed this week? (7/20-7/26) ",
-   "category": "Politics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.18,
-   "entry_price": 0.5,
-   "p_final": 0.495,
-   "edge": 0.0,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.49; faded 0.12 toward 0.5 \u2192 0.50. Category: Politics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.118023+00:00"
-  },
-  {
    "ticker": "KXTRUMPSAY-26JUL27-URAN",
    "title": "What will Trump say this week? \u2014 Uranium",
    "category": "Mentions",
@@ -79112,21 +79025,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.14. Category: Mentions. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.116810+00:00"
-  },
-  {
-   "ticker": "KXTOPMODEL-26JUL27-CLAUT",
-   "title": "Top AI model this week \u2014 claude-opus-4-6-thinking",
-   "category": "Science and Technology",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.15000000000000002,
-   "p_final": 0.861,
-   "edge": 0.009,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.87; faded 0.12 toward 0.5 \u2192 0.83. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.115582+00:00"
   },
   {
    "ticker": "KXRT-PIN-80",
@@ -80195,6 +80093,158 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLIUKELIMINATIONW-26JUL31-SAMR",
+   "title": "Love Island UK S13 \u00b7 Eliminations Before August \u2014 Samraj",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.29000000000000004,
+   "p_final": 0.71,
+   "edge": 0.005,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.71; faded 0.12 toward 0.5 \u2192 0.69. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.338430+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.25,
+   "settled_at": "2026-07-27T15:01:22.575571+00:00"
+  },
+  {
+   "ticker": "KXLIUKELIMINATIONW-26JUL31-MIC",
+   "title": "Love Island UK S13 \u00b7 Eliminations Before August \u2014 Mica",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.22999999999999998,
+   "p_final": 0.768,
+   "edge": 0.007,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.78; faded 0.12 toward 0.5 \u2192 0.74. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.330186+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-27T15:01:22.572190+00:00"
+  },
+  {
+   "ticker": "KXTECHRANKLISTAICODE-26JUL27-KIMI",
+   "title": "Top Coding AI this week \u2014 Kimi",
+   "category": "Science and Technology",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.08999999999999997,
+   "p_final": 0.914,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.93; faded 0.12 toward 0.5 \u2192 0.87. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.166923+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-07-27T15:01:22.567167+00:00"
+  },
+  {
+   "ticker": "KXTRUMPPHOTO-26JUL26-4",
+   "title": "How many days will Trump be photographed this week? (7/20-7/26)  \u2014 4",
+   "category": "Politics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.12,
+   "p_final": 0.126,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.11; faded 0.12 toward 0.5 \u2192 0.16. Category: Politics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.142768+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.31,
+   "settled_at": "2026-07-27T15:01:22.563845+00:00"
+  },
+  {
+   "ticker": "KXTECHRANKLISTAICODE-26JUL27-CLAU",
+   "title": "Top Coding AI this week \u2014 Claude",
+   "category": "Science and Technology",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.1,
+   "p_final": 0.095,
+   "edge": 0.01,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.09; faded 0.12 toward 0.5 \u2192 0.14. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.139964+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-07-27T15:01:22.560175+00:00"
+  },
+  {
+   "ticker": "KXTRUMPPHOTO-26JUL26-5",
+   "title": "How many days will Trump be photographed this week? (7/20-7/26)  \u2014 5",
+   "category": "Politics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.4,
+   "p_final": 0.398,
+   "edge": 0.003,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.40; faded 0.12 toward 0.5 \u2192 0.41. Category: Politics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.130553+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.21,
+   "settled_at": "2026-07-27T15:01:22.556674+00:00"
+  },
+  {
+   "ticker": "KXTRUMPPHOTO-26JUL26-6",
+   "title": "How many days will Trump be photographed this week? (7/20-7/26) ",
+   "category": "Politics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.18,
+   "entry_price": 0.5,
+   "p_final": 0.495,
+   "edge": 0.0,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.49; faded 0.12 toward 0.5 \u2192 0.50. Category: Politics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.118023+00:00",
+   "won": true,
+   "payout": 10.0,
+   "pnl": 4.82,
+   "settled_at": "2026-07-27T15:01:22.551871+00:00"
+  },
+  {
+   "ticker": "KXTOPMODEL-26JUL27-CLAUT",
+   "title": "Top AI model this week \u2014 claude-opus-4-6-thinking",
+   "category": "Science and Technology",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.15000000000000002,
+   "p_final": 0.861,
+   "edge": 0.009,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.87; faded 0.12 toward 0.5 \u2192 0.83. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.115582+00:00",
+   "won": true,
+   "payout": 33.33,
+   "pnl": 28.03,
+   "settled_at": "2026-07-27T15:01:22.546372+00:00"
+  },
   {
    "ticker": "KXLOLGAME-26JUL270600FOXYGENGA-GENGA",
    "title": "BNK FearX Youth vs. Gen.G Global Academy",
