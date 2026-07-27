@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T03:14:06.425215+00:00",
+ "generated_at": "2026-07-27T03:38:40.216151+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -398.81,
+  "realized_pnl": -383.87,
   "total_fees": 1569.81,
-  "open_count": 5246,
-  "open_stake": 28270.25,
-  "settled_count": 252,
+  "open_count": 5240,
+  "open_stake": 28238.7,
+  "settled_count": 258,
   "m1_settled_gate": 500,
-  "m1_progress": 0.504,
+  "m1_progress": 0.516,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1457 beats the market's 0.1465. On profitability, realized ROI is -30.4% (P&L $-398.81). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1569.81 in fees across 5498 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.23,
-  "roi": -0.304,
-  "brier_model": 0.1457,
-  "brier_market": 0.1465,
-  "predictions_scored": 249,
-  "prediction_brier": 0.1457,
-  "prediction_log_loss": 0.4499
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1478 beats the market's 0.1486. On profitability, realized ROI is -28.6% (P&L $-383.87). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1569.81 in fees across 5498 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.233,
+  "roi": -0.2857,
+  "brier_model": 0.1478,
+  "brier_market": 0.1486,
+  "predictions_scored": 255,
+  "prediction_brier": 0.1478,
+  "prediction_log_loss": 0.4554
  },
  "calibration": [
   {
@@ -29,20 +29,20 @@
   },
   {
    "predicted": 0.137,
-   "realized": 0.04,
-   "n": 50,
-   "low_sample": false
-  },
-  {
-   "predicted": 0.252,
-   "realized": 0.205,
-   "n": 44,
-   "low_sample": false
-  },
-  {
-   "predicted": 0.351,
-   "realized": 0.294,
+   "realized": 0.059,
    "n": 51,
+   "low_sample": false
+  },
+  {
+   "predicted": 0.251,
+   "realized": 0.191,
+   "n": 47,
+   "low_sample": false
+  },
+  {
+   "predicted": 0.352,
+   "realized": 0.302,
+   "n": 53,
    "low_sample": false
   },
   {
@@ -61,20 +61,20 @@
   },
   {
    "predicted": 0.136,
-   "realized": 0.049,
-   "n": 41,
+   "realized": 0.071,
+   "n": 42,
    "low_sample": false
   },
   {
-   "predicted": 0.249,
-   "realized": 0.206,
-   "n": 34,
+   "predicted": 0.248,
+   "realized": 0.194,
+   "n": 36,
    "low_sample": false
   },
   {
-   "predicted": 0.347,
-   "realized": 0.233,
-   "n": 30,
+   "predicted": 0.348,
+   "realized": 0.226,
+   "n": 31,
    "low_sample": false
   },
   {
@@ -90,15 +90,15 @@
    "low_sample": true
   },
   {
-   "predicted": 0.642,
-   "realized": 0.619,
-   "n": 21,
+   "predicted": 0.641,
+   "realized": 0.591,
+   "n": 22,
    "low_sample": true
   },
   {
-   "predicted": 0.741,
-   "realized": 0.8,
-   "n": 10,
+   "predicted": 0.742,
+   "realized": 0.818,
+   "n": 11,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 199,
-   "win_rate": 0.221,
-   "brier_model": 0.1432,
-   "brier_market": 0.1453,
-   "pnl": -302.45,
+   "n": 205,
+   "win_rate": 0.224,
+   "brier_model": 0.1459,
+   "brier_market": 0.148,
+   "pnl": -287.51,
    "beats_market": true
   },
   {
@@ -4225,21 +4225,6 @@
    "placed_at": "2026-07-26T16:02:47.205876+00:00"
   },
   {
-   "ticker": "KXLIGAMXSPREAD-26JUL26PACQUE-PAC2",
-   "title": "Pachuca vs Queretaro: Spread \u2014 Pachuca wins by more than 1.5 goals",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.22,
-   "entry_price": 0.38,
-   "p_final": 0.379,
-   "edge": 0.004,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.38; faded 0.12 toward 0.5 \u2192 0.39. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T15:01:48.556219+00:00"
-  },
-  {
    "ticker": "KXTEAMSINWS-26-CWSLAD",
    "title": "Pro Baseball Championship Series Matchup \u2014 Chicago WS vs Los Angeles D",
    "category": "Sports",
@@ -4973,21 +4958,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.86; faded 0.12 toward 0.5 \u2192 0.82. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T06:55:04.433951+00:00"
-  },
-  {
-   "ticker": "KXLIGAMXGAME-26JUL26PACQUE-TIE",
-   "title": "Pachuca vs Queretaro \u2014 Tie",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.23,
-   "p_final": 0.233,
-   "edge": 0.008,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.26. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T05:54:15.720645+00:00"
   },
   {
    "ticker": "KXLIGAMX-27APER-ATL",
@@ -22825,21 +22795,6 @@
    "placed_at": "2026-07-25T13:02:42.943611+00:00"
   },
   {
-   "ticker": "KXBOXING-26JUL26BERLANBUTLER-BERLAN",
-   "title": "Edgar Berlanga vs Steven Butler",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.24,
-   "p_final": 0.758,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.77; faded 0.12 toward 0.5 \u2192 0.73. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:42.885394+00:00"
-  },
-  {
    "ticker": "SENATEAZ-28-D",
    "title": "Arizona Senate winner? (2028) \u2014 Democratic party",
    "category": "Elections",
@@ -23273,21 +23228,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.97; faded 0.12 toward 0.5 \u2192 0.91. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:40.711678+00:00"
-  },
-  {
-   "ticker": "KXBOXING-26JUL26BERLANBUTLER-BUTLER",
-   "title": "Edgar Berlanga vs Steven Butler",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.23,
-   "p_final": 0.233,
-   "edge": 0.008,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.26. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:40.666081+00:00"
   },
   {
    "ticker": "KXNCAAFFINALIST-27-MIA",
@@ -28673,21 +28613,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:21.721392+00:00"
-  },
-  {
-   "ticker": "KXLIGAMXGAME-26JUL26PACQUE-PAC",
-   "title": "Pachuca vs Queretaro",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.22,
-   "entry_price": 0.38,
-   "p_final": 0.621,
-   "edge": 0.004,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.62; faded 0.12 toward 0.5 \u2192 0.61. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:21.669544+00:00"
   },
   {
    "ticker": "KXWHPRESSBRIEFING-DBON",
@@ -38108,21 +38033,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.42; faded 0.12 toward 0.5 \u2192 0.42. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:01:55.680350+00:00"
-  },
-  {
-   "ticker": "KXLIGAMXGAME-26JUL26PACQUE-QUE",
-   "title": "Pachuca vs Queretaro",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.15,
-   "p_final": 0.155,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:55.648070+00:00"
   },
   {
    "ticker": "KXEOTRUMPTERM-29JAN20-300",
@@ -78836,6 +78746,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLIGAMXSPREAD-26JUL26PACQUE-PAC2",
+   "title": "Pachuca vs Queretaro: Spread \u2014 Pachuca wins by more than 1.5 goals",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.22,
+   "entry_price": 0.38,
+   "p_final": 0.379,
+   "edge": 0.004,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.38; faded 0.12 toward 0.5 \u2192 0.39. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T15:01:48.556219+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.22,
+   "settled_at": "2026-07-27T03:38:09.404124+00:00"
+  },
+  {
+   "ticker": "KXLIGAMXGAME-26JUL26PACQUE-TIE",
+   "title": "Pachuca vs Queretaro \u2014 Tie",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.23,
+   "p_final": 0.233,
+   "edge": 0.008,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.26. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T05:54:15.720645+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-27T03:38:09.401265+00:00"
+  },
+  {
+   "ticker": "KXBOXING-26JUL26BERLANBUTLER-BERLAN",
+   "title": "Edgar Berlanga vs Steven Butler",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.24,
+   "p_final": 0.758,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.77; faded 0.12 toward 0.5 \u2192 0.73. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:42.885394+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-27T03:38:09.396103+00:00"
+  },
+  {
+   "ticker": "KXBOXING-26JUL26BERLANBUTLER-BUTLER",
+   "title": "Edgar Berlanga vs Steven Butler",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.23,
+   "p_final": 0.233,
+   "edge": 0.008,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.26. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:40.666081+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-27T03:38:09.391145+00:00"
+  },
+  {
+   "ticker": "KXLIGAMXGAME-26JUL26PACQUE-PAC",
+   "title": "Pachuca vs Queretaro",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.22,
+   "entry_price": 0.38,
+   "p_final": 0.621,
+   "edge": 0.004,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.62; faded 0.12 toward 0.5 \u2192 0.61. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:21.669544+00:00",
+   "won": true,
+   "payout": 13.16,
+   "pnl": 7.94,
+   "settled_at": "2026-07-27T03:38:09.386748+00:00"
+  },
+  {
+   "ticker": "KXLIGAMXGAME-26JUL26PACQUE-QUE",
+   "title": "Pachuca vs Queretaro",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.15,
+   "p_final": 0.155,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:55.648070+00:00",
+   "won": true,
+   "payout": 33.33,
+   "pnl": 28.03,
+   "settled_at": "2026-07-27T03:38:09.376458+00:00"
+  },
   {
    "ticker": "KXMLBHR-26JUL261920NYYPHI-PHIBHARPER3-1",
    "title": "New York Y vs Philadelphia: Home Runs \u2014 Bryce Harper: 1+",
