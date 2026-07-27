@@ -1,30 +1,30 @@
 {
- "generated_at": "2026-07-27T19:26:28.169431+00:00",
+ "generated_at": "2026-07-27T19:40:45.984050+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -481.5,
+  "realized_pnl": -486.82,
   "total_fees": 1622.17,
-  "open_count": 5365,
-  "open_stake": 28900.18,
-  "settled_count": 317,
+  "open_count": 5364,
+  "open_stake": 28894.86,
+  "settled_count": 318,
   "m1_settled_gate": 500,
-  "m1_progress": 0.634,
+  "m1_progress": 0.636,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1471 beats the market's 0.1472. On profitability, realized ROI is -29.1% (P&L $-481.50). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1622.17 in fees across 5682 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.237,
-  "roi": -0.291,
-  "brier_model": 0.1471,
-  "brier_market": 0.1472,
-  "predictions_scored": 314,
-  "prediction_brier": 0.1471,
-  "prediction_log_loss": 0.4513
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1467 beats the market's 0.1467. On profitability, realized ROI is -29.3% (P&L $-486.82). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1622.17 in fees across 5682 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.236,
+  "roi": -0.2933,
+  "brier_model": 0.1467,
+  "brier_market": 0.1467,
+  "predictions_scored": 315,
+  "prediction_brier": 0.1467,
+  "prediction_log_loss": 0.4501
  },
  "calibration": [
   {
    "predicted": 0.067,
-   "realized": 0.031,
-   "n": 65,
+   "realized": 0.03,
+   "n": 66,
    "low_sample": false
   },
   {
@@ -110,11 +110,20 @@
   {
    "predicted": 0.934,
    "realized": 1.0,
-   "n": 12,
+   "n": 13,
    "low_sample": true
   }
  ],
  "categories": [
+  {
+   "category": "Commodities",
+   "n": 1,
+   "win_rate": 0.0,
+   "brier_model": 0.0039,
+   "brier_market": 0.01,
+   "pnl": -5.32,
+   "beats_market": true
+  },
   {
    "category": "Sports",
    "n": 217,
@@ -5960,21 +5969,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.42; faded 0.12 toward 0.5 \u2192 0.43. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T20:06:48.413185+00:00"
-  },
-  {
-   "ticker": "KXWTIMAX-26JUL31-T92.00",
-   "title": "How high will WTI oil get by Jul 31, 2026? \u2014 92.01 or above",
-   "category": "Commodities",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.09999999999999998,
-   "p_final": 0.937,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.95; faded 0.12 toward 0.5 \u2192 0.90. Category: Commodities. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T20:06:48.345328+00:00"
   },
   {
    "ticker": "KXALBUMEQUIV-MUS26JUL30-70K",
@@ -80648,6 +80642,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXWTIMAX-26JUL31-T92.00",
+   "title": "How high will WTI oil get by Jul 31, 2026? \u2014 92.01 or above",
+   "category": "Commodities",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.09999999999999998,
+   "p_final": 0.937,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.95; faded 0.12 toward 0.5 \u2192 0.90. Category: Commodities. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T20:06:48.345328+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-07-27T19:40:07.614243+00:00"
+  },
   {
    "ticker": "KXMLBRFI-26JUL271435SEATEX",
    "title": "Seattle vs Texas: First Inning Run \u2014 Yes",
