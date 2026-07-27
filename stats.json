@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-07-27T09:51:18.124311+00:00",
+ "generated_at": "2026-07-27T10:19:15.509190+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
   "realized_pnl": -356.05,
-  "total_fees": 1593.5,
-  "open_count": 5319,
-  "open_stake": 28656.56,
+  "total_fees": 1593.7,
+  "open_count": 5320,
+  "open_stake": 28661.76,
   "settled_count": 262,
   "m1_settled_gate": 500,
   "m1_progress": 0.524,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1510 beats the market's 0.1516. On profitability, realized ROI is -26.1% (P&L $-356.05). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1593.50 in fees across 5581 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1510 beats the market's 0.1516. On profitability, realized ROI is -26.1% (P&L $-356.05). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1593.70 in fees across 5582 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
   "win_rate": 0.244,
   "roi": -0.2609,
   "brier_model": 0.151,
@@ -144,6 +144,21 @@
   }
  ],
  "active_bets": [
+  {
+   "ticker": "KXLIGAMXGAME-26JUL31PUECDG-CDG",
+   "title": "Puebla vs Guadalajara",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.43000000000000005,
+   "p_final": 0.573,
+   "edge": 0.002,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.57; faded 0.12 toward 0.5 \u2192 0.57. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T10:19:15.319971+00:00"
+  },
   {
    "ticker": "KXPLL-26-UTA",
    "title": "Premier Lacrosse League Championship Winner \u2014 Utah Archers",
