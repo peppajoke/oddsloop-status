@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-26T23:30:12.808765+00:00",
+ "generated_at": "2026-07-27T00:01:16.247375+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -65.81,
+  "realized_pnl": -61.59,
   "total_fees": 1536.75,
-  "open_count": 5290,
-  "open_stake": 28499.62,
-  "settled_count": 90,
+  "open_count": 5284,
+  "open_stake": 28468.27,
+  "settled_count": 96,
   "m1_settled_gate": 500,
-  "m1_progress": 0.18,
+  "m1_progress": 0.192,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1516 trails the market's 0.1495. On profitability, realized ROI is -14.3% (P&L $-65.81). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1536.75 in fees across 5380 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.244,
-  "roi": -0.1425,
-  "brier_model": 0.1516,
-  "brier_market": 0.1495,
-  "predictions_scored": 87,
-  "prediction_brier": 0.1516,
-  "prediction_log_loss": 0.4722
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1558 trails the market's 0.1537. On profitability, realized ROI is -12.5% (P&L $-61.59). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1536.75 in fees across 5380 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.26,
+  "roi": -0.1247,
+  "brier_model": 0.1558,
+  "brier_market": 0.1537,
+  "predictions_scored": 94,
+  "prediction_brier": 0.1577,
+  "prediction_log_loss": 0.4855
  },
  "calibration": [
   {
@@ -30,7 +30,7 @@
   {
    "predicted": 0.133,
    "realized": 0.0,
-   "n": 16,
+   "n": 17,
    "low_sample": true
   },
   {
@@ -40,15 +40,15 @@
    "low_sample": true
   },
   {
-   "predicted": 0.353,
-   "realized": 0.312,
-   "n": 16,
+   "predicted": 0.355,
+   "realized": 0.316,
+   "n": 19,
    "low_sample": true
   },
   {
-   "predicted": 0.445,
-   "realized": 0.583,
-   "n": 24,
+   "predicted": 0.448,
+   "realized": 0.615,
+   "n": 26,
    "low_sample": true
   }
  ],
@@ -62,7 +62,7 @@
   {
    "predicted": 0.131,
    "realized": 0.0,
-   "n": 14,
+   "n": 15,
    "low_sample": true
   },
   {
@@ -72,27 +72,27 @@
    "low_sample": true
   },
   {
-   "predicted": 0.345,
-   "realized": 0.2,
+   "predicted": 0.348,
+   "realized": 0.182,
+   "n": 11,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.458,
+   "realized": 0.6,
    "n": 10,
    "low_sample": true
   },
   {
-   "predicted": 0.456,
-   "realized": 0.556,
-   "n": 9,
+   "predicted": 0.56,
+   "realized": 0.353,
+   "n": 17,
    "low_sample": true
   },
   {
-   "predicted": 0.562,
-   "realized": 0.4,
-   "n": 15,
-   "low_sample": true
-  },
-  {
-   "predicted": 0.633,
+   "predicted": 0.634,
    "realized": 0.5,
-   "n": 6,
+   "n": 8,
    "low_sample": true
   },
   {
@@ -116,21 +116,21 @@
  ],
  "categories": [
   {
-   "category": "Sports",
-   "n": 37,
-   "win_rate": 0.216,
-   "brier_model": 0.146,
-   "brier_market": 0.1476,
-   "pnl": 30.55,
-   "beats_market": true
-  },
-  {
    "category": "Entertainment",
    "n": 1,
    "win_rate": 0.0,
    "brier_model": 0.005,
    "brier_market": 0.0064,
    "pnl": -5.33,
+   "beats_market": true
+  },
+  {
+   "category": "Sports",
+   "n": 43,
+   "win_rate": 0.256,
+   "brier_model": 0.1557,
+   "brier_market": 0.157,
+   "pnl": 34.77,
    "beats_market": true
   },
   {
@@ -3370,21 +3370,6 @@
    "placed_at": "2026-07-26T06:55:04.433951+00:00"
   },
   {
-   "ticker": "KXBRASILEIROTOTAL-26JUL26FLASPA-5",
-   "title": "Flamengo vs Sao Paulo: Total Goals \u2014 Over 4.5 goals scored",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.13,
-   "p_final": 0.136,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T05:54:15.780520+00:00"
-  },
-  {
    "ticker": "KXLIGAMXGAME-26JUL26PACQUE-TIE",
    "title": "Pachuca vs Queretaro \u2014 Tie",
    "category": "Sports",
@@ -3578,21 +3563,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.91; faded 0.12 toward 0.5 \u2192 0.86. Category: Companies. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T04:53:27.791040+00:00"
-  },
-  {
-   "ticker": "KXMLBRFI-26JUL261920NYYPHI",
-   "title": "New York Y vs Philadelphia: First Inning Run \u2014 Yes",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.19,
-   "entry_price": 0.48,
-   "p_final": 0.476,
-   "edge": 0.001,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.47; faded 0.12 toward 0.5 \u2192 0.48. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T04:53:27.730789+00:00"
   },
   {
    "ticker": "KXMLBTOTAL-26JUL261920NYYPHI-8",
@@ -4810,21 +4780,6 @@
    "placed_at": "2026-07-25T22:47:30.000946+00:00"
   },
   {
-   "ticker": "KXBOXING-26JUL26DAVISNISTOR-DAVIS",
-   "title": "Kashaun Davis vs Mihai Nistor",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.4,
-   "p_final": 0.607,
-   "edge": 0.003,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.61; faded 0.12 toward 0.5 \u2192 0.60. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T22:47:29.931184+00:00"
-  },
-  {
    "ticker": "KXLIGAMX-27CLA-TOL",
    "title": "Liga MX Clausura Champion \u2014 Toluca",
    "category": "Sports",
@@ -5243,21 +5198,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Financials. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T20:45:19.235218+00:00"
-  },
-  {
-   "ticker": "KXAPFDDHGAME-26JUL26GUALUQ-GUA",
-   "title": "Club Guarani vs Luqueno",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.18,
-   "entry_price": 0.5,
-   "p_final": 0.505,
-   "edge": 0.0,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.51; faded 0.12 toward 0.5 \u2192 0.50. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T20:45:19.168034+00:00"
   },
   {
    "ticker": "KXFLPRIMARY-02R26-LMUR",
@@ -5828,21 +5768,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.09; faded 0.12 toward 0.5 \u2192 0.14. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T18:42:57.922461+00:00"
-  },
-  {
-   "ticker": "KXBOXING-26JUL26DAVISNISTOR-NISTOR",
-   "title": "Kashaun Davis vs Mihai Nistor",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.22,
-   "entry_price": 0.38,
-   "p_final": 0.379,
-   "edge": 0.004,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.38; faded 0.12 toward 0.5 \u2192 0.39. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T17:41:52.496204+00:00"
   },
   {
    "ticker": "KXPGATOP20-3MO26-CBLA",
@@ -34808,21 +34733,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.57; faded 0.12 toward 0.5 \u2192 0.56. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:04.185361+00:00"
-  },
-  {
-   "ticker": "KXBRASILEIROGAME-26JUL26FLASPA-FLA",
-   "title": "Flamengo vs Sao Paulo",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.32999999999999996,
-   "p_final": 0.67,
-   "edge": 0.005,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.68; faded 0.12 toward 0.5 \u2192 0.65. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:04.150761+00:00"
   },
   {
    "ticker": "KXBLANCHECOUNT-27-T50",
@@ -79496,6 +79406,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXBRASILEIROTOTAL-26JUL26FLASPA-5",
+   "title": "Flamengo vs Sao Paulo: Total Goals \u2014 Over 4.5 goals scored",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.13,
+   "p_final": 0.136,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T05:54:15.780520+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.31,
+   "settled_at": "2026-07-27T00:00:45.091423+00:00"
+  },
+  {
+   "ticker": "KXMLBRFI-26JUL261920NYYPHI",
+   "title": "New York Y vs Philadelphia: First Inning Run \u2014 Yes",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.19,
+   "entry_price": 0.48,
+   "p_final": 0.476,
+   "edge": 0.001,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.47; faded 0.12 toward 0.5 \u2192 0.48. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T04:53:27.730789+00:00",
+   "won": true,
+   "payout": 10.42,
+   "pnl": 5.23,
+   "settled_at": "2026-07-27T00:00:45.090558+00:00"
+  },
+  {
+   "ticker": "KXBOXING-26JUL26DAVISNISTOR-DAVIS",
+   "title": "Kashaun Davis vs Mihai Nistor",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.4,
+   "p_final": 0.607,
+   "edge": 0.003,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.61; faded 0.12 toward 0.5 \u2192 0.60. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T22:47:29.931184+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.21,
+   "settled_at": "2026-07-27T00:00:45.089603+00:00"
+  },
+  {
+   "ticker": "KXAPFDDHGAME-26JUL26GUALUQ-GUA",
+   "title": "Club Guarani vs Luqueno",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.18,
+   "entry_price": 0.5,
+   "p_final": 0.505,
+   "edge": 0.0,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.51; faded 0.12 toward 0.5 \u2192 0.50. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T20:45:19.168034+00:00",
+   "won": true,
+   "payout": 10.0,
+   "pnl": 4.82,
+   "settled_at": "2026-07-27T00:00:45.088140+00:00"
+  },
+  {
+   "ticker": "KXBOXING-26JUL26DAVISNISTOR-NISTOR",
+   "title": "Kashaun Davis vs Mihai Nistor",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.22,
+   "entry_price": 0.38,
+   "p_final": 0.379,
+   "edge": 0.004,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.38; faded 0.12 toward 0.5 \u2192 0.39. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T17:41:52.496204+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.22,
+   "settled_at": "2026-07-27T00:00:45.085286+00:00"
+  },
+  {
+   "ticker": "KXBRASILEIROGAME-26JUL26FLASPA-FLA",
+   "title": "Flamengo vs Sao Paulo",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.32999999999999996,
+   "p_final": 0.67,
+   "edge": 0.005,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.68; faded 0.12 toward 0.5 \u2192 0.65. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:04.150761+00:00",
+   "won": true,
+   "payout": 15.15,
+   "pnl": 9.91,
+   "settled_at": "2026-07-27T00:00:45.071924+00:00"
+  },
   {
    "ticker": "KXRANKLISTSONGSPOTUSA-26AUG01-MOR",
    "title": "Artist(s) with a #1 Song on Spotify USA: July \u2014 Morgan Wallen",
