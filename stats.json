@@ -1,48 +1,48 @@
 {
- "generated_at": "2026-07-27T13:21:26.367213+00:00",
+ "generated_at": "2026-07-27T13:28:38.745331+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -373.43,
+  "realized_pnl": -385.93,
   "total_fees": 1602.13,
-  "open_count": 5337,
-  "open_stake": 28751.9,
-  "settled_count": 275,
+  "open_count": 5327,
+  "open_stake": 28698.92,
+  "settled_count": 285,
   "m1_settled_gate": 500,
-  "m1_progress": 0.55,
+  "m1_progress": 0.57,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1519 beats the market's 0.1525. On profitability, realized ROI is -26.1% (P&L $-373.43). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1602.13 in fees across 5612 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.247,
-  "roi": -0.2606,
-  "brier_model": 0.1519,
-  "brier_market": 0.1525,
-  "predictions_scored": 272,
-  "prediction_brier": 0.1519,
-  "prediction_log_loss": 0.4641
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1518 beats the market's 0.1522. On profitability, realized ROI is -26.0% (P&L $-385.93). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1602.13 in fees across 5612 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.246,
+  "roi": -0.2597,
+  "brier_model": 0.1518,
+  "brier_market": 0.1522,
+  "predictions_scored": 282,
+  "prediction_brier": 0.1518,
+  "prediction_log_loss": 0.463
  },
  "calibration": [
   {
-   "predicted": 0.068,
-   "realized": 0.042,
-   "n": 48,
+   "predicted": 0.067,
+   "realized": 0.038,
+   "n": 53,
    "low_sample": false
   },
   {
-   "predicted": 0.138,
-   "realized": 0.055,
-   "n": 55,
+   "predicted": 0.139,
+   "realized": 0.07,
+   "n": 57,
    "low_sample": false
   },
   {
-   "predicted": 0.25,
-   "realized": 0.188,
-   "n": 48,
+   "predicted": 0.251,
+   "realized": 0.204,
+   "n": 49,
    "low_sample": false
   },
   {
    "predicted": 0.354,
-   "realized": 0.345,
-   "n": 58,
+   "realized": 0.333,
+   "n": 60,
    "low_sample": false
   },
   {
@@ -55,14 +55,14 @@
  "prediction_calibration": [
   {
    "predicted": 0.067,
-   "realized": 0.049,
-   "n": 41,
+   "realized": 0.047,
+   "n": 43,
    "low_sample": false
   },
   {
    "predicted": 0.136,
-   "realized": 0.067,
-   "n": 45,
+   "realized": 0.065,
+   "n": 46,
    "low_sample": false
   },
   {
@@ -72,9 +72,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.35,
-   "realized": 0.294,
-   "n": 34,
+   "predicted": 0.349,
+   "realized": 0.286,
+   "n": 35,
    "low_sample": false
   },
   {
@@ -90,38 +90,38 @@
    "low_sample": true
   },
   {
-   "predicted": 0.641,
-   "realized": 0.583,
-   "n": 24,
+   "predicted": 0.639,
+   "realized": 0.6,
+   "n": 25,
    "low_sample": true
   },
   {
-   "predicted": 0.742,
-   "realized": 0.818,
+   "predicted": 0.74,
+   "realized": 0.75,
+   "n": 12,
+   "low_sample": true
+  },
+  {
+   "predicted": 0.852,
+   "realized": 0.909,
    "n": 11,
    "low_sample": true
   },
   {
-   "predicted": 0.855,
+   "predicted": 0.934,
    "realized": 1.0,
    "n": 10,
-   "low_sample": true
-  },
-  {
-   "predicted": 0.928,
-   "realized": 1.0,
-   "n": 7,
    "low_sample": true
   }
  ],
  "categories": [
   {
    "category": "Sports",
-   "n": 211,
-   "win_rate": 0.242,
-   "brier_model": 0.1506,
+   "n": 212,
+   "win_rate": 0.241,
+   "brier_model": 0.1507,
    "brier_market": 0.1526,
-   "pnl": -257.64,
+   "pnl": -262.85,
    "beats_market": true
   },
   {
@@ -140,6 +140,15 @@
    "brier_model": 0.159,
    "brier_market": 0.1549,
    "pnl": -109.82,
+   "beats_market": false
+  },
+  {
+   "category": "Economics",
+   "n": 9,
+   "win_rate": 0.222,
+   "brier_model": 0.1483,
+   "brier_market": 0.1399,
+   "pnl": -7.29,
    "beats_market": false
   }
  ],
@@ -6205,21 +6214,6 @@
    "placed_at": "2026-07-26T10:58:18.574363+00:00"
   },
   {
-   "ticker": "KXAAAGASW-26JUL27-4.100",
-   "title": "US gas prices this week \u2014 Above 4.100",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.040000000000000036,
-   "p_final": 0.95,
-   "edge": 0.015,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T10:58:18.509446+00:00"
-  },
-  {
    "ticker": "KXWNBAWORSTREC-26-CHI",
    "title": "Women's Pro Basketball Worst Record \u2014 Chicago",
    "category": "Sports",
@@ -6353,51 +6347,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.38; faded 0.12 toward 0.5 \u2192 0.39. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T07:55:52.120750+00:00"
-  },
-  {
-   "ticker": "KXAAAGASW-26JUL27-4.116",
-   "title": "US gas prices this week \u2014 Above 4.116",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.13,
-   "p_final": 0.137,
-   "edge": 0.012,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T07:55:51.979524+00:00"
-  },
-  {
-   "ticker": "KXAAAGASW-26JUL27-4.118",
-   "title": "US gas prices this week \u2014 Above 4.118",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.06,
-   "p_final": 0.07,
-   "edge": 0.015,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T07:55:51.908491+00:00"
-  },
-  {
-   "ticker": "KXAAAGASW-26JUL27-4.102",
-   "title": "US gas prices this week \u2014 Above 4.102",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.050000000000000044,
-   "p_final": 0.95,
-   "edge": 0.015,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T07:55:51.752915+00:00"
   },
   {
    "ticker": "KXTRUMPSAYCOMPANY-26AUG01-CHAT",
@@ -8185,21 +8134,6 @@
    "placed_at": "2026-07-25T20:45:18.217488+00:00"
   },
   {
-   "ticker": "KXAAAGASW-26JUL27-4.108",
-   "title": "US gas prices this week \u2014 Above 4.108",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.050000000000000044,
-   "p_final": 0.95,
-   "edge": 0.015,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T20:45:18.155920+00:00"
-  },
-  {
    "ticker": "KXNFLGAME-26SEP14DENKC-KC",
    "title": "Denver vs Kansas City",
    "category": "Sports",
@@ -8888,21 +8822,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.55; faded 0.12 toward 0.5 \u2192 0.55. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T16:40:42.720523+00:00"
-  },
-  {
-   "ticker": "KXAAAGASW-26JUL27-4.114",
-   "title": "US gas prices this week \u2014 Above 4.114",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.30000000000000004,
-   "p_final": 0.713,
-   "edge": 0.007,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.72; faded 0.12 toward 0.5 \u2192 0.69. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T16:40:42.652436+00:00"
   },
   {
    "ticker": "KXJOINCLUB-26OCT02RODRI-BAR",
@@ -78865,21 +78784,6 @@
    "placed_at": "2026-07-25T12:51:43.138590+00:00"
   },
   {
-   "ticker": "KXAAAGASW-26JUL27-4.128",
-   "title": "US gas prices this week \u2014 Above 4.128",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.05,
-   "p_final": 0.045,
-   "edge": 0.015,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.03; faded 0.12 toward 0.5 \u2192 0.09. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.137215+00:00"
-  },
-  {
    "ticker": "KXBTCD-26JUL3117-T64499.99",
    "title": "BTC price on Jul 31, 2026 at 5pm EDT? \u2014 $64,500 or above",
    "category": "Crypto",
@@ -78985,21 +78889,6 @@
    "placed_at": "2026-07-25T12:51:43.126685+00:00"
   },
   {
-   "ticker": "KXAAAGASW-26JUL27-4.110",
-   "title": "US gas prices this week \u2014 Above 4.110",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.20999999999999996,
-   "p_final": 0.829,
-   "edge": 0.011,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.84; faded 0.12 toward 0.5 \u2192 0.80. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.125398+00:00"
-  },
-  {
    "ticker": "KXBTCD-26JUL3117-T63999.99",
    "title": "BTC price on Jul 31, 2026 at 5pm EDT? \u2014 $64,000 or above",
    "category": "Crypto",
@@ -79043,21 +78932,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.121671+00:00"
-  },
-  {
-   "ticker": "KXLOLGAME-26JUL270715DNFT1-T1",
-   "title": "DN SOOPers vs. T1",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.4,
-   "p_final": 0.602,
-   "edge": 0.003,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.60; faded 0.12 toward 0.5 \u2192 0.59. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.120446+00:00"
   },
   {
    "ticker": "KXWTI-26JUL2714-T98.99",
@@ -79133,21 +79007,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.114339+00:00"
-  },
-  {
-   "ticker": "KXAAAGASW-26JUL27-4.120",
-   "title": "US gas prices this week \u2014 Above 4.120",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.34,
-   "p_final": 0.326,
-   "edge": 0.006,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.32; faded 0.12 toward 0.5 \u2192 0.34. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.112915+00:00"
   },
   {
    "ticker": "KXTRUMPRESIGN",
@@ -80201,6 +80060,196 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXAAAGASW-26JUL27-4.100",
+   "title": "US gas prices this week \u2014 Above 4.100",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.040000000000000036,
+   "p_final": 0.95,
+   "edge": 0.015,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T10:58:18.509446+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-27T13:28:08.030569+00:00"
+  },
+  {
+   "ticker": "KXAAAGASW-26JUL27-4.116",
+   "title": "US gas prices this week \u2014 Above 4.116",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.13,
+   "p_final": 0.137,
+   "edge": 0.012,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T07:55:51.979524+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.31,
+   "settled_at": "2026-07-27T13:28:08.028829+00:00"
+  },
+  {
+   "ticker": "KXAAAGASW-26JUL27-4.118",
+   "title": "US gas prices this week \u2014 Above 4.118",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.06,
+   "p_final": 0.07,
+   "edge": 0.015,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T07:55:51.908491+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-27T13:28:08.027122+00:00"
+  },
+  {
+   "ticker": "KXAAAGASW-26JUL27-4.102",
+   "title": "US gas prices this week \u2014 Above 4.102",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.050000000000000044,
+   "p_final": 0.95,
+   "edge": 0.015,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T07:55:51.752915+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-27T13:28:08.025373+00:00"
+  },
+  {
+   "ticker": "KXAAAGASW-26JUL27-4.108",
+   "title": "US gas prices this week \u2014 Above 4.108",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.050000000000000044,
+   "p_final": 0.95,
+   "edge": 0.015,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T20:45:18.155920+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-27T13:28:08.022969+00:00"
+  },
+  {
+   "ticker": "KXAAAGASW-26JUL27-4.114",
+   "title": "US gas prices this week \u2014 Above 4.114",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.30000000000000004,
+   "p_final": 0.713,
+   "edge": 0.007,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.72; faded 0.12 toward 0.5 \u2192 0.69. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T16:40:42.652436+00:00",
+   "won": true,
+   "payout": 16.67,
+   "pnl": 11.42,
+   "settled_at": "2026-07-27T13:28:08.020282+00:00"
+  },
+  {
+   "ticker": "KXAAAGASW-26JUL27-4.128",
+   "title": "US gas prices this week \u2014 Above 4.128",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.05,
+   "p_final": 0.045,
+   "edge": 0.015,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.03; faded 0.12 toward 0.5 \u2192 0.09. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.137215+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-27T13:28:08.004991+00:00"
+  },
+  {
+   "ticker": "KXAAAGASW-26JUL27-4.110",
+   "title": "US gas prices this week \u2014 Above 4.110",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.20999999999999996,
+   "p_final": 0.829,
+   "edge": 0.011,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.84; faded 0.12 toward 0.5 \u2192 0.80. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.125398+00:00",
+   "won": true,
+   "payout": 23.81,
+   "pnl": 18.53,
+   "settled_at": "2026-07-27T13:28:08.000690+00:00"
+  },
+  {
+   "ticker": "KXLOLGAME-26JUL270715DNFT1-T1",
+   "title": "DN SOOPers vs. T1",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.4,
+   "p_final": 0.602,
+   "edge": 0.003,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.60; faded 0.12 toward 0.5 \u2192 0.59. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.120446+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.21,
+   "settled_at": "2026-07-27T13:28:07.996872+00:00"
+  },
+  {
+   "ticker": "KXAAAGASW-26JUL27-4.120",
+   "title": "US gas prices this week \u2014 Above 4.120",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.34,
+   "p_final": 0.326,
+   "edge": 0.006,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.32; faded 0.12 toward 0.5 \u2192 0.34. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.112915+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.24,
+   "settled_at": "2026-07-27T13:28:07.990589+00:00"
+  },
   {
    "ticker": "KXLOLGAME-26JUL270545NST1-T1",
    "title": "Nongshim Red Force vs. T1",
