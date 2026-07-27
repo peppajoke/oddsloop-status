@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T09:18:43.718481+00:00",
+ "generated_at": "2026-07-27T09:20:15.750860+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -370.15,
+  "realized_pnl": -356.05,
   "total_fees": 1593.5,
-  "open_count": 5321,
-  "open_stake": 28666.98,
-  "settled_count": 260,
+  "open_count": 5319,
+  "open_stake": 28656.56,
+  "settled_count": 262,
   "m1_settled_gate": 500,
-  "m1_progress": 0.52,
+  "m1_progress": 0.524,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1494 beats the market's 0.1501. On profitability, realized ROI is -27.3% (P&L $-370.15). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1593.50 in fees across 5581 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.238,
-  "roi": -0.2734,
-  "brier_model": 0.1494,
-  "brier_market": 0.1501,
-  "predictions_scored": 257,
-  "prediction_brier": 0.1494,
-  "prediction_log_loss": 0.4588
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1510 beats the market's 0.1516. On profitability, realized ROI is -26.1% (P&L $-356.05). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1593.50 in fees across 5581 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.244,
+  "roi": -0.2609,
+  "brier_model": 0.151,
+  "brier_market": 0.1516,
+  "predictions_scored": 259,
+  "prediction_brier": 0.151,
+  "prediction_log_loss": 0.4623
  },
  "calibration": [
   {
@@ -40,15 +40,15 @@
    "low_sample": false
   },
   {
-   "predicted": 0.353,
-   "realized": 0.315,
-   "n": 54,
+   "predicted": 0.354,
+   "realized": 0.327,
+   "n": 55,
    "low_sample": false
   },
   {
-   "predicted": 0.449,
-   "realized": 0.534,
-   "n": 58,
+   "predicted": 0.448,
+   "realized": 0.542,
+   "n": 59,
    "low_sample": false
   }
  ],
@@ -73,8 +73,8 @@
   },
   {
    "predicted": 0.35,
-   "realized": 0.25,
-   "n": 32,
+   "realized": 0.273,
+   "n": 33,
    "low_sample": false
   },
   {
@@ -85,8 +85,8 @@
   },
   {
    "predicted": 0.558,
-   "realized": 0.44,
-   "n": 25,
+   "realized": 0.423,
+   "n": 26,
    "low_sample": true
   },
   {
@@ -117,11 +117,11 @@
  "categories": [
   {
    "category": "Sports",
-   "n": 207,
-   "win_rate": 0.232,
-   "brier_model": 0.1478,
-   "brier_market": 0.1499,
-   "pnl": -273.79,
+   "n": 209,
+   "win_rate": 0.239,
+   "brier_model": 0.1498,
+   "brier_market": 0.1518,
+   "pnl": -259.69,
    "beats_market": true
   },
   {
@@ -5635,21 +5635,6 @@
    "placed_at": "2026-07-26T14:00:55.127129+00:00"
   },
   {
-   "ticker": "KXLOLGAME-26JUL270330GENKT-KT",
-   "title": "Gen.G vs. KT Rolster",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.43999999999999995,
-   "p_final": 0.568,
-   "edge": 0.002,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.57; faded 0.12 toward 0.5 \u2192 0.56. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T14:00:55.003876+00:00"
-  },
-  {
    "ticker": "KXINXU-26JUL27H1600-T7444.9999",
    "title": "S&P price on Jul 27, 2026 at 4pm EDT? \u2014 7,445 or above",
    "category": "Financials",
@@ -6038,21 +6023,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.48; faded 0.12 toward 0.5 \u2192 0.48. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T08:56:39.952891+00:00"
-  },
-  {
-   "ticker": "KXLOLGAME-26JUL270330GENKT-GEN",
-   "title": "Gen.G vs. KT Rolster",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.22,
-   "entry_price": 0.38,
-   "p_final": 0.379,
-   "edge": 0.004,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.38; faded 0.12 toward 0.5 \u2192 0.39. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T08:56:39.865378+00:00"
   },
   {
    "ticker": "KXGOLDD-26JUL2717-T4035",
@@ -79961,6 +79931,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLOLGAME-26JUL270330GENKT-KT",
+   "title": "Gen.G vs. KT Rolster",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.43999999999999995,
+   "p_final": 0.568,
+   "edge": 0.002,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.57; faded 0.12 toward 0.5 \u2192 0.56. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T14:00:55.003876+00:00",
+   "won": true,
+   "payout": 11.36,
+   "pnl": 6.16,
+   "settled_at": "2026-07-27T09:19:44.844027+00:00"
+  },
+  {
+   "ticker": "KXLOLGAME-26JUL270330GENKT-GEN",
+   "title": "Gen.G vs. KT Rolster",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.22,
+   "entry_price": 0.38,
+   "p_final": 0.379,
+   "edge": 0.004,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.38; faded 0.12 toward 0.5 \u2192 0.39. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T08:56:39.865378+00:00",
+   "won": true,
+   "payout": 13.16,
+   "pnl": 7.94,
+   "settled_at": "2026-07-27T09:19:44.835967+00:00"
+  },
   {
    "ticker": "KXLOLGAME-26JUL270200GENFOX-FOX",
    "title": "Gen.G vs. BNK FEARX",
