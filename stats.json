@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-27T23:49:53.559188+00:00",
+ "generated_at": "2026-07-28T00:20:56.363911+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -736.74,
+  "realized_pnl": -701.86,
   "total_fees": 1626.95,
-  "open_count": 5269,
-  "open_stake": 28384.36,
-  "settled_count": 430,
+  "open_count": 5267,
+  "open_stake": 28373.79,
+  "settled_count": 432,
   "m1_settled_gate": 500,
-  "m1_progress": 0.86,
+  "m1_progress": 0.864,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1400 beats the market's 0.1405. On profitability, realized ROI is -32.6% (P&L $-736.74). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.221,
-  "roi": -0.326,
-  "brier_model": 0.14,
-  "brier_market": 0.1405,
-  "predictions_scored": 427,
-  "prediction_brier": 0.14,
-  "prediction_log_loss": 0.4353
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1413 beats the market's 0.1419. On profitability, realized ROI is -30.9% (P&L $-701.86). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.222,
+  "roi": -0.3091,
+  "brier_model": 0.1413,
+  "brier_market": 0.1419,
+  "predictions_scored": 429,
+  "prediction_brier": 0.1413,
+  "prediction_log_loss": 0.4391
  },
  "calibration": [
   {
@@ -28,9 +28,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.141,
-   "realized": 0.082,
-   "n": 85,
+   "predicted": 0.14,
+   "realized": 0.093,
+   "n": 86,
    "low_sample": false
   },
   {
@@ -41,8 +41,8 @@
   },
   {
    "predicted": 0.352,
-   "realized": 0.276,
-   "n": 76,
+   "realized": 0.273,
+   "n": 77,
    "low_sample": false
   },
   {
@@ -102,9 +102,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.643,
-   "realized": 0.714,
-   "n": 35,
+   "predicted": 0.645,
+   "realized": 0.722,
+   "n": 36,
    "low_sample": false
   },
   {
@@ -114,9 +114,9 @@
    "low_sample": true
   },
   {
-   "predicted": 0.855,
-   "realized": 0.923,
-   "n": 26,
+   "predicted": 0.856,
+   "realized": 0.889,
+   "n": 27,
    "low_sample": true
   },
   {
@@ -156,11 +156,11 @@
   },
   {
    "category": "Sports",
-   "n": 222,
-   "win_rate": 0.248,
-   "brier_model": 0.1532,
-   "brier_market": 0.1548,
-   "pnl": -273.21,
+   "n": 223,
+   "win_rate": 0.247,
+   "brier_model": 0.1529,
+   "brier_market": 0.1545,
+   "pnl": -278.46,
    "beats_market": true
   },
   {
@@ -183,11 +183,11 @@
   },
   {
    "category": "Mentions",
-   "n": 108,
-   "win_rate": 0.222,
-   "brier_model": 0.1335,
-   "brier_market": 0.1316,
-   "pnl": -267.48,
+   "n": 109,
+   "win_rate": 0.229,
+   "brier_model": 0.1394,
+   "brier_market": 0.1376,
+   "pnl": -227.35,
    "beats_market": false
   },
   {
@@ -398,21 +398,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.21; faded 0.12 toward 0.5 \u2192 0.24. Category: Mentions. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T20:28:04.160224+00:00"
-  },
-  {
-   "ticker": "KXWORLDNEWSMENTION-26JUL27-OIL",
-   "title": "What will the reporters say during ABC World News Tonight? \u2014 Oil / Gas / Gasoline",
-   "category": "Mentions",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.10999999999999999,
-   "p_final": 0.884,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.90; faded 0.12 toward 0.5 \u2192 0.85. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T20:28:04.064556+00:00"
   },
   {
    "ticker": "KXALBUMEQUIV-MUS26JUL30-85K",
@@ -7208,21 +7193,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Crypto. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T01:50:31.437494+00:00"
-  },
-  {
-   "ticker": "KXVALORANTGAME-26JUL271500BBBBST-BST",
-   "title": "Contra vs. BESTIA",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.30000000000000004,
-   "p_final": 0.699,
-   "edge": 0.006,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.70; faded 0.12 toward 0.5 \u2192 0.68. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T01:50:31.370858+00:00"
   },
   {
    "ticker": "KXTRUMPSAYCOMPANY-26AUG01-TSLA",
@@ -79256,6 +79226,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXWORLDNEWSMENTION-26JUL27-OIL",
+   "title": "What will the reporters say during ABC World News Tonight? \u2014 Oil / Gas / Gasoline",
+   "category": "Mentions",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.10999999999999999,
+   "p_final": 0.884,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.90; faded 0.12 toward 0.5 \u2192 0.85. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T20:28:04.064556+00:00",
+   "won": true,
+   "payout": 45.45,
+   "pnl": 40.13,
+   "settled_at": "2026-07-28T00:20:26.075093+00:00"
+  },
+  {
+   "ticker": "KXVALORANTGAME-26JUL271500BBBBST-BST",
+   "title": "Contra vs. BESTIA",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.30000000000000004,
+   "p_final": 0.699,
+   "edge": 0.006,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.70; faded 0.12 toward 0.5 \u2192 0.68. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T01:50:31.370858+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.25,
+   "settled_at": "2026-07-28T00:20:26.068196+00:00"
+  },
   {
    "ticker": "KXINXDUD-26JUL27H1600-T7411.98",
    "title": "S&P 500 Daily Up/Down \u2014 Above 7411.98",
