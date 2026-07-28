@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-28T05:00:16.919737+00:00",
+ "generated_at": "2026-07-28T05:31:19.501766+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -577.83,
+  "realized_pnl": -588.21,
   "total_fees": 1626.95,
-  "open_count": 5218,
-  "open_stake": 28116.63,
-  "settled_count": 481,
+  "open_count": 5216,
+  "open_stake": 28106.25,
+  "settled_count": 483,
   "m1_settled_gate": 500,
-  "m1_progress": 0.962,
+  "m1_progress": 0.966,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1506 beats the market's 0.1512. On profitability, realized ROI is -22.9% (P&L $-577.83). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.241,
-  "roi": -0.2285,
-  "brier_model": 0.1506,
-  "brier_market": 0.1512,
-  "predictions_scored": 478,
-  "prediction_brier": 0.1506,
-  "prediction_log_loss": 0.4615
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1509 beats the market's 0.1516. On profitability, realized ROI is -23.2% (P&L $-588.21). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.24,
+  "roi": -0.2317,
+  "brier_model": 0.1509,
+  "brier_market": 0.1516,
+  "predictions_scored": 480,
+  "prediction_brier": 0.1509,
+  "prediction_log_loss": 0.4623
  },
  "calibration": [
   {
@@ -46,9 +46,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.451,
-   "realized": 0.517,
-   "n": 116,
+   "predicted": 0.452,
+   "realized": 0.508,
+   "n": 118,
    "low_sample": false
   },
   {
@@ -90,15 +90,15 @@
    "low_sample": false
   },
   {
-   "predicted": 0.453,
-   "realized": 0.532,
-   "n": 62,
+   "predicted": 0.454,
+   "realized": 0.524,
+   "n": 63,
    "low_sample": false
   },
   {
    "predicted": 0.55,
-   "realized": 0.518,
-   "n": 56,
+   "realized": 0.526,
+   "n": 57,
    "low_sample": false
   },
   {
@@ -147,11 +147,11 @@
   },
   {
    "category": "Sports",
-   "n": 242,
-   "win_rate": 0.269,
-   "brier_model": 0.1608,
-   "brier_market": 0.1622,
-   "pnl": -267.56,
+   "n": 244,
+   "win_rate": 0.266,
+   "brier_model": 0.1613,
+   "brier_market": 0.1628,
+   "pnl": -277.94,
    "beats_market": true
   },
   {
@@ -4150,21 +4150,6 @@
    "placed_at": "2026-07-27T00:11:03.767868+00:00"
   },
   {
-   "ticker": "KXMLBGAME-26JUL272138HOULAA-LAA",
-   "title": "Houston vs Los Angeles A",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.19,
-   "entry_price": 0.48,
-   "p_final": 0.476,
-   "edge": 0.001,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.47; faded 0.12 toward 0.5 \u2192 0.48. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T00:11:03.555946+00:00"
-  },
-  {
    "ticker": "KXFEDMENTION-26JUL-PROD",
    "title": "What will Kevin Warsh say during his July press conference? \u2014 Productivity",
    "category": "Mentions",
@@ -4463,21 +4448,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.64; faded 0.12 toward 0.5 \u2192 0.62. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T22:08:58.164988+00:00"
-  },
-  {
-   "ticker": "KXMLBGAME-26JUL272138HOULAA-HOU",
-   "title": "Houston vs Los Angeles A",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.19,
-   "entry_price": 0.48,
-   "p_final": 0.524,
-   "edge": 0.001,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.53; faded 0.12 toward 0.5 \u2192 0.52. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T22:08:57.882399+00:00"
   },
   {
    "ticker": "KXMLBGAME-26JUL271910CLECIN-CLE",
@@ -78491,6 +78461,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXMLBGAME-26JUL272138HOULAA-LAA",
+   "title": "Houston vs Los Angeles A",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.19,
+   "entry_price": 0.48,
+   "p_final": 0.476,
+   "edge": 0.001,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.47; faded 0.12 toward 0.5 \u2192 0.48. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T00:11:03.555946+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.19,
+   "settled_at": "2026-07-28T05:30:49.125488+00:00"
+  },
+  {
+   "ticker": "KXMLBGAME-26JUL272138HOULAA-HOU",
+   "title": "Houston vs Los Angeles A",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.19,
+   "entry_price": 0.48,
+   "p_final": 0.524,
+   "edge": 0.001,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.53; faded 0.12 toward 0.5 \u2192 0.52. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T22:08:57.882399+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.19,
+   "settled_at": "2026-07-28T05:30:49.117388+00:00"
+  },
   {
    "ticker": "KXMLBGAME-26JUL272140BOSATH-ATH",
    "title": "Boston vs A's",
