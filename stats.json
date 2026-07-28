@@ -1,36 +1,36 @@
 {
- "generated_at": "2026-07-28T00:51:57.276895+00:00",
+ "generated_at": "2026-07-28T01:22:58.313233+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -701.86,
+  "realized_pnl": -712.45,
   "total_fees": 1626.95,
-  "open_count": 5267,
-  "open_stake": 28373.79,
-  "settled_count": 432,
+  "open_count": 5265,
+  "open_stake": 28363.2,
+  "settled_count": 434,
   "m1_settled_gate": 500,
-  "m1_progress": 0.864,
+  "m1_progress": 0.868,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1413 beats the market's 0.1419. On profitability, realized ROI is -30.9% (P&L $-701.86). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.222,
-  "roi": -0.3091,
-  "brier_model": 0.1413,
-  "brier_market": 0.1419,
-  "predictions_scored": 429,
-  "prediction_brier": 0.1413,
-  "prediction_log_loss": 0.4391
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1408 beats the market's 0.1415. On profitability, realized ROI is -31.2% (P&L $-712.45). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.221,
+  "roi": -0.3123,
+  "brier_model": 0.1408,
+  "brier_market": 0.1415,
+  "predictions_scored": 431,
+  "prediction_brier": 0.1408,
+  "prediction_log_loss": 0.4376
  },
  "calibration": [
   {
    "predicted": 0.067,
-   "realized": 0.032,
-   "n": 95,
+   "realized": 0.031,
+   "n": 96,
    "low_sample": false
   },
   {
-   "predicted": 0.14,
-   "realized": 0.093,
-   "n": 86,
+   "predicted": 0.141,
+   "realized": 0.092,
+   "n": 87,
    "low_sample": false
   },
   {
@@ -68,13 +68,13 @@
   {
    "predicted": 0.068,
    "realized": 0.042,
-   "n": 71,
+   "n": 72,
    "low_sample": false
   },
   {
    "predicted": 0.139,
-   "realized": 0.085,
-   "n": 59,
+   "realized": 0.083,
+   "n": 60,
    "low_sample": false
   },
   {
@@ -138,11 +138,11 @@
   },
   {
    "category": "Entertainment",
-   "n": 34,
-   "win_rate": 0.059,
-   "brier_model": 0.066,
-   "brier_market": 0.0694,
-   "pnl": -110.33,
+   "n": 36,
+   "win_rate": 0.056,
+   "brier_model": 0.0633,
+   "brier_market": 0.0681,
+   "pnl": -120.92,
    "beats_market": true
   },
   {
@@ -5198,21 +5198,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.43; faded 0.12 toward 0.5 \u2192 0.44. Category: Mentions. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T20:06:48.755358+00:00"
-  },
-  {
-   "ticker": "KXLOVEISLANDUKRANK-26AUG31RTOP3-YATMS",
-   "title": "Love Island UK S13: Top 3 couples \u2014 Yasmine and Tommy S",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.3,
-   "p_final": 0.173,
-   "edge": 0.008,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.16; faded 0.12 toward 0.5 \u2192 0.20. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T20:06:48.618921+00:00"
   },
   {
    "ticker": "KXFED-26SEP-T4.25",
@@ -57550,21 +57535,6 @@
    "placed_at": "2026-07-25T12:51:56.771068+00:00"
   },
   {
-   "ticker": "KXLOVEISLANDUKRANK-26AUG31RTOP3-MISA",
-   "title": "Love Island UK S13: Top 3 couples \u2014 Mica and Samraj",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.04,
-   "p_final": 0.047,
-   "edge": 0.012,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:56.754190+00:00"
-  },
-  {
    "ticker": "KXNASCARCUPSERIES-NCS26-CBEL",
    "title": "NASCAR Cup Series Champion \u2014 Christopher Bell",
    "category": "Sports",
@@ -79226,6 +79196,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLOVEISLANDUKRANK-26AUG31RTOP3-YATMS",
+   "title": "Love Island UK S13: Top 3 couples \u2014 Yasmine and Tommy S",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.3,
+   "p_final": 0.173,
+   "edge": 0.008,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.16; faded 0.12 toward 0.5 \u2192 0.20. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T20:06:48.618921+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.25,
+   "settled_at": "2026-07-28T01:22:28.182428+00:00"
+  },
+  {
+   "ticker": "KXLOVEISLANDUKRANK-26AUG31RTOP3-MISA",
+   "title": "Love Island UK S13: Top 3 couples \u2014 Mica and Samraj",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.04,
+   "p_final": 0.047,
+   "edge": 0.012,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:56.754190+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-28T01:22:28.159658+00:00"
+  },
   {
    "ticker": "KXWORLDNEWSMENTION-26JUL27-OIL",
    "title": "What will the reporters say during ABC World News Tonight? \u2014 Oil / Gas / Gasoline",
