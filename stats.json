@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-28T14:18:45.419080+00:00",
+ "generated_at": "2026-07-28T14:49:53.550386+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -600.94,
+  "realized_pnl": -569.15,
   "total_fees": 1626.95,
-  "open_count": 5211,
-  "open_stake": 28080.01,
-  "settled_count": 488,
+  "open_count": 5206,
+  "open_stake": 28053.66,
+  "settled_count": 493,
   "m1_settled_gate": 500,
-  "m1_progress": 0.976,
+  "m1_progress": 0.986,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1509 beats the market's 0.1517. On profitability, realized ROI is -23.4% (P&L $-600.94). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.24,
-  "roi": -0.2343,
-  "brier_model": 0.1509,
-  "brier_market": 0.1517,
-  "predictions_scored": 485,
-  "prediction_brier": 0.1509,
-  "prediction_log_loss": 0.4622
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1528 beats the market's 0.1535. On profitability, realized ROI is -22.0% (P&L $-569.15). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.243,
+  "roi": -0.2196,
+  "brier_model": 0.1528,
+  "brier_market": 0.1535,
+  "predictions_scored": 490,
+  "prediction_brier": 0.1528,
+  "prediction_log_loss": 0.4665
  },
  "calibration": [
   {
@@ -29,20 +29,20 @@
   },
   {
    "predicted": 0.14,
-   "realized": 0.116,
-   "n": 95,
+   "realized": 0.124,
+   "n": 97,
    "low_sample": false
   },
   {
-   "predicted": 0.254,
-   "realized": 0.169,
-   "n": 77,
+   "predicted": 0.253,
+   "realized": 0.177,
+   "n": 79,
    "low_sample": false
   },
   {
-   "predicted": 0.354,
-   "realized": 0.302,
-   "n": 86,
+   "predicted": 0.353,
+   "realized": 0.31,
+   "n": 87,
    "low_sample": false
   },
   {
@@ -72,15 +72,15 @@
    "low_sample": false
   },
   {
-   "predicted": 0.139,
-   "realized": 0.078,
-   "n": 64,
+   "predicted": 0.14,
+   "realized": 0.091,
+   "n": 66,
    "low_sample": false
   },
   {
-   "predicted": 0.25,
-   "realized": 0.17,
-   "n": 47,
+   "predicted": 0.249,
+   "realized": 0.167,
+   "n": 48,
    "low_sample": false
   },
   {
@@ -102,15 +102,15 @@
    "low_sample": false
   },
   {
-   "predicted": 0.644,
-   "realized": 0.683,
-   "n": 41,
+   "predicted": 0.645,
+   "realized": 0.667,
+   "n": 42,
    "low_sample": false
   },
   {
    "predicted": 0.741,
-   "realized": 0.833,
-   "n": 30,
+   "realized": 0.806,
+   "n": 31,
    "low_sample": false
   },
   {
@@ -183,11 +183,11 @@
   },
   {
    "category": "Mentions",
-   "n": 113,
-   "win_rate": 0.23,
-   "brier_model": 0.1408,
-   "brier_market": 0.1397,
-   "pnl": -234.77,
+   "n": 118,
+   "win_rate": 0.246,
+   "brier_model": 0.1492,
+   "brier_market": 0.1479,
+   "pnl": -202.98,
    "beats_market": false
   },
   {
@@ -392,21 +392,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T20:28:04.270256+00:00"
-  },
-  {
-   "ticker": "KXMADDOWMENTION-26JUL20-AI",
-   "title": "What will Rachel Maddow say during her show? \u2014 AI / Artificial Intelligence",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.23,
-   "p_final": 0.213,
-   "edge": 0.008,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.21; faded 0.12 toward 0.5 \u2192 0.24. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T20:28:04.160224+00:00"
   },
   {
    "ticker": "KXALBUMEQUIV-MUS26JUL30-85K",
@@ -992,21 +977,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T16:23:51.161613+00:00"
-  },
-  {
-   "ticker": "KXMADDOWMENTION-26JUL20-MAIN",
-   "title": "What will Rachel Maddow say during her show? \u2014 Maine",
-   "category": "Mentions",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.32999999999999996,
-   "p_final": 0.671,
-   "edge": 0.004,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.68; faded 0.12 toward 0.5 \u2192 0.65. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T16:23:51.090979+00:00"
   },
   {
    "ticker": "KXALBUMLENGTH-26DEC30-PET-40",
@@ -1877,21 +1847,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.05; faded 0.12 toward 0.5 \u2192 0.10. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T06:16:53.197628+00:00"
-  },
-  {
-   "ticker": "KXMADDOWMENTION-26JUL20-CEAS",
-   "title": "What will Rachel Maddow say during her show? \u2014 Ceasefire",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.29,
-   "entry_price": 0.19,
-   "p_final": 0.188,
-   "edge": 0.008,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.18; faded 0.12 toward 0.5 \u2192 0.22. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T06:16:53.130145+00:00"
   },
   {
    "ticker": "KXUFCFIGHT-26AUG01REBPRE-PRE",
@@ -67234,21 +67189,6 @@
    "placed_at": "2026-07-25T12:51:47.123963+00:00"
   },
   {
-   "ticker": "KXMADDOWMENTION-26JUL20-CORR",
-   "title": "What will Rachel Maddow say during her show? \u2014 Corrupt / Corruption",
-   "category": "Mentions",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.30000000000000004,
-   "p_final": 0.724,
-   "edge": 0.006,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.73; faded 0.12 toward 0.5 \u2192 0.70. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:47.114024+00:00"
-  },
-  {
    "ticker": "KXVINE-26",
    "title": "X re-launches Vine this year? \u2014 Before 2027",
    "category": "Companies",
@@ -69617,21 +69557,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.44; faded 0.12 toward 0.5 \u2192 0.45. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:45.752990+00:00"
-  },
-  {
-   "ticker": "KXMADDOWMENTION-26JUL20-WORL",
-   "title": "What will Rachel Maddow say during her show? \u2014 World Cup",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.15,
-   "p_final": 0.12,
-   "edge": 0.01,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.11; faded 0.12 toward 0.5 \u2192 0.16. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:45.745528+00:00"
   },
   {
    "ticker": "KXXAIGAME-27-VID",
@@ -78395,6 +78320,101 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXMADDOWMENTION-26JUL20-AI",
+   "title": "What will Rachel Maddow say during her show? \u2014 AI / Artificial Intelligence",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.23,
+   "p_final": 0.213,
+   "edge": 0.008,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.21; faded 0.12 toward 0.5 \u2192 0.24. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T20:28:04.160224+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-28T14:49:19.345817+00:00"
+  },
+  {
+   "ticker": "KXMADDOWMENTION-26JUL20-MAIN",
+   "title": "What will Rachel Maddow say during her show? \u2014 Maine",
+   "category": "Mentions",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.32999999999999996,
+   "p_final": 0.671,
+   "edge": 0.004,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.68; faded 0.12 toward 0.5 \u2192 0.65. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T16:23:51.090979+00:00",
+   "won": true,
+   "payout": 15.15,
+   "pnl": 9.91,
+   "settled_at": "2026-07-28T14:49:19.343446+00:00"
+  },
+  {
+   "ticker": "KXMADDOWMENTION-26JUL20-CEAS",
+   "title": "What will Rachel Maddow say during her show? \u2014 Ceasefire",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.29,
+   "entry_price": 0.19,
+   "p_final": 0.188,
+   "edge": 0.008,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.18; faded 0.12 toward 0.5 \u2192 0.22. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T06:16:53.130145+00:00",
+   "won": true,
+   "payout": 26.32,
+   "pnl": 21.03,
+   "settled_at": "2026-07-28T14:49:19.341198+00:00"
+  },
+  {
+   "ticker": "KXMADDOWMENTION-26JUL20-CORR",
+   "title": "What will Rachel Maddow say during her show? \u2014 Corrupt / Corruption",
+   "category": "Mentions",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.30000000000000004,
+   "p_final": 0.724,
+   "edge": 0.006,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.73; faded 0.12 toward 0.5 \u2192 0.70. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:47.114024+00:00",
+   "won": true,
+   "payout": 16.67,
+   "pnl": 11.42,
+   "settled_at": "2026-07-28T14:49:19.310855+00:00"
+  },
+  {
+   "ticker": "KXMADDOWMENTION-26JUL20-WORL",
+   "title": "What will Rachel Maddow say during her show? \u2014 World Cup",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.15,
+   "p_final": 0.12,
+   "edge": 0.01,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.11; faded 0.12 toward 0.5 \u2192 0.16. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:45.745528+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-07-28T14:49:19.237840+00:00"
+  },
   {
    "ticker": "KXMADDOWMENTION-26JUL20-CONS",
    "title": "What will Rachel Maddow say during her show? \u2014 Constitution / Constitutional / Unconstitutional",
