@@ -1,30 +1,30 @@
 {
- "generated_at": "2026-07-28T17:01:09.509204+00:00",
+ "generated_at": "2026-07-28T17:25:28.130878+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -569.15,
+  "realized_pnl": -579.82,
   "total_fees": 1626.95,
-  "open_count": 5206,
-  "open_stake": 28053.66,
-  "settled_count": 493,
+  "open_count": 5204,
+  "open_stake": 28042.99,
+  "settled_count": 495,
   "m1_settled_gate": 500,
-  "m1_progress": 0.986,
+  "m1_progress": 0.99,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1528 beats the market's 0.1535. On profitability, realized ROI is -22.0% (P&L $-569.15). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.243,
-  "roi": -0.2196,
-  "brier_model": 0.1528,
-  "brier_market": 0.1535,
-  "predictions_scored": 490,
-  "prediction_brier": 0.1528,
-  "prediction_log_loss": 0.4665
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1522 beats the market's 0.1529. On profitability, realized ROI is -22.3% (P&L $-579.82). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.242,
+  "roi": -0.2228,
+  "brier_model": 0.1522,
+  "brier_market": 0.1529,
+  "predictions_scored": 492,
+  "prediction_brier": 0.1522,
+  "prediction_log_loss": 0.4649
  },
  "calibration": [
   {
-   "predicted": 0.068,
-   "realized": 0.038,
-   "n": 106,
+   "predicted": 0.067,
+   "realized": 0.037,
+   "n": 108,
    "low_sample": false
   },
   {
@@ -120,9 +120,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.934,
-   "realized": 0.96,
-   "n": 25,
+   "predicted": 0.935,
+   "realized": 0.963,
+   "n": 27,
    "low_sample": true
   }
  ],
@@ -182,21 +182,21 @@
    "beats_market": true
   },
   {
+   "category": "Politics",
+   "n": 6,
+   "win_rate": 0.167,
+   "brier_model": 0.0776,
+   "brier_market": 0.0768,
+   "pnl": -21.67,
+   "beats_market": false
+  },
+  {
    "category": "Mentions",
    "n": 118,
    "win_rate": 0.246,
    "brier_model": 0.1492,
    "brier_market": 0.1479,
    "pnl": -202.98,
-   "beats_market": false
-  },
-  {
-   "category": "Politics",
-   "n": 4,
-   "win_rate": 0.25,
-   "brier_model": 0.1149,
-   "brier_market": 0.1133,
-   "pnl": -11.0,
    "beats_market": false
   },
   {
@@ -28667,21 +28667,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.55; faded 0.12 toward 0.5 \u2192 0.55. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:23.512904+00:00"
-  },
-  {
-   "ticker": "KXWHVISIT-27-VZEL",
-   "title": "Who will visit the White House in 2026? \u2014 Volodymyr Zelenskyy",
-   "category": "Politics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.07599999999999996,
-   "p_final": 0.937,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.95; faded 0.12 toward 0.5 \u2192 0.90. Category: Politics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:23.471908+00:00"
   },
   {
    "ticker": "KXVOTEPERCENTBINFACE-CLACTONBYELECTION26SEP01CBIN-55",
@@ -66829,21 +66814,6 @@
    "placed_at": "2026-07-25T12:51:47.374950+00:00"
   },
   {
-   "ticker": "KXTRUMPBIBIMEET-26AUG01-AUG01",
-   "title": "When will Trump and Netanyahu meet? \u2014 Before Aug 1, 2026",
-   "category": "Politics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.040000000000000036,
-   "p_final": 0.952,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Politics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:47.365458+00:00"
-  },
-  {
    "ticker": "KXCLACTONBYELECTION-26SEP01-RUK",
    "title": "Clacton by-election winner? \u2014 Reform UK",
    "category": "Elections",
@@ -78320,6 +78290,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXWHVISIT-27-VZEL",
+   "title": "Who will visit the White House in 2026? \u2014 Volodymyr Zelenskyy",
+   "category": "Politics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.07599999999999996,
+   "p_final": 0.937,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.95; faded 0.12 toward 0.5 \u2192 0.90. Category: Politics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:23.471908+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-28T17:25:00.135548+00:00"
+  },
+  {
+   "ticker": "KXTRUMPBIBIMEET-26AUG01-AUG01",
+   "title": "When will Trump and Netanyahu meet? \u2014 Before Aug 1, 2026",
+   "category": "Politics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.040000000000000036,
+   "p_final": 0.952,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Politics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:47.365458+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-28T17:25:00.117523+00:00"
+  },
   {
    "ticker": "KXMADDOWMENTION-26JUL20-AI",
    "title": "What will Rachel Maddow say during her show? \u2014 AI / Artificial Intelligence",
