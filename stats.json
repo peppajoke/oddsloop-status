@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-28T01:54:03.000347+00:00",
+ "generated_at": "2026-07-28T02:25:03.974383+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -548.59,
+  "realized_pnl": -558.97,
   "total_fees": 1626.95,
-  "open_count": 5230,
-  "open_stake": 28178.97,
-  "settled_count": 469,
+  "open_count": 5228,
+  "open_stake": 28168.59,
+  "settled_count": 471,
   "m1_settled_gate": 500,
-  "m1_progress": 0.938,
+  "m1_progress": 0.942,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1486 beats the market's 0.1493. On profitability, realized ROI is -22.2% (P&L $-548.59). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.241,
-  "roi": -0.2225,
-  "brier_model": 0.1486,
-  "brier_market": 0.1493,
-  "predictions_scored": 466,
-  "prediction_brier": 0.1486,
-  "prediction_log_loss": 0.4567
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1489 beats the market's 0.1495. On profitability, realized ROI is -22.6% (P&L $-558.97). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.24,
+  "roi": -0.2257,
+  "brier_model": 0.1489,
+  "brier_market": 0.1495,
+  "predictions_scored": 468,
+  "prediction_brier": 0.1489,
+  "prediction_log_loss": 0.4574
  },
  "calibration": [
   {
@@ -47,8 +47,8 @@
   },
   {
    "predicted": 0.451,
-   "realized": 0.543,
-   "n": 105,
+   "realized": 0.533,
+   "n": 107,
    "low_sample": false
   },
   {
@@ -91,14 +91,14 @@
   },
   {
    "predicted": 0.454,
-   "realized": 0.544,
-   "n": 57,
+   "realized": 0.534,
+   "n": 58,
    "low_sample": false
   },
   {
    "predicted": 0.551,
-   "realized": 0.48,
-   "n": 50,
+   "realized": 0.49,
+   "n": 51,
    "low_sample": false
   },
   {
@@ -147,11 +147,11 @@
   },
   {
    "category": "Sports",
-   "n": 230,
-   "win_rate": 0.27,
-   "brier_model": 0.1573,
-   "brier_market": 0.1587,
-   "pnl": -238.32,
+   "n": 232,
+   "win_rate": 0.267,
+   "brier_model": 0.1578,
+   "brier_market": 0.1592,
+   "pnl": -248.7,
    "beats_market": true
   },
   {
@@ -4585,21 +4585,6 @@
    "placed_at": "2026-07-26T22:08:57.750910+00:00"
   },
   {
-   "ticker": "KXMLBGAME-26JUL271840AZPIT-PIT",
-   "title": "Arizona vs Pittsburgh",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.19,
-   "entry_price": 0.45999999999999996,
-   "p_final": 0.544,
-   "edge": 0.001,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.55; faded 0.12 toward 0.5 \u2192 0.54. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T22:08:57.336835+00:00"
-  },
-  {
    "ticker": "KXNCAAFWINS-26MISS-9",
    "title": "College Football: Ole Miss Total Wins \u2014 9+ wins",
    "category": "Sports",
@@ -4898,21 +4883,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.46; faded 0.12 toward 0.5 \u2192 0.46. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T21:07:57.854583+00:00"
-  },
-  {
-   "ticker": "KXMLBGAME-26JUL271840AZPIT-AZ",
-   "title": "Arizona vs Pittsburgh",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.19,
-   "entry_price": 0.47,
-   "p_final": 0.466,
-   "edge": 0.001,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.46; faded 0.12 toward 0.5 \u2192 0.47. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T21:07:57.708520+00:00"
   },
   {
    "ticker": "KXRTX5090WS-26JUL31-0.500",
@@ -78671,6 +78641,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXMLBGAME-26JUL271840AZPIT-PIT",
+   "title": "Arizona vs Pittsburgh",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.19,
+   "entry_price": 0.45999999999999996,
+   "p_final": 0.544,
+   "edge": 0.001,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.55; faded 0.12 toward 0.5 \u2192 0.54. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T22:08:57.336835+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.19,
+   "settled_at": "2026-07-28T02:24:33.906772+00:00"
+  },
+  {
+   "ticker": "KXMLBGAME-26JUL271840AZPIT-AZ",
+   "title": "Arizona vs Pittsburgh",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.19,
+   "entry_price": 0.47,
+   "p_final": 0.466,
+   "edge": 0.001,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.46; faded 0.12 toward 0.5 \u2192 0.47. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T21:07:57.708520+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.19,
+   "settled_at": "2026-07-28T02:24:33.901649+00:00"
+  },
   {
    "ticker": "KXMLBTOTAL-26JUL271910ATLNYM-9",
    "title": "Atlanta vs New York M: Total Runs \u2014 Over 8.5 runs scored",
