@@ -1,36 +1,36 @@
 {
- "generated_at": "2026-07-28T19:29:38.950230+00:00",
+ "generated_at": "2026-07-28T20:00:39.069182+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -579.82,
+  "realized_pnl": -617.09,
   "total_fees": 1626.95,
-  "open_count": 5204,
-  "open_stake": 28042.99,
-  "settled_count": 495,
+  "open_count": 5197,
+  "open_stake": 28005.72,
+  "settled_count": 502,
   "m1_settled_gate": 500,
-  "m1_progress": 0.99,
+  "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1522 beats the market's 0.1529. On profitability, realized ROI is -22.3% (P&L $-579.82). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.242,
-  "roi": -0.2228,
-  "brier_model": 0.1522,
-  "brier_market": 0.1529,
-  "predictions_scored": 492,
-  "prediction_brier": 0.1522,
-  "prediction_log_loss": 0.4649
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1501 beats the market's 0.1509. On profitability, realized ROI is -23.4% (P&L $-617.09). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.239,
+  "roi": -0.2338,
+  "brier_model": 0.1501,
+  "brier_market": 0.1509,
+  "predictions_scored": 499,
+  "prediction_brier": 0.1501,
+  "prediction_log_loss": 0.4595
  },
  "calibration": [
   {
    "predicted": 0.067,
-   "realized": 0.037,
-   "n": 108,
+   "realized": 0.035,
+   "n": 113,
    "low_sample": false
   },
   {
    "predicted": 0.14,
-   "realized": 0.124,
-   "n": 97,
+   "realized": 0.121,
+   "n": 99,
    "low_sample": false
   },
   {
@@ -67,8 +67,8 @@
  "prediction_calibration": [
   {
    "predicted": 0.068,
-   "realized": 0.037,
-   "n": 81,
+   "realized": 0.036,
+   "n": 83,
    "low_sample": false
   },
   {
@@ -115,15 +115,15 @@
   },
   {
    "predicted": 0.859,
-   "realized": 0.806,
-   "n": 31,
+   "realized": 0.818,
+   "n": 33,
    "low_sample": false
   },
   {
-   "predicted": 0.935,
-   "realized": 0.963,
-   "n": 27,
-   "low_sample": true
+   "predicted": 0.936,
+   "realized": 0.967,
+   "n": 30,
+   "low_sample": false
   }
  ],
  "categories": [
@@ -147,11 +147,11 @@
   },
   {
    "category": "Entertainment",
-   "n": 36,
-   "win_rate": 0.056,
-   "brier_model": 0.0633,
-   "brier_market": 0.0681,
-   "pnl": -120.92,
+   "n": 43,
+   "win_rate": 0.047,
+   "brier_model": 0.0543,
+   "brier_market": 0.0587,
+   "pnl": -158.19,
    "beats_market": true
   },
   {
@@ -5284,21 +5284,6 @@
    "placed_at": "2026-07-26T18:04:42.229446+00:00"
   },
   {
-   "ticker": "KXNETFLIXTOPVIEWSMOVIE-26JUL27-21",
-   "title": "How many views will the #1 Movie on Netflix have this week? \u2014 At least 21 million",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.13,
-   "p_final": 0.879,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.89; faded 0.12 toward 0.5 \u2192 0.84. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T18:04:42.082852+00:00"
-  },
-  {
    "ticker": "KXTEAMSINWS-26-TEXLAD",
    "title": "Pro Baseball Championship Series Matchup \u2014 Texas vs Los Angeles D",
    "category": "Sports",
@@ -6754,21 +6739,6 @@
    "placed_at": "2026-07-26T01:50:31.307832+00:00"
   },
   {
-   "ticker": "KXNETFLIXTOPVIEWSMOVIE-26JUL27-25",
-   "title": "How many views will the #1 Movie on Netflix have this week? \u2014 At least 25 million",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.06,
-   "p_final": 0.067,
-   "edge": 0.012,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T01:50:31.171104+00:00"
-  },
-  {
    "ticker": "KXCS2-BBS2F26-LIQ",
    "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 Team Liquid",
    "category": "Sports",
@@ -7459,21 +7429,6 @@
    "placed_at": "2026-07-25T21:46:27.976131+00:00"
   },
   {
-   "ticker": "KXNETFLIXTOPVIEWSMOVIE-26JUL27-18",
-   "title": "How many views will the #1 Movie on Netflix have this week? \u2014 At least 18 million",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.20999999999999996,
-   "p_final": 0.84,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.85; faded 0.12 toward 0.5 \u2192 0.81. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T21:46:27.852610+00:00"
-  },
-  {
    "ticker": "KXTLN-26AUGGEN-9.0",
    "title": "Talen Energy TWh generation in Q2 \u2014 Above 9 TWh",
    "category": "Financials",
@@ -7832,21 +7787,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.17; faded 0.12 toward 0.5 \u2192 0.21. Category: Mentions. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T19:44:08.448058+00:00"
-  },
-  {
-   "ticker": "KXNETFLIXTOPVIEWSTV-26JUL27-6",
-   "title": "How many views will the #1 Show on Netflix have this week? \u2014 At least 6 million",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.040000000000000036,
-   "p_final": 0.952,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T19:44:08.323943+00:00"
   },
   {
    "ticker": "KXNBAWINS-27NOP-25",
@@ -37367,21 +37307,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.41; faded 0.12 toward 0.5 \u2192 0.42. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:01:58.745610+00:00"
-  },
-  {
-   "ticker": "KX20SONG-26DEC26-BAB",
-   "title": "Who will have a top 20 song this year? \u2014 Lil Baby",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.06000000000000005,
-   "p_final": 0.937,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.95; faded 0.12 toward 0.5 \u2192 0.90. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:58.711944+00:00"
   },
   {
    "ticker": "KXNFLNFCNORTH-27-DET",
@@ -76144,21 +76069,6 @@
    "placed_at": "2026-07-25T12:51:43.309038+00:00"
   },
   {
-   "ticker": "KXNETFLIXTOPVIEWSMOVIE-26JUL27-12",
-   "title": "How many views will the #1 Movie on Netflix have this week? \u2014 At least 12 million",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.040000000000000036,
-   "p_final": 0.952,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.306760+00:00"
-  },
-  {
    "ticker": "KXPCECORE-26JUN-T0.1",
    "title": "How much will core PCE increase in Jun 2026? \u2014 Above 0.1%",
    "category": "Economics",
@@ -76862,21 +76772,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.91; faded 0.12 toward 0.5 \u2192 0.86. Category: Science and Technology. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.202276+00:00"
-  },
-  {
-   "ticker": "KXNETFLIXTOPVIEWSTV-26JUL27-9",
-   "title": "How many views will the #1 Show on Netflix have this week? \u2014 At least 9 million",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.04,
-   "p_final": 0.048,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.200501+00:00"
   },
   {
    "ticker": "KXFEDDECISION-26JUL-H25",
@@ -78290,6 +78185,139 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXNETFLIXTOPVIEWSMOVIE-26JUL27-21",
+   "title": "How many views will the #1 Movie on Netflix have this week? \u2014 At least 21 million",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.13,
+   "p_final": 0.879,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.89; faded 0.12 toward 0.5 \u2192 0.84. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T18:04:42.082852+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.31,
+   "settled_at": "2026-07-28T20:00:10.910127+00:00"
+  },
+  {
+   "ticker": "KXNETFLIXTOPVIEWSMOVIE-26JUL27-25",
+   "title": "How many views will the #1 Movie on Netflix have this week? \u2014 At least 25 million",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.06,
+   "p_final": 0.067,
+   "edge": 0.012,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T01:50:31.171104+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-28T20:00:10.907104+00:00"
+  },
+  {
+   "ticker": "KXNETFLIXTOPVIEWSMOVIE-26JUL27-18",
+   "title": "How many views will the #1 Movie on Netflix have this week? \u2014 At least 18 million",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.20999999999999996,
+   "p_final": 0.84,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.85; faded 0.12 toward 0.5 \u2192 0.81. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T21:46:27.852610+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.28,
+   "settled_at": "2026-07-28T20:00:10.902414+00:00"
+  },
+  {
+   "ticker": "KXNETFLIXTOPVIEWSTV-26JUL27-6",
+   "title": "How many views will the #1 Show on Netflix have this week? \u2014 At least 6 million",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.040000000000000036,
+   "p_final": 0.952,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T19:44:08.323943+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-28T20:00:10.899553+00:00"
+  },
+  {
+   "ticker": "KX20SONG-26DEC26-BAB",
+   "title": "Who will have a top 20 song this year? \u2014 Lil Baby",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.06000000000000005,
+   "p_final": 0.937,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.95; faded 0.12 toward 0.5 \u2192 0.90. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:58.711944+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-28T20:00:10.888773+00:00"
+  },
+  {
+   "ticker": "KXNETFLIXTOPVIEWSMOVIE-26JUL27-12",
+   "title": "How many views will the #1 Movie on Netflix have this week? \u2014 At least 12 million",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.040000000000000036,
+   "p_final": 0.952,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.306760+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-28T20:00:10.875517+00:00"
+  },
+  {
+   "ticker": "KXNETFLIXTOPVIEWSTV-26JUL27-9",
+   "title": "How many views will the #1 Show on Netflix have this week? \u2014 At least 9 million",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.04,
+   "p_final": 0.048,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.200501+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-28T20:00:10.868965+00:00"
+  },
   {
    "ticker": "KXWHVISIT-27-VZEL",
    "title": "Who will visit the White House in 2026? \u2014 Volodymyr Zelenskyy",
