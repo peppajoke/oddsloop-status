@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-07-29T23:03:39.731138+00:00",
+ "generated_at": "2026-07-29T23:26:51.318989+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -698.57,
+  "realized_pnl": -703.87,
   "total_fees": 1627.04,
-  "open_count": 5092,
-  "open_stake": 27452.56,
-  "settled_count": 608,
+  "open_count": 5091,
+  "open_stake": 27447.26,
+  "settled_count": 609,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1504 beats the market's 0.1510. On profitability, realized ROI is -21.8% (P&L $-698.57). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.3%, so our selection still loses to that baseline by -21.5 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1502 beats the market's 0.1508. On profitability, realized ROI is -22.0% (P&L $-703.87). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.3%, so our selection still loses to that baseline by -21.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.238,
-  "roi": -0.2185,
-  "edge_vs_favorite_null": -0.2154,
-  "edge_vs_random_null": -0.1055,
-  "brier_model": 0.1504,
-  "brier_market": 0.151,
-  "predictions_scored": 605,
-  "prediction_brier": 0.1504,
-  "prediction_log_loss": 0.4615
+  "roi": -0.2198,
+  "edge_vs_favorite_null": -0.217,
+  "edge_vs_random_null": -0.1063,
+  "brier_model": 0.1502,
+  "brier_market": 0.1508,
+  "predictions_scored": 606,
+  "prediction_brier": 0.1502,
+  "prediction_log_loss": 0.461
  },
  "null_baseline": {
-  "n": 605,
-  "realized_roi": -0.2185,
-  "favorite_roi": -0.003,
-  "random_roi": -0.113,
-  "edge_vs_favorite": -0.2154,
-  "edge_vs_random": -0.1055,
-  "realized_pnl": -697.93,
-  "favorite_pnl": -9.35,
-  "random_pnl": -353.64
+  "n": 606,
+  "realized_roi": -0.2198,
+  "favorite_roi": -0.0028,
+  "random_roi": -0.1135,
+  "edge_vs_favorite": -0.217,
+  "edge_vs_random": -0.1063,
+  "realized_pnl": -703.23,
+  "favorite_pnl": -8.51,
+  "random_pnl": -355.87
  },
  "calibration": [
   {
@@ -41,9 +41,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.143,
-   "realized": 0.119,
-   "n": 126,
+   "predicted": 0.142,
+   "realized": 0.118,
+   "n": 127,
    "low_sample": false
   },
   {
@@ -86,8 +86,8 @@
   },
   {
    "predicted": 0.141,
-   "realized": 0.111,
-   "n": 81,
+   "realized": 0.11,
+   "n": 82,
    "low_sample": false
   },
   {
@@ -214,11 +214,11 @@
   },
   {
    "category": "Mentions",
-   "n": 142,
-   "win_rate": 0.254,
-   "brier_model": 0.1558,
-   "brier_market": 0.1543,
-   "pnl": -190.2,
+   "n": 143,
+   "win_rate": 0.252,
+   "brier_model": 0.1549,
+   "brier_market": 0.1534,
+   "pnl": -195.5,
    "beats_market": false
   },
   {
@@ -65132,21 +65132,6 @@
    "placed_at": "2026-07-25T12:51:47.718565+00:00"
   },
   {
-   "ticker": "KXEARNINGSMENTIONCMG-26JUL29-SHAR",
-   "title": "What will Chipotle say during their next earnings call? \u2014 Share Purchase",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.15,
-   "p_final": 0.131,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:47.708873+00:00"
-  },
-  {
    "ticker": "KXNEWROLEX-27JAN-NIKI",
    "title": "Who will be the next CEO of X? \u2014 Nikita Bier",
    "category": "Companies",
@@ -76623,6 +76608,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXEARNINGSMENTIONCMG-26JUL29-SHAR",
+   "title": "What will Chipotle say during their next earnings call? \u2014 Share Purchase",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.15,
+   "p_final": 0.131,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:47.708873+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-07-29T23:25:46.442857+00:00"
+  },
   {
    "ticker": "KXEARNINGSMENTIONSBUX-26JUL29-BOYU",
    "title": "What will Starbucks say during their next earnings call? \u2014 Boyu",
