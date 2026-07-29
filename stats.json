@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-07-29T18:45:33.091413+00:00",
+ "generated_at": "2026-07-29T19:16:34.582072+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -726.22,
+  "realized_pnl": -768.19,
   "total_fees": 1626.95,
-  "open_count": 5158,
-  "open_stake": 27800.43,
-  "settled_count": 541,
+  "open_count": 5150,
+  "open_stake": 27758.46,
+  "settled_count": 549,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1480 beats the market's 0.1489. On profitability, realized ROI is -25.5% (P&L $-726.22). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.6%, so our selection still loses to that baseline by -25.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.237,
-  "roi": -0.2553,
-  "edge_vs_favorite_null": -0.2497,
-  "edge_vs_random_null": -0.1255,
-  "brier_model": 0.148,
-  "brier_market": 0.1489,
-  "predictions_scored": 541,
-  "prediction_brier": 0.1475,
-  "prediction_log_loss": 0.4531
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1474 beats the market's 0.1483. On profitability, realized ROI is -26.6% (P&L $-768.19). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -26.8 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.233,
+  "roi": -0.2662,
+  "edge_vs_favorite_null": -0.2676,
+  "edge_vs_random_null": -0.1343,
+  "brier_model": 0.1474,
+  "brier_market": 0.1483,
+  "predictions_scored": 546,
+  "prediction_brier": 0.1474,
+  "prediction_log_loss": 0.4529
  },
  "null_baseline": {
-  "n": 538,
-  "realized_roi": -0.2553,
-  "favorite_roi": -0.0056,
-  "random_roi": -0.1298,
-  "edge_vs_favorite": -0.2497,
-  "edge_vs_random": -0.1255,
-  "realized_pnl": -725.58,
-  "favorite_pnl": -15.34,
-  "random_pnl": -361.42
+  "n": 546,
+  "realized_roi": -0.2662,
+  "favorite_roi": 0.0015,
+  "random_roi": -0.1319,
+  "edge_vs_favorite": -0.2676,
+  "edge_vs_random": -0.1343,
+  "realized_pnl": -767.55,
+  "favorite_pnl": 4.08,
+  "random_pnl": -372.69
  },
  "calibration": [
   {
@@ -42,14 +42,14 @@
   },
   {
    "predicted": 0.14,
-   "realized": 0.111,
-   "n": 108,
+   "realized": 0.11,
+   "n": 109,
    "low_sample": false
   },
   {
-   "predicted": 0.253,
-   "realized": 0.165,
-   "n": 85,
+   "predicted": 0.252,
+   "realized": 0.157,
+   "n": 89,
    "low_sample": false
   },
   {
@@ -60,8 +60,8 @@
   },
   {
    "predicted": 0.451,
-   "realized": 0.52,
-   "n": 127,
+   "realized": 0.508,
+   "n": 130,
    "low_sample": false
   },
   {
@@ -85,15 +85,15 @@
    "low_sample": false
   },
   {
-   "predicted": 0.14,
-   "realized": 0.087,
-   "n": 69,
+   "predicted": 0.139,
+   "realized": 0.086,
+   "n": 70,
    "low_sample": false
   },
   {
-   "predicted": 0.249,
-   "realized": 0.145,
-   "n": 55,
+   "predicted": 0.248,
+   "realized": 0.143,
+   "n": 56,
    "low_sample": false
   },
   {
@@ -109,9 +109,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.55,
-   "realized": 0.508,
-   "n": 61,
+   "predicted": 0.549,
+   "realized": 0.531,
+   "n": 64,
    "low_sample": false
   },
   {
@@ -213,6 +213,15 @@
    "beats_market": false
   },
   {
+   "category": "Economics",
+   "n": 20,
+   "win_rate": 0.1,
+   "brier_model": 0.1206,
+   "brier_market": 0.1176,
+   "pnl": -65.06,
+   "beats_market": false
+  },
+  {
    "category": "Science and Technology",
    "n": 11,
    "win_rate": 0.364,
@@ -228,15 +237,6 @@
    "brier_model": 0.1466,
    "brier_market": 0.1414,
    "pnl": -11.05,
-   "beats_market": false
-  },
-  {
-   "category": "Economics",
-   "n": 12,
-   "win_rate": 0.167,
-   "brier_model": 0.1274,
-   "brier_market": 0.121,
-   "pnl": -23.09,
    "beats_market": false
   }
  ],
@@ -4607,21 +4607,6 @@
    "placed_at": "2026-07-26T21:07:57.360171+00:00"
   },
   {
-   "ticker": "KXFOMCGUIDE-26-FWD",
-   "title": "Will the July 2026 FOMC statement include forward guidance? \u2014 In July 2026",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.1,
-   "p_final": 0.108,
-   "edge": 0.013,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.14. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T21:07:57.287809+00:00"
-  },
-  {
    "ticker": "KXLALIGA-27-BAR",
    "title": "La Liga Champion \u2014 Barcelona",
    "category": "Sports",
@@ -7170,21 +7155,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Companies. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T21:46:28.156807+00:00"
-  },
-  {
-   "ticker": "KXFEDDISSENT-26JUL-BETH",
-   "title": "Who will dissent at the July Fed meeting? \u2014 Beth Hammack",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.18,
-   "entry_price": 0.49,
-   "p_final": 0.515,
-   "edge": 0.0,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.52; faded 0.12 toward 0.5 \u2192 0.51. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T21:46:27.976131+00:00"
   },
   {
    "ticker": "KXTLN-26AUGGEN-9.0",
@@ -76022,21 +75992,6 @@
    "placed_at": "2026-07-25T12:51:43.252461+00:00"
   },
   {
-   "ticker": "KXFEDDISSENT-26JUL-LORI",
-   "title": "Who will dissent at the July Fed meeting? \u2014 Lorie Logan",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.18,
-   "entry_price": 0.49,
-   "p_final": 0.524,
-   "edge": 0.001,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.53; faded 0.12 toward 0.5 \u2192 0.52. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.248065+00:00"
-  },
-  {
    "ticker": "KXBTCD-26JUL3117-T61999.99",
    "title": "BTC price on Jul 31, 2026 at 5pm EDT? \u2014 $62,000 or above",
    "category": "Crypto",
@@ -76112,21 +76067,6 @@
    "placed_at": "2026-07-25T12:51:43.238080+00:00"
   },
   {
-   "ticker": "KXFOMCDISSENTCOUNT-26JUL-1",
-   "title": "How many dissenting votes at the July Fed meeting? \u2014 1",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.25,
-   "p_final": 0.252,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.24; faded 0.12 toward 0.5 \u2192 0.28. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.234149+00:00"
-  },
-  {
    "ticker": "KXBTCD-26JUL3117-T65499.99",
    "title": "BTC price on Jul 31, 2026 at 5pm EDT? \u2014 $65,500 or above",
    "category": "Crypto",
@@ -76172,21 +76112,6 @@
    "placed_at": "2026-07-25T12:51:43.228311+00:00"
   },
   {
-   "ticker": "KXFOMCDISSENTCOUNT-26JUL-2",
-   "title": "How many dissenting votes at the July Fed meeting? \u2014 2",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.25,
-   "p_final": 0.247,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.24; faded 0.12 toward 0.5 \u2192 0.27. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.224448+00:00"
-  },
-  {
    "ticker": "KXBTCD-26JUL3117-T59499.99",
    "title": "BTC price on Jul 31, 2026 at 5pm EDT? \u2014 $59,500 or above",
    "category": "Crypto",
@@ -76230,21 +76155,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.79; faded 0.12 toward 0.5 \u2192 0.76. Category: Science and Technology. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.215034+00:00"
-  },
-  {
-   "ticker": "KXFOMCDISSENTCOUNT-26JUL-0",
-   "title": "How many dissenting votes at the July Fed meeting? \u2014 0",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.26,
-   "entry_price": 0.27,
-   "p_final": 0.272,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.27; faded 0.12 toward 0.5 \u2192 0.29. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.211376+00:00"
   },
   {
    "ticker": "KXBTCD-26JUL3117-T63499.99",
@@ -76382,21 +76292,6 @@
    "placed_at": "2026-07-25T12:51:43.178183+00:00"
   },
   {
-   "ticker": "KXFEDCOMBO-26JUL-0-T0",
-   "title": "July 2026 Fed Combo: Rate and Dissents \u2014 Federal Funds Rate Decision: No change, Dissents: >0",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.41000000000000003,
-   "p_final": 0.592,
-   "edge": 0.003,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.59; faded 0.12 toward 0.5 \u2192 0.58. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.174917+00:00"
-  },
-  {
    "ticker": "KXBTCD-26JUL3117-T65999.99",
    "title": "BTC price on Jul 31, 2026 at 5pm EDT? \u2014 $66,000 or above",
    "category": "Crypto",
@@ -76425,21 +76320,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.71; faded 0.12 toward 0.5 \u2192 0.69. Category: Politics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.170096+00:00"
-  },
-  {
-   "ticker": "KXFEDCOMBO-26JUL-0-0",
-   "title": "July 2026 Fed Combo: Rate and Dissents \u2014 Federal Funds Rate Decision: No change, Dissents: 0",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.21,
-   "p_final": 0.213,
-   "edge": 0.008,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.21; faded 0.12 toward 0.5 \u2192 0.24. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.163774+00:00"
   },
   {
    "ticker": "KXBTCD-26JUL3117-T59999.99",
@@ -77613,6 +77493,158 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXFOMCGUIDE-26-FWD",
+   "title": "Will the July 2026 FOMC statement include forward guidance? \u2014 In July 2026",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.1,
+   "p_final": 0.108,
+   "edge": 0.013,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.14. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T21:07:57.287809+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-07-29T19:16:05.147988+00:00"
+  },
+  {
+   "ticker": "KXFEDDISSENT-26JUL-BETH",
+   "title": "Who will dissent at the July Fed meeting? \u2014 Beth Hammack",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.18,
+   "entry_price": 0.49,
+   "p_final": 0.515,
+   "edge": 0.0,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.52; faded 0.12 toward 0.5 \u2192 0.51. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T21:46:27.976131+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.18,
+   "settled_at": "2026-07-29T19:16:05.144575+00:00"
+  },
+  {
+   "ticker": "KXFEDDISSENT-26JUL-LORI",
+   "title": "Who will dissent at the July Fed meeting? \u2014 Lorie Logan",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.18,
+   "entry_price": 0.49,
+   "p_final": 0.524,
+   "edge": 0.001,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.53; faded 0.12 toward 0.5 \u2192 0.52. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.248065+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.18,
+   "settled_at": "2026-07-29T19:16:05.133322+00:00"
+  },
+  {
+   "ticker": "KXFOMCDISSENTCOUNT-26JUL-1",
+   "title": "How many dissenting votes at the July Fed meeting? \u2014 1",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.25,
+   "p_final": 0.252,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.24; faded 0.12 toward 0.5 \u2192 0.28. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.234149+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-29T19:16:05.130990+00:00"
+  },
+  {
+   "ticker": "KXFOMCDISSENTCOUNT-26JUL-2",
+   "title": "How many dissenting votes at the July Fed meeting? \u2014 2",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.25,
+   "p_final": 0.247,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.24; faded 0.12 toward 0.5 \u2192 0.27. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.224448+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-29T19:16:05.127596+00:00"
+  },
+  {
+   "ticker": "KXFOMCDISSENTCOUNT-26JUL-0",
+   "title": "How many dissenting votes at the July Fed meeting? \u2014 0",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.26,
+   "entry_price": 0.27,
+   "p_final": 0.272,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.27; faded 0.12 toward 0.5 \u2192 0.29. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.211376+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.26,
+   "settled_at": "2026-07-29T19:16:05.122372+00:00"
+  },
+  {
+   "ticker": "KXFEDCOMBO-26JUL-0-T0",
+   "title": "July 2026 Fed Combo: Rate and Dissents \u2014 Federal Funds Rate Decision: No change, Dissents: >0",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.41000000000000003,
+   "p_final": 0.592,
+   "edge": 0.003,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.59; faded 0.12 toward 0.5 \u2192 0.58. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.174917+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.21,
+   "settled_at": "2026-07-29T19:16:05.115955+00:00"
+  },
+  {
+   "ticker": "KXFEDCOMBO-26JUL-0-0",
+   "title": "July 2026 Fed Combo: Rate and Dissents \u2014 Federal Funds Rate Decision: No change, Dissents: 0",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.21,
+   "p_final": 0.213,
+   "edge": 0.008,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.21; faded 0.12 toward 0.5 \u2192 0.24. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.163774+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.28,
+   "settled_at": "2026-07-29T19:16:05.102548+00:00"
+  },
   {
    "ticker": "KXFEDDECISION-26JUL-H25",
    "title": "Fed decision in Jul 2026? \u2014 Hike 25bps",
