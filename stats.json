@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-07-29T21:58:05.851296+00:00",
+ "generated_at": "2026-07-29T22:23:21.919588+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -743.21,
+  "realized_pnl": -712.81,
   "total_fees": 1627.04,
-  "open_count": 5107,
-  "open_stake": 27531.45,
-  "settled_count": 593,
+  "open_count": 5106,
+  "open_stake": 27526.14,
+  "settled_count": 594,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1480 beats the market's 0.1488. On profitability, realized ROI is -23.8% (P&L $-743.21). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -24.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.233,
-  "roi": -0.2383,
-  "edge_vs_favorite_null": -0.2406,
-  "edge_vs_random_null": -0.1194,
-  "brier_model": 0.148,
-  "brier_market": 0.1488,
-  "predictions_scored": 590,
-  "prediction_brier": 0.148,
-  "prediction_log_loss": 0.4555
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1491 beats the market's 0.1498. On profitability, realized ROI is -22.8% (P&L $-712.81). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -22.9 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.234,
+  "roi": -0.2282,
+  "edge_vs_favorite_null": -0.2287,
+  "edge_vs_random_null": -0.1136,
+  "brier_model": 0.1491,
+  "brier_market": 0.1498,
+  "predictions_scored": 591,
+  "prediction_brier": 0.1491,
+  "prediction_log_loss": 0.4585
  },
  "null_baseline": {
-  "n": 590,
-  "realized_roi": -0.2383,
-  "favorite_roi": 0.0023,
-  "random_roi": -0.1189,
-  "edge_vs_favorite": -0.2406,
-  "edge_vs_random": -0.1194,
-  "realized_pnl": -742.57,
-  "favorite_pnl": 6.74,
-  "random_pnl": -362.91
+  "n": 591,
+  "realized_roi": -0.2282,
+  "favorite_roi": 0.0005,
+  "random_roi": -0.1146,
+  "edge_vs_favorite": -0.2287,
+  "edge_vs_random": -0.1136,
+  "realized_pnl": -712.17,
+  "favorite_pnl": 1.52,
+  "random_pnl": -350.32
  },
  "calibration": [
   {
@@ -42,8 +42,8 @@
   },
   {
    "predicted": 0.142,
-   "realized": 0.114,
-   "n": 123,
+   "realized": 0.121,
+   "n": 124,
    "low_sample": false
   },
   {
@@ -86,8 +86,8 @@
   },
   {
    "predicted": 0.141,
-   "realized": 0.101,
-   "n": 79,
+   "realized": 0.113,
+   "n": 80,
    "low_sample": false
   },
   {
@@ -205,11 +205,11 @@
   },
   {
    "category": "Mentions",
-   "n": 137,
-   "win_rate": 0.234,
-   "brier_model": 0.1468,
-   "brier_market": 0.1457,
-   "pnl": -239.79,
+   "n": 138,
+   "win_rate": 0.239,
+   "brier_model": 0.1515,
+   "brier_market": 0.15,
+   "pnl": -209.39,
    "beats_market": false
   },
   {
@@ -70667,21 +70667,6 @@
    "placed_at": "2026-07-25T12:51:44.722606+00:00"
   },
   {
-   "ticker": "KXTRUMPSAYCOMPANY-26AUG01-DE",
-   "title": "What companies will Trump say in July? \u2014 Deere / DE",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.14,
-   "p_final": 0.106,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.14. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:44.717056+00:00"
-  },
-  {
    "ticker": "KXNEWROLEX-27JAN-ELON",
    "title": "Who will be the next CEO of X? \u2014 Elon Musk",
    "category": "Companies",
@@ -76848,6 +76833,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXTRUMPSAYCOMPANY-26AUG01-DE",
+   "title": "What companies will Trump say in July? \u2014 Deere / DE",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.14,
+   "p_final": 0.106,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.14. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:44.717056+00:00",
+   "won": true,
+   "payout": 35.71,
+   "pnl": 30.4,
+   "settled_at": "2026-07-29T22:22:52.278764+00:00"
+  },
   {
    "ticker": "KXCMG-26JULCOMP-3.0",
    "title": "Chipotle comparable restaurant sales increase in Q2 \u2014 Above 3%",
