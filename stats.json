@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-07-29T04:47:51.955432+00:00",
+ "generated_at": "2026-07-29T05:18:54.136905+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -686.62,
+  "realized_pnl": -689.16,
   "total_fees": 1626.95,
-  "open_count": 5168,
-  "open_stake": 27853.19,
-  "settled_count": 531,
+  "open_count": 5165,
+  "open_stake": 27837.49,
+  "settled_count": 534,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1490 beats the market's 0.1500. On profitability, realized ROI is -24.6% (P&L $-686.62). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.5%, so our selection still loses to that baseline by -24.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.239,
-  "roi": -0.246,
-  "edge_vs_favorite_null": -0.241,
-  "edge_vs_random_null": -0.1195,
-  "brier_model": 0.149,
-  "brier_market": 0.15,
-  "predictions_scored": 528,
-  "prediction_brier": 0.149,
-  "prediction_log_loss": 0.4564
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1494 beats the market's 0.1504. On profitability, realized ROI is -24.5% (P&L $-689.16). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -23.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.24,
+  "roi": -0.2455,
+  "edge_vs_favorite_null": -0.237,
+  "edge_vs_random_null": -0.1193,
+  "brier_model": 0.1494,
+  "brier_market": 0.1504,
+  "predictions_scored": 531,
+  "prediction_brier": 0.1494,
+  "prediction_log_loss": 0.4573
  },
  "null_baseline": {
-  "n": 528,
-  "realized_roi": -0.246,
-  "favorite_roi": -0.005,
-  "random_roi": -0.1265,
-  "edge_vs_favorite": -0.241,
-  "edge_vs_random": -0.1195,
-  "realized_pnl": -685.98,
-  "favorite_pnl": -13.38,
-  "random_pnl": -345.64
+  "n": 531,
+  "realized_roi": -0.2455,
+  "favorite_roi": -0.0085,
+  "random_roi": -0.1262,
+  "edge_vs_favorite": -0.237,
+  "edge_vs_random": -0.1193,
+  "realized_pnl": -688.52,
+  "favorite_pnl": -22.82,
+  "random_pnl": -346.63
  },
  "calibration": [
   {
@@ -42,8 +42,8 @@
   },
   {
    "predicted": 0.14,
-   "realized": 0.114,
-   "n": 105,
+   "realized": 0.113,
+   "n": 106,
    "low_sample": false
   },
   {
@@ -54,14 +54,14 @@
   },
   {
    "predicted": 0.355,
-   "realized": 0.301,
-   "n": 93,
+   "realized": 0.309,
+   "n": 94,
    "low_sample": false
   },
   {
-   "predicted": 0.45,
-   "realized": 0.524,
-   "n": 126,
+   "predicted": 0.451,
+   "realized": 0.52,
+   "n": 127,
    "low_sample": false
   },
   {
@@ -103,9 +103,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.451,
-   "realized": 0.537,
-   "n": 67,
+   "predicted": 0.452,
+   "realized": 0.529,
+   "n": 68,
    "low_sample": false
   },
   {
@@ -116,8 +116,8 @@
   },
   {
    "predicted": 0.643,
-   "realized": 0.667,
-   "n": 45,
+   "realized": 0.652,
+   "n": 46,
    "low_sample": false
   },
   {
@@ -127,9 +127,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.861,
-   "realized": 0.838,
-   "n": 37,
+   "predicted": 0.86,
+   "realized": 0.842,
+   "n": 38,
    "low_sample": false
   },
   {
@@ -169,11 +169,11 @@
   },
   {
    "category": "Sports",
-   "n": 254,
+   "n": 257,
    "win_rate": 0.28,
-   "brier_model": 0.1652,
-   "brier_market": 0.1667,
-   "pnl": -260.49,
+   "brier_model": 0.1659,
+   "brier_market": 0.1674,
+   "pnl": -263.03,
    "beats_market": true
   },
   {
@@ -4142,21 +4142,6 @@
    "placed_at": "2026-07-26T23:09:57.190288+00:00"
   },
   {
-   "ticker": "KXATPGTOTAL-26JUL26BROMOU-24",
-   "title": "Jenson Brooksby vs Corentin Moutet: Total Games \u2014 Over 23.5 games",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.18,
-   "entry_price": 0.5,
-   "p_final": 0.49,
-   "edge": 0.0,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.49; faded 0.12 toward 0.5 \u2192 0.49. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T23:09:57.123381+00:00"
-  },
-  {
    "ticker": "KXBOND-30-HC",
    "title": "Next James Bond film: Actor cast as James Bond \u2014 Henry Cavill",
    "category": "Entertainment",
@@ -4335,21 +4320,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.33; faded 0.12 toward 0.5 \u2192 0.35. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T22:08:58.233162+00:00"
-  },
-  {
-   "ticker": "KXMLBGAME-26JUL282210SEALAD-LAD",
-   "title": "Seattle vs Los Angeles D",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.22,
-   "entry_price": 0.38,
-   "p_final": 0.636,
-   "edge": 0.004,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.64; faded 0.12 toward 0.5 \u2192 0.62. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T22:08:58.164988+00:00"
   },
   {
    "ticker": "KXNCAAFWINS-26MISS-9",
@@ -4740,21 +4710,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.63; faded 0.12 toward 0.5 \u2192 0.61. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T20:06:48.903137+00:00"
-  },
-  {
-   "ticker": "KXWTAMATCH-26JUL27POTWIL-POT",
-   "title": "Potapova vs Williams \u2014 Anastasia Potapova",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.15000000000000002,
-   "p_final": 0.845,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.85; faded 0.12 toward 0.5 \u2192 0.81. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T20:06:48.823049+00:00"
   },
   {
    "ticker": "KXTRUMPSAYNICKNAME-26OCT01-PIGG",
@@ -77763,6 +77718,63 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXATPGTOTAL-26JUL26BROMOU-24",
+   "title": "Jenson Brooksby vs Corentin Moutet: Total Games \u2014 Over 23.5 games",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.18,
+   "entry_price": 0.5,
+   "p_final": 0.49,
+   "edge": 0.0,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.49; faded 0.12 toward 0.5 \u2192 0.49. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T23:09:57.123381+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.18,
+   "settled_at": "2026-07-29T05:18:23.846244+00:00"
+  },
+  {
+   "ticker": "KXMLBGAME-26JUL282210SEALAD-LAD",
+   "title": "Seattle vs Los Angeles D",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.22,
+   "entry_price": 0.38,
+   "p_final": 0.636,
+   "edge": 0.004,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.64; faded 0.12 toward 0.5 \u2192 0.62. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T22:08:58.164988+00:00",
+   "won": true,
+   "payout": 13.16,
+   "pnl": 7.94,
+   "settled_at": "2026-07-29T05:18:23.843817+00:00"
+  },
+  {
+   "ticker": "KXWTAMATCH-26JUL27POTWIL-POT",
+   "title": "Potapova vs Williams \u2014 Anastasia Potapova",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.15000000000000002,
+   "p_final": 0.845,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.85; faded 0.12 toward 0.5 \u2192 0.81. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T20:06:48.823049+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-07-29T05:18:23.836385+00:00"
+  },
   {
    "ticker": "KXMLBGAME-26JUL282140BOSATH-BOS",
    "title": "Boston vs A's",
