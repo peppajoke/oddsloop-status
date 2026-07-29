@@ -1,43 +1,43 @@
 {
- "generated_at": "2026-07-29T14:37:27.532568+00:00",
+ "generated_at": "2026-07-29T15:08:28.732945+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -705.08,
+  "realized_pnl": -710.42,
   "total_fees": 1626.95,
-  "open_count": 5162,
-  "open_stake": 27821.57,
-  "settled_count": 537,
+  "open_count": 5161,
+  "open_stake": 27816.23,
+  "settled_count": 538,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1487 beats the market's 0.1496. On profitability, realized ROI is -25.0% (P&L $-705.08). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -24.2 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1484 beats the market's 0.1494. On profitability, realized ROI is -25.1% (P&L $-710.42). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -24.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.238,
-  "roi": -0.2498,
-  "edge_vs_favorite_null": -0.2421,
-  "edge_vs_random_null": -0.1218,
-  "brier_model": 0.1487,
-  "brier_market": 0.1496,
-  "predictions_scored": 534,
-  "prediction_brier": 0.1487,
-  "prediction_log_loss": 0.4556
+  "roi": -0.2512,
+  "edge_vs_favorite_null": -0.2437,
+  "edge_vs_random_null": -0.1226,
+  "brier_model": 0.1484,
+  "brier_market": 0.1494,
+  "predictions_scored": 535,
+  "prediction_brier": 0.1484,
+  "prediction_log_loss": 0.4548
  },
  "null_baseline": {
-  "n": 534,
-  "realized_roi": -0.2498,
-  "favorite_roi": -0.0076,
-  "random_roi": -0.1279,
-  "edge_vs_favorite": -0.2421,
-  "edge_vs_random": -0.1218,
-  "realized_pnl": -704.44,
-  "favorite_pnl": -20.59,
-  "random_pnl": -353.47
+  "n": 535,
+  "realized_roi": -0.2512,
+  "favorite_roi": -0.0075,
+  "random_roi": -0.1286,
+  "edge_vs_favorite": -0.2437,
+  "edge_vs_random": -0.1226,
+  "realized_pnl": -709.78,
+  "favorite_pnl": -20.36,
+  "random_pnl": -356.03
  },
  "calibration": [
   {
    "predicted": 0.067,
    "realized": 0.033,
-   "n": 120,
+   "n": 121,
    "low_sample": false
   },
   {
@@ -79,9 +79,9 @@
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.068,
-   "realized": 0.034,
-   "n": 89,
+   "predicted": 0.067,
+   "realized": 0.033,
+   "n": 90,
    "low_sample": false
   },
   {
@@ -196,11 +196,11 @@
   },
   {
    "category": "Politics",
-   "n": 7,
-   "win_rate": 0.143,
-   "brier_model": 0.0892,
-   "brier_market": 0.0887,
-   "pnl": -26.88,
+   "n": 8,
+   "win_rate": 0.125,
+   "brier_model": 0.0784,
+   "brier_market": 0.0779,
+   "pnl": -32.22,
    "beats_market": false
   },
   {
@@ -48902,21 +48902,6 @@
    "placed_at": "2026-07-25T13:01:34.425967+00:00"
   },
   {
-   "ticker": "KXREHEARBIRTHRIGHT-27",
-   "title": "Will the Supreme Court rehear Trump\u2019s birthright case in 2026? \u2014 Yes",
-   "category": "Politics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.05,
-   "p_final": 0.053,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Politics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:34.402262+00:00"
-  },
-  {
    "ticker": "KXPRESMATCHUP-28NOV07-GNEWMRUB",
    "title": "2028 Presidential matchup \u2014 Gavin Newsom v. Marco Rubio",
    "category": "Elections",
@@ -77673,6 +77658,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXREHEARBIRTHRIGHT-27",
+   "title": "Will the Supreme Court rehear Trump\u2019s birthright case in 2026? \u2014 Yes",
+   "category": "Politics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.05,
+   "p_final": 0.053,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Politics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:34.402262+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-29T15:07:59.921930+00:00"
+  },
   {
    "ticker": "KXWING-26JULREST-3280",
    "title": "Wingstop total system-wide restaurants in Q2 \u2014 Above 3280",
