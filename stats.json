@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-07-29T17:43:29.309827+00:00",
+ "generated_at": "2026-07-29T18:14:31.835785+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -710.42,
+  "realized_pnl": -726.22,
   "total_fees": 1626.95,
-  "open_count": 5161,
-  "open_stake": 27816.23,
-  "settled_count": 538,
+  "open_count": 5158,
+  "open_stake": 27800.43,
+  "settled_count": 541,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1484 beats the market's 0.1494. On profitability, realized ROI is -25.1% (P&L $-710.42). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -24.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.238,
-  "roi": -0.2512,
-  "edge_vs_favorite_null": -0.2437,
-  "edge_vs_random_null": -0.1226,
-  "brier_model": 0.1484,
-  "brier_market": 0.1494,
-  "predictions_scored": 535,
-  "prediction_brier": 0.1484,
-  "prediction_log_loss": 0.4548
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1480 beats the market's 0.1489. On profitability, realized ROI is -25.5% (P&L $-726.22). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.6%, so our selection still loses to that baseline by -25.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.237,
+  "roi": -0.2553,
+  "edge_vs_favorite_null": -0.2497,
+  "edge_vs_random_null": -0.1255,
+  "brier_model": 0.148,
+  "brier_market": 0.1489,
+  "predictions_scored": 538,
+  "prediction_brier": 0.148,
+  "prediction_log_loss": 0.4539
  },
  "null_baseline": {
-  "n": 535,
-  "realized_roi": -0.2512,
-  "favorite_roi": -0.0075,
-  "random_roi": -0.1286,
-  "edge_vs_favorite": -0.2437,
-  "edge_vs_random": -0.1226,
-  "realized_pnl": -709.78,
-  "favorite_pnl": -20.36,
-  "random_pnl": -356.03
+  "n": 538,
+  "realized_roi": -0.2553,
+  "favorite_roi": -0.0056,
+  "random_roi": -0.1298,
+  "edge_vs_favorite": -0.2497,
+  "edge_vs_random": -0.1255,
+  "realized_pnl": -725.58,
+  "favorite_pnl": -15.34,
+  "random_pnl": -361.42
  },
  "calibration": [
   {
@@ -48,8 +48,8 @@
   },
   {
    "predicted": 0.253,
-   "realized": 0.171,
-   "n": 82,
+   "realized": 0.165,
+   "n": 85,
    "low_sample": false
   },
   {
@@ -91,9 +91,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.248,
-   "realized": 0.16,
-   "n": 50,
+   "predicted": 0.249,
+   "realized": 0.154,
+   "n": 52,
    "low_sample": false
   },
   {
@@ -122,8 +122,8 @@
   },
   {
    "predicted": 0.741,
-   "realized": 0.812,
-   "n": 32,
+   "realized": 0.818,
+   "n": 33,
    "low_sample": false
   },
   {
@@ -232,11 +232,11 @@
   },
   {
    "category": "Economics",
-   "n": 9,
-   "win_rate": 0.222,
-   "brier_model": 0.1483,
-   "brier_market": 0.1399,
-   "pnl": -7.29,
+   "n": 12,
+   "win_rate": 0.167,
+   "brier_model": 0.1274,
+   "brier_market": 0.121,
+   "pnl": -23.09,
    "beats_market": false
   }
  ],
@@ -76292,21 +76292,6 @@
    "placed_at": "2026-07-25T12:51:43.202276+00:00"
   },
   {
-   "ticker": "KXFEDDECISION-26JUL-H25",
-   "title": "Fed decision in Jul 2026? \u2014 Hike 25bps",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.25,
-   "p_final": 0.253,
-   "edge": 0.008,
-   "confidence": 0.5,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.24; faded 0.12 toward 0.5 \u2192 0.28. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.198745+00:00"
-  },
-  {
    "ticker": "KXBTC-26JUL3117-B64250",
    "title": "BTC price range on Jul 31, 2026 at 5pm EDT? \u2014 $64,000 to 64,499.99",
    "category": "Crypto",
@@ -76350,21 +76335,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.03; faded 0.12 toward 0.5 \u2192 0.09. Category: Science and Technology. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.190010+00:00"
-  },
-  {
-   "ticker": "KXFEDDECISION-26JUL-H0",
-   "title": "Fed decision in Jul 2026? \u2014 Fed maintains rate",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.25,
-   "p_final": 0.752,
-   "edge": 0.008,
-   "confidence": 0.5,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.76; faded 0.12 toward 0.5 \u2192 0.73. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.186595+00:00"
   },
   {
    "ticker": "KXBTCD-26JUL3117-T62999.99",
@@ -76515,21 +76485,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.58; faded 0.12 toward 0.5 \u2192 0.57. Category: Politics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.155898+00:00"
-  },
-  {
-   "ticker": "KXFED-26JUL-T3.75",
-   "title": "Fed funds rate after Jul 2026 meeting? \u2014 Above 3.75%",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.26,
-   "entry_price": 0.26,
-   "p_final": 0.263,
-   "edge": 0.008,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.26; faded 0.12 toward 0.5 \u2192 0.28. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.149961+00:00"
   },
   {
    "ticker": "KXBTCD-26JUL3117-T64999.99",
@@ -77658,6 +77613,63 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXFEDDECISION-26JUL-H25",
+   "title": "Fed decision in Jul 2026? \u2014 Hike 25bps",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.25,
+   "p_final": 0.253,
+   "edge": 0.008,
+   "confidence": 0.5,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.24; faded 0.12 toward 0.5 \u2192 0.28. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.198745+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-29T18:14:02.294227+00:00"
+  },
+  {
+   "ticker": "KXFEDDECISION-26JUL-H0",
+   "title": "Fed decision in Jul 2026? \u2014 Fed maintains rate",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.25,
+   "p_final": 0.752,
+   "edge": 0.008,
+   "confidence": 0.5,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.76; faded 0.12 toward 0.5 \u2192 0.73. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.186595+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-29T18:14:02.288752+00:00"
+  },
+  {
+   "ticker": "KXFED-26JUL-T3.75",
+   "title": "Fed funds rate after Jul 2026 meeting? \u2014 Above 3.75%",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.26,
+   "entry_price": 0.26,
+   "p_final": 0.263,
+   "edge": 0.008,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.26; faded 0.12 toward 0.5 \u2192 0.28. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.149961+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.26,
+   "settled_at": "2026-07-29T18:14:02.275751+00:00"
+  },
   {
    "ticker": "KXREHEARBIRTHRIGHT-27",
    "title": "Will the Supreme Court rehear Trump\u2019s birthright case in 2026? \u2014 Yes",
