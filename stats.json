@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-07-28T23:37:41.075490+00:00",
+ "generated_at": "2026-07-29T00:08:41.739769+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -695.68,
+  "realized_pnl": -700.89,
   "total_fees": 1626.95,
-  "open_count": 5173,
-  "open_stake": 27879.2,
-  "settled_count": 526,
+  "open_count": 5172,
+  "open_stake": 27873.99,
+  "settled_count": 527,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1479 beats the market's 0.1488. On profitability, realized ROI is -25.2% (P&L $-695.68). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
-  "win_rate": 0.236,
-  "roi": -0.2516,
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1479 beats the market's 0.1488. On profitability, realized ROI is -25.3% (P&L $-700.89). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "win_rate": 0.235,
+  "roi": -0.253,
   "brier_model": 0.1479,
   "brier_market": 0.1488,
-  "predictions_scored": 523,
+  "predictions_scored": 524,
   "prediction_brier": 0.1479,
-  "prediction_log_loss": 0.4537
+  "prediction_log_loss": 0.4538
  },
  "calibration": [
   {
@@ -40,9 +40,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.354,
-   "realized": 0.297,
-   "n": 91,
+   "predicted": 0.355,
+   "realized": 0.293,
+   "n": 92,
    "low_sample": false
   },
   {
@@ -84,9 +84,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.352,
-   "realized": 0.271,
-   "n": 48,
+   "predicted": 0.353,
+   "realized": 0.265,
+   "n": 49,
    "low_sample": false
   },
   {
@@ -183,11 +183,11 @@
   },
   {
    "category": "Politics",
-   "n": 6,
-   "win_rate": 0.167,
-   "brier_model": 0.0776,
-   "brier_market": 0.0768,
-   "pnl": -21.67,
+   "n": 7,
+   "win_rate": 0.143,
+   "brier_model": 0.0892,
+   "brier_market": 0.0887,
+   "pnl": -26.88,
    "beats_market": false
   },
   {
@@ -25862,21 +25862,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:32.826412+00:00"
-  },
-  {
-   "ticker": "KXCLAYTONCOUNT-27-T53",
-   "title": "How many Senators vote to confirm Jay Clayton as Director of National Intelligence? \u2014 Above 53",
-   "category": "Politics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.4,
-   "p_final": 0.398,
-   "edge": 0.003,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.40; faded 0.12 toward 0.5 \u2192 0.41. Category: Politics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:32.782970+00:00"
   },
   {
    "ticker": "KXSTATELEG-MNHOUSE26-D",
@@ -77825,6 +77810,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXCLAYTONCOUNT-27-T53",
+   "title": "How many Senators vote to confirm Jay Clayton as Director of National Intelligence? \u2014 Above 53",
+   "category": "Politics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.4,
+   "p_final": 0.398,
+   "edge": 0.003,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.40; faded 0.12 toward 0.5 \u2192 0.41. Category: Politics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:32.782970+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.21,
+   "settled_at": "2026-07-29T00:08:11.858030+00:00"
+  },
   {
    "ticker": "KXMLBSPREAD-26JUL271910CLECIN-CIN2",
    "title": "Cleveland vs Cincinnati: Spread \u2014 Cincinnati wins by over 1.5 runs",
