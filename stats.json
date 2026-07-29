@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-29T18:40:59.408339+00:00",
+ "generated_at": "2026-07-29T18:45:33.091413+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
@@ -18,9 +18,9 @@
   "edge_vs_random_null": -0.1255,
   "brier_model": 0.148,
   "brier_market": 0.1489,
-  "predictions_scored": 538,
-  "prediction_brier": 0.148,
-  "prediction_log_loss": 0.4539
+  "predictions_scored": 541,
+  "prediction_brier": 0.1475,
+  "prediction_log_loss": 0.4531
  },
  "null_baseline": {
   "n": 538,
@@ -92,8 +92,8 @@
   },
   {
    "predicted": 0.249,
-   "realized": 0.154,
-   "n": 52,
+   "realized": 0.145,
+   "n": 55,
    "low_sample": false
   },
   {
