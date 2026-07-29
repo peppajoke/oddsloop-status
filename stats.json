@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-29T01:41:45.428034+00:00",
+ "generated_at": "2026-07-29T02:12:44.811932+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
@@ -11,14 +11,27 @@
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1481 beats the market's 0.1490. On profitability, realized ROI is -25.1% (P&L $-695.87). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1481 beats the market's 0.1490. On profitability, realized ROI is -25.1% (P&L $-695.87). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.3%, so our selection still loses to that baseline by -24.8 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.237,
   "roi": -0.2507,
+  "edge_vs_favorite_null": -0.248,
+  "edge_vs_random_null": -0.1229,
   "brier_model": 0.1481,
   "brier_market": 0.149,
   "predictions_scored": 525,
   "prediction_brier": 0.1481,
   "prediction_log_loss": 0.4544
+ },
+ "null_baseline": {
+  "n": 525,
+  "realized_roi": -0.2507,
+  "favorite_roi": -0.0027,
+  "random_roi": -0.1278,
+  "edge_vs_favorite": -0.248,
+  "edge_vs_random": -0.1229,
+  "realized_pnl": -695.23,
+  "favorite_pnl": -7.07,
+  "random_pnl": -347.11
  },
  "calibration": [
   {
