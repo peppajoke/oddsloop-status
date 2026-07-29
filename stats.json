@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-07-29T21:52:19.027223+00:00",
+ "generated_at": "2026-07-29T21:58:05.851296+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
   "realized_pnl": -743.21,
-  "total_fees": 1626.95,
-  "open_count": 5106,
-  "open_stake": 27526.36,
+  "total_fees": 1627.04,
+  "open_count": 5107,
+  "open_stake": 27531.45,
   "settled_count": 593,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1480 beats the market's 0.1488. On profitability, realized ROI is -23.8% (P&L $-743.21). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -24.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1480 beats the market's 0.1488. On profitability, realized ROI is -23.8% (P&L $-743.21). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -24.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.233,
   "roi": -0.2383,
   "edge_vs_favorite_null": -0.2406,
@@ -241,6 +241,21 @@
   }
  ],
  "active_bets": [
+  {
+   "ticker": "KXTRUEV-26JUL29-T1194.08",
+   "title": "EV commodity prices on Jul 29, 2026 \u2014 Above 1194.08",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.09,
+   "entry_price": 0.75,
+   "p_final": 0.735,
+   "edge": 0.0,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): calibration sample, NO claimed edge. Market mid 0.73, 6.0h to close. Category: Economics. The favorite-longshot fade this module used to apply was removed \u2014 it failed its null control in brain/research and lost $612 over 382 live settled bets.",
+   "placed_at": "2026-07-29T21:58:05.614029+00:00"
+  },
   {
    "ticker": "KXNFLGAME-26SEP13GBMIN-MIN",
    "title": "Green Bay vs Minnesota",
