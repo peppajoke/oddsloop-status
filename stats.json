@@ -1,49 +1,49 @@
 {
- "generated_at": "2026-07-29T13:35:24.213797+00:00",
+ "generated_at": "2026-07-29T14:06:26.408962+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -689.16,
+  "realized_pnl": -705.08,
   "total_fees": 1626.95,
-  "open_count": 5165,
-  "open_stake": 27837.49,
-  "settled_count": 534,
+  "open_count": 5162,
+  "open_stake": 27821.57,
+  "settled_count": 537,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1494 beats the market's 0.1504. On profitability, realized ROI is -24.5% (P&L $-689.16). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -23.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.24,
-  "roi": -0.2455,
-  "edge_vs_favorite_null": -0.237,
-  "edge_vs_random_null": -0.1193,
-  "brier_model": 0.1494,
-  "brier_market": 0.1504,
-  "predictions_scored": 531,
-  "prediction_brier": 0.1494,
-  "prediction_log_loss": 0.4573
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1487 beats the market's 0.1496. On profitability, realized ROI is -25.0% (P&L $-705.08). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1626.95 in fees across 5699 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -24.2 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.238,
+  "roi": -0.2498,
+  "edge_vs_favorite_null": -0.2421,
+  "edge_vs_random_null": -0.1218,
+  "brier_model": 0.1487,
+  "brier_market": 0.1496,
+  "predictions_scored": 534,
+  "prediction_brier": 0.1487,
+  "prediction_log_loss": 0.4556
  },
  "null_baseline": {
-  "n": 531,
-  "realized_roi": -0.2455,
-  "favorite_roi": -0.0085,
-  "random_roi": -0.1262,
-  "edge_vs_favorite": -0.237,
-  "edge_vs_random": -0.1193,
-  "realized_pnl": -688.52,
-  "favorite_pnl": -22.82,
-  "random_pnl": -346.63
+  "n": 534,
+  "realized_roi": -0.2498,
+  "favorite_roi": -0.0076,
+  "random_roi": -0.1279,
+  "edge_vs_favorite": -0.2421,
+  "edge_vs_random": -0.1218,
+  "realized_pnl": -704.44,
+  "favorite_pnl": -20.59,
+  "random_pnl": -353.47
  },
  "calibration": [
   {
    "predicted": 0.067,
-   "realized": 0.034,
-   "n": 119,
+   "realized": 0.033,
+   "n": 120,
    "low_sample": false
   },
   {
    "predicted": 0.14,
-   "realized": 0.113,
-   "n": 106,
+   "realized": 0.111,
+   "n": 108,
    "low_sample": false
   },
   {
@@ -81,13 +81,13 @@
   {
    "predicted": 0.068,
    "realized": 0.034,
-   "n": 88,
+   "n": 89,
    "low_sample": false
   },
   {
    "predicted": 0.14,
-   "realized": 0.088,
-   "n": 68,
+   "realized": 0.087,
+   "n": 69,
    "low_sample": false
   },
   {
@@ -127,9 +127,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.86,
-   "realized": 0.842,
-   "n": 38,
+   "predicted": 0.859,
+   "realized": 0.846,
+   "n": 39,
    "low_sample": false
   },
   {
@@ -222,21 +222,21 @@
    "beats_market": false
   },
   {
+   "category": "Financials",
+   "n": 7,
+   "win_rate": 0.286,
+   "brier_model": 0.1466,
+   "brier_market": 0.1414,
+   "pnl": -11.05,
+   "beats_market": false
+  },
+  {
    "category": "Economics",
    "n": 9,
    "win_rate": 0.222,
    "brier_model": 0.1483,
    "brier_market": 0.1399,
    "pnl": -7.29,
-   "beats_market": false
-  },
-  {
-   "category": "Financials",
-   "n": 4,
-   "win_rate": 0.5,
-   "brier_model": 0.2409,
-   "brier_market": 0.2316,
-   "pnl": 4.87,
    "beats_market": false
   }
  ],
@@ -4472,21 +4472,6 @@
    "placed_at": "2026-07-26T21:07:58.704311+00:00"
   },
   {
-   "ticker": "KXWING-26JULREST-3280",
-   "title": "Wingstop total system-wide restaurants in Q2 \u2014 Above 3280",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.08,
-   "p_final": 0.076,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T21:07:58.637276+00:00"
-  },
-  {
    "ticker": "KXNBAMVP-27-CCUNNINGHAM2",
    "title": "Pro Basketball MVP Winner \u2014 Cade Cunningham",
    "category": "Sports",
@@ -7230,21 +7215,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T20:45:19.108766+00:00"
-  },
-  {
-   "ticker": "KXWING-26JULREST-3260",
-   "title": "Wingstop total system-wide restaurants in Q2 \u2014 Above 3260",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.13,
-   "p_final": 0.134,
-   "edge": 0.009,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T20:45:19.049155+00:00"
   },
   {
    "ticker": "KXARTISTSTREAMSY-BTS26DEC31-13.0B",
@@ -47957,21 +47927,6 @@
    "placed_at": "2026-07-25T13:01:36.069391+00:00"
   },
   {
-   "ticker": "KXWING-26JULREST-3240",
-   "title": "Wingstop total system-wide restaurants in Q2 \u2014 Above 3240",
-   "category": "Financials",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.19999999999999996,
-   "p_final": 0.802,
-   "edge": 0.008,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.81; faded 0.12 toward 0.5 \u2192 0.77. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:36.045929+00:00"
-  },
-  {
    "ticker": "KXMUSICREPORT-TOPVYNLSALE27DEC31-ARI",
    "title": "Top U.S. Selling Vinyl Album: 2026 \u2014 ARIRANG",
    "category": "Entertainment",
@@ -77718,6 +77673,63 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXWING-26JULREST-3280",
+   "title": "Wingstop total system-wide restaurants in Q2 \u2014 Above 3280",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.08,
+   "p_final": 0.076,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T21:07:58.637276+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-29T14:05:58.037756+00:00"
+  },
+  {
+   "ticker": "KXWING-26JULREST-3260",
+   "title": "Wingstop total system-wide restaurants in Q2 \u2014 Above 3260",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.13,
+   "p_final": 0.134,
+   "edge": 0.009,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T20:45:19.049155+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.31,
+   "settled_at": "2026-07-29T14:05:58.034588+00:00"
+  },
+  {
+   "ticker": "KXWING-26JULREST-3240",
+   "title": "Wingstop total system-wide restaurants in Q2 \u2014 Above 3240",
+   "category": "Financials",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.19999999999999996,
+   "p_final": 0.802,
+   "edge": 0.008,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.81; faded 0.12 toward 0.5 \u2192 0.77. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:36.045929+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.28,
+   "settled_at": "2026-07-29T14:05:58.005706+00:00"
+  },
   {
    "ticker": "KXATPGTOTAL-26JUL26BROMOU-24",
    "title": "Jenson Brooksby vs Corentin Moutet: Total Games \u2014 Over 23.5 games",
