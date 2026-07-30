@@ -1,49 +1,49 @@
 {
- "generated_at": "2026-07-30T13:36:25.280067+00:00",
+ "generated_at": "2026-07-30T13:39:14.102369+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -707.51,
+  "realized_pnl": -690.59,
   "total_fees": 1627.04,
-  "open_count": 5089,
-  "open_stake": 27436.95,
-  "settled_count": 611,
+  "open_count": 5083,
+  "open_stake": 27405.21,
+  "settled_count": 617,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1500 beats the market's 0.1507. On profitability, realized ROI is -22.0% (P&L $-707.51). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.1%, so our selection still loses to that baseline by -21.9 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.239,
-  "roi": -0.2202,
-  "edge_vs_favorite_null": -0.2189,
-  "edge_vs_random_null": -0.1061,
-  "brier_model": 0.15,
-  "brier_market": 0.1507,
-  "predictions_scored": 608,
-  "prediction_brier": 0.15,
-  "prediction_log_loss": 0.4607
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1503 beats the market's 0.1510. On profitability, realized ROI is -21.3% (P&L $-690.59). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.4%, so our selection still loses to that baseline by -20.9 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.24,
+  "roi": -0.2128,
+  "edge_vs_favorite_null": -0.209,
+  "edge_vs_random_null": -0.1013,
+  "brier_model": 0.1503,
+  "brier_market": 0.151,
+  "predictions_scored": 614,
+  "prediction_brier": 0.1503,
+  "prediction_log_loss": 0.4616
  },
  "null_baseline": {
-  "n": 608,
-  "realized_roi": -0.2202,
-  "favorite_roi": -0.0013,
-  "random_roi": -0.1141,
-  "edge_vs_favorite": -0.2189,
-  "edge_vs_random": -0.1061,
-  "realized_pnl": -706.87,
-  "favorite_pnl": -3.95,
-  "random_pnl": -358.83
+  "n": 614,
+  "realized_roi": -0.2128,
+  "favorite_roi": -0.0038,
+  "random_roi": -0.1115,
+  "edge_vs_favorite": -0.209,
+  "edge_vs_random": -0.1013,
+  "realized_pnl": -689.95,
+  "favorite_pnl": -11.93,
+  "random_pnl": -354.36
  },
  "calibration": [
   {
    "predicted": 0.067,
-   "realized": 0.038,
-   "n": 132,
+   "realized": 0.037,
+   "n": 134,
    "low_sample": false
   },
   {
-   "predicted": 0.142,
-   "realized": 0.118,
-   "n": 127,
+   "predicted": 0.143,
+   "realized": 0.123,
+   "n": 130,
    "low_sample": false
   },
   {
@@ -60,8 +60,8 @@
   },
   {
    "predicted": 0.452,
-   "realized": 0.518,
-   "n": 139,
+   "realized": 0.521,
+   "n": 140,
    "low_sample": false
   },
   {
@@ -87,13 +87,13 @@
   {
    "predicted": 0.068,
    "realized": 0.041,
-   "n": 97,
+   "n": 98,
    "low_sample": false
   },
   {
-   "predicted": 0.141,
-   "realized": 0.11,
-   "n": 82,
+   "predicted": 0.142,
+   "realized": 0.107,
+   "n": 84,
    "low_sample": false
   },
   {
@@ -116,8 +116,8 @@
   },
   {
    "predicted": 0.547,
-   "realized": 0.544,
-   "n": 68,
+   "realized": 0.536,
+   "n": 69,
    "low_sample": false
   },
   {
@@ -134,14 +134,14 @@
   },
   {
    "predicted": 0.855,
-   "realized": 0.867,
-   "n": 45,
+   "realized": 0.848,
+   "n": 46,
    "low_sample": false
   },
   {
-   "predicted": 0.936,
-   "realized": 0.971,
-   "n": 35,
+   "predicted": 0.935,
+   "realized": 0.972,
+   "n": 36,
    "low_sample": false
   }
  ],
@@ -228,21 +228,21 @@
    "beats_market": false
   },
   {
+   "category": "Economics",
+   "n": 28,
+   "win_rate": 0.214,
+   "brier_model": 0.1373,
+   "brier_market": 0.134,
+   "pnl": -41.74,
+   "beats_market": false
+  },
+  {
    "category": "Science and Technology",
    "n": 11,
    "win_rate": 0.364,
    "brier_model": 0.237,
    "brier_market": 0.2334,
    "pnl": 55.55,
-   "beats_market": false
-  },
-  {
-   "category": "Economics",
-   "n": 22,
-   "win_rate": 0.182,
-   "brier_model": 0.1254,
-   "brier_market": 0.1211,
-   "pnl": -58.66,
    "beats_market": false
   }
  ],
@@ -74468,21 +74468,6 @@
    "placed_at": "2026-07-25T12:51:43.418567+00:00"
   },
   {
-   "ticker": "KXGDP-26JUL30-T3.5",
-   "title": "US GDP growth in Q2 2026? \u2014 Above 3.5%",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.07,
-   "p_final": 0.077,
-   "edge": 0.012,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.415504+00:00"
-  },
-  {
    "ticker": "KXDOGEMINMON-DOGE-26JUL31-006",
    "title": "How low will DOGE get in July? \u2014 Below $0.06",
    "category": "Crypto",
@@ -74603,21 +74588,6 @@
    "placed_at": "2026-07-25T12:51:43.363586+00:00"
   },
   {
-   "ticker": "KXGDP-26JUL30-T3.0",
-   "title": "US GDP growth in Q2 2026? \u2014 Above 3.0%",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.16,
-   "p_final": 0.165,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.20. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.358384+00:00"
-  },
-  {
    "ticker": "KXSOLMINMON-SOL-26JUL31-7000",
    "title": "How low will SOL get in July? \u2014 Below $70.00",
    "category": "Crypto",
@@ -74646,21 +74616,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.41; faded 0.12 toward 0.5 \u2192 0.42. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.352207+00:00"
-  },
-  {
-   "ticker": "KXGDP-26JUL30-T1.0",
-   "title": "US GDP growth in Q2 2026? \u2014 Above 1.0%",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.06000000000000005,
-   "p_final": 0.933,
-   "edge": 0.012,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.94; faded 0.12 toward 0.5 \u2192 0.89. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.346176+00:00"
   },
   {
    "ticker": "KXXRPMINMON-XRP-26JUL31-100",
@@ -74693,21 +74648,6 @@
    "placed_at": "2026-07-25T12:51:43.341034+00:00"
   },
   {
-   "ticker": "KXGDP-26JUL30-T1.5",
-   "title": "US GDP growth in Q2 2026? \u2014 Above 1.5%",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.13,
-   "p_final": 0.864,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.88; faded 0.12 toward 0.5 \u2192 0.83. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.335679+00:00"
-  },
-  {
    "ticker": "KXBRENTMON-26JUL3117-T80.99",
    "title": "Brent crude oil price on July 31, 2026 at 5:00 PM EDT? \u2014 Above $80.99",
    "category": "Commodities",
@@ -74721,21 +74661,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.93; faded 0.12 toward 0.5 \u2192 0.88. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.332808+00:00"
-  },
-  {
-   "ticker": "KXGDP-26JUL30-T2.0",
-   "title": "US GDP growth in Q2 2026? \u2014 Above 2.0%",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.18,
-   "entry_price": 0.49,
-   "p_final": 0.515,
-   "edge": 0.0,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.52; faded 0.12 toward 0.5 \u2192 0.51. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.327772+00:00"
   },
   {
    "ticker": "KXXRPMAXMON-XRP-26JUL31-120",
@@ -74796,21 +74721,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.318309+00:00"
-  },
-  {
-   "ticker": "KXGDP-26JUL30-T2.5",
-   "title": "US GDP growth in Q2 2026? \u2014 Above 2.5%",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.29,
-   "entry_price": 0.19,
-   "p_final": 0.194,
-   "edge": 0.009,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.18; faded 0.12 toward 0.5 \u2192 0.22. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.315965+00:00"
   },
   {
    "ticker": "KXETHMAXMON-ETH-26JUL31-200000",
@@ -76584,6 +76494,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXGDP-26JUL30-T3.5",
+   "title": "US GDP growth in Q2 2026? \u2014 Above 3.5%",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.07,
+   "p_final": 0.077,
+   "edge": 0.012,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.415504+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-30T13:38:45.613706+00:00"
+  },
+  {
+   "ticker": "KXGDP-26JUL30-T3.0",
+   "title": "US GDP growth in Q2 2026? \u2014 Above 3.0%",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.16,
+   "p_final": 0.165,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.20. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.358384+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-07-30T13:38:45.609349+00:00"
+  },
+  {
+   "ticker": "KXGDP-26JUL30-T1.0",
+   "title": "US GDP growth in Q2 2026? \u2014 Above 1.0%",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.06000000000000005,
+   "p_final": 0.933,
+   "edge": 0.012,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.94; faded 0.12 toward 0.5 \u2192 0.89. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.346176+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-30T13:38:45.603975+00:00"
+  },
+  {
+   "ticker": "KXGDP-26JUL30-T1.5",
+   "title": "US GDP growth in Q2 2026? \u2014 Above 1.5%",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.13,
+   "p_final": 0.864,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.88; faded 0.12 toward 0.5 \u2192 0.83. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.335679+00:00",
+   "won": true,
+   "payout": 38.46,
+   "pnl": 33.15,
+   "settled_at": "2026-07-30T13:38:45.597795+00:00"
+  },
+  {
+   "ticker": "KXGDP-26JUL30-T2.0",
+   "title": "US GDP growth in Q2 2026? \u2014 Above 2.0%",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.18,
+   "entry_price": 0.49,
+   "p_final": 0.515,
+   "edge": 0.0,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.52; faded 0.12 toward 0.5 \u2192 0.51. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.327772+00:00",
+   "won": true,
+   "payout": 10.2,
+   "pnl": 5.02,
+   "settled_at": "2026-07-30T13:38:45.590552+00:00"
+  },
+  {
+   "ticker": "KXGDP-26JUL30-T2.5",
+   "title": "US GDP growth in Q2 2026? \u2014 Above 2.5%",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.29,
+   "entry_price": 0.19,
+   "p_final": 0.194,
+   "edge": 0.009,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.18; faded 0.12 toward 0.5 \u2192 0.22. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.315965+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.29,
+   "settled_at": "2026-07-30T13:38:45.578755+00:00"
+  },
   {
    "ticker": "KXTRUEV-26JUL29-T1194.08",
    "title": "EV commodity prices on Jul 29, 2026 \u2014 Above 1194.08",
