@@ -1,43 +1,43 @@
 {
- "generated_at": "2026-07-30T13:39:14.102369+00:00",
+ "generated_at": "2026-07-30T14:10:32.435315+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -690.59,
+  "realized_pnl": -693.94,
   "total_fees": 1627.04,
-  "open_count": 5083,
-  "open_stake": 27405.21,
-  "settled_count": 617,
+  "open_count": 5079,
+  "open_stake": 27384.0,
+  "settled_count": 621,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1503 beats the market's 0.1510. On profitability, realized ROI is -21.3% (P&L $-690.59). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.4%, so our selection still loses to that baseline by -20.9 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1503 beats the market's 0.1509. On profitability, realized ROI is -21.2% (P&L $-693.94). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.5%, so our selection still loses to that baseline by -20.8 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.24,
-  "roi": -0.2128,
-  "edge_vs_favorite_null": -0.209,
-  "edge_vs_random_null": -0.1013,
+  "roi": -0.2125,
+  "edge_vs_favorite_null": -0.2076,
+  "edge_vs_random_null": -0.1006,
   "brier_model": 0.1503,
-  "brier_market": 0.151,
-  "predictions_scored": 614,
+  "brier_market": 0.1509,
+  "predictions_scored": 618,
   "prediction_brier": 0.1503,
-  "prediction_log_loss": 0.4616
+  "prediction_log_loss": 0.4612
  },
  "null_baseline": {
-  "n": 614,
-  "realized_roi": -0.2128,
-  "favorite_roi": -0.0038,
-  "random_roi": -0.1115,
-  "edge_vs_favorite": -0.209,
-  "edge_vs_random": -0.1013,
-  "realized_pnl": -689.95,
-  "favorite_pnl": -11.93,
-  "random_pnl": -354.36
+  "n": 618,
+  "realized_roi": -0.2125,
+  "favorite_roi": -0.0049,
+  "random_roi": -0.1119,
+  "edge_vs_favorite": -0.2076,
+  "edge_vs_random": -0.1006,
+  "realized_pnl": -693.3,
+  "favorite_pnl": -15.32,
+  "random_pnl": -357.73
  },
  "calibration": [
   {
    "predicted": 0.067,
    "realized": 0.037,
-   "n": 134,
+   "n": 136,
    "low_sample": false
   },
   {
@@ -47,9 +47,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.253,
-   "realized": 0.181,
-   "n": 105,
+   "predicted": 0.252,
+   "realized": 0.187,
+   "n": 107,
    "low_sample": false
   },
   {
@@ -86,8 +86,8 @@
  "prediction_calibration": [
   {
    "predicted": 0.068,
-   "realized": 0.041,
-   "n": 98,
+   "realized": 0.04,
+   "n": 100,
    "low_sample": false
   },
   {
@@ -98,8 +98,8 @@
   },
   {
    "predicted": 0.25,
-   "realized": 0.148,
-   "n": 61,
+   "realized": 0.145,
+   "n": 62,
    "low_sample": false
   },
   {
@@ -128,8 +128,8 @@
   },
   {
    "predicted": 0.744,
-   "realized": 0.778,
-   "n": 45,
+   "realized": 0.761,
+   "n": 46,
    "low_sample": false
   },
   {
@@ -220,20 +220,20 @@
   },
   {
    "category": "Mentions",
-   "n": 144,
-   "win_rate": 0.25,
-   "brier_model": 0.1548,
-   "brier_market": 0.1534,
-   "pnl": -200.72,
+   "n": 145,
+   "win_rate": 0.248,
+   "brier_model": 0.154,
+   "brier_market": 0.1526,
+   "pnl": -206.0,
    "beats_market": false
   },
   {
    "category": "Economics",
-   "n": 28,
-   "win_rate": 0.214,
-   "brier_model": 0.1373,
-   "brier_market": 0.134,
-   "pnl": -41.74,
+   "n": 31,
+   "win_rate": 0.226,
+   "brier_model": 0.1409,
+   "brier_market": 0.1379,
+   "pnl": -39.81,
    "beats_market": false
   },
   {
@@ -6531,21 +6531,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.33; faded 0.12 toward 0.5 \u2192 0.35. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T23:48:33.447435+00:00"
-  },
-  {
-   "ticker": "KXPCECORE-26JUN-T0.3",
-   "title": "How much will core PCE increase in Jun 2026? \u2014 Above 0.3%",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.06,
-   "p_final": 0.06,
-   "edge": 0.015,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T23:48:33.382880+00:00"
   },
   {
    "ticker": "KXNEXTTEAMMLB-27MTROUT-LAA",
@@ -69503,21 +69488,6 @@
    "placed_at": "2026-07-25T12:51:45.132766+00:00"
   },
   {
-   "ticker": "KXEARNINGSMENTIONCVNA-26JUL29-INSU",
-   "title": "What will Carvana say during their next earnings call? \u2014 Insurance",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.22,
-   "p_final": 0.213,
-   "edge": 0.008,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.21; faded 0.12 toward 0.5 \u2192 0.24. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:45.126240+00:00"
-  },
-  {
    "ticker": "KXIPOANTHROPIC-DATE-26NOV01",
    "title": "When will Anthropic officially announce an IPO? \u2014 Before Nov 1, 2026",
    "category": "Companies",
@@ -74768,21 +74738,6 @@
    "placed_at": "2026-07-25T12:51:43.309038+00:00"
   },
   {
-   "ticker": "KXPCECORE-26JUN-T0.1",
-   "title": "How much will core PCE increase in Jun 2026? \u2014 Above 0.1%",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.26,
-   "entry_price": 0.28,
-   "p_final": 0.718,
-   "edge": 0.007,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.72; faded 0.12 toward 0.5 \u2192 0.70. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.304483+00:00"
-  },
-  {
    "ticker": "KXBTCMINMON-BTC-26JUL31-5750000",
    "title": "How low will BTC get in July? \u2014 Below $57,500.00",
    "category": "Crypto",
@@ -74901,21 +74856,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.25; faded 0.12 toward 0.5 \u2192 0.28. Category: Science and Technology. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.279952+00:00"
-  },
-  {
-   "ticker": "KXPCECORE-26JUN-T0.2",
-   "title": "How much will core PCE increase in Jun 2026? \u2014 Above 0.2%",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.05,
-   "p_final": 0.06,
-   "edge": 0.015,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.275641+00:00"
   },
   {
    "ticker": "KXBTCMAXMON-BTC-26JUL31-6750000",
@@ -76494,6 +76434,82 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXPCECORE-26JUN-T0.3",
+   "title": "How much will core PCE increase in Jun 2026? \u2014 Above 0.3%",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.06,
+   "p_final": 0.06,
+   "edge": 0.015,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T23:48:33.382880+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-30T14:09:54.889623+00:00"
+  },
+  {
+   "ticker": "KXEARNINGSMENTIONCVNA-26JUL29-INSU",
+   "title": "What will Carvana say during their next earnings call? \u2014 Insurance",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.22,
+   "p_final": 0.213,
+   "edge": 0.008,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.21; faded 0.12 toward 0.5 \u2192 0.24. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:45.126240+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.28,
+   "settled_at": "2026-07-30T14:09:54.876587+00:00"
+  },
+  {
+   "ticker": "KXPCECORE-26JUN-T0.1",
+   "title": "How much will core PCE increase in Jun 2026? \u2014 Above 0.1%",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.26,
+   "entry_price": 0.28,
+   "p_final": 0.718,
+   "edge": 0.007,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.72; faded 0.12 toward 0.5 \u2192 0.70. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.304483+00:00",
+   "won": true,
+   "payout": 17.86,
+   "pnl": 12.6,
+   "settled_at": "2026-07-30T14:09:54.861671+00:00"
+  },
+  {
+   "ticker": "KXPCECORE-26JUN-T0.2",
+   "title": "How much will core PCE increase in Jun 2026? \u2014 Above 0.2%",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.05,
+   "p_final": 0.06,
+   "edge": 0.015,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.275641+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-30T14:09:54.846787+00:00"
+  },
   {
    "ticker": "KXGDP-26JUL30-T3.5",
    "title": "US GDP growth in Q2 2026? \u2014 Above 3.5%",
