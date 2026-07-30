@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-07-30T21:00:05.597514+00:00",
+ "generated_at": "2026-07-30T21:31:06.415539+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -694.04,
+  "realized_pnl": -699.32,
   "total_fees": 1627.04,
-  "open_count": 5050,
-  "open_stake": 27230.59,
-  "settled_count": 650,
+  "open_count": 5049,
+  "open_stake": 27225.31,
+  "settled_count": 651,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1510 beats the market's 0.1515. On profitability, realized ROI is -20.3% (P&L $-694.04). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.6%, so our selection still loses to that baseline by -19.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1508 beats the market's 0.1513. On profitability, realized ROI is -20.4% (P&L $-699.32). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.5%, so our selection still loses to that baseline by -19.9 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.238,
-  "roi": -0.2029,
-  "edge_vs_favorite_null": -0.1973,
-  "edge_vs_random_null": -0.0956,
-  "brier_model": 0.151,
-  "brier_market": 0.1515,
-  "predictions_scored": 647,
-  "prediction_brier": 0.151,
-  "prediction_log_loss": 0.4628
+  "roi": -0.2042,
+  "edge_vs_favorite_null": -0.1989,
+  "edge_vs_random_null": -0.0963,
+  "brier_model": 0.1508,
+  "brier_market": 0.1513,
+  "predictions_scored": 648,
+  "prediction_brier": 0.1508,
+  "prediction_log_loss": 0.4624
  },
  "null_baseline": {
-  "n": 647,
-  "realized_roi": -0.2029,
-  "favorite_roi": -0.0057,
-  "random_roi": -0.1074,
-  "edge_vs_favorite": -0.1973,
-  "edge_vs_random": -0.0956,
-  "realized_pnl": -693.4,
-  "favorite_pnl": -18.53,
-  "random_pnl": -359.38
+  "n": 648,
+  "realized_roi": -0.2042,
+  "favorite_roi": -0.0053,
+  "random_roi": -0.1078,
+  "edge_vs_favorite": -0.1989,
+  "edge_vs_random": -0.0963,
+  "realized_pnl": -698.68,
+  "favorite_pnl": -17.34,
+  "random_pnl": -361.43
  },
  "calibration": [
   {
@@ -42,8 +42,8 @@
   },
   {
    "predicted": 0.143,
-   "realized": 0.133,
-   "n": 135,
+   "realized": 0.132,
+   "n": 136,
    "low_sample": false
   },
   {
@@ -133,9 +133,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.855,
-   "realized": 0.854,
-   "n": 48,
+   "predicted": 0.854,
+   "realized": 0.857,
+   "n": 49,
    "low_sample": false
   },
   {
@@ -229,11 +229,11 @@
   },
   {
    "category": "Financials",
-   "n": 65,
-   "win_rate": 0.262,
-   "brier_model": 0.1772,
-   "brier_market": 0.1749,
-   "pnl": 67.51,
+   "n": 66,
+   "win_rate": 0.258,
+   "brier_model": 0.175,
+   "brier_market": 0.1729,
+   "pnl": 62.23,
    "beats_market": false
   },
   {
@@ -6915,21 +6915,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.20. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T19:44:09.179471+00:00"
-  },
-  {
-   "ticker": "KXFSLR-26JULMWSOLD-3600",
-   "title": "First Solar megawatts sold in Q2 \u2014 Above 3600 MW",
-   "category": "Financials",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.20999999999999996,
-   "p_final": 0.807,
-   "edge": 0.008,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.81; faded 0.12 toward 0.5 \u2192 0.78. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T19:44:09.118606+00:00"
   },
   {
    "ticker": "KXPUREALBUMS-MUS26JUL30-60K",
@@ -76008,6 +75993,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXFSLR-26JULMWSOLD-3600",
+   "title": "First Solar megawatts sold in Q2 \u2014 Above 3600 MW",
+   "category": "Financials",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.20999999999999996,
+   "p_final": 0.807,
+   "edge": 0.008,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.81; faded 0.12 toward 0.5 \u2192 0.78. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T19:44:09.118606+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.28,
+   "settled_at": "2026-07-30T21:30:37.155341+00:00"
+  },
   {
    "ticker": "KXAMZN-26OCTHEAD-1560000",
    "title": "Amazon headcount in Q2 \u2014 Above 1560000",
