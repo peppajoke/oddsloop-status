@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-07-30T22:02:12.274609+00:00",
+ "generated_at": "2026-07-30T22:33:31.991499+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -699.32,
+  "realized_pnl": -704.53,
   "total_fees": 1627.04,
-  "open_count": 5049,
-  "open_stake": 27225.31,
-  "settled_count": 651,
+  "open_count": 5048,
+  "open_stake": 27220.1,
+  "settled_count": 652,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1508 beats the market's 0.1513. On profitability, realized ROI is -20.4% (P&L $-699.32). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.5%, so our selection still loses to that baseline by -19.9 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1508 beats the market's 0.1513. On profitability, realized ROI is -20.5% (P&L $-704.53). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.4%, so our selection still loses to that baseline by -20.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.238,
-  "roi": -0.2042,
-  "edge_vs_favorite_null": -0.1989,
-  "edge_vs_random_null": -0.0963,
+  "roi": -0.2054,
+  "edge_vs_favorite_null": -0.201,
+  "edge_vs_random_null": -0.0974,
   "brier_model": 0.1508,
   "brier_market": 0.1513,
-  "predictions_scored": 648,
+  "predictions_scored": 649,
   "prediction_brier": 0.1508,
   "prediction_log_loss": 0.4624
  },
  "null_baseline": {
-  "n": 648,
-  "realized_roi": -0.2042,
-  "favorite_roi": -0.0053,
-  "random_roi": -0.1078,
-  "edge_vs_favorite": -0.1989,
-  "edge_vs_random": -0.0963,
-  "realized_pnl": -698.68,
-  "favorite_pnl": -17.34,
-  "random_pnl": -361.43
+  "n": 649,
+  "realized_roi": -0.2054,
+  "favorite_roi": -0.0043,
+  "random_roi": -0.108,
+  "edge_vs_favorite": -0.201,
+  "edge_vs_random": -0.0974,
+  "realized_pnl": -703.89,
+  "favorite_pnl": -14.28,
+  "random_pnl": -362.5
  },
  "calibration": [
   {
@@ -54,8 +54,8 @@
   },
   {
    "predicted": 0.354,
-   "realized": 0.302,
-   "n": 106,
+   "realized": 0.299,
+   "n": 107,
    "low_sample": false
   },
   {
@@ -104,8 +104,8 @@
   },
   {
    "predicted": 0.352,
-   "realized": 0.291,
-   "n": 55,
+   "realized": 0.286,
+   "n": 56,
    "low_sample": false
   },
   {
@@ -220,11 +220,11 @@
   },
   {
    "category": "Mentions",
-   "n": 145,
-   "win_rate": 0.248,
-   "brier_model": 0.154,
-   "brier_market": 0.1526,
-   "pnl": -206.0,
+   "n": 146,
+   "win_rate": 0.247,
+   "brier_model": 0.1538,
+   "brier_market": 0.1527,
+   "pnl": -211.21,
    "beats_market": false
   },
   {
@@ -66947,21 +66947,6 @@
    "placed_at": "2026-07-25T12:51:46.255854+00:00"
   },
   {
-   "ticker": "KXEARNINGSMENTIONRDDT-26JUL30-OPEN",
-   "title": "What will Reddit say during their next earnings call? \u2014 OpenAI / Open AI",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.4,
-   "p_final": 0.359,
-   "edge": 0.004,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.35; faded 0.12 toward 0.5 \u2192 0.37. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:46.248055+00:00"
-  },
-  {
    "ticker": "KXAISTREAMSERIES-27-AMA",
    "title": "Which companies will release a Fully AI-generated multi-episode scripted series  before 2027? \u2014 Amazon",
    "category": "Companies",
@@ -75993,6 +75978,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXEARNINGSMENTIONRDDT-26JUL30-OPEN",
+   "title": "What will Reddit say during their next earnings call? \u2014 OpenAI / Open AI",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.4,
+   "p_final": 0.359,
+   "edge": 0.004,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.35; faded 0.12 toward 0.5 \u2192 0.37. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:46.248055+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.21,
+   "settled_at": "2026-07-30T22:32:54.260858+00:00"
+  },
   {
    "ticker": "KXFSLR-26JULMWSOLD-3600",
    "title": "First Solar megawatts sold in Q2 \u2014 Above 3600 MW",
