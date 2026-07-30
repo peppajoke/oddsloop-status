@@ -1,67 +1,67 @@
 {
- "generated_at": "2026-07-30T20:29:23.410910+00:00",
+ "generated_at": "2026-07-30T21:00:05.597514+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -696.88,
+  "realized_pnl": -694.04,
   "total_fees": 1627.04,
-  "open_count": 5060,
-  "open_stake": 27283.31,
-  "settled_count": 640,
+  "open_count": 5050,
+  "open_stake": 27230.59,
+  "settled_count": 650,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1505 beats the market's 0.1511. On profitability, realized ROI is -20.7% (P&L $-696.88). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.7%, so our selection still loses to that baseline by -20.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.239,
-  "roi": -0.207,
-  "edge_vs_favorite_null": -0.2003,
-  "edge_vs_random_null": -0.097,
-  "brier_model": 0.1505,
-  "brier_market": 0.1511,
-  "predictions_scored": 637,
-  "prediction_brier": 0.1505,
-  "prediction_log_loss": 0.461
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1510 beats the market's 0.1515. On profitability, realized ROI is -20.3% (P&L $-694.04). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.6%, so our selection still loses to that baseline by -19.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.238,
+  "roi": -0.2029,
+  "edge_vs_favorite_null": -0.1973,
+  "edge_vs_random_null": -0.0956,
+  "brier_model": 0.151,
+  "brier_market": 0.1515,
+  "predictions_scored": 647,
+  "prediction_brier": 0.151,
+  "prediction_log_loss": 0.4628
  },
  "null_baseline": {
-  "n": 637,
-  "realized_roi": -0.207,
-  "favorite_roi": -0.0067,
-  "random_roi": -0.11,
-  "edge_vs_favorite": -0.2003,
-  "edge_vs_random": -0.097,
-  "realized_pnl": -696.24,
-  "favorite_pnl": -21.47,
-  "random_pnl": -362.27
+  "n": 647,
+  "realized_roi": -0.2029,
+  "favorite_roi": -0.0057,
+  "random_roi": -0.1074,
+  "edge_vs_favorite": -0.1973,
+  "edge_vs_random": -0.0956,
+  "realized_pnl": -693.4,
+  "favorite_pnl": -18.53,
+  "random_pnl": -359.38
  },
  "calibration": [
   {
    "predicted": 0.067,
-   "realized": 0.034,
-   "n": 146,
+   "realized": 0.04,
+   "n": 149,
    "low_sample": false
   },
   {
    "predicted": 0.143,
-   "realized": 0.134,
-   "n": 134,
+   "realized": 0.133,
+   "n": 135,
    "low_sample": false
   },
   {
    "predicted": 0.252,
-   "realized": 0.194,
-   "n": 108,
+   "realized": 0.191,
+   "n": 110,
    "low_sample": false
   },
   {
    "predicted": 0.354,
-   "realized": 0.301,
-   "n": 103,
+   "realized": 0.302,
+   "n": 106,
    "low_sample": false
   },
   {
    "predicted": 0.452,
-   "realized": 0.518,
-   "n": 141,
+   "realized": 0.514,
+   "n": 142,
    "low_sample": false
   },
   {
@@ -85,9 +85,9 @@
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.067,
-   "realized": 0.038,
-   "n": 104,
+   "predicted": 0.068,
+   "realized": 0.047,
+   "n": 106,
    "low_sample": false
   },
   {
@@ -97,15 +97,15 @@
    "low_sample": false
   },
   {
-   "predicted": 0.249,
-   "realized": 0.159,
-   "n": 63,
+   "predicted": 0.248,
+   "realized": 0.154,
+   "n": 65,
    "low_sample": false
   },
   {
    "predicted": 0.352,
-   "realized": 0.283,
-   "n": 53,
+   "realized": 0.291,
+   "n": 55,
    "low_sample": false
   },
   {
@@ -115,15 +115,15 @@
    "low_sample": false
   },
   {
-   "predicted": 0.547,
-   "realized": 0.543,
-   "n": 70,
+   "predicted": 0.548,
+   "realized": 0.549,
+   "n": 71,
    "low_sample": false
   },
   {
    "predicted": 0.645,
-   "realized": 0.686,
-   "n": 51,
+   "realized": 0.692,
+   "n": 52,
    "low_sample": false
   },
   {
@@ -134,14 +134,14 @@
   },
   {
    "predicted": 0.855,
-   "realized": 0.851,
-   "n": 47,
+   "realized": 0.854,
+   "n": 48,
    "low_sample": false
   },
   {
-   "predicted": 0.935,
-   "realized": 0.976,
-   "n": 42,
+   "predicted": 0.936,
+   "realized": 0.977,
+   "n": 43,
    "low_sample": false
   }
  ],
@@ -229,11 +229,11 @@
   },
   {
    "category": "Financials",
-   "n": 55,
-   "win_rate": 0.273,
-   "brier_model": 0.176,
-   "brier_market": 0.1746,
-   "pnl": 64.67,
+   "n": 65,
+   "win_rate": 0.262,
+   "brier_model": 0.1772,
+   "brier_market": 0.1749,
+   "pnl": 67.51,
    "beats_market": false
   },
   {
@@ -1682,21 +1682,6 @@
    "placed_at": "2026-07-27T07:17:30.775507+00:00"
   },
   {
-   "ticker": "KXAMZN-26OCTHEAD-1560000",
-   "title": "Amazon headcount in Q2 \u2014 Above 1560000",
-   "category": "Financials",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.42000000000000004,
-   "p_final": 0.587,
-   "edge": 0.003,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.59; faded 0.12 toward 0.5 \u2192 0.58. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T06:16:53.557430+00:00"
-  },
-  {
    "ticker": "KXLIGAMXGAME-26AUG02TOLNCX-NCX",
    "title": "Toluca vs Necaxa",
    "category": "Sports",
@@ -2865,21 +2850,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.19; faded 0.12 toward 0.5 \u2192 0.23. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T02:13:16.352665+00:00"
-  },
-  {
-   "ticker": "KXAMZN-26OCTHEAD-1580000",
-   "title": "Amazon headcount in Q2 \u2014 Above 1580000",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.12,
-   "p_final": 0.082,
-   "edge": 0.012,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T02:13:16.274800+00:00"
   },
   {
    "ticker": "KXARGENTINAPRES-27-AKIC",
@@ -4065,21 +4035,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.09; faded 0.12 toward 0.5 \u2192 0.14. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T22:08:58.575053+00:00"
-  },
-  {
-   "ticker": "KXRBLX-26JULHOURS-33000000000",
-   "title": "Roblox hours engaged in Q2 \u2014 Above 33 billion",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.2,
-   "p_final": 0.203,
-   "edge": 0.008,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.20; faded 0.12 toward 0.5 \u2192 0.23. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T22:08:58.508425+00:00"
   },
   {
    "ticker": "KXTOPALBUMRECORD-PET-ARI-3",
@@ -5507,21 +5462,6 @@
    "placed_at": "2026-07-26T09:57:28.856018+00:00"
   },
   {
-   "ticker": "KXRDDT-26JULDAU-P128000000",
-   "title": "Reddit daily active uniques in Q2 \u2014 above 128 million",
-   "category": "Financials",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.050000000000000044,
-   "p_final": 0.953,
-   "edge": 0.012,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T09:57:28.782132+00:00"
-  },
-  {
    "ticker": "KXALBUMRELEASE-26-JOH",
    "title": "Who will release a new album in 2026? \u2014 John Mayer",
    "category": "Entertainment",
@@ -5640,21 +5580,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.03; faded 0.12 toward 0.5 \u2192 0.09. Category: Crypto. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T05:54:15.536870+00:00"
-  },
-  {
-   "ticker": "KXAMZN-26OCTHEAD-1575000",
-   "title": "Amazon headcount in Q2 \u2014 Above 1575000",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.23,
-   "entry_price": 0.36,
-   "p_final": 0.344,
-   "edge": 0.004,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.34; faded 0.12 toward 0.5 \u2192 0.36. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T04:53:28.222536+00:00"
   },
   {
    "ticker": "KXCOINBASE-26JULVOL-175000000000",
@@ -6645,21 +6570,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T21:46:28.779557+00:00"
-  },
-  {
-   "ticker": "KXRDDT-26JULDAU-P130000000",
-   "title": "Reddit daily active uniques in Q2 \u2014 above 130 million",
-   "category": "Financials",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.33999999999999997,
-   "p_final": 0.661,
-   "edge": 0.004,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.67; faded 0.12 toward 0.5 \u2192 0.65. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T21:46:28.718759+00:00"
   },
   {
    "ticker": "KXNFLCPOTY-27-DJONES17",
@@ -46292,21 +46202,6 @@
    "placed_at": "2026-07-25T13:01:38.013279+00:00"
   },
   {
-   "ticker": "KXRDDT-26JULDAU-P131000000",
-   "title": "Reddit daily active uniques in Q2 \u2014 above 131 million",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.22,
-   "entry_price": 0.39,
-   "p_final": 0.388,
-   "edge": 0.003,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.39; faded 0.12 toward 0.5 \u2192 0.40. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:37.987566+00:00"
-  },
-  {
    "ticker": "KXESVI-28",
    "title": "When will Elder Scrolls VI be released? \u2014 Before 2028",
    "category": "Entertainment",
@@ -46560,21 +46455,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.30; faded 0.12 toward 0.5 \u2192 0.32. Category: Economics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:01:37.412550+00:00"
-  },
-  {
-   "ticker": "KXRDDT-26JULDAU-P133000000",
-   "title": "Reddit daily active uniques in Q2 \u2014 above 133 million",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.08,
-   "p_final": 0.086,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.13. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:37.387257+00:00"
   },
   {
    "ticker": "KXOSCARACTR-27-IND",
@@ -47777,21 +47657,6 @@
    "placed_at": "2026-07-25T13:01:35.343101+00:00"
   },
   {
-   "ticker": "KXRDDT-26JULDAU-P132000000",
-   "title": "Reddit daily active uniques in Q2 \u2014 above 132 million",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.24,
-   "p_final": 0.242,
-   "edge": 0.007,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.27. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:35.319606+00:00"
-  },
-  {
    "ticker": "KXTOPMONTHLY-26AUG-ARI",
    "title": "Artist with the most monthly Spotify listeners at the end of Aug 2026? \u2014 Ariana Grande",
    "category": "Entertainment",
@@ -48615,21 +48480,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.83; faded 0.12 toward 0.5 \u2192 0.80. Category: Economics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:01:33.915101+00:00"
-  },
-  {
-   "ticker": "KXAMZN-26OCTHEAD-1555000",
-   "title": "Amazon headcount in Q2 \u2014 Above 1555000",
-   "category": "Financials",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.29,
-   "entry_price": 0.18000000000000005,
-   "p_final": 0.86,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.87; faded 0.12 toward 0.5 \u2192 0.83. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:33.892805+00:00"
   },
   {
    "ticker": "KXOSCARNOMACTR-27-EMI",
@@ -76158,6 +76008,196 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXAMZN-26OCTHEAD-1560000",
+   "title": "Amazon headcount in Q2 \u2014 Above 1560000",
+   "category": "Financials",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.42000000000000004,
+   "p_final": 0.587,
+   "edge": 0.003,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.59; faded 0.12 toward 0.5 \u2192 0.58. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T06:16:53.557430+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.21,
+   "settled_at": "2026-07-30T20:59:38.040005+00:00"
+  },
+  {
+   "ticker": "KXAMZN-26OCTHEAD-1580000",
+   "title": "Amazon headcount in Q2 \u2014 Above 1580000",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.12,
+   "p_final": 0.082,
+   "edge": 0.012,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T02:13:16.274800+00:00",
+   "won": true,
+   "payout": 41.67,
+   "pnl": 36.36,
+   "settled_at": "2026-07-30T20:59:38.036717+00:00"
+  },
+  {
+   "ticker": "KXRBLX-26JULHOURS-33000000000",
+   "title": "Roblox hours engaged in Q2 \u2014 Above 33 billion",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.2,
+   "p_final": 0.203,
+   "edge": 0.008,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.20; faded 0.12 toward 0.5 \u2192 0.23. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T22:08:58.508425+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.28,
+   "settled_at": "2026-07-30T20:59:38.033569+00:00"
+  },
+  {
+   "ticker": "KXRDDT-26JULDAU-P128000000",
+   "title": "Reddit daily active uniques in Q2 \u2014 above 128 million",
+   "category": "Financials",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.050000000000000044,
+   "p_final": 0.953,
+   "edge": 0.012,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T09:57:28.782132+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-30T20:59:38.029766+00:00"
+  },
+  {
+   "ticker": "KXAMZN-26OCTHEAD-1575000",
+   "title": "Amazon headcount in Q2 \u2014 Above 1575000",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.23,
+   "entry_price": 0.36,
+   "p_final": 0.344,
+   "edge": 0.004,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.34; faded 0.12 toward 0.5 \u2192 0.36. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T04:53:28.222536+00:00",
+   "won": true,
+   "payout": 13.89,
+   "pnl": 8.66,
+   "settled_at": "2026-07-30T20:59:38.026809+00:00"
+  },
+  {
+   "ticker": "KXRDDT-26JULDAU-P130000000",
+   "title": "Reddit daily active uniques in Q2 \u2014 above 130 million",
+   "category": "Financials",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.33999999999999997,
+   "p_final": 0.661,
+   "edge": 0.004,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.67; faded 0.12 toward 0.5 \u2192 0.65. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T21:46:28.718759+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.24,
+   "settled_at": "2026-07-30T20:59:38.023014+00:00"
+  },
+  {
+   "ticker": "KXRDDT-26JULDAU-P131000000",
+   "title": "Reddit daily active uniques in Q2 \u2014 above 131 million",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.22,
+   "entry_price": 0.39,
+   "p_final": 0.388,
+   "edge": 0.003,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.39; faded 0.12 toward 0.5 \u2192 0.40. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:37.987566+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.22,
+   "settled_at": "2026-07-30T20:59:38.015693+00:00"
+  },
+  {
+   "ticker": "KXRDDT-26JULDAU-P133000000",
+   "title": "Reddit daily active uniques in Q2 \u2014 above 133 million",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.08,
+   "p_final": 0.086,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.13. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:37.387257+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-30T20:59:38.009605+00:00"
+  },
+  {
+   "ticker": "KXRDDT-26JULDAU-P132000000",
+   "title": "Reddit daily active uniques in Q2 \u2014 above 132 million",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.24,
+   "p_final": 0.242,
+   "edge": 0.007,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.27. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:35.319606+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-07-30T20:59:38.002616+00:00"
+  },
+  {
+   "ticker": "KXAMZN-26OCTHEAD-1555000",
+   "title": "Amazon headcount in Q2 \u2014 Above 1555000",
+   "category": "Financials",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.29,
+   "entry_price": 0.18000000000000005,
+   "p_final": 0.86,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.87; faded 0.12 toward 0.5 \u2192 0.83. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:33.892805+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.29,
+   "settled_at": "2026-07-30T20:59:37.988392+00:00"
+  },
   {
    "ticker": "KXTRUMPENDORSESC-26AUG11-RFRY",
    "title": "Who will Trump endorse in the South Carolina Senate race? \u2014 Russell Fry",
