@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-07-31T17:23:25.567240+00:00",
+ "generated_at": "2026-07-31T17:41:31.382972+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -691.66,
+  "realized_pnl": -697.18,
   "total_fees": 1627.04,
-  "open_count": 4999,
-  "open_stake": 26960.11,
-  "settled_count": 701,
+  "open_count": 4996,
+  "open_stake": 26944.39,
+  "settled_count": 704,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1489 beats the market's 0.1493. On profitability, realized ROI is -18.9% (P&L $-691.66). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.5%, so our selection still loses to that baseline by -18.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.231,
-  "roi": -0.1891,
-  "edge_vs_favorite_null": -0.1839,
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1488 beats the market's 0.1492. On profitability, realized ROI is -19.0% (P&L $-697.18). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.6%, so our selection still loses to that baseline by -18.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.232,
+  "roi": -0.1898,
+  "edge_vs_favorite_null": -0.184,
   "edge_vs_random_null": -0.0878,
-  "brier_model": 0.1489,
-  "brier_market": 0.1493,
-  "predictions_scored": 689,
-  "prediction_brier": 0.1489,
-  "prediction_log_loss": 0.4575
+  "brier_model": 0.1488,
+  "brier_market": 0.1492,
+  "predictions_scored": 692,
+  "prediction_brier": 0.1488,
+  "prediction_log_loss": 0.4574
  },
  "null_baseline": {
-  "n": 689,
-  "realized_roi": -0.1891,
-  "favorite_roi": -0.0052,
-  "random_roi": -0.1014,
-  "edge_vs_favorite": -0.1839,
+  "n": 692,
+  "realized_roi": -0.1898,
+  "favorite_roi": -0.0058,
+  "random_roi": -0.102,
+  "edge_vs_favorite": -0.184,
   "edge_vs_random": -0.0878,
-  "realized_pnl": -688.22,
-  "favorite_pnl": -18.14,
-  "random_pnl": -360.96
+  "realized_pnl": -693.74,
+  "favorite_pnl": -20.32,
+  "random_pnl": -364.81
  },
  "calibration": [
   {
@@ -42,8 +42,8 @@
   },
   {
    "predicted": 0.143,
-   "realized": 0.123,
-   "n": 146,
+   "realized": 0.122,
+   "n": 147,
    "low_sample": false
   },
   {
@@ -54,14 +54,14 @@
   },
   {
    "predicted": 0.353,
-   "realized": 0.303,
-   "n": 109,
+   "realized": 0.3,
+   "n": 110,
    "low_sample": false
   },
   {
    "predicted": 0.452,
-   "realized": 0.517,
-   "n": 143,
+   "realized": 0.521,
+   "n": 144,
    "low_sample": false
   },
   {
@@ -92,8 +92,8 @@
   },
   {
    "predicted": 0.142,
-   "realized": 0.118,
-   "n": 93,
+   "realized": 0.117,
+   "n": 94,
    "low_sample": false
   },
   {
@@ -104,14 +104,14 @@
   },
   {
    "predicted": 0.351,
-   "realized": 0.281,
-   "n": 57,
+   "realized": 0.276,
+   "n": 58,
    "low_sample": false
   },
   {
    "predicted": 0.453,
-   "realized": 0.56,
-   "n": 75,
+   "realized": 0.566,
+   "n": 76,
    "low_sample": false
   },
   {
@@ -166,11 +166,11 @@
   },
   {
    "category": "Entertainment",
-   "n": 65,
-   "win_rate": 0.031,
-   "brier_model": 0.046,
-   "brier_market": 0.0507,
-   "pnl": -274.8,
+   "n": 68,
+   "win_rate": 0.044,
+   "brier_model": 0.05,
+   "brier_market": 0.0543,
+   "pnl": -280.32,
    "beats_market": true
   },
   {
@@ -6197,21 +6197,6 @@
    "placed_at": "2026-07-25T23:48:33.510576+00:00"
   },
   {
-   "ticker": "KXBIGBROTHERELIMINATION-26JUL30-MAL",
-   "title": "Big Brother Season 28 \u00b7 Week 3 elimination \u2014 Mallory Aurichio",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.33,
-   "p_final": 0.33,
-   "edge": 0.005,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.33; faded 0.12 toward 0.5 \u2192 0.35. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T23:48:33.447435+00:00"
-  },
-  {
    "ticker": "KXNEXTTEAMMLB-27MTROUT-LAA",
    "title": "Mike Trout's Next Team \u2014 Los Angeles A",
    "category": "Sports",
@@ -6722,21 +6707,6 @@
    "placed_at": "2026-07-25T19:44:08.641413+00:00"
   },
   {
-   "ticker": "KXBIGBROTHERELIMINATION-26JUL30-LAT",
-   "title": "Big Brother Season 28 \u00b7 Week 3 elimination \u2014 LaTrice Verrett",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.16,
-   "p_final": 0.155,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T19:44:08.581897+00:00"
-  },
-  {
    "ticker": "KXBTCD-26JUL3117-T66999.99",
    "title": "BTC price on Jul 31, 2026 at 5pm EDT? \u2014 $67,000 or above",
    "category": "Crypto",
@@ -6945,21 +6915,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.47; faded 0.12 toward 0.5 \u2192 0.47. Category: Crypto. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T17:41:51.544087+00:00"
-  },
-  {
-   "ticker": "KXBIGBROTHERELIMINATION-26JUL30-JAS",
-   "title": "Big Brother Season 28 \u00b7 Week 3 elimination \u2014 Jason De Puy",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.18,
-   "entry_price": 0.49,
-   "p_final": 0.476,
-   "edge": 0.001,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.47; faded 0.12 toward 0.5 \u2192 0.48. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T17:41:51.469680+00:00"
   },
   {
    "ticker": "KXNBAEAST1SEED-26-DET",
@@ -75243,6 +75198,63 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXBIGBROTHERELIMINATION-26JUL30-MAL",
+   "title": "Big Brother Season 28 \u00b7 Week 3 elimination \u2014 Mallory Aurichio",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.33,
+   "p_final": 0.33,
+   "edge": 0.005,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.33; faded 0.12 toward 0.5 \u2192 0.35. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T23:48:33.447435+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.24,
+   "settled_at": "2026-07-31T17:41:02.697592+00:00"
+  },
+  {
+   "ticker": "KXBIGBROTHERELIMINATION-26JUL30-LAT",
+   "title": "Big Brother Season 28 \u00b7 Week 3 elimination \u2014 LaTrice Verrett",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.16,
+   "p_final": 0.155,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T19:44:08.581897+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-07-31T17:41:02.693311+00:00"
+  },
+  {
+   "ticker": "KXBIGBROTHERELIMINATION-26JUL30-JAS",
+   "title": "Big Brother Season 28 \u00b7 Week 3 elimination \u2014 Jason De Puy",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.18,
+   "entry_price": 0.49,
+   "p_final": 0.476,
+   "edge": 0.001,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.47; faded 0.12 toward 0.5 \u2192 0.48. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T17:41:51.469680+00:00",
+   "won": true,
+   "payout": 10.2,
+   "pnl": 5.02,
+   "settled_at": "2026-07-31T17:41:02.683145+00:00"
+  },
   {
    "ticker": "KXPERFORMROLEJEANGREY-SAD",
    "title": "Marvel: Sadie Sink cast as next Jean Grey?",
