@@ -1,55 +1,55 @@
 {
- "generated_at": "2026-07-31T15:10:00.545752+00:00",
+ "generated_at": "2026-07-31T15:36:42.834211+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -675.56,
+  "realized_pnl": -695.36,
   "total_fees": 1627.04,
-  "open_count": 5022,
-  "open_stake": 27082.27,
-  "settled_count": 678,
+  "open_count": 5014,
+  "open_stake": 27039.74,
+  "settled_count": 686,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1512 beats the market's 0.1515. On profitability, realized ROI is -19.1% (P&L $-675.56). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.7%, so our selection still loses to that baseline by -18.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.236,
-  "roi": -0.1911,
-  "edge_vs_favorite_null": -0.1842,
-  "edge_vs_random_null": -0.0879,
-  "brier_model": 0.1512,
-  "brier_market": 0.1515,
-  "predictions_scored": 666,
-  "prediction_brier": 0.1512,
-  "prediction_log_loss": 0.463
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1504 beats the market's 0.1508. On profitability, realized ROI is -19.4% (P&L $-695.36). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.7%, so our selection still loses to that baseline by -18.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.235,
+  "roi": -0.1944,
+  "edge_vs_favorite_null": -0.1872,
+  "edge_vs_random_null": -0.0893,
+  "brier_model": 0.1504,
+  "brier_market": 0.1508,
+  "predictions_scored": 674,
+  "prediction_brier": 0.1504,
+  "prediction_log_loss": 0.4608
  },
  "null_baseline": {
-  "n": 666,
-  "realized_roi": -0.1911,
-  "favorite_roi": -0.0069,
-  "random_roi": -0.1032,
-  "edge_vs_favorite": -0.1842,
-  "edge_vs_random": -0.0879,
-  "realized_pnl": -672.12,
-  "favorite_pnl": -23.35,
-  "random_pnl": -355.52
+  "n": 674,
+  "realized_roi": -0.1944,
+  "favorite_roi": -0.0072,
+  "random_roi": -0.105,
+  "edge_vs_favorite": -0.1872,
+  "edge_vs_random": -0.0893,
+  "realized_pnl": -691.92,
+  "favorite_pnl": -24.54,
+  "random_pnl": -366.01
  },
  "calibration": [
   {
-   "predicted": 0.067,
-   "realized": 0.044,
-   "n": 158,
+   "predicted": 0.066,
+   "realized": 0.043,
+   "n": 162,
    "low_sample": false
   },
   {
-   "predicted": 0.143,
-   "realized": 0.13,
-   "n": 138,
+   "predicted": 0.142,
+   "realized": 0.129,
+   "n": 140,
    "low_sample": false
   },
   {
    "predicted": 0.251,
-   "realized": 0.204,
-   "n": 113,
+   "realized": 0.209,
+   "n": 115,
    "low_sample": false
   },
   {
@@ -85,15 +85,15 @@
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.068,
-   "realized": 0.045,
-   "n": 110,
+   "predicted": 0.067,
+   "realized": 0.044,
+   "n": 113,
    "low_sample": false
   },
   {
    "predicted": 0.141,
-   "realized": 0.125,
-   "n": 88,
+   "realized": 0.124,
+   "n": 89,
    "low_sample": false
   },
   {
@@ -127,21 +127,21 @@
    "low_sample": false
   },
   {
-   "predicted": 0.744,
-   "realized": 0.729,
-   "n": 48,
-   "low_sample": false
-  },
-  {
-   "predicted": 0.855,
-   "realized": 0.86,
+   "predicted": 0.745,
+   "realized": 0.72,
    "n": 50,
    "low_sample": false
   },
   {
+   "predicted": 0.856,
+   "realized": 0.863,
+   "n": 51,
+   "low_sample": false
+  },
+  {
    "predicted": 0.936,
-   "realized": 0.958,
-   "n": 48,
+   "realized": 0.959,
+   "n": 49,
    "low_sample": false
   }
  ],
@@ -166,11 +166,11 @@
   },
   {
    "category": "Entertainment",
-   "n": 60,
+   "n": 61,
    "win_rate": 0.033,
-   "brier_model": 0.0487,
-   "brier_market": 0.0533,
-   "pnl": -248.24,
+   "brier_model": 0.0479,
+   "brier_market": 0.0525,
+   "pnl": -253.57,
    "beats_market": true
   },
   {
@@ -238,11 +238,11 @@
   },
   {
    "category": "Science and Technology",
-   "n": 11,
-   "win_rate": 0.364,
-   "brier_model": 0.237,
-   "brier_market": 0.2334,
-   "pnl": 55.55,
+   "n": 18,
+   "win_rate": 0.278,
+   "brier_model": 0.1832,
+   "brier_market": 0.1809,
+   "pnl": 41.08,
    "beats_market": false
   },
   {
@@ -707,21 +707,6 @@
    "placed_at": "2026-07-27T18:25:35.553534+00:00"
   },
   {
-   "ticker": "KXTOPMODEL-26JUL31-CLAU5",
-   "title": "Top AI model in July? \u2014 claude-opus-5-high",
-   "category": "Science and Technology",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.11,
-   "p_final": 0.11,
-   "edge": 0.01,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.15. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T18:25:35.361005+00:00"
-  },
-  {
    "ticker": "KXDECLAREPRESFIRSTD-28NOV07-JSHA",
    "title": "Who will be the first Democrat listed to announce a presidential run? \u2014 Josh Shapiro",
    "category": "Elections",
@@ -930,21 +915,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T16:23:51.161613+00:00"
-  },
-  {
-   "ticker": "KXALBUMLENGTH-26DEC30-PET-40",
-   "title": "How long will Ariana Grande's album 'petal' be? \u2014 At least 40 minutes",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.06,
-   "p_final": 0.047,
-   "edge": 0.012,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.03; faded 0.12 toward 0.5 \u2192 0.09. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T16:23:51.018839+00:00"
   },
   {
    "ticker": "KXMLBALMOTY-26-SSCH",
@@ -5327,21 +5297,6 @@
    "placed_at": "2026-07-26T11:59:09.851819+00:00"
   },
   {
-   "ticker": "KXTOPMODEL-26JUL31-CLAUF",
-   "title": "Top AI model in July? \u2014 claude-fable-5",
-   "category": "Science and Technology",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.05,
-   "p_final": 0.056,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T11:59:09.780104+00:00"
-  },
-  {
    "ticker": "KXGDPYEAR-27-T0.1",
    "title": "US real GDP growth in 2027? \u2014 0.0% or Below",
    "category": "Economics",
@@ -7770,21 +7725,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Politics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T14:38:11.917296+00:00"
-  },
-  {
-   "ticker": "KXCODEAI-26JUL31-CHAT",
-   "title": "Top Coding AI this month \u2014 ChatGPT",
-   "category": "Science and Technology",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.06,
-   "p_final": 0.053,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T14:38:11.848257+00:00"
   },
   {
    "ticker": "KXNFLCPOTY-27-MNABERS1",
@@ -74117,21 +74057,6 @@
    "placed_at": "2026-07-25T12:51:43.256575+00:00"
   },
   {
-   "ticker": "KXCHINAAI-26JUL31-ALIB",
-   "title": "Best Chinese AI Company this month \u2014 Alibaba",
-   "category": "Science and Technology",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.20999999999999996,
-   "p_final": 0.792,
-   "edge": 0.008,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.80; faded 0.12 toward 0.5 \u2192 0.76. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.252461+00:00"
-  },
-  {
    "ticker": "KXBTCD-26JUL3117-T61999.99",
    "title": "BTC price on Jul 31, 2026 at 5pm EDT? \u2014 $62,000 or above",
    "category": "Crypto",
@@ -74175,21 +74100,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Politics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.242031+00:00"
-  },
-  {
-   "ticker": "KXMATHAI-26JUL31-CLAU",
-   "title": "Top Math AI this month \u2014 Claude",
-   "category": "Science and Technology",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.07999999999999996,
-   "p_final": 0.923,
-   "edge": 0.012,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.94; faded 0.12 toward 0.5 \u2192 0.88. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.238080+00:00"
   },
   {
    "ticker": "KXBTCD-26JUL3117-T65499.99",
@@ -74252,21 +74162,6 @@
    "placed_at": "2026-07-25T12:51:43.218748+00:00"
   },
   {
-   "ticker": "KXTOPMODEL-26JUL31-CLAUT",
-   "title": "Top AI model in July? \u2014 claude-opus-4-6-thinking",
-   "category": "Science and Technology",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.21999999999999997,
-   "p_final": 0.783,
-   "edge": 0.007,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.79; faded 0.12 toward 0.5 \u2192 0.76. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.215034+00:00"
-  },
-  {
    "ticker": "KXBTCD-26JUL3117-T63499.99",
    "title": "BTC price on Jul 31, 2026 at 5pm EDT? \u2014 $63,500 or above",
    "category": "Crypto",
@@ -74295,21 +74190,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.93; faded 0.12 toward 0.5 \u2192 0.87. Category: Politics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.205873+00:00"
-  },
-  {
-   "ticker": "KXCODEAI-26JUL31-CLAU",
-   "title": "Top Coding AI this month \u2014 Claude",
-   "category": "Science and Technology",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.10999999999999999,
-   "p_final": 0.894,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.91; faded 0.12 toward 0.5 \u2192 0.86. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.202276+00:00"
   },
   {
    "ticker": "KXBTC-26JUL3117-B64250",
@@ -75588,6 +75468,158 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXTOPMODEL-26JUL31-CLAU5",
+   "title": "Top AI model in July? \u2014 claude-opus-5-high",
+   "category": "Science and Technology",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.11,
+   "p_final": 0.11,
+   "edge": 0.01,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.15. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T18:25:35.361005+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-07-31T15:36:15.426227+00:00"
+  },
+  {
+   "ticker": "KXALBUMLENGTH-26DEC30-PET-40",
+   "title": "How long will Ariana Grande's album 'petal' be? \u2014 At least 40 minutes",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.06,
+   "p_final": 0.047,
+   "edge": 0.012,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.03; faded 0.12 toward 0.5 \u2192 0.09. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T16:23:51.018839+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-31T15:36:15.423028+00:00"
+  },
+  {
+   "ticker": "KXTOPMODEL-26JUL31-CLAUF",
+   "title": "Top AI model in July? \u2014 claude-fable-5",
+   "category": "Science and Technology",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.05,
+   "p_final": 0.056,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T11:59:09.780104+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-31T15:36:15.419113+00:00"
+  },
+  {
+   "ticker": "KXCODEAI-26JUL31-CHAT",
+   "title": "Top Coding AI this month \u2014 ChatGPT",
+   "category": "Science and Technology",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.06,
+   "p_final": 0.053,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T14:38:11.848257+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-31T15:36:15.414795+00:00"
+  },
+  {
+   "ticker": "KXCHINAAI-26JUL31-ALIB",
+   "title": "Best Chinese AI Company this month \u2014 Alibaba",
+   "category": "Science and Technology",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.20999999999999996,
+   "p_final": 0.792,
+   "edge": 0.008,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.80; faded 0.12 toward 0.5 \u2192 0.76. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.252461+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.28,
+   "settled_at": "2026-07-31T15:36:15.401133+00:00"
+  },
+  {
+   "ticker": "KXMATHAI-26JUL31-CLAU",
+   "title": "Top Math AI this month \u2014 Claude",
+   "category": "Science and Technology",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.07999999999999996,
+   "p_final": 0.923,
+   "edge": 0.012,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.94; faded 0.12 toward 0.5 \u2192 0.88. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.238080+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-31T15:36:15.395044+00:00"
+  },
+  {
+   "ticker": "KXTOPMODEL-26JUL31-CLAUT",
+   "title": "Top AI model in July? \u2014 claude-opus-4-6-thinking",
+   "category": "Science and Technology",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.21999999999999997,
+   "p_final": 0.783,
+   "edge": 0.007,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.79; faded 0.12 toward 0.5 \u2192 0.76. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.215034+00:00",
+   "won": true,
+   "payout": 22.73,
+   "pnl": 17.45,
+   "settled_at": "2026-07-31T15:36:15.388606+00:00"
+  },
+  {
+   "ticker": "KXCODEAI-26JUL31-CLAU",
+   "title": "Top Coding AI this month \u2014 Claude",
+   "category": "Science and Technology",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.10999999999999999,
+   "p_final": 0.894,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.91; faded 0.12 toward 0.5 \u2192 0.86. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.202276+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-07-31T15:36:15.373008+00:00"
+  },
   {
    "ticker": "KXACTBLUETOP-26JUL31-TJAC",
    "title": "Who will be the top ActBlue fundraiser on Jul 31, 2026? \u2014 Troy Jackson",
