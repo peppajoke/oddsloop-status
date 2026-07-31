@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-07-31T16:16:22.496268+00:00",
+ "generated_at": "2026-07-31T16:38:43.943512+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -686.36,
+  "realized_pnl": -691.66,
   "total_fees": 1627.04,
-  "open_count": 5000,
-  "open_stake": 26965.41,
-  "settled_count": 700,
+  "open_count": 4999,
+  "open_stake": 26960.11,
+  "settled_count": 701,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1490 beats the market's 0.1495. On profitability, realized ROI is -18.8% (P&L $-686.36). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.5%, so our selection still loses to that baseline by -18.2 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1489 beats the market's 0.1493. On profitability, realized ROI is -18.9% (P&L $-691.66). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.5%, so our selection still loses to that baseline by -18.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.231,
-  "roi": -0.1879,
-  "edge_vs_favorite_null": -0.1824,
-  "edge_vs_random_null": -0.087,
-  "brier_model": 0.149,
-  "brier_market": 0.1495,
-  "predictions_scored": 688,
-  "prediction_brier": 0.149,
-  "prediction_log_loss": 0.458
+  "roi": -0.1891,
+  "edge_vs_favorite_null": -0.1839,
+  "edge_vs_random_null": -0.0878,
+  "brier_model": 0.1489,
+  "brier_market": 0.1493,
+  "predictions_scored": 689,
+  "prediction_brier": 0.1489,
+  "prediction_log_loss": 0.4575
  },
  "null_baseline": {
-  "n": 688,
-  "realized_roi": -0.1879,
-  "favorite_roi": -0.0055,
-  "random_roi": -0.1009,
-  "edge_vs_favorite": -0.1824,
-  "edge_vs_random": -0.087,
-  "realized_pnl": -682.92,
-  "favorite_pnl": -19.04,
-  "random_pnl": -358.76
+  "n": 689,
+  "realized_roi": -0.1891,
+  "favorite_roi": -0.0052,
+  "random_roi": -0.1014,
+  "edge_vs_favorite": -0.1839,
+  "edge_vs_random": -0.0878,
+  "realized_pnl": -688.22,
+  "favorite_pnl": -18.14,
+  "random_pnl": -360.96
  },
  "calibration": [
   {
@@ -42,8 +42,8 @@
   },
   {
    "predicted": 0.143,
-   "realized": 0.124,
-   "n": 145,
+   "realized": 0.123,
+   "n": 146,
    "low_sample": false
   },
   {
@@ -134,8 +134,8 @@
   },
   {
    "predicted": 0.856,
-   "realized": 0.865,
-   "n": 52,
+   "realized": 0.868,
+   "n": 53,
    "low_sample": false
   },
   {
@@ -166,11 +166,11 @@
   },
   {
    "category": "Entertainment",
-   "n": 64,
+   "n": 65,
    "win_rate": 0.031,
-   "brier_model": 0.0463,
-   "brier_market": 0.0511,
-   "pnl": -269.5,
+   "brier_model": 0.046,
+   "brier_market": 0.0507,
+   "pnl": -274.8,
    "beats_market": true
   },
   {
@@ -72377,21 +72377,6 @@
    "placed_at": "2026-07-25T12:51:43.721932+00:00"
   },
   {
-   "ticker": "KXPERFORMROLEJEANGREY-SAD",
-   "title": "Marvel: Sadie Sink cast as next Jean Grey?",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.16000000000000003,
-   "p_final": 0.845,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.85; faded 0.12 toward 0.5 \u2192 0.81. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.718168+00:00"
-  },
-  {
    "ticker": "KXSB-27-DAL",
    "title": "2027 Pro Football Champion \u2014 Dallas",
    "category": "Sports",
@@ -75258,6 +75243,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXPERFORMROLEJEANGREY-SAD",
+   "title": "Marvel: Sadie Sink cast as next Jean Grey?",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.16000000000000003,
+   "p_final": 0.845,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.85; faded 0.12 toward 0.5 \u2192 0.81. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.718168+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-07-31T16:38:15.334705+00:00"
+  },
   {
    "ticker": "KXAPRPOTUS-26JUL31-41.2",
    "title": "Trump's approval rating on Jul 31, 2026? \u2014 41.1 to 41.3",
