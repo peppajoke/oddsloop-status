@@ -1,43 +1,43 @@
 {
- "generated_at": "2026-07-31T12:57:14.587847+00:00",
+ "generated_at": "2026-07-31T13:01:44.158513+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -680.95,
+  "realized_pnl": -691.63,
   "total_fees": 1627.04,
-  "open_count": 5026,
-  "open_stake": 27103.36,
-  "settled_count": 674,
+  "open_count": 5024,
+  "open_stake": 27092.68,
+  "settled_count": 676,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1508 beats the market's 0.1514. On profitability, realized ROI is -19.4% (P&L $-680.95). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.7%, so our selection still loses to that baseline by -18.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1503 beats the market's 0.1510. On profitability, realized ROI is -19.6% (P&L $-691.63). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.6%, so our selection still loses to that baseline by -19.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.234,
-  "roi": -0.1938,
-  "edge_vs_favorite_null": -0.1872,
-  "edge_vs_random_null": -0.0906,
-  "brier_model": 0.1508,
-  "brier_market": 0.1514,
-  "predictions_scored": 662,
-  "prediction_brier": 0.1508,
-  "prediction_log_loss": 0.4624
+  "roi": -0.1962,
+  "edge_vs_favorite_null": -0.1898,
+  "edge_vs_random_null": -0.0919,
+  "brier_model": 0.1503,
+  "brier_market": 0.151,
+  "predictions_scored": 664,
+  "prediction_brier": 0.1503,
+  "prediction_log_loss": 0.4612
  },
  "null_baseline": {
-  "n": 662,
-  "realized_roi": -0.1938,
-  "favorite_roi": -0.0066,
-  "random_roi": -0.1032,
-  "edge_vs_favorite": -0.1872,
-  "edge_vs_random": -0.0906,
-  "realized_pnl": -677.51,
-  "favorite_pnl": -22.09,
-  "random_pnl": -353.22
+  "n": 664,
+  "realized_roi": -0.1962,
+  "favorite_roi": -0.0065,
+  "random_roi": -0.1044,
+  "edge_vs_favorite": -0.1898,
+  "edge_vs_random": -0.0919,
+  "realized_pnl": -688.19,
+  "favorite_pnl": -21.68,
+  "random_pnl": -358.36
  },
  "calibration": [
   {
    "predicted": 0.067,
-   "realized": 0.045,
-   "n": 156,
+   "realized": 0.044,
+   "n": 158,
    "low_sample": false
   },
   {
@@ -86,8 +86,8 @@
  "prediction_calibration": [
   {
    "predicted": 0.068,
-   "realized": 0.046,
-   "n": 109,
+   "realized": 0.045,
+   "n": 110,
    "low_sample": false
   },
   {
@@ -140,8 +140,8 @@
   },
   {
    "predicted": 0.936,
-   "realized": 0.957,
-   "n": 47,
+   "realized": 0.958,
+   "n": 48,
    "low_sample": false
   }
  ],
@@ -220,11 +220,11 @@
   },
   {
    "category": "Economics",
-   "n": 46,
-   "win_rate": 0.217,
-   "brier_model": 0.1379,
-   "brier_market": 0.1371,
-   "pnl": -24.08,
+   "n": 48,
+   "win_rate": 0.208,
+   "brier_model": 0.1322,
+   "brier_market": 0.1315,
+   "pnl": -34.76,
    "beats_market": false
   },
   {
@@ -7485,21 +7485,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Crypto. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T15:39:30.885159+00:00"
-  },
-  {
-   "ticker": "KXCBDECISIONJAPAN-26JUL30-HOLD",
-   "title": "Bank of Japan rate decision in July \u2014 Maintain current rate",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.050000000000000044,
-   "p_final": 0.947,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T15:39:30.826097+00:00"
   },
   {
    "ticker": "KXWTIW-26JUL3114-T101.99",
@@ -73592,21 +73577,6 @@
    "placed_at": "2026-07-25T12:51:43.443213+00:00"
   },
   {
-   "ticker": "KXCBDECISIONJAPAN-26JUL30-H25",
-   "title": "Bank of Japan rate decision in July \u2014 Hike 25bps",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.04,
-   "p_final": 0.048,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.437869+00:00"
-  },
-  {
    "ticker": "KXDOGEMAXMON-DOGE-26JUL31-009",
    "title": "How high will DOGE get in July? \u2014 Above $0.09",
    "category": "Crypto",
@@ -75648,6 +75618,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXCBDECISIONJAPAN-26JUL30-HOLD",
+   "title": "Bank of Japan rate decision in July \u2014 Maintain current rate",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.050000000000000044,
+   "p_final": 0.947,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T15:39:30.826097+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-31T13:01:15.319794+00:00"
+  },
+  {
+   "ticker": "KXCBDECISIONJAPAN-26JUL30-H25",
+   "title": "Bank of Japan rate decision in July \u2014 Hike 25bps",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.04,
+   "p_final": 0.048,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.437869+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-07-31T13:01:15.287336+00:00"
+  },
   {
    "ticker": "KXAAAGASM-26JUL31-4.04",
    "title": "Gas prices in the US in Jul 2026? \u2014 Above 4.04",
