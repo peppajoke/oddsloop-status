@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-31T21:49:12.956270+00:00",
+ "generated_at": "2026-07-31T21:49:23.602709+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
@@ -18,9 +18,9 @@
   "edge_vs_random_null": -0.1089,
   "brier_model": 0.1447,
   "brier_market": 0.1452,
-  "predictions_scored": 735,
-  "prediction_brier": 0.1456,
-  "prediction_log_loss": 0.4491
+  "predictions_scored": 740,
+  "prediction_brier": 0.1447,
+  "prediction_log_loss": 0.4469
  },
  "null_baseline": {
   "n": 740,
@@ -86,8 +86,8 @@
  "prediction_calibration": [
   {
    "predicted": 0.067,
-   "realized": 0.047,
-   "n": 129,
+   "realized": 0.045,
+   "n": 132,
    "low_sample": false
   },
   {
@@ -98,8 +98,8 @@
   },
   {
    "predicted": 0.249,
-   "realized": 0.141,
-   "n": 71,
+   "realized": 0.139,
+   "n": 72,
    "low_sample": false
   },
   {
@@ -134,8 +134,8 @@
   },
   {
    "predicted": 0.857,
-   "realized": 0.877,
-   "n": 57,
+   "realized": 0.879,
+   "n": 58,
    "low_sample": false
   },
   {
