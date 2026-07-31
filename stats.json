@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-07-31T21:49:23.602709+00:00",
+ "generated_at": "2026-07-31T22:20:22.232482+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -882.13,
+  "realized_pnl": -862.75,
   "total_fees": 1627.04,
-  "open_count": 4948,
-  "open_stake": 26690.78,
-  "settled_count": 752,
+  "open_count": 4944,
+  "open_stake": 26669.88,
+  "settled_count": 756,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1447 beats the market's 0.1452. On profitability, realized ROI is -22.5% (P&L $-882.13). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.1%, so our selection still loses to that baseline by -22.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.223,
-  "roi": -0.2248,
-  "edge_vs_favorite_null": -0.2242,
-  "edge_vs_random_null": -0.1089,
-  "brier_model": 0.1447,
-  "brier_market": 0.1452,
-  "predictions_scored": 740,
-  "prediction_brier": 0.1447,
-  "prediction_log_loss": 0.4469
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1458 beats the market's 0.1462. On profitability, realized ROI is -21.9% (P&L $-862.75). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.4%, so our selection still loses to that baseline by -21.5 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.226,
+  "roi": -0.2187,
+  "edge_vs_favorite_null": -0.2147,
+  "edge_vs_random_null": -0.1043,
+  "brier_model": 0.1458,
+  "brier_market": 0.1462,
+  "predictions_scored": 744,
+  "prediction_brier": 0.1458,
+  "prediction_log_loss": 0.4493
  },
  "null_baseline": {
-  "n": 740,
-  "realized_roi": -0.2248,
-  "favorite_roi": -0.0006,
-  "random_roi": -0.1159,
-  "edge_vs_favorite": -0.2242,
-  "edge_vs_random": -0.1089,
-  "realized_pnl": -878.69,
-  "favorite_pnl": -2.31,
-  "random_pnl": -443.23
+  "n": 744,
+  "realized_roi": -0.2187,
+  "favorite_roi": -0.004,
+  "random_roi": -0.1144,
+  "edge_vs_favorite": -0.2147,
+  "edge_vs_random": -0.1043,
+  "realized_pnl": -859.31,
+  "favorite_pnl": -15.08,
+  "random_pnl": -439.93
  },
  "calibration": [
   {
@@ -54,8 +54,8 @@
   },
   {
    "predicted": 0.353,
-   "realized": 0.302,
-   "n": 116,
+   "realized": 0.317,
+   "n": 120,
    "low_sample": false
   },
   {
@@ -104,8 +104,8 @@
   },
   {
    "predicted": 0.351,
-   "realized": 0.267,
-   "n": 60,
+   "realized": 0.286,
+   "n": 63,
    "low_sample": false
   },
   {
@@ -121,9 +121,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.645,
-   "realized": 0.667,
-   "n": 57,
+   "predicted": 0.644,
+   "realized": 0.655,
+   "n": 58,
    "low_sample": false
   },
   {
@@ -228,21 +228,21 @@
    "beats_market": false
   },
   {
-   "category": "Financials",
-   "n": 73,
-   "win_rate": 0.233,
-   "brier_model": 0.1613,
-   "brier_market": 0.16,
-   "pnl": 25.13,
-   "beats_market": false
-  },
-  {
    "category": "Science and Technology",
    "n": 19,
    "win_rate": 0.263,
    "brier_model": 0.1737,
    "brier_market": 0.1715,
    "pnl": 35.74,
+   "beats_market": false
+  },
+  {
+   "category": "Financials",
+   "n": 77,
+   "win_rate": 0.26,
+   "brier_model": 0.1711,
+   "brier_market": 0.1686,
+   "pnl": 44.51,
    "beats_market": false
   },
   {
@@ -73382,21 +73382,6 @@
    "placed_at": "2026-07-25T12:51:43.170096+00:00"
   },
   {
-   "ticker": "KXB200MS-26JUL-6.500",
-   "title": "NVIDIA B200 \u00b7 Average hourly price in July \u2014 Above $6.50",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.23,
-   "entry_price": 0.35,
-   "p_final": 0.349,
-   "edge": 0.004,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.34; faded 0.12 toward 0.5 \u2192 0.36. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.160691+00:00"
-  },
-  {
    "ticker": "KXHORMUZWEEKLY-26JUL26-T50",
    "title": "Traffic through the Strait of Hormuz? (7/20 - 7/26) \u2014 Above 50",
    "category": "Politics",
@@ -73410,51 +73395,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.58; faded 0.12 toward 0.5 \u2192 0.57. Category: Politics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.155898+00:00"
-  },
-  {
-   "ticker": "KXH200MS-26JUL-4.500",
-   "title": "NVIDIA H200 \u00b7 Average hourly price in July \u2014 Above $4.50",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.23,
-   "entry_price": 0.36,
-   "p_final": 0.359,
-   "edge": 0.004,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.35; faded 0.12 toward 0.5 \u2192 0.37. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.147051+00:00"
-  },
-  {
-   "ticker": "KXRTX5090MS-26JUL-0.500",
-   "title": "NVIDIA RTX 5090 \u00b7 Average hourly price in July \u2014 Above $0.50",
-   "category": "Financials",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.4,
-   "p_final": 0.641,
-   "edge": 0.004,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.65; faded 0.12 toward 0.5 \u2192 0.63. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.134503+00:00"
-  },
-  {
-   "ticker": "KXUST30AM-26JUL31-T5.19",
-   "title": "30Y US Treasury yield on Jul 31, 2026? \u2014 5.2% or above",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.23,
-   "entry_price": 0.36,
-   "p_final": 0.325,
-   "edge": 0.005,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.32; faded 0.12 toward 0.5 \u2192 0.34. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.122890+00:00"
   },
   {
    "ticker": "KXTRUMPRESIGN",
@@ -74478,6 +74418,82 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXB200MS-26JUL-6.500",
+   "title": "NVIDIA B200 \u00b7 Average hourly price in July \u2014 Above $6.50",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.23,
+   "entry_price": 0.35,
+   "p_final": 0.349,
+   "edge": 0.004,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.34; faded 0.12 toward 0.5 \u2192 0.36. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.160691+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.23,
+   "settled_at": "2026-07-31T22:19:53.482226+00:00"
+  },
+  {
+   "ticker": "KXH200MS-26JUL-4.500",
+   "title": "NVIDIA H200 \u00b7 Average hourly price in July \u2014 Above $4.50",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.23,
+   "entry_price": 0.36,
+   "p_final": 0.359,
+   "edge": 0.004,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.35; faded 0.12 toward 0.5 \u2192 0.37. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.147051+00:00",
+   "won": true,
+   "payout": 13.89,
+   "pnl": 8.66,
+   "settled_at": "2026-07-31T22:19:53.477437+00:00"
+  },
+  {
+   "ticker": "KXRTX5090MS-26JUL-0.500",
+   "title": "NVIDIA RTX 5090 \u00b7 Average hourly price in July \u2014 Above $0.50",
+   "category": "Financials",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.4,
+   "p_final": 0.641,
+   "edge": 0.004,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.65; faded 0.12 toward 0.5 \u2192 0.63. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.134503+00:00",
+   "won": true,
+   "payout": 12.5,
+   "pnl": 7.29,
+   "settled_at": "2026-07-31T22:19:53.469405+00:00"
+  },
+  {
+   "ticker": "KXUST30AM-26JUL31-T5.19",
+   "title": "30Y US Treasury yield on Jul 31, 2026? \u2014 5.2% or above",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.23,
+   "entry_price": 0.36,
+   "p_final": 0.325,
+   "edge": 0.005,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.32; faded 0.12 toward 0.5 \u2192 0.34. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.122890+00:00",
+   "won": true,
+   "payout": 13.89,
+   "pnl": 8.66,
+   "settled_at": "2026-07-31T22:19:53.454049+00:00"
+  },
   {
    "ticker": "KXRTX5090WS-26JUL31-0.750",
    "title": "NVIDIA RTX 5090 \u00b7 Hourly price on Jul 31 (Week 31) \u2014 Above $0.75",
