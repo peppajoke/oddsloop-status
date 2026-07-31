@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-07-31T14:34:42.591859+00:00",
+ "generated_at": "2026-07-31T15:05:42.557036+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -691.63,
+  "realized_pnl": -675.56,
   "total_fees": 1627.04,
-  "open_count": 5024,
-  "open_stake": 27092.68,
-  "settled_count": 676,
+  "open_count": 5022,
+  "open_stake": 27082.27,
+  "settled_count": 678,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1503 beats the market's 0.1510. On profitability, realized ROI is -19.6% (P&L $-691.63). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.6%, so our selection still loses to that baseline by -19.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.234,
-  "roi": -0.1962,
-  "edge_vs_favorite_null": -0.1898,
-  "edge_vs_random_null": -0.0919,
-  "brier_model": 0.1503,
-  "brier_market": 0.151,
-  "predictions_scored": 664,
-  "prediction_brier": 0.1503,
-  "prediction_log_loss": 0.4612
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1512 beats the market's 0.1515. On profitability, realized ROI is -19.1% (P&L $-675.56). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.7%, so our selection still loses to that baseline by -18.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.236,
+  "roi": -0.1911,
+  "edge_vs_favorite_null": -0.1842,
+  "edge_vs_random_null": -0.0879,
+  "brier_model": 0.1512,
+  "brier_market": 0.1515,
+  "predictions_scored": 666,
+  "prediction_brier": 0.1512,
+  "prediction_log_loss": 0.463
  },
  "null_baseline": {
-  "n": 664,
-  "realized_roi": -0.1962,
-  "favorite_roi": -0.0065,
-  "random_roi": -0.1044,
-  "edge_vs_favorite": -0.1898,
-  "edge_vs_random": -0.0919,
-  "realized_pnl": -688.19,
-  "favorite_pnl": -21.68,
-  "random_pnl": -358.36
+  "n": 666,
+  "realized_roi": -0.1911,
+  "favorite_roi": -0.0069,
+  "random_roi": -0.1032,
+  "edge_vs_favorite": -0.1842,
+  "edge_vs_random": -0.0879,
+  "realized_pnl": -672.12,
+  "favorite_pnl": -23.35,
+  "random_pnl": -355.52
  },
  "calibration": [
   {
@@ -48,8 +48,8 @@
   },
   {
    "predicted": 0.251,
-   "realized": 0.196,
-   "n": 112,
+   "realized": 0.204,
+   "n": 113,
    "low_sample": false
   },
   {
@@ -60,8 +60,8 @@
   },
   {
    "predicted": 0.452,
-   "realized": 0.514,
-   "n": 142,
+   "realized": 0.517,
+   "n": 143,
    "low_sample": false
   },
   {
@@ -110,8 +110,8 @@
   },
   {
    "predicted": 0.453,
-   "realized": 0.554,
-   "n": 74,
+   "realized": 0.56,
+   "n": 75,
    "low_sample": false
   },
   {
@@ -128,8 +128,8 @@
   },
   {
    "predicted": 0.744,
-   "realized": 0.745,
-   "n": 47,
+   "realized": 0.729,
+   "n": 48,
    "low_sample": false
   },
   {
@@ -192,15 +192,6 @@
    "beats_market": true
   },
   {
-   "category": "Elections",
-   "n": 2,
-   "win_rate": 0.0,
-   "brier_model": 0.004,
-   "brier_market": 0.0042,
-   "pnl": -10.66,
-   "beats_market": true
-  },
-  {
    "category": "Crypto",
    "n": 20,
    "win_rate": 0.1,
@@ -252,6 +243,15 @@
    "brier_model": 0.237,
    "brier_market": 0.2334,
    "pnl": 55.55,
+   "beats_market": false
+  },
+  {
+   "category": "Elections",
+   "n": 4,
+   "win_rate": 0.5,
+   "brier_model": 0.2125,
+   "brier_market": 0.1758,
+   "pnl": 5.41,
    "beats_market": false
   }
  ],
@@ -4455,21 +4455,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.59; faded 0.12 toward 0.5 \u2192 0.58. Category: Entertainment. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T20:06:48.276476+00:00"
-  },
-  {
-   "ticker": "KXACTBLUETOP-26JUL31-TJAC",
-   "title": "Who will be the top ActBlue fundraiser on Jul 31, 2026? \u2014 Troy Jackson",
-   "category": "Elections",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.15,
-   "entry_price": 0.58,
-   "p_final": 0.456,
-   "edge": 0.001,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.45; faded 0.12 toward 0.5 \u2192 0.46. Category: Elections. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T20:06:48.197990+00:00"
   },
   {
    "ticker": "KXSTARTINGQBWEEK1-W1-26SEP15-ARI-JBRI",
@@ -74582,21 +74567,6 @@
    "placed_at": "2026-07-25T12:51:43.122890+00:00"
   },
   {
-   "ticker": "KXACTBLUETOP-26JUL31-JOSS",
-   "title": "Who will be the top ActBlue fundraiser on Jul 31, 2026? \u2014 Jon Ossoff",
-   "category": "Elections",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.26,
-   "entry_price": 0.28,
-   "p_final": 0.739,
-   "edge": 0.006,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Elections. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.121671+00:00"
-  },
-  {
    "ticker": "KXTRUMPRESIGN",
    "title": "Will Trump resign during his term? \u2014 Before his term ends",
    "category": "Politics",
@@ -75618,6 +75588,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXACTBLUETOP-26JUL31-TJAC",
+   "title": "Who will be the top ActBlue fundraiser on Jul 31, 2026? \u2014 Troy Jackson",
+   "category": "Elections",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.15,
+   "entry_price": 0.58,
+   "p_final": 0.456,
+   "edge": 0.001,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.45; faded 0.12 toward 0.5 \u2192 0.46. Category: Elections. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T20:06:48.197990+00:00",
+   "won": true,
+   "payout": 8.62,
+   "pnl": 3.47,
+   "settled_at": "2026-07-31T15:05:14.231097+00:00"
+  },
+  {
+   "ticker": "KXACTBLUETOP-26JUL31-JOSS",
+   "title": "Who will be the top ActBlue fundraiser on Jul 31, 2026? \u2014 Jon Ossoff",
+   "category": "Elections",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.26,
+   "entry_price": 0.28,
+   "p_final": 0.739,
+   "edge": 0.006,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Elections. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.121671+00:00",
+   "won": true,
+   "payout": 17.86,
+   "pnl": 12.6,
+   "settled_at": "2026-07-31T15:05:14.201789+00:00"
+  },
   {
    "ticker": "KXCBDECISIONJAPAN-26JUL30-HOLD",
    "title": "Bank of Japan rate decision in July \u2014 Maintain current rate",
