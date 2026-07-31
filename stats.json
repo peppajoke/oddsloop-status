@@ -1,43 +1,43 @@
 {
- "generated_at": "2026-07-31T00:06:37.589465+00:00",
+ "generated_at": "2026-07-31T00:37:37.065376+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -707.33,
+  "realized_pnl": -712.66,
   "total_fees": 1627.04,
-  "open_count": 5039,
-  "open_stake": 27172.3,
-  "settled_count": 661,
+  "open_count": 5038,
+  "open_stake": 27166.97,
+  "settled_count": 662,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1508 beats the market's 0.1513. On profitability, realized ROI is -20.5% (P&L $-707.33). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.4%, so our selection still loses to that baseline by -20.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1506 beats the market's 0.1511. On profitability, realized ROI is -20.7% (P&L $-712.66). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.4%, so our selection still loses to that baseline by -20.2 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.234,
-  "roi": -0.2054,
-  "edge_vs_favorite_null": -0.201,
-  "edge_vs_random_null": -0.0974,
-  "brier_model": 0.1508,
-  "brier_market": 0.1513,
-  "predictions_scored": 649,
-  "prediction_brier": 0.1508,
-  "prediction_log_loss": 0.4624
+  "roi": -0.2066,
+  "edge_vs_favorite_null": -0.2024,
+  "edge_vs_random_null": -0.098,
+  "brier_model": 0.1506,
+  "brier_market": 0.1511,
+  "predictions_scored": 650,
+  "prediction_brier": 0.1506,
+  "prediction_log_loss": 0.4618
  },
  "null_baseline": {
-  "n": 649,
-  "realized_roi": -0.2054,
-  "favorite_roi": -0.0043,
-  "random_roi": -0.108,
-  "edge_vs_favorite": -0.201,
-  "edge_vs_random": -0.0974,
-  "realized_pnl": -703.89,
-  "favorite_pnl": -14.28,
-  "random_pnl": -362.5
+  "n": 650,
+  "realized_roi": -0.2066,
+  "favorite_roi": -0.0042,
+  "random_roi": -0.1086,
+  "edge_vs_favorite": -0.2024,
+  "edge_vs_random": -0.098,
+  "realized_pnl": -709.22,
+  "favorite_pnl": -13.93,
+  "random_pnl": -365.0
  },
  "calibration": [
   {
    "predicted": 0.067,
    "realized": 0.04,
-   "n": 149,
+   "n": 150,
    "low_sample": false
   },
   {
@@ -87,7 +87,7 @@
   {
    "predicted": 0.068,
    "realized": 0.047,
-   "n": 106,
+   "n": 107,
    "low_sample": false
   },
   {
@@ -175,11 +175,11 @@
   },
   {
    "category": "Sports",
-   "n": 257,
-   "win_rate": 0.28,
-   "brier_model": 0.1659,
-   "brier_market": 0.1674,
-   "pnl": -263.03,
+   "n": 258,
+   "win_rate": 0.279,
+   "brier_model": 0.1653,
+   "brier_market": 0.1667,
+   "pnl": -268.36,
    "beats_market": true
   },
   {
@@ -2040,21 +2040,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.03; faded 0.12 toward 0.5 \u2192 0.09. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T05:16:05.910645+00:00"
-  },
-  {
-   "ticker": "KXPGAR1LEAD-ROC26-CAME",
-   "title": "Rocket Classic End of Round 1 Leader \u2014 Cameron Young",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.075,
-   "p_final": 0.078,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T05:16:05.837703+00:00"
   },
   {
    "ticker": "KXRT-COY-90",
@@ -75843,6 +75828,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXPGAR1LEAD-ROC26-CAME",
+   "title": "Rocket Classic End of Round 1 Leader \u2014 Cameron Young",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.075,
+   "p_final": 0.078,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T05:16:05.837703+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-31T00:37:09.021915+00:00"
+  },
   {
    "ticker": "KXCOINBASE-26JULVOL-175000000000",
    "title": "Coinbase total trading volume in Q2 \u2014 Above $175 billion",
