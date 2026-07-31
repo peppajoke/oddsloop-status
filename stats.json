@@ -1,49 +1,49 @@
 {
- "generated_at": "2026-07-31T18:43:31.041851+00:00",
+ "generated_at": "2026-07-31T19:14:29.624109+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -697.18,
+  "realized_pnl": -728.79,
   "total_fees": 1627.04,
-  "open_count": 4996,
-  "open_stake": 26944.39,
-  "settled_count": 704,
+  "open_count": 4990,
+  "open_stake": 26912.78,
+  "settled_count": 710,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1488 beats the market's 0.1492. On profitability, realized ROI is -19.0% (P&L $-697.18). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.6%, so our selection still loses to that baseline by -18.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.232,
-  "roi": -0.1898,
-  "edge_vs_favorite_null": -0.184,
-  "edge_vs_random_null": -0.0878,
-  "brier_model": 0.1488,
-  "brier_market": 0.1492,
-  "predictions_scored": 692,
-  "prediction_brier": 0.1488,
-  "prediction_log_loss": 0.4574
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1482 beats the market's 0.1487. On profitability, realized ROI is -19.7% (P&L $-728.79). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.2%, so our selection still loses to that baseline by -19.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.23,
+  "roi": -0.1968,
+  "edge_vs_favorite_null": -0.1943,
+  "edge_vs_random_null": -0.0929,
+  "brier_model": 0.1482,
+  "brier_market": 0.1487,
+  "predictions_scored": 698,
+  "prediction_brier": 0.1482,
+  "prediction_log_loss": 0.4561
  },
  "null_baseline": {
-  "n": 692,
-  "realized_roi": -0.1898,
-  "favorite_roi": -0.0058,
-  "random_roi": -0.102,
-  "edge_vs_favorite": -0.184,
-  "edge_vs_random": -0.0878,
-  "realized_pnl": -693.74,
-  "favorite_pnl": -20.32,
-  "random_pnl": -364.81
+  "n": 698,
+  "realized_roi": -0.1968,
+  "favorite_roi": -0.0025,
+  "random_roi": -0.1039,
+  "edge_vs_favorite": -0.1943,
+  "edge_vs_random": -0.0929,
+  "realized_pnl": -725.35,
+  "favorite_pnl": -8.7,
+  "random_pnl": -374.81
  },
  "calibration": [
   {
    "predicted": 0.066,
    "realized": 0.047,
-   "n": 169,
+   "n": 171,
    "low_sample": false
   },
   {
    "predicted": 0.143,
    "realized": 0.122,
-   "n": 147,
+   "n": 148,
    "low_sample": false
   },
   {
@@ -54,14 +54,14 @@
   },
   {
    "predicted": 0.353,
-   "realized": 0.3,
-   "n": 110,
+   "realized": 0.297,
+   "n": 111,
    "low_sample": false
   },
   {
    "predicted": 0.452,
-   "realized": 0.521,
-   "n": 144,
+   "realized": 0.514,
+   "n": 146,
    "low_sample": false
   },
   {
@@ -87,7 +87,7 @@
   {
    "predicted": 0.067,
    "realized": 0.05,
-   "n": 119,
+   "n": 121,
    "low_sample": false
   },
   {
@@ -110,20 +110,20 @@
   },
   {
    "predicted": 0.453,
-   "realized": 0.566,
-   "n": 76,
+   "realized": 0.558,
+   "n": 77,
    "low_sample": false
   },
   {
    "predicted": 0.548,
-   "realized": 0.549,
-   "n": 71,
+   "realized": 0.556,
+   "n": 72,
    "low_sample": false
   },
   {
-   "predicted": 0.645,
-   "realized": 0.679,
-   "n": 53,
+   "predicted": 0.644,
+   "realized": 0.685,
+   "n": 54,
    "low_sample": false
   },
   {
@@ -134,8 +134,8 @@
   },
   {
    "predicted": 0.856,
-   "realized": 0.868,
-   "n": 53,
+   "realized": 0.87,
+   "n": 54,
    "low_sample": false
   },
   {
@@ -211,11 +211,11 @@
   },
   {
    "category": "Economics",
-   "n": 48,
-   "win_rate": 0.208,
-   "brier_model": 0.1322,
-   "brier_market": 0.1315,
-   "pnl": -34.76,
+   "n": 54,
+   "win_rate": 0.185,
+   "brier_model": 0.1269,
+   "brier_market": 0.1268,
+   "pnl": -66.37,
    "beats_market": false
   },
   {
@@ -45392,21 +45392,6 @@
    "placed_at": "2026-07-25T13:01:38.801254+00:00"
   },
   {
-   "ticker": "KXTBCRUNCHWRAP-26AUG02-T6.68",
-   "title": "Taco Bell Crunchwrap Supreme price in July 2026 \u2014 At least $6.68",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.43999999999999995,
-   "p_final": 0.573,
-   "edge": 0.002,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.57; faded 0.12 toward 0.5 \u2192 0.57. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:38.776587+00:00"
-  },
-  {
    "ticker": "KXOSCARNOMDIR-27-CHRI",
    "title": "Oscar nominees: Best Director \u2014 Christopher Nolan",
    "category": "Entertainment",
@@ -46395,21 +46380,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.14; faded 0.12 toward 0.5 \u2192 0.18. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:01:36.838691+00:00"
-  },
-  {
-   "ticker": "KXTBCRUNCHWRAP-26AUG02-T6.67",
-   "title": "Taco Bell Crunchwrap Supreme price in July 2026 \u2014 At least $6.67",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.23,
-   "entry_price": 0.37,
-   "p_final": 0.636,
-   "edge": 0.004,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.64; faded 0.12 toward 0.5 \u2192 0.62. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:36.813816+00:00"
   },
   {
    "ticker": "KXRTX5090MS-26SEP-0.750",
@@ -51842,21 +51812,6 @@
    "placed_at": "2026-07-25T13:01:28.096547+00:00"
   },
   {
-   "ticker": "KXCHIPBURRITO-26AUG02-T9.80",
-   "title": "Chipotle chicken burrito price in July 2026 \u2014 At least $9.80",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.06,
-   "p_final": 0.067,
-   "edge": 0.012,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:28.076932+00:00"
-  },
-  {
    "ticker": "KXIPO-26-GLEAN",
    "title": "Which companies will officially announce an IPO this year? \u2014 Glean",
    "category": "Financials",
@@ -52140,21 +52095,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.26. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:52:00.691405+00:00"
-  },
-  {
-   "ticker": "KXTBCRUNCHWRAP-26AUG02-T6.69",
-   "title": "Taco Bell Crunchwrap Supreme price in July 2026 \u2014 At least $6.69",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.42,
-   "p_final": 0.403,
-   "edge": 0.003,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.40; faded 0.12 toward 0.5 \u2192 0.41. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:52:00.671899+00:00"
   },
   {
    "ticker": "KXWTIVSBRENT-26DEC31-BRENT",
@@ -52817,21 +52757,6 @@
    "placed_at": "2026-07-25T12:51:59.727081+00:00"
   },
   {
-   "ticker": "KXTBCRUNCHWRAP-26AUG02-T6.72",
-   "title": "Taco Bell Crunchwrap Supreme price in July 2026 \u2014 At least $6.72",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.07,
-   "p_final": 0.063,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.05; faded 0.12 toward 0.5 \u2192 0.10. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:59.708422+00:00"
-  },
-  {
    "ticker": "KXMLBAL-26-TEX",
    "title": "American League Champion \u2014 Texas",
    "category": "Sports",
@@ -52965,21 +52890,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.80; faded 0.12 toward 0.5 \u2192 0.76. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:59.488415+00:00"
-  },
-  {
-   "ticker": "KXTBCRUNCHWRAP-26AUG02-T6.65",
-   "title": "Taco Bell Crunchwrap Supreme price in July 2026 \u2014 At least $6.65",
-   "category": "Economics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.14,
-   "p_final": 0.864,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.88; faded 0.12 toward 0.5 \u2192 0.83. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:59.469881+00:00"
   },
   {
    "ticker": "KXRIVNA-28JANDELIV-40000",
@@ -75198,6 +75108,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXTBCRUNCHWRAP-26AUG02-T6.68",
+   "title": "Taco Bell Crunchwrap Supreme price in July 2026 \u2014 At least $6.68",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.43999999999999995,
+   "p_final": 0.573,
+   "edge": 0.002,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.57; faded 0.12 toward 0.5 \u2192 0.57. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:38.776587+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.2,
+   "settled_at": "2026-07-31T19:14:02.538907+00:00"
+  },
+  {
+   "ticker": "KXTBCRUNCHWRAP-26AUG02-T6.67",
+   "title": "Taco Bell Crunchwrap Supreme price in July 2026 \u2014 At least $6.67",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.23,
+   "entry_price": 0.37,
+   "p_final": 0.636,
+   "edge": 0.004,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.64; faded 0.12 toward 0.5 \u2192 0.62. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:36.813816+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.23,
+   "settled_at": "2026-07-31T19:14:02.535816+00:00"
+  },
+  {
+   "ticker": "KXCHIPBURRITO-26AUG02-T9.80",
+   "title": "Chipotle chicken burrito price in July 2026 \u2014 At least $9.80",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.06,
+   "p_final": 0.067,
+   "edge": 0.012,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:28.076932+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-31T19:14:02.530607+00:00"
+  },
+  {
+   "ticker": "KXTBCRUNCHWRAP-26AUG02-T6.69",
+   "title": "Taco Bell Crunchwrap Supreme price in July 2026 \u2014 At least $6.69",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.42,
+   "p_final": 0.403,
+   "edge": 0.003,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.40; faded 0.12 toward 0.5 \u2192 0.41. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:52:00.671899+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.21,
+   "settled_at": "2026-07-31T19:14:02.523546+00:00"
+  },
+  {
+   "ticker": "KXTBCRUNCHWRAP-26AUG02-T6.72",
+   "title": "Taco Bell Crunchwrap Supreme price in July 2026 \u2014 At least $6.72",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.07,
+   "p_final": 0.063,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.05; faded 0.12 toward 0.5 \u2192 0.10. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:59.708422+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-07-31T19:14:02.516387+00:00"
+  },
+  {
+   "ticker": "KXTBCRUNCHWRAP-26AUG02-T6.65",
+   "title": "Taco Bell Crunchwrap Supreme price in July 2026 \u2014 At least $6.65",
+   "category": "Economics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.14,
+   "p_final": 0.864,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.88; faded 0.12 toward 0.5 \u2192 0.83. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:59.469881+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.31,
+   "settled_at": "2026-07-31T19:14:02.507357+00:00"
+  },
   {
    "ticker": "KXBIGBROTHERELIMINATION-26JUL30-MAL",
    "title": "Big Brother Season 28 \u00b7 Week 3 elimination \u2014 Mallory Aurichio",
