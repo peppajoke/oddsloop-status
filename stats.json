@@ -1,49 +1,49 @@
 {
- "generated_at": "2026-08-01T22:15:45.921659+00:00",
+ "generated_at": "2026-08-01T22:38:46.613091+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1138.04,
+  "realized_pnl": -1051.56,
   "total_fees": 1627.04,
-  "open_count": 4852,
-  "open_stake": 26176.87,
-  "settled_count": 848,
+  "open_count": 4847,
+  "open_stake": 26150.25,
+  "settled_count": 853,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1370 beats the market's 0.1374. On profitability, realized ROI is -25.7% (P&L $-1138.04). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.3%, so our selection still loses to that baseline by -26.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.211,
-  "roi": -0.2565,
-  "edge_vs_favorite_null": -0.2596,
-  "edge_vs_random_null": -0.1261,
-  "brier_model": 0.137,
-  "brier_market": 0.1374,
-  "predictions_scored": 836,
-  "prediction_brier": 0.137,
-  "prediction_log_loss": 0.4276
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1382 beats the market's 0.1386. On profitability, realized ROI is -23.6% (P&L $-1051.56). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -23.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.212,
+  "roi": -0.2356,
+  "edge_vs_favorite_null": -0.2365,
+  "edge_vs_random_null": -0.1149,
+  "brier_model": 0.1382,
+  "brier_market": 0.1386,
+  "predictions_scored": 841,
+  "prediction_brier": 0.1382,
+  "prediction_log_loss": 0.4311
  },
  "null_baseline": {
-  "n": 836,
-  "realized_roi": -0.2565,
-  "favorite_roi": 0.003,
-  "random_roi": -0.1304,
-  "edge_vs_favorite": -0.2596,
-  "edge_vs_random": -0.1261,
-  "realized_pnl": -1134.6,
-  "favorite_pnl": 12.76,
-  "random_pnl": -563.65
+  "n": 841,
+  "realized_roi": -0.2356,
+  "favorite_roi": 0.001,
+  "random_roi": -0.1207,
+  "edge_vs_favorite": -0.2365,
+  "edge_vs_random": -0.1149,
+  "realized_pnl": -1048.12,
+  "favorite_pnl": 4.12,
+  "random_pnl": -524.73
  },
  "calibration": [
   {
    "predicted": 0.065,
-   "realized": 0.039,
-   "n": 231,
+   "realized": 0.043,
+   "n": 234,
    "low_sample": false
   },
   {
    "predicted": 0.143,
-   "realized": 0.105,
-   "n": 181,
+   "realized": 0.109,
+   "n": 183,
    "low_sample": false
   },
   {
@@ -85,15 +85,15 @@
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.066,
-   "realized": 0.041,
-   "n": 172,
+   "predicted": 0.065,
+   "realized": 0.04,
+   "n": 174,
    "low_sample": false
   },
   {
    "predicted": 0.143,
-   "realized": 0.102,
-   "n": 118,
+   "realized": 0.108,
+   "n": 120,
    "low_sample": false
   },
   {
@@ -140,8 +140,8 @@
   },
   {
    "predicted": 0.935,
-   "realized": 0.966,
-   "n": 59,
+   "realized": 0.95,
+   "n": 60,
    "low_sample": false
   }
  ],
@@ -229,11 +229,11 @@
   },
   {
    "category": "Science and Technology",
-   "n": 28,
-   "win_rate": 0.214,
-   "brier_model": 0.1337,
-   "brier_market": 0.1315,
-   "pnl": -1.74,
+   "n": 33,
+   "win_rate": 0.242,
+   "brier_model": 0.1641,
+   "brier_market": 0.1622,
+   "pnl": 84.74,
    "beats_market": false
   },
   {
@@ -735,21 +735,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.54; faded 0.12 toward 0.5 \u2192 0.54. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T17:24:39.298942+00:00"
-  },
-  {
-   "ticker": "KXLAUNCHES-26JUL-13",
-   "title": "Total space launches in July \u2014 Above 13",
-   "category": "Science and Technology",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.06999999999999995,
-   "p_final": 0.928,
-   "edge": 0.012,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.94; faded 0.12 toward 0.5 \u2192 0.89. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T17:24:39.227218+00:00"
   },
   {
    "ticker": "KXNATGASMON-26JUL3117-T2.799",
@@ -2865,21 +2850,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.21; faded 0.12 toward 0.5 \u2192 0.25. Category: Politics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T01:12:20.896207+00:00"
-  },
-  {
-   "ticker": "KXLAUNCHES-26JUL-15",
-   "title": "Total space launches in July \u2014 Above 15",
-   "category": "Science and Technology",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.05,
-   "p_final": 0.058,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T01:12:20.745947+00:00"
   },
   {
    "ticker": "KXTSX-26JUL31-36000",
@@ -56762,21 +56732,6 @@
    "placed_at": "2026-07-25T12:51:53.200071+00:00"
   },
   {
-   "ticker": "KXLAUNCHCOUNTM-JUL-14",
-   "title": "How many space launches will there be in Jul 2026? \u2014 Above 14",
-   "category": "Science and Technology",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.12,
-   "p_final": 0.116,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.15. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:53.183867+00:00"
-  },
-  {
    "ticker": "KXFERT-26-1200",
    "title": "How high will the price of fertilizer get this year? \u2014 Above $1200",
    "category": "Economics",
@@ -58320,21 +58275,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.12. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:51.553888+00:00"
-  },
-  {
-   "ticker": "KXLAUNCHCOUNTM-JUL-15",
-   "title": "How many space launches will there be in Jul 2026? \u2014 Above 15",
-   "category": "Science and Technology",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.04,
-   "p_final": 0.048,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:51.526543+00:00"
   },
   {
    "ticker": "KXIPOSTARLINK-27FEB01",
@@ -61470,21 +61410,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.41; faded 0.12 toward 0.5 \u2192 0.42. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:48.744886+00:00"
-  },
-  {
-   "ticker": "KXLAUNCHES-26JUL-14",
-   "title": "Total space launches in July \u2014 Above 14",
-   "category": "Science and Technology",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.17,
-   "p_final": 0.16,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:48.733974+00:00"
   },
   {
    "ticker": "KXECONSTATCORECPIYOY-26JUL-T2.6",
@@ -73038,6 +72963,101 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLAUNCHES-26JUL-13",
+   "title": "Total space launches in July \u2014 Above 13",
+   "category": "Science and Technology",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.06999999999999995,
+   "p_final": 0.928,
+   "edge": 0.012,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.94; faded 0.12 toward 0.5 \u2192 0.89. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T17:24:39.227218+00:00",
+   "won": true,
+   "payout": 71.43,
+   "pnl": 66.1,
+   "settled_at": "2026-08-01T22:38:17.417294+00:00"
+  },
+  {
+   "ticker": "KXLAUNCHES-26JUL-15",
+   "title": "Total space launches in July \u2014 Above 15",
+   "category": "Science and Technology",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.05,
+   "p_final": 0.058,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T01:12:20.745947+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-08-01T22:38:17.413911+00:00"
+  },
+  {
+   "ticker": "KXLAUNCHCOUNTM-JUL-14",
+   "title": "How many space launches will there be in Jul 2026? \u2014 Above 14",
+   "category": "Science and Technology",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.12,
+   "p_final": 0.116,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.15. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:53.183867+00:00",
+   "won": true,
+   "payout": 41.67,
+   "pnl": 36.36,
+   "settled_at": "2026-08-01T22:38:17.405975+00:00"
+  },
+  {
+   "ticker": "KXLAUNCHCOUNTM-JUL-15",
+   "title": "How many space launches will there be in Jul 2026? \u2014 Above 15",
+   "category": "Science and Technology",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.04,
+   "p_final": 0.048,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:51.526543+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-08-01T22:38:17.357688+00:00"
+  },
+  {
+   "ticker": "KXLAUNCHES-26JUL-14",
+   "title": "Total space launches in July \u2014 Above 14",
+   "category": "Science and Technology",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.17,
+   "p_final": 0.16,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:48.733974+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-08-01T22:38:17.332935+00:00"
+  },
   {
    "ticker": "KXUFCFIGHT-26AUG01MEDROD-MED",
    "title": "Fight Night: Medic vs Rodriguez \u2014 Uros Medic",
