@@ -1,49 +1,49 @@
 {
- "generated_at": "2026-08-01T22:38:46.613091+00:00",
+ "generated_at": "2026-08-01T23:09:44.729051+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1051.56,
+  "realized_pnl": -1067.51,
   "total_fees": 1627.04,
-  "open_count": 4847,
-  "open_stake": 26150.25,
-  "settled_count": 853,
+  "open_count": 4844,
+  "open_stake": 26134.3,
+  "settled_count": 856,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1382 beats the market's 0.1386. On profitability, realized ROI is -23.6% (P&L $-1051.56). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -23.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.212,
-  "roi": -0.2356,
-  "edge_vs_favorite_null": -0.2365,
-  "edge_vs_random_null": -0.1149,
-  "brier_model": 0.1382,
-  "brier_market": 0.1386,
-  "predictions_scored": 841,
-  "prediction_brier": 0.1382,
-  "prediction_log_loss": 0.4311
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1377 beats the market's 0.1381. On profitability, realized ROI is -23.8% (P&L $-1067.51). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -24.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.211,
+  "roi": -0.2383,
+  "edge_vs_favorite_null": -0.2397,
+  "edge_vs_random_null": -0.1164,
+  "brier_model": 0.1377,
+  "brier_market": 0.1381,
+  "predictions_scored": 844,
+  "prediction_brier": 0.1377,
+  "prediction_log_loss": 0.4299
  },
  "null_baseline": {
-  "n": 841,
-  "realized_roi": -0.2356,
-  "favorite_roi": 0.001,
-  "random_roi": -0.1207,
-  "edge_vs_favorite": -0.2365,
-  "edge_vs_random": -0.1149,
-  "realized_pnl": -1048.12,
-  "favorite_pnl": 4.12,
-  "random_pnl": -524.73
+  "n": 844,
+  "realized_roi": -0.2383,
+  "favorite_roi": 0.0014,
+  "random_roi": -0.1219,
+  "edge_vs_favorite": -0.2397,
+  "edge_vs_random": -0.1164,
+  "realized_pnl": -1064.07,
+  "favorite_pnl": 5.87,
+  "random_pnl": -531.83
  },
  "calibration": [
   {
    "predicted": 0.065,
    "realized": 0.043,
-   "n": 234,
+   "n": 235,
    "low_sample": false
   },
   {
-   "predicted": 0.143,
-   "realized": 0.109,
-   "n": 183,
+   "predicted": 0.142,
+   "realized": 0.108,
+   "n": 185,
    "low_sample": false
   },
   {
@@ -87,13 +87,13 @@
   {
    "predicted": 0.065,
    "realized": 0.04,
-   "n": 174,
+   "n": 175,
    "low_sample": false
   },
   {
    "predicted": 0.143,
-   "realized": 0.108,
-   "n": 120,
+   "realized": 0.107,
+   "n": 122,
    "low_sample": false
   },
   {
@@ -166,11 +166,11 @@
   },
   {
    "category": "Entertainment",
-   "n": 71,
-   "win_rate": 0.056,
-   "brier_model": 0.0609,
-   "brier_market": 0.065,
-   "pnl": -201.61,
+   "n": 74,
+   "win_rate": 0.054,
+   "brier_model": 0.059,
+   "brier_market": 0.063,
+   "pnl": -217.56,
    "beats_market": true
   },
   {
@@ -5100,21 +5100,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.03; faded 0.12 toward 0.5 \u2192 0.09. Category: Companies. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T00:49:35.712378+00:00"
-  },
-  {
-   "ticker": "KXRANKLISTSONGSPOTUSA-26AUG01-SHA",
-   "title": "Artist(s) with a #1 Song on Spotify USA: July \u2014 Shakira",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.12,
-   "p_final": 0.115,
-   "edge": 0.01,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.15. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T00:49:35.650316+00:00"
   },
   {
    "ticker": "KXNASCARAUTOPARTSSERIES-NAPS26-TGRA",
@@ -50192,21 +50177,6 @@
    "placed_at": "2026-07-25T13:01:28.562925+00:00"
   },
   {
-   "ticker": "KXRANKLISTSONGSPOTUSA-26AUG01-MAL",
-   "title": "Artist(s) with a #1 Song on Spotify USA: July \u2014 Malcolm Todd",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.16,
-   "p_final": 0.154,
-   "edge": 0.009,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:28.525418+00:00"
-  },
-  {
    "ticker": "KXNEXTNBACOACH-GS26-SKER",
    "title": "Golden State Pro Basketball: Next Head Coach \u2014 Steve Kerr / No new coach",
    "category": "Sports",
@@ -65297,21 +65267,6 @@
    "placed_at": "2026-07-25T12:51:46.058426+00:00"
   },
   {
-   "ticker": "KXRANKLISTSONGSPOTUSA-26AUG01-OLII",
-   "title": "Artist(s) with a #1 Song on Spotify USA: July \u2014 Olivia Rodrigo",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.04,
-   "p_final": 0.047,
-   "edge": 0.012,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:46.050961+00:00"
-  },
-  {
    "ticker": "KXBALLONDOR-26-LYAM",
    "title": "Who will win the Ballon d'Or in 2026? \u2014 Lamine Yamal",
    "category": "Sports",
@@ -72963,6 +72918,63 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXRANKLISTSONGSPOTUSA-26AUG01-SHA",
+   "title": "Artist(s) with a #1 Song on Spotify USA: July \u2014 Shakira",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.12,
+   "p_final": 0.115,
+   "edge": 0.01,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.15. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T00:49:35.650316+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.31,
+   "settled_at": "2026-08-01T23:09:17.158107+00:00"
+  },
+  {
+   "ticker": "KXRANKLISTSONGSPOTUSA-26AUG01-MAL",
+   "title": "Artist(s) with a #1 Song on Spotify USA: July \u2014 Malcolm Todd",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.16,
+   "p_final": 0.154,
+   "edge": 0.009,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:28.525418+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-08-01T23:09:17.146865+00:00"
+  },
+  {
+   "ticker": "KXRANKLISTSONGSPOTUSA-26AUG01-OLII",
+   "title": "Artist(s) with a #1 Song on Spotify USA: July \u2014 Olivia Rodrigo",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.04,
+   "p_final": 0.047,
+   "edge": 0.012,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:46.050961+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-08-01T23:09:17.131058+00:00"
+  },
   {
    "ticker": "KXLAUNCHES-26JUL-13",
    "title": "Total space launches in July \u2014 Above 13",
