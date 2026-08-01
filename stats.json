@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-01T05:32:52.277170+00:00",
+ "generated_at": "2026-08-01T05:34:45.437911+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -912.69,
+  "realized_pnl": -908.46,
   "total_fees": 1627.04,
-  "open_count": 4926,
-  "open_stake": 26574.58,
-  "settled_count": 774,
+  "open_count": 4924,
+  "open_stake": 26564.1,
+  "settled_count": 776,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1443 beats the market's 0.1446. On profitability, realized ROI is -22.6% (P&L $-912.69). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -21.8 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.226,
-  "roi": -0.2259,
-  "edge_vs_favorite_null": -0.2183,
-  "edge_vs_random_null": -0.106,
-  "brier_model": 0.1443,
-  "brier_market": 0.1446,
-  "predictions_scored": 762,
-  "prediction_brier": 0.1443,
-  "prediction_log_loss": 0.4451
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1447 beats the market's 0.1450. On profitability, realized ROI is -22.4% (P&L $-908.46). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -21.6 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.227,
+  "roi": -0.2243,
+  "edge_vs_favorite_null": -0.216,
+  "edge_vs_random_null": -0.1049,
+  "brier_model": 0.1447,
+  "brier_market": 0.145,
+  "predictions_scored": 764,
+  "prediction_brier": 0.1447,
+  "prediction_log_loss": 0.4459
  },
  "null_baseline": {
-  "n": 762,
-  "realized_roi": -0.2259,
-  "favorite_roi": -0.0076,
-  "random_roi": -0.1199,
-  "edge_vs_favorite": -0.2183,
-  "edge_vs_random": -0.106,
-  "realized_pnl": -909.25,
-  "favorite_pnl": -29.29,
-  "random_pnl": -472.0
+  "n": 764,
+  "realized_roi": -0.2243,
+  "favorite_roi": -0.0083,
+  "random_roi": -0.1194,
+  "edge_vs_favorite": -0.216,
+  "edge_vs_random": -0.1049,
+  "realized_pnl": -905.02,
+  "favorite_pnl": -32.11,
+  "random_pnl": -471.3
  },
  "calibration": [
   {
@@ -54,8 +54,8 @@
   },
   {
    "predicted": 0.353,
-   "realized": 0.317,
-   "n": 120,
+   "realized": 0.32,
+   "n": 122,
    "low_sample": false
   },
   {
@@ -103,9 +103,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.351,
-   "realized": 0.286,
-   "n": 63,
+   "predicted": 0.35,
+   "realized": 0.292,
+   "n": 65,
    "low_sample": false
   },
   {
@@ -175,11 +175,11 @@
   },
   {
    "category": "Sports",
-   "n": 266,
-   "win_rate": 0.278,
-   "brier_model": 0.1641,
-   "brier_market": 0.1655,
-   "pnl": -287.01,
+   "n": 268,
+   "win_rate": 0.28,
+   "brier_model": 0.1649,
+   "brier_market": 0.1663,
+   "pnl": -282.78,
    "beats_market": true
   },
   {
@@ -1637,21 +1637,6 @@
    "placed_at": "2026-07-27T05:16:06.404298+00:00"
   },
   {
-   "ticker": "KXLIGAMXGAME-26JUL31JUAPUM-PUM",
-   "title": "Juarez vs Pumas UNAM",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.34,
-   "p_final": 0.34,
-   "edge": 0.005,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.34; faded 0.12 toward 0.5 \u2192 0.35. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T05:16:06.333952+00:00"
-  },
-  {
    "ticker": "KXRTX5090MS-27FEB-2.000",
    "title": "NVIDIA RTX 5090 \u00b7 Average hourly price in February 2027 \u2014 Above $2.00",
    "category": "Financials",
@@ -2040,21 +2025,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.79; faded 0.12 toward 0.5 \u2192 0.76. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T04:15:13.661971+00:00"
-  },
-  {
-   "ticker": "KXLIGAMXGAME-26JUL31ASLTIJ-TIJ",
-   "title": "San Luis vs Tijuana de Caliente",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.34,
-   "p_final": 0.335,
-   "edge": 0.005,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.33; faded 0.12 toward 0.5 \u2192 0.35. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T04:15:13.592016+00:00"
   },
   {
    "ticker": "KXABNB-26AUGNEB-P150000000",
@@ -74148,6 +74118,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLIGAMXGAME-26JUL31JUAPUM-PUM",
+   "title": "Juarez vs Pumas UNAM",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.34,
+   "p_final": 0.34,
+   "edge": 0.005,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.34; faded 0.12 toward 0.5 \u2192 0.35. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T05:16:06.333952+00:00",
+   "won": true,
+   "payout": 14.71,
+   "pnl": 9.47,
+   "settled_at": "2026-08-01T05:34:17.800883+00:00"
+  },
+  {
+   "ticker": "KXLIGAMXGAME-26JUL31ASLTIJ-TIJ",
+   "title": "San Luis vs Tijuana de Caliente",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.34,
+   "p_final": 0.335,
+   "edge": 0.005,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.33; faded 0.12 toward 0.5 \u2192 0.35. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T04:15:13.592016+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.24,
+   "settled_at": "2026-08-01T05:34:17.791078+00:00"
+  },
   {
    "ticker": "KXH100MON-26JUL31-2.710",
    "title": "Price of NVIDIA H100 SXM compute by Jul 31, 2026? \u2014 Above $2.71",
