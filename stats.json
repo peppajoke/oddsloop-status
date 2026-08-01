@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-01T14:21:20.196855+00:00",
+ "generated_at": "2026-08-01T14:21:52.944848+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -924.42,
+  "realized_pnl": -884.29,
   "total_fees": 1627.04,
-  "open_count": 4922,
-  "open_stake": 26548.14,
-  "settled_count": 778,
+  "open_count": 4921,
+  "open_stake": 26542.82,
+  "settled_count": 779,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1443 beats the market's 0.1446. On profitability, realized ROI is -22.7% (P&L $-924.42). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -21.9 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.226,
-  "roi": -0.2273,
-  "edge_vs_favorite_null": -0.2194,
-  "edge_vs_random_null": -0.1066,
-  "brier_model": 0.1443,
-  "brier_market": 0.1446,
-  "predictions_scored": 766,
-  "prediction_brier": 0.1443,
-  "prediction_log_loss": 0.4449
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1451 beats the market's 0.1455. On profitability, realized ROI is -21.7% (P&L $-884.29). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.9%, so our selection still loses to that baseline by -20.8 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.227,
+  "roi": -0.2171,
+  "edge_vs_favorite_null": -0.2079,
+  "edge_vs_random_null": -0.1009,
+  "brier_model": 0.1451,
+  "brier_market": 0.1455,
+  "predictions_scored": 767,
+  "prediction_brier": 0.1451,
+  "prediction_log_loss": 0.4472
  },
  "null_baseline": {
-  "n": 766,
-  "realized_roi": -0.2273,
-  "favorite_roi": -0.0079,
-  "random_roi": -0.1208,
-  "edge_vs_favorite": -0.2194,
-  "edge_vs_random": -0.1066,
-  "realized_pnl": -920.98,
-  "favorite_pnl": -30.61,
-  "random_pnl": -478.53
+  "n": 767,
+  "realized_roi": -0.2171,
+  "favorite_roi": -0.0093,
+  "random_roi": -0.1162,
+  "edge_vs_favorite": -0.2079,
+  "edge_vs_random": -0.1009,
+  "realized_pnl": -880.85,
+  "favorite_pnl": -36.0,
+  "random_pnl": -461.16
  },
  "calibration": [
   {
@@ -42,8 +42,8 @@
   },
   {
    "predicted": 0.142,
-   "realized": 0.113,
-   "n": 160,
+   "realized": 0.118,
+   "n": 161,
    "low_sample": false
   },
   {
@@ -92,8 +92,8 @@
   },
   {
    "predicted": 0.142,
-   "realized": 0.108,
-   "n": 102,
+   "realized": 0.117,
+   "n": 103,
    "low_sample": false
   },
   {
@@ -220,11 +220,11 @@
   },
   {
    "category": "Mentions",
-   "n": 148,
-   "win_rate": 0.243,
-   "brier_model": 0.152,
-   "brier_market": 0.1509,
-   "pnl": -221.82,
+   "n": 149,
+   "win_rate": 0.248,
+   "brier_model": 0.1562,
+   "brier_market": 0.1552,
+   "pnl": -181.69,
    "beats_market": false
   },
   {
@@ -64157,21 +64157,6 @@
    "placed_at": "2026-07-25T12:51:47.241267+00:00"
   },
   {
-   "ticker": "KXTRUMPSAYMONTH-26AUG01-AUTI",
-   "title": "What will Trump say in July? \u2014 Autism",
-   "category": "Mentions",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.11,
-   "p_final": 0.116,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.11; faded 0.12 toward 0.5 \u2192 0.15. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:47.231827+00:00"
-  },
-  {
    "ticker": "KXTESLAENERGYBY-27-15",
    "title": "How much will Tesla's energy business grow before 2027? \u2014 Above 15 GWh of energy deployed in a single quarter",
    "category": "Companies",
@@ -74088,6 +74073,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXTRUMPSAYMONTH-26AUG01-AUTI",
+   "title": "What will Trump say in July? \u2014 Autism",
+   "category": "Mentions",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.11,
+   "p_final": 0.116,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.11; faded 0.12 toward 0.5 \u2192 0.15. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:47.231827+00:00",
+   "won": true,
+   "payout": 45.45,
+   "pnl": 40.13,
+   "settled_at": "2026-08-01T14:21:25.702928+00:00"
+  },
   {
    "ticker": "KXMEDIARELEASESPIDERMAN-AUG26",
    "title": "When will the official trailer for Spider-Man: Beyond the Spider-Verse be released? \u2014 Before Aug 1, 2026",
