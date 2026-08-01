@@ -1,43 +1,43 @@
 {
- "generated_at": "2026-08-01T12:08:19.142320+00:00",
+ "generated_at": "2026-08-01T12:17:39.555724+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -908.46,
+  "realized_pnl": -913.79,
   "total_fees": 1627.04,
-  "open_count": 4924,
-  "open_stake": 26564.1,
-  "settled_count": 776,
+  "open_count": 4923,
+  "open_stake": 26558.77,
+  "settled_count": 777,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1447 beats the market's 0.1450. On profitability, realized ROI is -22.4% (P&L $-908.46). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -21.6 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1445 beats the market's 0.1448. On profitability, realized ROI is -22.5% (P&L $-913.79). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -21.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.227,
-  "roi": -0.2243,
-  "edge_vs_favorite_null": -0.216,
-  "edge_vs_random_null": -0.1049,
-  "brier_model": 0.1447,
-  "brier_market": 0.145,
-  "predictions_scored": 764,
-  "prediction_brier": 0.1447,
-  "prediction_log_loss": 0.4459
+  "roi": -0.2253,
+  "edge_vs_favorite_null": -0.2171,
+  "edge_vs_random_null": -0.1054,
+  "brier_model": 0.1445,
+  "brier_market": 0.1448,
+  "predictions_scored": 765,
+  "prediction_brier": 0.1445,
+  "prediction_log_loss": 0.4454
  },
  "null_baseline": {
-  "n": 764,
-  "realized_roi": -0.2243,
-  "favorite_roi": -0.0083,
-  "random_roi": -0.1194,
-  "edge_vs_favorite": -0.216,
-  "edge_vs_random": -0.1049,
-  "realized_pnl": -905.02,
-  "favorite_pnl": -32.11,
-  "random_pnl": -471.3
+  "n": 765,
+  "realized_roi": -0.2253,
+  "favorite_roi": -0.0082,
+  "random_roi": -0.1199,
+  "edge_vs_favorite": -0.2171,
+  "edge_vs_random": -0.1054,
+  "realized_pnl": -910.35,
+  "favorite_pnl": -31.74,
+  "random_pnl": -473.78
  },
  "calibration": [
   {
    "predicted": 0.066,
-   "realized": 0.041,
-   "n": 197,
+   "realized": 0.04,
+   "n": 198,
    "low_sample": false
   },
   {
@@ -87,7 +87,7 @@
   {
    "predicted": 0.067,
    "realized": 0.042,
-   "n": 142,
+   "n": 143,
    "low_sample": false
   },
   {
@@ -211,11 +211,11 @@
   },
   {
    "category": "Economics",
-   "n": 60,
-   "win_rate": 0.183,
-   "brier_model": 0.1212,
-   "brier_market": 0.121,
-   "pnl": -86.54,
+   "n": 61,
+   "win_rate": 0.18,
+   "brier_model": 0.1193,
+   "brier_market": 0.1191,
+   "pnl": -91.87,
    "beats_market": false
   },
   {
@@ -72407,21 +72407,6 @@
    "placed_at": "2026-07-25T12:51:43.498821+00:00"
   },
   {
-   "ticker": "KXMAJORPROTEST-26JUL",
-   "title": "Major protest in Jul 2026? \u2014 In 2026",
-   "category": "Economics",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.08,
-   "p_final": 0.075,
-   "edge": 0.015,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Economics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.495676+00:00"
-  },
-  {
    "ticker": "KXPOKEMON-26JULASCHERPO-445.57",
    "title": "Ascended Heroes Pokemon Center Elite Trainer Box (Exclusive) Up or Down: July\n \u2014 Above $445.57",
    "category": "Entertainment",
@@ -74118,6 +74103,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXMAJORPROTEST-26JUL",
+   "title": "Major protest in Jul 2026? \u2014 In 2026",
+   "category": "Economics",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.08,
+   "p_final": 0.075,
+   "edge": 0.015,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Economics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.495676+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-08-01T12:17:10.192750+00:00"
+  },
   {
    "ticker": "KXLIGAMXGAME-26JUL31JUAPUM-PUM",
    "title": "Juarez vs Pumas UNAM",
