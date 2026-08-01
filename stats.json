@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-01T16:36:16.692625+00:00",
+ "generated_at": "2026-08-01T16:56:50.375627+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1074.74,
+  "realized_pnl": -1080.01,
   "total_fees": 1627.04,
-  "open_count": 4864,
-  "open_stake": 26240.17,
-  "settled_count": 836,
+  "open_count": 4863,
+  "open_stake": 26234.9,
+  "settled_count": 837,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1381 beats the market's 0.1385. On profitability, realized ROI is -24.6% (P&L $-1074.74). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.1%, so our selection still loses to that baseline by -24.5 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1380 beats the market's 0.1384. On profitability, realized ROI is -24.7% (P&L $-1080.01). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.1%, so our selection still loses to that baseline by -24.6 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.214,
-  "roi": -0.2458,
-  "edge_vs_favorite_null": -0.2445,
-  "edge_vs_random_null": -0.1187,
-  "brier_model": 0.1381,
-  "brier_market": 0.1385,
-  "predictions_scored": 824,
-  "prediction_brier": 0.1381,
-  "prediction_log_loss": 0.4301
+  "roi": -0.2467,
+  "edge_vs_favorite_null": -0.2458,
+  "edge_vs_random_null": -0.1194,
+  "brier_model": 0.138,
+  "brier_market": 0.1384,
+  "predictions_scored": 825,
+  "prediction_brier": 0.138,
+  "prediction_log_loss": 0.4299
  },
  "null_baseline": {
-  "n": 824,
-  "realized_roi": -0.2458,
-  "favorite_roi": -0.0012,
-  "random_roi": -0.127,
-  "edge_vs_favorite": -0.2445,
-  "edge_vs_random": -0.1187,
-  "realized_pnl": -1071.3,
-  "favorite_pnl": -5.18,
-  "random_pnl": -540.97
+  "n": 825,
+  "realized_roi": -0.2467,
+  "favorite_roi": -0.0008,
+  "random_roi": -0.1273,
+  "edge_vs_favorite": -0.2458,
+  "edge_vs_random": -0.1194,
+  "realized_pnl": -1076.57,
+  "favorite_pnl": -3.53,
+  "random_pnl": -542.78
  },
  "calibration": [
   {
@@ -48,8 +48,8 @@
   },
   {
    "predicted": 0.25,
-   "realized": 0.191,
-   "n": 131,
+   "realized": 0.189,
+   "n": 132,
    "low_sample": false
   },
   {
@@ -128,8 +128,8 @@
   },
   {
    "predicted": 0.746,
-   "realized": 0.722,
-   "n": 54,
+   "realized": 0.727,
+   "n": 55,
    "low_sample": false
   },
   {
@@ -175,11 +175,11 @@
   },
   {
    "category": "Sports",
-   "n": 271,
-   "win_rate": 0.277,
-   "brier_model": 0.1636,
-   "brier_market": 0.1649,
-   "pnl": -298.63,
+   "n": 272,
+   "win_rate": 0.276,
+   "brier_model": 0.1632,
+   "brier_market": 0.1646,
+   "pnl": -303.9,
    "beats_market": true
   },
   {
@@ -1965,21 +1965,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T04:15:13.443476+00:00"
-  },
-  {
-   "ticker": "KXUFCFIGHT-26AUG01ELLOLI-OLI",
-   "title": "Fight Night: Elliott vs Oliveira \u2014 Michael Oliveira",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.25,
-   "p_final": 0.753,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.76; faded 0.12 toward 0.5 \u2192 0.73. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T04:15:13.374965+00:00"
   },
   {
    "ticker": "KXNEXTTEAMNBA-26JDUREN0-GSW",
@@ -73218,6 +73203,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXUFCFIGHT-26AUG01ELLOLI-OLI",
+   "title": "Fight Night: Elliott vs Oliveira \u2014 Michael Oliveira",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.25,
+   "p_final": 0.753,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.76; faded 0.12 toward 0.5 \u2192 0.73. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T04:15:13.374965+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-08-01T16:56:22.828561+00:00"
+  },
   {
    "ticker": "KXUFCFIGHT-26AUG01REBPRE-REB",
    "title": "Fight Night: Rebecki vs Prepolec \u2014 Mateusz Rebecki",
