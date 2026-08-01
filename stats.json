@@ -1,43 +1,43 @@
 {
- "generated_at": "2026-08-01T12:17:39.555724+00:00",
+ "generated_at": "2026-08-01T12:48:39.019809+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -913.79,
+  "realized_pnl": -924.42,
   "total_fees": 1627.04,
-  "open_count": 4923,
-  "open_stake": 26558.77,
-  "settled_count": 777,
+  "open_count": 4922,
+  "open_stake": 26548.14,
+  "settled_count": 778,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1445 beats the market's 0.1448. On profitability, realized ROI is -22.5% (P&L $-913.79). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -21.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.227,
-  "roi": -0.2253,
-  "edge_vs_favorite_null": -0.2171,
-  "edge_vs_random_null": -0.1054,
-  "brier_model": 0.1445,
-  "brier_market": 0.1448,
-  "predictions_scored": 765,
-  "prediction_brier": 0.1445,
-  "prediction_log_loss": 0.4454
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1443 beats the market's 0.1446. On profitability, realized ROI is -22.7% (P&L $-924.42). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.8%, so our selection still loses to that baseline by -21.9 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.226,
+  "roi": -0.2273,
+  "edge_vs_favorite_null": -0.2194,
+  "edge_vs_random_null": -0.1066,
+  "brier_model": 0.1443,
+  "brier_market": 0.1446,
+  "predictions_scored": 766,
+  "prediction_brier": 0.1443,
+  "prediction_log_loss": 0.4449
  },
  "null_baseline": {
-  "n": 765,
-  "realized_roi": -0.2253,
-  "favorite_roi": -0.0082,
-  "random_roi": -0.1199,
-  "edge_vs_favorite": -0.2171,
-  "edge_vs_random": -0.1054,
-  "realized_pnl": -910.35,
-  "favorite_pnl": -31.74,
-  "random_pnl": -473.78
+  "n": 766,
+  "realized_roi": -0.2273,
+  "favorite_roi": -0.0079,
+  "random_roi": -0.1208,
+  "edge_vs_favorite": -0.2194,
+  "edge_vs_random": -0.1066,
+  "realized_pnl": -920.98,
+  "favorite_pnl": -30.61,
+  "random_pnl": -478.53
  },
  "calibration": [
   {
    "predicted": 0.066,
    "realized": 0.04,
-   "n": 198,
+   "n": 199,
    "low_sample": false
   },
   {
@@ -87,7 +87,7 @@
   {
    "predicted": 0.067,
    "realized": 0.042,
-   "n": 143,
+   "n": 144,
    "low_sample": false
   },
   {
@@ -166,11 +166,11 @@
   },
   {
    "category": "Entertainment",
-   "n": 68,
-   "win_rate": 0.044,
-   "brier_model": 0.05,
-   "brier_market": 0.0543,
-   "pnl": -280.32,
+   "n": 69,
+   "win_rate": 0.043,
+   "brier_model": 0.0494,
+   "brier_market": 0.0537,
+   "pnl": -290.95,
    "beats_market": true
   },
   {
@@ -73667,21 +73667,6 @@
    "placed_at": "2026-07-25T12:36:00.328955+00:00"
   },
   {
-   "ticker": "KXMEDIARELEASESPIDERMAN-AUG26",
-   "title": "When will the official trailer for Spider-Man: Beyond the Spider-Verse be released? \u2014 Before Aug 1, 2026",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 10.0,
-   "fee": 0.63,
-   "entry_price": 0.11,
-   "p_final": 0.089,
-   "edge": 0.014,
-   "confidence": 0.55,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.13. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:36:00.327959+00:00"
-  },
-  {
    "ticker": "KXSBUXA-28JANSTORES-41800",
    "title": "Starbucks total global stores in 2026 \u2014 Above 41800",
    "category": "Companies",
@@ -74103,6 +74088,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXMEDIARELEASESPIDERMAN-AUG26",
+   "title": "When will the official trailer for Spider-Man: Beyond the Spider-Verse be released? \u2014 Before Aug 1, 2026",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 10.0,
+   "fee": 0.63,
+   "entry_price": 0.11,
+   "p_final": 0.089,
+   "edge": 0.014,
+   "confidence": 0.55,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.13. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:36:00.327959+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -10.63,
+   "settled_at": "2026-08-01T12:48:10.354535+00:00"
+  },
   {
    "ticker": "KXMAJORPROTEST-26JUL",
    "title": "Major protest in Jul 2026? \u2014 In 2026",
