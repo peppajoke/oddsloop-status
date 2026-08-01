@@ -1,43 +1,43 @@
 {
- "generated_at": "2026-08-01T18:54:45.587315+00:00",
+ "generated_at": "2026-08-01T19:01:24.148029+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1095.75,
+  "realized_pnl": -1101.07,
   "total_fees": 1627.04,
-  "open_count": 4860,
-  "open_stake": 26219.16,
-  "settled_count": 840,
+  "open_count": 4859,
+  "open_stake": 26213.84,
+  "settled_count": 841,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1379 beats the market's 0.1383. On profitability, realized ROI is -24.9% (P&L $-1095.75). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -25.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1378 beats the market's 0.1382. On profitability, realized ROI is -25.0% (P&L $-1101.07). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -25.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.213,
-  "roi": -0.2494,
-  "edge_vs_favorite_null": -0.2502,
-  "edge_vs_random_null": -0.1215,
-  "brier_model": 0.1379,
-  "brier_market": 0.1383,
-  "predictions_scored": 828,
-  "prediction_brier": 0.1379,
-  "prediction_log_loss": 0.4297
+  "roi": -0.2503,
+  "edge_vs_favorite_null": -0.2512,
+  "edge_vs_random_null": -0.122,
+  "brier_model": 0.1378,
+  "brier_market": 0.1382,
+  "predictions_scored": 829,
+  "prediction_brier": 0.1378,
+  "prediction_log_loss": 0.4293
  },
  "null_baseline": {
-  "n": 828,
-  "realized_roi": -0.2494,
-  "favorite_roi": 0.0008,
-  "random_roi": -0.1279,
-  "edge_vs_favorite": -0.2502,
-  "edge_vs_random": -0.1215,
-  "realized_pnl": -1092.31,
-  "favorite_pnl": 3.31,
-  "random_pnl": -547.23
+  "n": 829,
+  "realized_roi": -0.2503,
+  "favorite_roi": 0.0009,
+  "random_roi": -0.1283,
+  "edge_vs_favorite": -0.2512,
+  "edge_vs_random": -0.122,
+  "realized_pnl": -1097.63,
+  "favorite_pnl": 3.73,
+  "random_pnl": -549.68
  },
  "calibration": [
   {
    "predicted": 0.065,
    "realized": 0.039,
-   "n": 229,
+   "n": 230,
    "low_sample": false
   },
   {
@@ -141,7 +141,7 @@
   {
    "predicted": 0.935,
    "realized": 0.966,
-   "n": 58,
+   "n": 59,
    "low_sample": false
   }
  ],
@@ -229,11 +229,11 @@
   },
   {
    "category": "Science and Technology",
-   "n": 27,
-   "win_rate": 0.222,
-   "brier_model": 0.1384,
-   "brier_market": 0.136,
-   "pnl": 3.58,
+   "n": 28,
+   "win_rate": 0.214,
+   "brier_model": 0.1337,
+   "brier_market": 0.1315,
+   "pnl": -1.74,
    "beats_market": false
   },
   {
@@ -58967,21 +58967,6 @@
    "placed_at": "2026-07-25T12:51:51.003481+00:00"
   },
   {
-   "ticker": "KXUSADATACENTERS-26DEC31-T4700",
-   "title": "Number of US data centers at the end of 2026? \u2014 At least 4,700",
-   "category": "Science and Technology",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.08999999999999997,
-   "p_final": 0.913,
-   "edge": 0.012,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.93; faded 0.12 toward 0.5 \u2192 0.87. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:50.990911+00:00"
-  },
-  {
    "ticker": "KXAAAGASMAXCA-26DEC31-7.40",
    "title": "How high will gas prices in California get this year? \u2014 Above $7.40",
    "category": "Economics",
@@ -73158,6 +73143,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXUSADATACENTERS-26DEC31-T4700",
+   "title": "Number of US data centers at the end of 2026? \u2014 At least 4,700",
+   "category": "Science and Technology",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.08999999999999997,
+   "p_final": 0.913,
+   "edge": 0.012,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.93; faded 0.12 toward 0.5 \u2192 0.87. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:50.990911+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-08-01T19:00:45.491510+00:00"
+  },
   {
    "ticker": "KXUFCFIGHT-26AUG01TODVAL-TOD",
    "title": "Fight Night: Todorovic vs Valentin \u2014 Dusko Todorovic",
