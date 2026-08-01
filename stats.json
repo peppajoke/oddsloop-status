@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-01T20:01:41.243784+00:00",
+ "generated_at": "2026-08-01T20:03:53.550337+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1127.5,
+  "realized_pnl": -1138.04,
   "total_fees": 1627.04,
-  "open_count": 4854,
-  "open_stake": 26187.41,
-  "settled_count": 846,
+  "open_count": 4852,
+  "open_stake": 26176.87,
+  "settled_count": 848,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1372 beats the market's 0.1376. On profitability, realized ROI is -25.5% (P&L $-1127.50). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -25.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.212,
-  "roi": -0.2548,
-  "edge_vs_favorite_null": -0.257,
-  "edge_vs_random_null": -0.1249,
-  "brier_model": 0.1372,
-  "brier_market": 0.1376,
-  "predictions_scored": 834,
-  "prediction_brier": 0.1372,
-  "prediction_log_loss": 0.428
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1370 beats the market's 0.1374. On profitability, realized ROI is -25.7% (P&L $-1138.04). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.3%, so our selection still loses to that baseline by -26.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.211,
+  "roi": -0.2565,
+  "edge_vs_favorite_null": -0.2596,
+  "edge_vs_random_null": -0.1261,
+  "brier_model": 0.137,
+  "brier_market": 0.1374,
+  "predictions_scored": 836,
+  "prediction_brier": 0.137,
+  "prediction_log_loss": 0.4276
  },
  "null_baseline": {
-  "n": 834,
-  "realized_roi": -0.2548,
-  "favorite_roi": 0.0023,
-  "random_roi": -0.1299,
-  "edge_vs_favorite": -0.257,
-  "edge_vs_random": -0.1249,
-  "realized_pnl": -1124.06,
-  "favorite_pnl": 9.58,
-  "random_pnl": -559.97
+  "n": 836,
+  "realized_roi": -0.2565,
+  "favorite_roi": 0.003,
+  "random_roi": -0.1304,
+  "edge_vs_favorite": -0.2596,
+  "edge_vs_random": -0.1261,
+  "realized_pnl": -1134.6,
+  "favorite_pnl": 12.76,
+  "random_pnl": -563.65
  },
  "calibration": [
   {
@@ -48,8 +48,8 @@
   },
   {
    "predicted": 0.25,
-   "realized": 0.187,
-   "n": 134,
+   "realized": 0.184,
+   "n": 136,
    "low_sample": false
   },
   {
@@ -98,8 +98,8 @@
   },
   {
    "predicted": 0.248,
-   "realized": 0.127,
-   "n": 79,
+   "realized": 0.125,
+   "n": 80,
    "low_sample": false
   },
   {
@@ -128,8 +128,8 @@
   },
   {
    "predicted": 0.746,
-   "realized": 0.732,
-   "n": 56,
+   "realized": 0.737,
+   "n": 57,
    "low_sample": false
   },
   {
@@ -175,11 +175,11 @@
   },
   {
    "category": "Sports",
-   "n": 279,
-   "win_rate": 0.269,
-   "brier_model": 0.161,
-   "brier_market": 0.1624,
-   "pnl": -340.75,
+   "n": 281,
+   "win_rate": 0.267,
+   "brier_model": 0.1602,
+   "brier_market": 0.1616,
+   "pnl": -351.29,
    "beats_market": true
   },
   {
@@ -2102,21 +2102,6 @@
    "placed_at": "2026-07-27T04:15:12.521716+00:00"
   },
   {
-   "ticker": "KXUFCFIGHT-26AUG01MEDROD-MED",
-   "title": "Fight Night: Medic vs Rodriguez \u2014 Uros Medic",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.24,
-   "p_final": 0.763,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.77; faded 0.12 toward 0.5 \u2192 0.74. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T03:14:06.238871+00:00"
-  },
-  {
    "ticker": "KXPGATOUR-ROC26-WKIM",
    "title": "Rocket Classic Winner \u2014 Si Woo Kim",
    "category": "Sports",
@@ -3210,21 +3195,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.56; faded 0.12 toward 0.5 \u2192 0.55. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T23:09:57.330871+00:00"
-  },
-  {
-   "ticker": "KXUFCFIGHT-26AUG01MEDROD-ROD",
-   "title": "Fight Night: Medic vs Rodriguez \u2014 Daniel Rodriguez",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.24,
-   "p_final": 0.237,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.26. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T23:09:57.262882+00:00"
   },
   {
    "ticker": "KXNFL1SEED-AFC26-CIN",
@@ -73068,6 +73038,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXUFCFIGHT-26AUG01MEDROD-MED",
+   "title": "Fight Night: Medic vs Rodriguez \u2014 Uros Medic",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.24,
+   "p_final": 0.763,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.77; faded 0.12 toward 0.5 \u2192 0.74. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T03:14:06.238871+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-08-01T20:03:26.721266+00:00"
+  },
+  {
+   "ticker": "KXUFCFIGHT-26AUG01MEDROD-ROD",
+   "title": "Fight Night: Medic vs Rodriguez \u2014 Daniel Rodriguez",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.24,
+   "p_final": 0.237,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.26. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T23:09:57.262882+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-08-01T20:03:26.713874+00:00"
+  },
   {
    "ticker": "KXCS2-BBS2F26-MGLZ",
    "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 The Mongolz",
