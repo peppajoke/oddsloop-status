@@ -1,55 +1,55 @@
 {
- "generated_at": "2026-08-01T19:01:24.148029+00:00",
+ "generated_at": "2026-08-01T19:32:53.666278+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1101.07,
+  "realized_pnl": -1127.5,
   "total_fees": 1627.04,
-  "open_count": 4859,
-  "open_stake": 26213.84,
-  "settled_count": 841,
+  "open_count": 4854,
+  "open_stake": 26187.41,
+  "settled_count": 846,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1378 beats the market's 0.1382. On profitability, realized ROI is -25.0% (P&L $-1101.07). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -25.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.213,
-  "roi": -0.2503,
-  "edge_vs_favorite_null": -0.2512,
-  "edge_vs_random_null": -0.122,
-  "brier_model": 0.1378,
-  "brier_market": 0.1382,
-  "predictions_scored": 829,
-  "prediction_brier": 0.1378,
-  "prediction_log_loss": 0.4293
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1372 beats the market's 0.1376. On profitability, realized ROI is -25.5% (P&L $-1127.50). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -25.7 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.212,
+  "roi": -0.2548,
+  "edge_vs_favorite_null": -0.257,
+  "edge_vs_random_null": -0.1249,
+  "brier_model": 0.1372,
+  "brier_market": 0.1376,
+  "predictions_scored": 834,
+  "prediction_brier": 0.1372,
+  "prediction_log_loss": 0.428
  },
  "null_baseline": {
-  "n": 829,
-  "realized_roi": -0.2503,
-  "favorite_roi": 0.0009,
-  "random_roi": -0.1283,
-  "edge_vs_favorite": -0.2512,
-  "edge_vs_random": -0.122,
-  "realized_pnl": -1097.63,
-  "favorite_pnl": 3.73,
-  "random_pnl": -549.68
+  "n": 834,
+  "realized_roi": -0.2548,
+  "favorite_roi": 0.0023,
+  "random_roi": -0.1299,
+  "edge_vs_favorite": -0.257,
+  "edge_vs_random": -0.1249,
+  "realized_pnl": -1124.06,
+  "favorite_pnl": 9.58,
+  "random_pnl": -559.97
  },
  "calibration": [
   {
    "predicted": 0.065,
    "realized": 0.039,
-   "n": 230,
+   "n": 231,
    "low_sample": false
   },
   {
    "predicted": 0.143,
-   "realized": 0.106,
-   "n": 179,
+   "realized": 0.105,
+   "n": 181,
    "low_sample": false
   },
   {
    "predicted": 0.25,
-   "realized": 0.189,
-   "n": 132,
+   "realized": 0.187,
+   "n": 134,
    "low_sample": false
   },
   {
@@ -85,21 +85,21 @@
  ],
  "prediction_calibration": [
   {
-   "predicted": 0.065,
+   "predicted": 0.066,
    "realized": 0.041,
-   "n": 171,
+   "n": 172,
    "low_sample": false
   },
   {
    "predicted": 0.143,
-   "realized": 0.103,
-   "n": 116,
+   "realized": 0.102,
+   "n": 118,
    "low_sample": false
   },
   {
    "predicted": 0.248,
-   "realized": 0.128,
-   "n": 78,
+   "realized": 0.127,
+   "n": 79,
    "low_sample": false
   },
   {
@@ -128,8 +128,8 @@
   },
   {
    "predicted": 0.746,
-   "realized": 0.727,
-   "n": 55,
+   "realized": 0.732,
+   "n": 56,
    "low_sample": false
   },
   {
@@ -175,11 +175,11 @@
   },
   {
    "category": "Sports",
-   "n": 274,
-   "win_rate": 0.274,
-   "brier_model": 0.1632,
-   "brier_market": 0.1646,
-   "pnl": -314.32,
+   "n": 279,
+   "win_rate": 0.269,
+   "brier_model": 0.161,
+   "brier_market": 0.1624,
+   "pnl": -340.75,
    "beats_market": true
   },
   {
@@ -1155,21 +1155,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.36; faded 0.12 toward 0.5 \u2192 0.38. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T11:20:00.955519+00:00"
-  },
-  {
-   "ticker": "KXCS2-BBS2F26-MGLZ",
-   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 The Mongolz",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.09,
-   "p_final": 0.09,
-   "edge": 0.01,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.13. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T11:20:00.885957+00:00"
   },
   {
    "ticker": "KXWTI-26NOV03-T103.99",
@@ -2267,21 +2252,6 @@
    "placed_at": "2026-07-27T03:14:05.024311+00:00"
   },
   {
-   "ticker": "KXUFCFIGHT-26AUG01BLASTI-BLA",
-   "title": "Fight Night: Blachowicz vs Stirling \u2014 Jan Blachowicz",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.26,
-   "entry_price": 0.27,
-   "p_final": 0.272,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.27; faded 0.12 toward 0.5 \u2192 0.29. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T02:13:16.704869+00:00"
-  },
-  {
    "ticker": "KX2028DRUN-28-RWAR",
    "title": "Who will run for the Democratic presidential nomination in 2028? \u2014 Raphael Warnock",
    "category": "Elections",
@@ -2385,21 +2355,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.12. Category: Financials. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T02:13:16.137546+00:00"
-  },
-  {
-   "ticker": "KXUFCFIGHT-26AUG01BLASTI-STI",
-   "title": "Fight Night: Blachowicz vs Stirling \u2014 Navajo Stirling",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.26,
-   "entry_price": 0.27,
-   "p_final": 0.738,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T02:13:15.990336+00:00"
   },
   {
    "ticker": "KXWHVISIT-27-AALS",
@@ -4352,21 +4307,6 @@
    "placed_at": "2026-07-26T15:01:48.279187+00:00"
   },
   {
-   "ticker": "KXCS2-BBS2F26-FAZE",
-   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 FaZe",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.29,
-   "entry_price": 0.18,
-   "p_final": 0.139,
-   "edge": 0.009,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.13; faded 0.12 toward 0.5 \u2192 0.17. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T14:00:55.574733+00:00"
-  },
-  {
    "ticker": "KXF1-26-CL",
    "title": "F1 Drivers Champion \u2014 Charles Leclerc",
    "category": "Sports",
@@ -5070,21 +5010,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.05; faded 0.12 toward 0.5 \u2192 0.10. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T01:50:31.634962+00:00"
-  },
-  {
-   "ticker": "KXCS2-BBS2F26-LIQ",
-   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 Team Liquid",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.15,
-   "p_final": 0.144,
-   "edge": 0.009,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.14; faded 0.12 toward 0.5 \u2192 0.18. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T00:49:36.747055+00:00"
   },
   {
    "ticker": "KXNEXTTEAMNBA-26SCUR-BOS",
@@ -73143,6 +73068,101 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXCS2-BBS2F26-MGLZ",
+   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 The Mongolz",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.09,
+   "p_final": 0.09,
+   "edge": 0.01,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.13. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T11:20:00.885957+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-08-01T19:32:06.963627+00:00"
+  },
+  {
+   "ticker": "KXUFCFIGHT-26AUG01BLASTI-BLA",
+   "title": "Fight Night: Blachowicz vs Stirling \u2014 Jan Blachowicz",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.26,
+   "entry_price": 0.27,
+   "p_final": 0.272,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.27; faded 0.12 toward 0.5 \u2192 0.29. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T02:13:16.704869+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.26,
+   "settled_at": "2026-08-01T19:32:06.958287+00:00"
+  },
+  {
+   "ticker": "KXUFCFIGHT-26AUG01BLASTI-STI",
+   "title": "Fight Night: Blachowicz vs Stirling \u2014 Navajo Stirling",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.26,
+   "entry_price": 0.27,
+   "p_final": 0.738,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T02:13:15.990336+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.26,
+   "settled_at": "2026-08-01T19:32:06.873951+00:00"
+  },
+  {
+   "ticker": "KXCS2-BBS2F26-FAZE",
+   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 FaZe",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.29,
+   "entry_price": 0.18,
+   "p_final": 0.139,
+   "edge": 0.009,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.13; faded 0.12 toward 0.5 \u2192 0.17. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T14:00:55.574733+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.29,
+   "settled_at": "2026-08-01T19:32:06.731597+00:00"
+  },
+  {
+   "ticker": "KXCS2-BBS2F26-LIQ",
+   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 Team Liquid",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.15,
+   "p_final": 0.144,
+   "edge": 0.009,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.14; faded 0.12 toward 0.5 \u2192 0.18. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T00:49:36.747055+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-08-01T19:32:06.591658+00:00"
+  },
   {
    "ticker": "KXUSADATACENTERS-26DEC31-T4700",
    "title": "Number of US data centers at the end of 2026? \u2014 At least 4,700",
