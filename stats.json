@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-01T01:26:17.478019+00:00",
+ "generated_at": "2026-08-01T01:57:17.475689+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -898.94,
+  "realized_pnl": -897.54,
   "total_fees": 1627.04,
-  "open_count": 4935,
-  "open_stake": 26622.06,
-  "settled_count": 765,
+  "open_count": 4933,
+  "open_stake": 26611.56,
+  "settled_count": 767,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1446 beats the market's 0.1450. On profitability, realized ROI is -22.5% (P&L $-898.94). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.4%, so our selection still loses to that baseline by -22.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.225,
-  "roi": -0.2251,
-  "edge_vs_favorite_null": -0.2207,
-  "edge_vs_random_null": -0.1072,
-  "brier_model": 0.1446,
-  "brier_market": 0.145,
-  "predictions_scored": 753,
-  "prediction_brier": 0.1446,
-  "prediction_log_loss": 0.4461
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1448 beats the market's 0.1451. On profitability, realized ROI is -22.4% (P&L $-897.54). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.6%, so our selection still loses to that baseline by -21.9 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.226,
+  "roi": -0.2242,
+  "edge_vs_favorite_null": -0.2186,
+  "edge_vs_random_null": -0.1062,
+  "brier_model": 0.1448,
+  "brier_market": 0.1451,
+  "predictions_scored": 755,
+  "prediction_brier": 0.1448,
+  "prediction_log_loss": 0.4464
  },
  "null_baseline": {
-  "n": 753,
-  "realized_roi": -0.2251,
-  "favorite_roi": -0.0044,
-  "random_roi": -0.1179,
-  "edge_vs_favorite": -0.2207,
-  "edge_vs_random": -0.1072,
-  "realized_pnl": -895.5,
-  "favorite_pnl": -16.83,
-  "random_pnl": -458.9
+  "n": 755,
+  "realized_roi": -0.2242,
+  "favorite_roi": -0.0056,
+  "random_roi": -0.118,
+  "edge_vs_favorite": -0.2186,
+  "edge_vs_random": -0.1062,
+  "realized_pnl": -894.1,
+  "favorite_pnl": -21.2,
+  "random_pnl": -460.38
  },
  "calibration": [
   {
@@ -43,7 +43,7 @@
   {
    "predicted": 0.142,
    "realized": 0.113,
-   "n": 159,
+   "n": 160,
    "low_sample": false
   },
   {
@@ -59,9 +59,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.452,
-   "realized": 0.513,
-   "n": 152,
+   "predicted": 0.451,
+   "realized": 0.516,
+   "n": 153,
    "low_sample": false
   },
   {
@@ -92,8 +92,8 @@
   },
   {
    "predicted": 0.142,
-   "realized": 0.109,
-   "n": 101,
+   "realized": 0.108,
+   "n": 102,
    "low_sample": false
   },
   {
@@ -115,9 +115,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.548,
-   "realized": 0.545,
-   "n": 77,
+   "predicted": 0.549,
+   "realized": 0.538,
+   "n": 78,
    "low_sample": false
   },
   {
@@ -175,11 +175,11 @@
   },
   {
    "category": "Sports",
-   "n": 262,
-   "win_rate": 0.275,
-   "brier_model": 0.1637,
-   "brier_market": 0.1652,
-   "pnl": -289.56,
+   "n": 264,
+   "win_rate": 0.277,
+   "brier_model": 0.1639,
+   "brier_market": 0.1653,
+   "pnl": -288.16,
    "beats_market": true
   },
   {
@@ -450,21 +450,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.46; faded 0.12 toward 0.5 \u2192 0.47. Category: Science and Technology. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T20:28:03.862380+00:00"
-  },
-  {
-   "ticker": "KXMLSGAME-26JUL31NYCTOR-TOR",
-   "title": "New York City vs Toronto",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.29,
-   "entry_price": 0.18,
-   "p_final": 0.184,
-   "edge": 0.009,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.17; faded 0.12 toward 0.5 \u2192 0.21. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T19:26:27.938953+00:00"
   },
   {
    "ticker": "KXRT-END-85",
@@ -1515,21 +1500,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.13. Category: Financials. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T06:16:53.410106+00:00"
-  },
-  {
-   "ticker": "KXMLSGAME-26JUL31NYCTOR-NYC",
-   "title": "New York City vs Toronto",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.21,
-   "entry_price": 0.42000000000000004,
-   "p_final": 0.587,
-   "edge": 0.003,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.59; faded 0.12 toward 0.5 \u2192 0.58. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T06:16:53.341295+00:00"
   },
   {
    "ticker": "KXNEXTTEAMNBA-26KDURANT7-MIA",
@@ -74283,6 +74253,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXMLSGAME-26JUL31NYCTOR-TOR",
+   "title": "New York City vs Toronto",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.29,
+   "entry_price": 0.18,
+   "p_final": 0.184,
+   "edge": 0.009,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.17; faded 0.12 toward 0.5 \u2192 0.21. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T19:26:27.938953+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.29,
+   "settled_at": "2026-08-01T01:56:48.275604+00:00"
+  },
+  {
+   "ticker": "KXMLSGAME-26JUL31NYCTOR-NYC",
+   "title": "New York City vs Toronto",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.21,
+   "entry_price": 0.42000000000000004,
+   "p_final": 0.587,
+   "edge": 0.003,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.59; faded 0.12 toward 0.5 \u2192 0.58. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T06:16:53.341295+00:00",
+   "won": true,
+   "payout": 11.9,
+   "pnl": 6.69,
+   "settled_at": "2026-08-01T01:56:48.267110+00:00"
+  },
   {
    "ticker": "KXPGATOUR-ROC26-WCLA",
    "title": "Rocket Classic Winner \u2014 Wyndham Clark",
