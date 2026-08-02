@@ -1,43 +1,43 @@
 {
- "generated_at": "2026-08-02T20:50:08.211614+00:00",
+ "generated_at": "2026-08-02T21:21:04.944921+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1100.6,
+  "realized_pnl": -1105.94,
   "total_fees": 1627.38,
-  "open_count": 4791,
-  "open_stake": 25853.86,
-  "settled_count": 911,
+  "open_count": 4790,
+  "open_stake": 25848.52,
+  "settled_count": 912,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1374 beats the market's 0.1378. On profitability, realized ROI is -23.1% (P&L $-1100.60). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -23.3 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1372 beats the market's 0.1377. On profitability, realized ROI is -23.2% (P&L $-1105.94). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -23.3 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.211,
-  "roi": -0.2307,
-  "edge_vs_favorite_null": -0.2325,
-  "edge_vs_random_null": -0.1119,
-  "brier_model": 0.1374,
-  "brier_market": 0.1378,
-  "predictions_scored": 899,
-  "prediction_brier": 0.1374,
-  "prediction_log_loss": 0.4291
+  "roi": -0.2316,
+  "edge_vs_favorite_null": -0.2334,
+  "edge_vs_random_null": -0.1124,
+  "brier_model": 0.1372,
+  "brier_market": 0.1377,
+  "predictions_scored": 900,
+  "prediction_brier": 0.1372,
+  "prediction_log_loss": 0.4287
  },
  "null_baseline": {
-  "n": 899,
-  "realized_roi": -0.2307,
-  "favorite_roi": 0.0018,
-  "random_roi": -0.1188,
-  "edge_vs_favorite": -0.2325,
-  "edge_vs_random": -0.1119,
-  "realized_pnl": -1097.16,
-  "favorite_pnl": 8.31,
-  "random_pnl": -551.87
+  "n": 900,
+  "realized_roi": -0.2316,
+  "favorite_roi": 0.0019,
+  "random_roi": -0.1192,
+  "edge_vs_favorite": -0.2334,
+  "edge_vs_random": -0.1124,
+  "realized_pnl": -1102.5,
+  "favorite_pnl": 8.49,
+  "random_pnl": -554.45
  },
  "calibration": [
   {
    "predicted": 0.065,
    "realized": 0.044,
-   "n": 249,
+   "n": 250,
    "low_sample": false
   },
   {
@@ -86,8 +86,8 @@
  "prediction_calibration": [
   {
    "predicted": 0.065,
-   "realized": 0.043,
-   "n": 188,
+   "realized": 0.042,
+   "n": 189,
    "low_sample": false
   },
   {
@@ -229,11 +229,11 @@
   },
   {
    "category": "Science and Technology",
-   "n": 33,
-   "win_rate": 0.242,
-   "brier_model": 0.1641,
-   "brier_market": 0.1622,
-   "pnl": 84.74,
+   "n": 34,
+   "win_rate": 0.235,
+   "brier_model": 0.1594,
+   "brier_market": 0.1575,
+   "pnl": 79.4,
    "beats_market": false
   },
   {
@@ -71072,21 +71072,6 @@
    "placed_at": "2026-07-25T12:51:43.181592+00:00"
   },
   {
-   "ticker": "KXGEMINI-GEMI35P-26JUL31",
-   "title": "When will Google release Gemini 3.5 Pro? \u2014 Before Jul 31, 2026",
-   "category": "Science and Technology",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.04,
-   "p_final": 0.047,
-   "edge": 0.012,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.178183+00:00"
-  },
-  {
    "ticker": "KXHORMUZWEEKLY-26JUL26-T40",
    "title": "Traffic through the Strait of Hormuz? (7/20 - 7/26) \u2014 Above 40",
    "category": "Politics",
@@ -72123,6 +72108,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXGEMINI-GEMI35P-26JUL31",
+   "title": "When will Google release Gemini 3.5 Pro? \u2014 Before Jul 31, 2026",
+   "category": "Science and Technology",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.04,
+   "p_final": 0.047,
+   "edge": 0.012,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.178183+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-08-02T21:20:38.122019+00:00"
+  },
   {
    "ticker": "KXLPGATOUR-AIGWO26-NELKOR",
    "title": "AIG Women's Open Winner \u2014 Nelly Korda",
