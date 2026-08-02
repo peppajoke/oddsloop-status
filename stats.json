@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-02T18:46:20.058937+00:00",
+ "generated_at": "2026-08-02T19:17:15.175654+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1095.29,
+  "realized_pnl": -1100.6,
   "total_fees": 1627.38,
-  "open_count": 4792,
-  "open_stake": 25859.17,
-  "settled_count": 910,
+  "open_count": 4791,
+  "open_stake": 25853.86,
+  "settled_count": 911,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1375 beats the market's 0.1380. On profitability, realized ROI is -23.0% (P&L $-1095.29). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -23.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1374 beats the market's 0.1378. On profitability, realized ROI is -23.1% (P&L $-1100.60). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -23.3 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.211,
-  "roi": -0.2298,
-  "edge_vs_favorite_null": -0.2315,
-  "edge_vs_random_null": -0.1114,
-  "brier_model": 0.1375,
-  "brier_market": 0.138,
-  "predictions_scored": 898,
-  "prediction_brier": 0.1375,
-  "prediction_log_loss": 0.4294
+  "roi": -0.2307,
+  "edge_vs_favorite_null": -0.2325,
+  "edge_vs_random_null": -0.1119,
+  "brier_model": 0.1374,
+  "brier_market": 0.1378,
+  "predictions_scored": 899,
+  "prediction_brier": 0.1374,
+  "prediction_log_loss": 0.4291
  },
  "null_baseline": {
-  "n": 898,
-  "realized_roi": -0.2298,
-  "favorite_roi": 0.0017,
-  "random_roi": -0.1184,
-  "edge_vs_favorite": -0.2315,
-  "edge_vs_random": -0.1114,
-  "realized_pnl": -1091.85,
-  "favorite_pnl": 7.53,
-  "random_pnl": -549.61
+  "n": 899,
+  "realized_roi": -0.2307,
+  "favorite_roi": 0.0018,
+  "random_roi": -0.1188,
+  "edge_vs_favorite": -0.2325,
+  "edge_vs_random": -0.1119,
+  "realized_pnl": -1097.16,
+  "favorite_pnl": 8.31,
+  "random_pnl": -551.87
  },
  "calibration": [
   {
@@ -43,7 +43,7 @@
   {
    "predicted": 0.142,
    "realized": 0.106,
-   "n": 207,
+   "n": 208,
    "low_sample": false
   },
   {
@@ -93,7 +93,7 @@
   {
    "predicted": 0.143,
    "realized": 0.106,
-   "n": 141,
+   "n": 142,
    "low_sample": false
   },
   {
@@ -175,11 +175,11 @@
   },
   {
    "category": "Sports",
-   "n": 303,
-   "win_rate": 0.267,
-   "brier_model": 0.1616,
-   "brier_market": 0.163,
-   "pnl": -332.81,
+   "n": 304,
+   "win_rate": 0.266,
+   "brier_model": 0.1611,
+   "brier_market": 0.1625,
+   "pnl": -338.12,
    "beats_market": true
   },
   {
@@ -720,21 +720,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.16; faded 0.12 toward 0.5 \u2192 0.20. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T16:23:51.309881+00:00"
-  },
-  {
-   "ticker": "KXLPGATOUR-AIGWO26-NELKOR",
-   "title": "AIG Women's Open Winner \u2014 Nelly Korda",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.14,
-   "p_final": 0.139,
-   "edge": 0.009,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.13; faded 0.12 toward 0.5 \u2192 0.17. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T16:23:51.238258+00:00"
   },
   {
    "ticker": "KXJOINCLUB-26OCT02JALVAREZ-PSG",
@@ -72138,6 +72123,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLPGATOUR-AIGWO26-NELKOR",
+   "title": "AIG Women's Open Winner \u2014 Nelly Korda",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.14,
+   "p_final": 0.139,
+   "edge": 0.009,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.13; faded 0.12 toward 0.5 \u2192 0.17. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T16:23:51.238258+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.31,
+   "settled_at": "2026-08-02T19:16:48.526460+00:00"
+  },
   {
    "ticker": "KXPOKEMON-26JUL151ULTCO-1006.43",
    "title": "151 Ultra-Premium Collection Up or Down: July\n \u2014 Above $1006.43",
