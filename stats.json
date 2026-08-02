@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-02T01:44:33.751565+00:00",
+ "generated_at": "2026-08-02T02:46:24.736751+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1077.36,
+  "realized_pnl": -1054.73,
   "total_fees": 1627.04,
-  "open_count": 4840,
-  "open_stake": 26113.34,
-  "settled_count": 860,
+  "open_count": 4838,
+  "open_stake": 26102.87,
+  "settled_count": 862,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1377 beats the market's 0.1381. On profitability, realized ROI is -23.9% (P&L $-1077.36). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -24.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.212,
-  "roi": -0.2394,
-  "edge_vs_favorite_null": -0.2409,
-  "edge_vs_random_null": -0.117,
-  "brier_model": 0.1377,
-  "brier_market": 0.1381,
-  "predictions_scored": 848,
-  "prediction_brier": 0.1377,
-  "prediction_log_loss": 0.4301
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1385 beats the market's 0.1389. On profitability, realized ROI is -23.4% (P&L $-1054.73). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.1%, so our selection still loses to that baseline by -23.3 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.213,
+  "roi": -0.2338,
+  "edge_vs_favorite_null": -0.233,
+  "edge_vs_random_null": -0.1132,
+  "brier_model": 0.1385,
+  "brier_market": 0.1389,
+  "predictions_scored": 850,
+  "prediction_brier": 0.1385,
+  "prediction_log_loss": 0.4318
  },
  "null_baseline": {
-  "n": 848,
-  "realized_roi": -0.2394,
-  "favorite_roi": 0.0015,
-  "random_roi": -0.1224,
-  "edge_vs_favorite": -0.2409,
-  "edge_vs_random": -0.117,
-  "realized_pnl": -1073.92,
-  "favorite_pnl": 6.54,
-  "random_pnl": -536.42
+  "n": 850,
+  "realized_roi": -0.2338,
+  "favorite_roi": -0.0008,
+  "random_roi": -0.1206,
+  "edge_vs_favorite": -0.233,
+  "edge_vs_random": -0.1132,
+  "realized_pnl": -1051.29,
+  "favorite_pnl": -3.36,
+  "random_pnl": -530.06
  },
  "calibration": [
   {
@@ -48,8 +48,8 @@
   },
   {
    "predicted": 0.25,
-   "realized": 0.182,
-   "n": 137,
+   "realized": 0.188,
+   "n": 138,
    "low_sample": false
   },
   {
@@ -59,9 +59,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.451,
-   "realized": 0.516,
-   "n": 159,
+   "predicted": 0.45,
+   "realized": 0.519,
+   "n": 160,
    "low_sample": false
   },
   {
@@ -98,8 +98,8 @@
   },
   {
    "predicted": 0.248,
-   "realized": 0.123,
-   "n": 81,
+   "realized": 0.134,
+   "n": 82,
    "low_sample": false
   },
   {
@@ -115,9 +115,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.549,
-   "realized": 0.537,
-   "n": 80,
+   "predicted": 0.55,
+   "realized": 0.531,
+   "n": 81,
    "low_sample": false
   },
   {
@@ -175,11 +175,11 @@
   },
   {
    "category": "Sports",
-   "n": 285,
-   "win_rate": 0.267,
-   "brier_model": 0.1599,
-   "brier_market": 0.1613,
-   "pnl": -361.14,
+   "n": 287,
+   "win_rate": 0.272,
+   "brier_model": 0.162,
+   "brier_market": 0.1634,
+   "pnl": -338.51,
    "beats_market": true
   },
   {
@@ -330,21 +330,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T20:28:04.765678+00:00"
-  },
-  {
-   "ticker": "KXMLSGAME-26AUG01MIACLB-TIE",
-   "title": "Miami vs Columbus \u2014 Tie",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.23,
-   "p_final": 0.233,
-   "edge": 0.008,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.26. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T20:28:04.663263+00:00"
   },
   {
    "ticker": "KXFRENCHPRES-27-GATT",
@@ -1260,21 +1245,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.32; faded 0.12 toward 0.5 \u2192 0.35. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T07:17:31.069511+00:00"
-  },
-  {
-   "ticker": "KXMLSGAME-26AUG01MIACLB-MIA",
-   "title": "Miami vs Columbus",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.43999999999999995,
-   "p_final": 0.563,
-   "edge": 0.002,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.56; faded 0.12 toward 0.5 \u2192 0.56. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T07:17:30.996088+00:00"
   },
   {
    "ticker": "KXUFCLIGHTWEIGHTTITLE-26-COLI",
@@ -72858,6 +72828,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXMLSGAME-26AUG01MIACLB-TIE",
+   "title": "Miami vs Columbus \u2014 Tie",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.23,
+   "p_final": 0.233,
+   "edge": 0.008,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.26. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T20:28:04.663263+00:00",
+   "won": true,
+   "payout": 21.74,
+   "pnl": 16.47,
+   "settled_at": "2026-08-02T02:15:03.185076+00:00"
+  },
+  {
+   "ticker": "KXMLSGAME-26AUG01MIACLB-MIA",
+   "title": "Miami vs Columbus",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.43999999999999995,
+   "p_final": 0.563,
+   "edge": 0.002,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.56; faded 0.12 toward 0.5 \u2192 0.56. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T07:17:30.996088+00:00",
+   "won": true,
+   "payout": 11.36,
+   "pnl": 6.16,
+   "settled_at": "2026-08-02T02:15:03.171591+00:00"
+  },
   {
    "ticker": "KXMLSGAME-26AUG01MTLNE-NE",
    "title": "Montreal vs New England",
