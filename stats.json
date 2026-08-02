@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-02T17:06:26.743998+00:00",
+ "generated_at": "2026-08-02T17:13:30.303234+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1093.06,
+  "realized_pnl": -1095.29,
   "total_fees": 1627.38,
-  "open_count": 4798,
-  "open_stake": 25890.81,
-  "settled_count": 904,
+  "open_count": 4792,
+  "open_stake": 25859.17,
+  "settled_count": 910,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1373 beats the market's 0.1377. On profitability, realized ROI is -23.1% (P&L $-1093.06). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -23.2 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1375 beats the market's 0.1380. On profitability, realized ROI is -23.0% (P&L $-1095.29). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -23.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.211,
-  "roi": -0.2309,
-  "edge_vs_favorite_null": -0.2318,
-  "edge_vs_random_null": -0.1115,
-  "brier_model": 0.1373,
-  "brier_market": 0.1377,
-  "predictions_scored": 892,
-  "prediction_brier": 0.1373,
-  "prediction_log_loss": 0.4289
+  "roi": -0.2298,
+  "edge_vs_favorite_null": -0.2315,
+  "edge_vs_random_null": -0.1114,
+  "brier_model": 0.1375,
+  "brier_market": 0.138,
+  "predictions_scored": 898,
+  "prediction_brier": 0.1375,
+  "prediction_log_loss": 0.4294
  },
  "null_baseline": {
-  "n": 892,
-  "realized_roi": -0.2309,
-  "favorite_roi": 0.0009,
-  "random_roi": -0.1194,
-  "edge_vs_favorite": -0.2318,
-  "edge_vs_random": -0.1115,
-  "realized_pnl": -1089.62,
-  "favorite_pnl": 3.9,
-  "random_pnl": -550.31
+  "n": 898,
+  "realized_roi": -0.2298,
+  "favorite_roi": 0.0017,
+  "random_roi": -0.1184,
+  "edge_vs_favorite": -0.2315,
+  "edge_vs_random": -0.1114,
+  "realized_pnl": -1091.85,
+  "favorite_pnl": 7.53,
+  "random_pnl": -549.61
  },
  "calibration": [
   {
@@ -42,14 +42,14 @@
   },
   {
    "predicted": 0.142,
-   "realized": 0.103,
-   "n": 203,
+   "realized": 0.106,
+   "n": 207,
    "low_sample": false
   },
   {
    "predicted": 0.25,
-   "realized": 0.191,
-   "n": 141,
+   "realized": 0.19,
+   "n": 142,
    "low_sample": false
   },
   {
@@ -60,8 +60,8 @@
   },
   {
    "predicted": 0.45,
-   "realized": 0.515,
-   "n": 165,
+   "realized": 0.512,
+   "n": 166,
    "low_sample": false
   },
   {
@@ -91,15 +91,15 @@
    "low_sample": false
   },
   {
-   "predicted": 0.142,
-   "realized": 0.102,
-   "n": 137,
+   "predicted": 0.143,
+   "realized": 0.106,
+   "n": 141,
    "low_sample": false
   },
   {
    "predicted": 0.248,
-   "realized": 0.143,
-   "n": 84,
+   "realized": 0.141,
+   "n": 85,
    "low_sample": false
   },
   {
@@ -110,8 +110,8 @@
   },
   {
    "predicted": 0.452,
-   "realized": 0.553,
-   "n": 85,
+   "realized": 0.547,
+   "n": 86,
    "low_sample": false
   },
   {
@@ -166,20 +166,20 @@
   },
   {
    "category": "Entertainment",
-   "n": 92,
-   "win_rate": 0.087,
-   "brier_model": 0.0688,
-   "brier_market": 0.0716,
-   "pnl": -261.07,
+   "n": 96,
+   "win_rate": 0.083,
+   "brier_model": 0.0673,
+   "brier_market": 0.0704,
+   "pnl": -282.21,
    "beats_market": true
   },
   {
    "category": "Sports",
-   "n": 301,
-   "win_rate": 0.266,
-   "brier_model": 0.1598,
-   "brier_market": 0.1611,
-   "pnl": -351.72,
+   "n": 303,
+   "win_rate": 0.267,
+   "brier_model": 0.1616,
+   "brier_market": 0.163,
+   "pnl": -332.81,
    "beats_market": true
   },
   {
@@ -2672,21 +2672,6 @@
    "placed_at": "2026-07-27T01:12:20.896207+00:00"
   },
   {
-   "ticker": "KXPOKEMON-26JUL151ULTCO-1006.43",
-   "title": "151 Ultra-Premium Collection Up or Down: July\n \u2014 Above $1006.43",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.17,
-   "p_final": 0.16,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T01:12:20.389062+00:00"
-  },
-  {
    "ticker": "KXNFLDROTY-27-AMES",
    "title": "Defensive Rookie of the Year Winner? \u2014 Akheem Mesidor",
    "category": "Sports",
@@ -4500,21 +4485,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T02:51:34.204392+00:00"
-  },
-  {
-   "ticker": "KXCS2-BBS2F26-MOUZ",
-   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 MOUZ",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.17,
-   "p_final": 0.173,
-   "edge": 0.008,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.17; faded 0.12 toward 0.5 \u2192 0.20. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T01:50:31.953390+00:00"
   },
   {
    "ticker": "KXWNBADUNK-26ANY-Y",
@@ -20895,21 +20865,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.62; faded 0.12 toward 0.5 \u2192 0.61. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:02:40.385499+00:00"
-  },
-  {
-   "ticker": "KXCS2-BBS2F26-TS",
-   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 Spirit",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.45,
-   "p_final": 0.437,
-   "edge": 0.002,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.43; faded 0.12 toward 0.5 \u2192 0.44. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:02:40.339983+00:00"
   },
   {
    "ticker": "KXBERNIEENDORSE-26NOV03-MPEL",
@@ -70817,36 +70772,6 @@
    "placed_at": "2026-07-25T12:51:43.498821+00:00"
   },
   {
-   "ticker": "KXPOKEMON-26JULASCHERPO-445.57",
-   "title": "Ascended Heroes Pokemon Center Elite Trainer Box (Exclusive) Up or Down: July\n \u2014 Above $445.57",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.26,
-   "entry_price": 0.27,
-   "p_final": 0.223,
-   "edge": 0.008,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.22; faded 0.12 toward 0.5 \u2192 0.25. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.459977+00:00"
-  },
-  {
-   "ticker": "KXPOKEMON-26JULBUL-31.52",
-   "title": "Bulbasaur Up or Down: July\n \u2014 Above $31.52",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.21,
-   "p_final": 0.178,
-   "edge": 0.008,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.17; faded 0.12 toward 0.5 \u2192 0.21. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.448796+00:00"
-  },
-  {
    "ticker": "KXGOLDMON-26JUL3117-T4031.99",
    "title": "Gold price on July 31, 2026 at 5:00 PM EDT? \u2014 Above $4031.99",
    "category": "Commodities",
@@ -70890,21 +70815,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Commodities. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:43.421477+00:00"
-  },
-  {
-   "ticker": "KXPOKEMON-26JULMEGGENEX-1390.04",
-   "title": "Mega Gengar ex Up or Down: July\n \u2014 Above $1390.04",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.15,
-   "p_final": 0.136,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.418567+00:00"
   },
   {
    "ticker": "KXBRENTMON-26JUL3117-T78.99",
@@ -72228,6 +72138,120 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXPOKEMON-26JUL151ULTCO-1006.43",
+   "title": "151 Ultra-Premium Collection Up or Down: July\n \u2014 Above $1006.43",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.17,
+   "p_final": 0.16,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.19. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T01:12:20.389062+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-08-02T17:13:03.050827+00:00"
+  },
+  {
+   "ticker": "KXCS2-BBS2F26-MOUZ",
+   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 MOUZ",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.17,
+   "p_final": 0.173,
+   "edge": 0.008,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.17; faded 0.12 toward 0.5 \u2192 0.20. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T01:50:31.953390+00:00",
+   "won": true,
+   "payout": 29.41,
+   "pnl": 24.11,
+   "settled_at": "2026-08-02T17:13:03.045602+00:00"
+  },
+  {
+   "ticker": "KXCS2-BBS2F26-TS",
+   "title": "BLAST Bounty 2026 Season 2 Finals Champion \u2014 Spirit",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.45,
+   "p_final": 0.437,
+   "edge": 0.002,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.43; faded 0.12 toward 0.5 \u2192 0.44. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:02:40.339983+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.2,
+   "settled_at": "2026-08-02T17:13:03.039502+00:00"
+  },
+  {
+   "ticker": "KXPOKEMON-26JULASCHERPO-445.57",
+   "title": "Ascended Heroes Pokemon Center Elite Trainer Box (Exclusive) Up or Down: July\n \u2014 Above $445.57",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.26,
+   "entry_price": 0.27,
+   "p_final": 0.223,
+   "edge": 0.008,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.22; faded 0.12 toward 0.5 \u2192 0.25. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.459977+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.26,
+   "settled_at": "2026-08-02T17:13:03.027861+00:00"
+  },
+  {
+   "ticker": "KXPOKEMON-26JULBUL-31.52",
+   "title": "Bulbasaur Up or Down: July\n \u2014 Above $31.52",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.21,
+   "p_final": 0.178,
+   "edge": 0.008,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.17; faded 0.12 toward 0.5 \u2192 0.21. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.448796+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.28,
+   "settled_at": "2026-08-02T17:13:03.017990+00:00"
+  },
+  {
+   "ticker": "KXPOKEMON-26JULMEGGENEX-1390.04",
+   "title": "Mega Gengar ex Up or Down: July\n \u2014 Above $1390.04",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.15,
+   "p_final": 0.136,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.418567+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-08-02T17:13:03.003912+00:00"
+  },
   {
    "ticker": "KXNEXTTEAMMLB-27TSKUBAL-NONE",
    "title": "Tarik Skubal's Next Team \u2014 Retires / No Team",
