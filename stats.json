@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-02T01:36:53.112108+00:00",
+ "generated_at": "2026-08-02T01:44:33.751565+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1067.51,
+  "realized_pnl": -1077.36,
   "total_fees": 1627.04,
-  "open_count": 4844,
-  "open_stake": 26134.3,
-  "settled_count": 856,
+  "open_count": 4840,
+  "open_stake": 26113.34,
+  "settled_count": 860,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1377 beats the market's 0.1381. On profitability, realized ROI is -23.8% (P&L $-1067.51). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -24.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.211,
-  "roi": -0.2383,
-  "edge_vs_favorite_null": -0.2397,
-  "edge_vs_random_null": -0.1164,
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1377 beats the market's 0.1381. On profitability, realized ROI is -23.9% (P&L $-1077.36). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -24.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.212,
+  "roi": -0.2394,
+  "edge_vs_favorite_null": -0.2409,
+  "edge_vs_random_null": -0.117,
   "brier_model": 0.1377,
   "brier_market": 0.1381,
-  "predictions_scored": 844,
+  "predictions_scored": 848,
   "prediction_brier": 0.1377,
-  "prediction_log_loss": 0.4299
+  "prediction_log_loss": 0.4301
  },
  "null_baseline": {
-  "n": 844,
-  "realized_roi": -0.2383,
-  "favorite_roi": 0.0014,
-  "random_roi": -0.1219,
-  "edge_vs_favorite": -0.2397,
-  "edge_vs_random": -0.1164,
-  "realized_pnl": -1064.07,
-  "favorite_pnl": 5.87,
-  "random_pnl": -531.83
+  "n": 848,
+  "realized_roi": -0.2394,
+  "favorite_roi": 0.0015,
+  "random_roi": -0.1224,
+  "edge_vs_favorite": -0.2409,
+  "edge_vs_random": -0.117,
+  "realized_pnl": -1073.92,
+  "favorite_pnl": 6.54,
+  "random_pnl": -536.42
  },
  "calibration": [
   {
@@ -48,20 +48,20 @@
   },
   {
    "predicted": 0.25,
-   "realized": 0.184,
-   "n": 136,
+   "realized": 0.182,
+   "n": 137,
    "low_sample": false
   },
   {
    "predicted": 0.353,
-   "realized": 0.32,
-   "n": 125,
+   "realized": 0.315,
+   "n": 127,
    "low_sample": false
   },
   {
    "predicted": 0.451,
-   "realized": 0.513,
-   "n": 158,
+   "realized": 0.516,
+   "n": 159,
    "low_sample": false
   },
   {
@@ -98,20 +98,20 @@
   },
   {
    "predicted": 0.248,
-   "realized": 0.125,
-   "n": 80,
+   "realized": 0.123,
+   "n": 81,
    "low_sample": false
   },
   {
-   "predicted": 0.35,
-   "realized": 0.284,
-   "n": 67,
+   "predicted": 0.349,
+   "realized": 0.275,
+   "n": 69,
    "low_sample": false
   },
   {
    "predicted": 0.452,
-   "realized": 0.543,
-   "n": 81,
+   "realized": 0.549,
+   "n": 82,
    "low_sample": false
   },
   {
@@ -175,11 +175,11 @@
   },
   {
    "category": "Sports",
-   "n": 281,
+   "n": 285,
    "win_rate": 0.267,
-   "brier_model": 0.1602,
-   "brier_market": 0.1616,
-   "pnl": -351.29,
+   "brier_model": 0.1599,
+   "brier_market": 0.1613,
+   "pnl": -361.14,
    "beats_market": true
   },
   {
@@ -285,21 +285,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.14; faded 0.12 toward 0.5 \u2192 0.18. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T20:28:05.162613+00:00"
-  },
-  {
-   "ticker": "KXMLSGAME-26AUG01MTLNE-NE",
-   "title": "Montreal vs New England",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.31,
-   "p_final": 0.31,
-   "edge": 0.005,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.30; faded 0.12 toward 0.5 \u2192 0.33. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T20:28:05.055374+00:00"
   },
   {
    "ticker": "KXNAVAJOPRES-26NOV03-JJON",
@@ -570,21 +555,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.05; faded 0.12 toward 0.5 \u2192 0.10. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T18:25:37.640446+00:00"
-  },
-  {
-   "ticker": "KXMLSGAME-26AUG01NYRBORL-NYRB",
-   "title": "New York RB vs Orlando",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.2,
-   "entry_price": 0.45,
-   "p_final": 0.447,
-   "edge": 0.002,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.45; faded 0.12 toward 0.5 \u2192 0.45. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T18:25:36.900653+00:00"
   },
   {
    "ticker": "KXOSCARNOMACTR-27-MIC",
@@ -1277,21 +1247,6 @@
    "placed_at": "2026-07-27T08:18:04.908681+00:00"
   },
   {
-   "ticker": "KXMLSGAME-26AUG01NYRBORL-ORL",
-   "title": "New York RB vs Orlando",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.24,
-   "entry_price": 0.32,
-   "p_final": 0.315,
-   "edge": 0.005,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.31; faded 0.12 toward 0.5 \u2192 0.33. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T07:17:31.142259+00:00"
-  },
-  {
    "ticker": "KXNFLWINS-27NYJ-7",
    "title": "Pro Football: New York J Total Wins \u2014 7+ wins",
    "category": "Sports",
@@ -1470,21 +1425,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.15. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T05:16:06.705206+00:00"
-  },
-  {
-   "ticker": "KXMLSGAME-26AUG01VANLAFC-LAFC",
-   "title": "Vancouver vs Los Angeles F",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.27,
-   "entry_price": 0.24,
-   "p_final": 0.242,
-   "edge": 0.007,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.27. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T05:16:06.634206+00:00"
   },
   {
    "ticker": "KXRTX5090MS-27MAY-1.750",
@@ -72918,6 +72858,82 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXMLSGAME-26AUG01MTLNE-NE",
+   "title": "Montreal vs New England",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.31,
+   "p_final": 0.31,
+   "edge": 0.005,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.30; faded 0.12 toward 0.5 \u2192 0.33. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T20:28:05.055374+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.25,
+   "settled_at": "2026-08-02T01:44:05.834106+00:00"
+  },
+  {
+   "ticker": "KXMLSGAME-26AUG01NYRBORL-NYRB",
+   "title": "New York RB vs Orlando",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.2,
+   "entry_price": 0.45,
+   "p_final": 0.447,
+   "edge": 0.002,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.45; faded 0.12 toward 0.5 \u2192 0.45. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T18:25:36.900653+00:00",
+   "won": true,
+   "payout": 11.11,
+   "pnl": 5.91,
+   "settled_at": "2026-08-02T01:44:05.829524+00:00"
+  },
+  {
+   "ticker": "KXMLSGAME-26AUG01NYRBORL-ORL",
+   "title": "New York RB vs Orlando",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.24,
+   "entry_price": 0.32,
+   "p_final": 0.315,
+   "edge": 0.005,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.31; faded 0.12 toward 0.5 \u2192 0.33. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T07:17:31.142259+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.24,
+   "settled_at": "2026-08-02T01:44:05.825070+00:00"
+  },
+  {
+   "ticker": "KXMLSGAME-26AUG01VANLAFC-LAFC",
+   "title": "Vancouver vs Los Angeles F",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.27,
+   "entry_price": 0.24,
+   "p_final": 0.242,
+   "edge": 0.007,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.23; faded 0.12 toward 0.5 \u2192 0.27. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T05:16:06.634206+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.27,
+   "settled_at": "2026-08-02T01:44:05.811052+00:00"
+  },
   {
    "ticker": "KXRANKLISTSONGSPOTUSA-26AUG01-SHA",
    "title": "Artist(s) with a #1 Song on Spotify USA: July \u2014 Shakira",
