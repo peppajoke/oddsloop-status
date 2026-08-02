@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-02T03:17:21.705807+00:00",
+ "generated_at": "2026-08-02T03:48:20.624340+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1054.73,
+  "realized_pnl": -1065.37,
   "total_fees": 1627.04,
-  "open_count": 4838,
-  "open_stake": 26102.87,
-  "settled_count": 862,
+  "open_count": 4836,
+  "open_stake": 26092.23,
+  "settled_count": 864,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1385 beats the market's 0.1389. On profitability, realized ROI is -23.4% (P&L $-1054.73). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.1%, so our selection still loses to that baseline by -23.3 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1382 beats the market's 0.1386. On profitability, realized ROI is -23.6% (P&L $-1065.37). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.04 in fees across 5700 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.1%, so our selection still loses to that baseline by -23.5 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.213,
-  "roi": -0.2338,
-  "edge_vs_favorite_null": -0.233,
-  "edge_vs_random_null": -0.1132,
-  "brier_model": 0.1385,
-  "brier_market": 0.1389,
-  "predictions_scored": 850,
-  "prediction_brier": 0.1385,
-  "prediction_log_loss": 0.4318
+  "roi": -0.2356,
+  "edge_vs_favorite_null": -0.2351,
+  "edge_vs_random_null": -0.1142,
+  "brier_model": 0.1382,
+  "brier_market": 0.1386,
+  "predictions_scored": 852,
+  "prediction_brier": 0.1382,
+  "prediction_log_loss": 0.431
  },
  "null_baseline": {
-  "n": 850,
-  "realized_roi": -0.2338,
-  "favorite_roi": -0.0008,
-  "random_roi": -0.1206,
-  "edge_vs_favorite": -0.233,
-  "edge_vs_random": -0.1132,
-  "realized_pnl": -1051.29,
-  "favorite_pnl": -3.36,
-  "random_pnl": -530.06
+  "n": 852,
+  "realized_roi": -0.2356,
+  "favorite_roi": -0.0005,
+  "random_roi": -0.1214,
+  "edge_vs_favorite": -0.2351,
+  "edge_vs_random": -0.1142,
+  "realized_pnl": -1061.93,
+  "favorite_pnl": -2.24,
+  "random_pnl": -534.82
  },
  "calibration": [
   {
@@ -42,8 +42,8 @@
   },
   {
    "predicted": 0.142,
-   "realized": 0.108,
-   "n": 185,
+   "realized": 0.107,
+   "n": 187,
    "low_sample": false
   },
   {
@@ -91,9 +91,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.143,
-   "realized": 0.107,
-   "n": 122,
+   "predicted": 0.142,
+   "realized": 0.106,
+   "n": 123,
    "low_sample": false
   },
   {
@@ -133,9 +133,9 @@
    "low_sample": false
   },
   {
-   "predicted": 0.858,
-   "realized": 0.889,
-   "n": 63,
+   "predicted": 0.859,
+   "realized": 0.891,
+   "n": 64,
    "low_sample": false
   },
   {
@@ -175,11 +175,11 @@
   },
   {
    "category": "Sports",
-   "n": 287,
-   "win_rate": 0.272,
-   "brier_model": 0.162,
-   "brier_market": 0.1634,
-   "pnl": -338.51,
+   "n": 289,
+   "win_rate": 0.27,
+   "brier_model": 0.1609,
+   "brier_market": 0.1623,
+   "pnl": -349.15,
    "beats_market": true
   },
   {
@@ -1590,21 +1590,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Elections. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T04:15:14.734298+00:00"
-  },
-  {
-   "ticker": "KXBOXING-26AUG01MURATACONCEI-MURATA",
-   "title": "Raymond Muratalla vs Robson Conceicao",
-   "category": "Sports",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.09999999999999998,
-   "p_final": 0.894,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.91; faded 0.12 toward 0.5 \u2192 0.86. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T04:15:14.665983+00:00"
   },
   {
    "ticker": "KXEUEXITCOUNTRY-30-HUN",
@@ -3615,21 +3600,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.13. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-26T19:05:44.186800+00:00"
-  },
-  {
-   "ticker": "KXBOXING-26AUG01MURATACONCEI-CONCEI",
-   "title": "Raymond Muratalla vs Robson Conceicao",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.1,
-   "p_final": 0.106,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.14. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-26T19:05:44.112438+00:00"
   },
   {
    "ticker": "KXNFLOPOTY-27-ASTB",
@@ -72828,6 +72798,44 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXBOXING-26AUG01MURATACONCEI-MURATA",
+   "title": "Raymond Muratalla vs Robson Conceicao",
+   "category": "Sports",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.09999999999999998,
+   "p_final": 0.894,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.91; faded 0.12 toward 0.5 \u2192 0.86. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T04:15:14.665983+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-08-02T03:47:51.864581+00:00"
+  },
+  {
+   "ticker": "KXBOXING-26AUG01MURATACONCEI-CONCEI",
+   "title": "Raymond Muratalla vs Robson Conceicao",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.1,
+   "p_final": 0.106,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.10; faded 0.12 toward 0.5 \u2192 0.14. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-26T19:05:44.112438+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-08-02T03:47:51.855114+00:00"
+  },
   {
    "ticker": "KXMLSGAME-26AUG01MIACLB-TIE",
    "title": "Miami vs Columbus \u2014 Tie",
