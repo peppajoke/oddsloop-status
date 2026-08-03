@@ -1,55 +1,55 @@
 {
- "generated_at": "2026-08-03T15:43:54.550859+00:00",
+ "generated_at": "2026-08-03T15:55:35.079271+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1152.54,
+  "realized_pnl": -1171.72,
   "total_fees": 1627.38,
-  "open_count": 4778,
-  "open_stake": 25784.68,
-  "settled_count": 924,
+  "open_count": 4771,
+  "open_stake": 25747.64,
+  "settled_count": 931,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1361 beats the market's 0.1365. On profitability, realized ROI is -23.8% (P&L $-1152.54). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -24.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.209,
-  "roi": -0.2382,
-  "edge_vs_favorite_null": -0.2399,
-  "edge_vs_random_null": -0.1155,
-  "brier_model": 0.1361,
-  "brier_market": 0.1365,
-  "predictions_scored": 912,
-  "prediction_brier": 0.1361,
-  "prediction_log_loss": 0.4256
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1360 beats the market's 0.1364. On profitability, realized ROI is -24.0% (P&L $-1171.72). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.0%, so our selection still loses to that baseline by -24.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.208,
+  "roi": -0.2403,
+  "edge_vs_favorite_null": -0.2404,
+  "edge_vs_random_null": -0.1168,
+  "brier_model": 0.136,
+  "brier_market": 0.1364,
+  "predictions_scored": 919,
+  "prediction_brier": 0.136,
+  "prediction_log_loss": 0.4251
  },
  "null_baseline": {
-  "n": 912,
-  "realized_roi": -0.2382,
-  "favorite_roi": 0.0017,
-  "random_roi": -0.1226,
-  "edge_vs_favorite": -0.2399,
-  "edge_vs_random": -0.1155,
-  "realized_pnl": -1149.1,
-  "favorite_pnl": 8.02,
-  "random_pnl": -577.99
+  "n": 919,
+  "realized_roi": -0.2403,
+  "favorite_roi": 0.0001,
+  "random_roi": -0.1235,
+  "edge_vs_favorite": -0.2404,
+  "edge_vs_random": -0.1168,
+  "realized_pnl": -1168.28,
+  "favorite_pnl": 0.48,
+  "random_pnl": -586.35
  },
  "calibration": [
   {
    "predicted": 0.065,
-   "realized": 0.043,
-   "n": 258,
+   "realized": 0.042,
+   "n": 260,
    "low_sample": false
   },
   {
    "predicted": 0.142,
-   "realized": 0.104,
-   "n": 211,
+   "realized": 0.103,
+   "n": 214,
    "low_sample": false
   },
   {
    "predicted": 0.25,
-   "realized": 0.196,
-   "n": 143,
+   "realized": 0.201,
+   "n": 144,
    "low_sample": false
   },
   {
@@ -60,8 +60,8 @@
   },
   {
    "predicted": 0.45,
-   "realized": 0.512,
-   "n": 166,
+   "realized": 0.509,
+   "n": 167,
    "low_sample": false
   },
   {
@@ -87,13 +87,13 @@
   {
    "predicted": 0.065,
    "realized": 0.041,
-   "n": 196,
+   "n": 197,
    "low_sample": false
   },
   {
    "predicted": 0.143,
    "realized": 0.103,
-   "n": 145,
+   "n": 146,
    "low_sample": false
   },
   {
@@ -110,8 +110,8 @@
   },
   {
    "predicted": 0.452,
-   "realized": 0.547,
-   "n": 86,
+   "realized": 0.54,
+   "n": 87,
    "low_sample": false
   },
   {
@@ -128,20 +128,20 @@
   },
   {
    "predicted": 0.746,
-   "realized": 0.729,
-   "n": 59,
+   "realized": 0.717,
+   "n": 60,
    "low_sample": false
   },
   {
    "predicted": 0.859,
-   "realized": 0.894,
-   "n": 66,
+   "realized": 0.897,
+   "n": 68,
    "low_sample": false
   },
   {
    "predicted": 0.935,
    "realized": 0.952,
-   "n": 62,
+   "n": 63,
    "low_sample": false
   }
  ],
@@ -166,11 +166,11 @@
   },
   {
    "category": "Entertainment",
-   "n": 96,
-   "win_rate": 0.083,
-   "brier_model": 0.0673,
-   "brier_market": 0.0704,
-   "pnl": -282.21,
+   "n": 103,
+   "win_rate": 0.087,
+   "brier_model": 0.0706,
+   "brier_market": 0.0737,
+   "pnl": -301.39,
    "beats_market": true
   },
   {
@@ -5355,21 +5355,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.96; faded 0.12 toward 0.5 \u2192 0.91. Category: Financials. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T16:40:43.201341+00:00"
-  },
-  {
-   "ticker": "KXRT-SPI-97",
-   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 97",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.34,
-   "entry_price": 0.05,
-   "p_final": 0.058,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T16:40:43.129233+00:00"
   },
   {
    "ticker": "KXBARRELS-26-14.10",
@@ -37157,21 +37142,6 @@
    "placed_at": "2026-07-25T13:01:50.907977+00:00"
   },
   {
-   "ticker": "KXRT-SPI-87",
-   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 87",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.3,
-   "entry_price": 0.15000000000000002,
-   "p_final": 0.845,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.85; faded 0.12 toward 0.5 \u2192 0.81. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:50.877121+00:00"
-  },
-  {
    "ticker": "KXMLSCUP-26-ORL",
    "title": "MLS Cup Champion \u2014 Orlando",
    "category": "Sports",
@@ -44972,21 +44942,6 @@
    "placed_at": "2026-07-25T13:01:35.461261+00:00"
   },
   {
-   "ticker": "KXRT-SPI-80",
-   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 80",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.07999999999999996,
-   "p_final": 0.913,
-   "edge": 0.012,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.93; faded 0.12 toward 0.5 \u2192 0.87. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:35.437534+00:00"
-  },
-  {
    "ticker": "KXNEXTTEAMNFL-26ARODGERS8-PIT",
    "title": "Aaron Rodgers's Next Team \u2014 Pittsburgh",
    "category": "Sports",
@@ -46890,21 +46845,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.06; faded 0.12 toward 0.5 \u2192 0.11. Category: Financials. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:01:32.282598+00:00"
-  },
-  {
-   "ticker": "KXRT-SPI-92",
-   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 92",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.18,
-   "entry_price": 0.5,
-   "p_final": 0.48,
-   "edge": 0.0,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.48; faded 0.12 toward 0.5 \u2192 0.48. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:32.261204+00:00"
   },
   {
    "ticker": "KXNCAAFWINS-26SCAR-8",
@@ -60137,21 +60077,6 @@
    "placed_at": "2026-07-25T12:51:49.015603+00:00"
   },
   {
-   "ticker": "KXRT-SPI-85",
-   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 85",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.32,
-   "entry_price": 0.09999999999999998,
-   "p_final": 0.894,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.91; faded 0.12 toward 0.5 \u2192 0.86. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:48.993950+00:00"
-  },
-  {
    "ticker": "KXMLBALWEST-26-SEA",
    "title": "AL West Division Winner \u2014 Seattle",
    "category": "Sports",
@@ -67037,21 +66962,6 @@
    "placed_at": "2026-07-25T12:51:44.705953+00:00"
   },
   {
-   "ticker": "KXRT-SPI-95",
-   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 95",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.14,
-   "p_final": 0.14,
-   "edge": 0.01,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.13; faded 0.12 toward 0.5 \u2192 0.17. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:44.700453+00:00"
-  },
-  {
    "ticker": "KXF1-26-LH",
    "title": "F1 Drivers Champion \u2014 Lewis Hamilton",
    "category": "Sports",
@@ -68400,21 +68310,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.08; faded 0.12 toward 0.5 \u2192 0.14. Category: Financials. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T12:51:44.179277+00:00"
-  },
-  {
-   "ticker": "KXRT-SPI-90",
-   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 90",
-   "category": "Entertainment",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.26,
-   "entry_price": 0.28,
-   "p_final": 0.719,
-   "edge": 0.006,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.72; faded 0.12 toward 0.5 \u2192 0.70. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:44.174691+00:00"
   },
   {
    "ticker": "KXSB-27-KC",
@@ -71928,6 +71823,139 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXRT-SPI-97",
+   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 97",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.34,
+   "entry_price": 0.05,
+   "p_final": 0.058,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T16:40:43.129233+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.34,
+   "settled_at": "2026-08-03T15:55:06.630424+00:00"
+  },
+  {
+   "ticker": "KXRT-SPI-87",
+   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 87",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.3,
+   "entry_price": 0.15000000000000002,
+   "p_final": 0.845,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.85; faded 0.12 toward 0.5 \u2192 0.81. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:50.877121+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.3,
+   "settled_at": "2026-08-03T15:55:06.622849+00:00"
+  },
+  {
+   "ticker": "KXRT-SPI-80",
+   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 80",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.07999999999999996,
+   "p_final": 0.913,
+   "edge": 0.012,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.93; faded 0.12 toward 0.5 \u2192 0.87. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:35.437534+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-08-03T15:55:06.616983+00:00"
+  },
+  {
+   "ticker": "KXRT-SPI-92",
+   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 92",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.18,
+   "entry_price": 0.5,
+   "p_final": 0.48,
+   "edge": 0.0,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.48; faded 0.12 toward 0.5 \u2192 0.48. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:32.261204+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.18,
+   "settled_at": "2026-08-03T15:55:06.610452+00:00"
+  },
+  {
+   "ticker": "KXRT-SPI-85",
+   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 85",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.32,
+   "entry_price": 0.09999999999999998,
+   "p_final": 0.894,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.91; faded 0.12 toward 0.5 \u2192 0.86. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:48.993950+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.32,
+   "settled_at": "2026-08-03T15:55:06.602352+00:00"
+  },
+  {
+   "ticker": "KXRT-SPI-95",
+   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 95",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.14,
+   "p_final": 0.14,
+   "edge": 0.01,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.13; faded 0.12 toward 0.5 \u2192 0.17. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:44.700453+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.31,
+   "settled_at": "2026-08-03T15:55:06.593122+00:00"
+  },
+  {
+   "ticker": "KXRT-SPI-90",
+   "title": "Spider-Man: Brand New Day: Rotten Tomatoes score \u2014 Above 90",
+   "category": "Entertainment",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.26,
+   "entry_price": 0.28,
+   "p_final": 0.719,
+   "edge": 0.006,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.72; faded 0.12 toward 0.5 \u2192 0.70. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:44.174691+00:00",
+   "won": true,
+   "payout": 17.86,
+   "pnl": 12.6,
+   "settled_at": "2026-08-03T15:55:06.577118+00:00"
+  },
   {
    "ticker": "KXTOPMODEL-26AUG03-CLAU5",
    "title": "Top AI model this week \u2014 claude-opus-5-high",
