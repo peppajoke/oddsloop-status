@@ -1,43 +1,43 @@
 {
- "generated_at": "2026-08-03T19:09:44.584175+00:00",
+ "generated_at": "2026-08-03T19:32:20.728335+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1255.65,
+  "realized_pnl": -1260.98,
   "total_fees": 1627.38,
-  "open_count": 4753,
-  "open_stake": 25652.84,
-  "settled_count": 949,
+  "open_count": 4752,
+  "open_stake": 25647.51,
+  "settled_count": 950,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1351 beats the market's 0.1356. On profitability, realized ROI is -25.3% (P&L $-1255.65). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -25.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1350 beats the market's 0.1355. On profitability, realized ROI is -25.3% (P&L $-1260.98). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -25.5 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.205,
-  "roi": -0.2526,
-  "edge_vs_favorite_null": -0.254,
-  "edge_vs_random_null": -0.1255,
-  "brier_model": 0.1351,
-  "brier_market": 0.1356,
-  "predictions_scored": 937,
-  "prediction_brier": 0.1351,
-  "prediction_log_loss": 0.423
+  "roi": -0.2534,
+  "edge_vs_favorite_null": -0.2549,
+  "edge_vs_random_null": -0.126,
+  "brier_model": 0.135,
+  "brier_market": 0.1355,
+  "predictions_scored": 938,
+  "prediction_brier": 0.135,
+  "prediction_log_loss": 0.4226
  },
  "null_baseline": {
-  "n": 937,
-  "realized_roi": -0.2526,
-  "favorite_roi": 0.0014,
-  "random_roi": -0.1271,
-  "edge_vs_favorite": -0.254,
-  "edge_vs_random": -0.1255,
-  "realized_pnl": -1252.21,
-  "favorite_pnl": 6.57,
-  "random_pnl": -615.22
+  "n": 938,
+  "realized_roi": -0.2534,
+  "favorite_roi": 0.0015,
+  "random_roi": -0.1275,
+  "edge_vs_favorite": -0.2549,
+  "edge_vs_random": -0.126,
+  "realized_pnl": -1257.54,
+  "favorite_pnl": 6.89,
+  "random_pnl": -617.72
  },
  "calibration": [
   {
    "predicted": 0.065,
    "realized": 0.041,
-   "n": 266,
+   "n": 267,
    "low_sample": false
   },
   {
@@ -86,8 +86,8 @@
  "prediction_calibration": [
   {
    "predicted": 0.065,
-   "realized": 0.041,
-   "n": 197,
+   "realized": 0.04,
+   "n": 198,
    "low_sample": false
   },
   {
@@ -166,11 +166,11 @@
   },
   {
    "category": "Entertainment",
-   "n": 103,
+   "n": 104,
    "win_rate": 0.087,
-   "brier_model": 0.0706,
-   "brier_market": 0.0737,
-   "pnl": -301.39,
+   "brier_model": 0.07,
+   "brier_market": 0.073,
+   "pnl": -306.72,
    "beats_market": true
   },
   {
@@ -39542,21 +39542,6 @@
    "placed_at": "2026-07-25T13:01:45.774061+00:00"
   },
   {
-   "ticker": "KXALBUMRELEASEDATETRIPPIE-AUG01-26",
-   "title": "When will Trippie Redd release a new album? \u2014 Before August",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.07,
-   "p_final": 0.056,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.05; faded 0.12 toward 0.5 \u2192 0.10. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:45.735345+00:00"
-  },
-  {
    "ticker": "KXMLBWINS-ATL-26-T100",
    "title": "Atlanta pro baseball wins this season? \u2014 100+ wins",
    "category": "Sports",
@@ -71553,6 +71538,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXALBUMRELEASEDATETRIPPIE-AUG01-26",
+   "title": "When will Trippie Redd release a new album? \u2014 Before August",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.07,
+   "p_final": 0.056,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.05; faded 0.12 toward 0.5 \u2192 0.10. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:45.735345+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-08-03T19:31:53.586405+00:00"
+  },
   {
    "ticker": "KXNATGASMON-26JUL3117-T2.799",
    "title": "Natural gas price on July 31, 2026 at 5:00 PM EDT? \u2014 Above $2.799",
