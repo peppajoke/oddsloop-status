@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-03T14:53:41.084428+00:00",
+ "generated_at": "2026-08-03T15:24:37.965647+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1147.26,
+  "realized_pnl": -1152.54,
   "total_fees": 1627.38,
-  "open_count": 4779,
-  "open_stake": 25789.96,
-  "settled_count": 923,
+  "open_count": 4778,
+  "open_stake": 25784.68,
+  "settled_count": 924,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1362 beats the market's 0.1366. On profitability, realized ROI is -23.7% (P&L $-1147.26). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -23.9 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1361 beats the market's 0.1365. On profitability, realized ROI is -23.8% (P&L $-1152.54). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -24.0 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
   "win_rate": 0.209,
-  "roi": -0.2373,
-  "edge_vs_favorite_null": -0.2388,
-  "edge_vs_random_null": -0.115,
-  "brier_model": 0.1362,
-  "brier_market": 0.1366,
-  "predictions_scored": 911,
-  "prediction_brier": 0.1362,
-  "prediction_log_loss": 0.4259
+  "roi": -0.2382,
+  "edge_vs_favorite_null": -0.2399,
+  "edge_vs_random_null": -0.1155,
+  "brier_model": 0.1361,
+  "brier_market": 0.1365,
+  "predictions_scored": 912,
+  "prediction_brier": 0.1361,
+  "prediction_log_loss": 0.4256
  },
  "null_baseline": {
-  "n": 911,
-  "realized_roi": -0.2373,
-  "favorite_roi": 0.0015,
-  "random_roi": -0.1223,
-  "edge_vs_favorite": -0.2388,
-  "edge_vs_random": -0.115,
-  "realized_pnl": -1143.82,
-  "favorite_pnl": 6.78,
-  "random_pnl": -575.97
+  "n": 912,
+  "realized_roi": -0.2382,
+  "favorite_roi": 0.0017,
+  "random_roi": -0.1226,
+  "edge_vs_favorite": -0.2399,
+  "edge_vs_random": -0.1155,
+  "realized_pnl": -1149.1,
+  "favorite_pnl": 8.02,
+  "random_pnl": -577.99
  },
  "calibration": [
   {
@@ -42,8 +42,8 @@
   },
   {
    "predicted": 0.142,
-   "realized": 0.105,
-   "n": 210,
+   "realized": 0.104,
+   "n": 211,
    "low_sample": false
   },
   {
@@ -92,8 +92,8 @@
   },
   {
    "predicted": 0.143,
-   "realized": 0.104,
-   "n": 144,
+   "realized": 0.103,
+   "n": 145,
    "low_sample": false
   },
   {
@@ -229,11 +229,11 @@
   },
   {
    "category": "Science and Technology",
-   "n": 34,
-   "win_rate": 0.235,
-   "brier_model": 0.1594,
-   "brier_market": 0.1575,
-   "pnl": 79.4,
+   "n": 35,
+   "win_rate": 0.229,
+   "brier_model": 0.1556,
+   "brier_market": 0.1544,
+   "pnl": 74.12,
    "beats_market": false
   },
   {
@@ -480,21 +480,6 @@
    "confidence": 0.41,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.09. Category: Economics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T19:26:26.941235+00:00"
-  },
-  {
-   "ticker": "KXTOPMODEL-26AUG03-CLAU5",
-   "title": "Top AI model this week \u2014 claude-opus-5-high",
-   "category": "Science and Technology",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.22,
-   "p_final": 0.163,
-   "edge": 0.008,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.20. Category: Science and Technology. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T19:26:26.840009+00:00"
   },
   {
    "ticker": "KXLALIGA-27-ATM",
@@ -71943,6 +71928,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXTOPMODEL-26AUG03-CLAU5",
+   "title": "Top AI model this week \u2014 claude-opus-5-high",
+   "category": "Science and Technology",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.22,
+   "p_final": 0.163,
+   "edge": 0.008,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.15; faded 0.12 toward 0.5 \u2192 0.20. Category: Science and Technology. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T19:26:26.840009+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.28,
+   "settled_at": "2026-08-03T15:24:10.078692+00:00"
+  },
   {
    "ticker": "KXTRUMPMEET-26JUL-RDES",
    "title": "Who will Donald Trump talk to in Jul 2026? \u2014 Ron DeSantis",
