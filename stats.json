@@ -1,49 +1,49 @@
 {
- "generated_at": "2026-08-03T22:34:52.814601+00:00",
+ "generated_at": "2026-08-03T22:37:59.965869+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1260.98,
+  "realized_pnl": -1216.19,
   "total_fees": 1627.38,
-  "open_count": 4752,
-  "open_stake": 25647.51,
-  "settled_count": 950,
+  "open_count": 4749,
+  "open_stake": 25631.59,
+  "settled_count": 953,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1350 beats the market's 0.1355. On profitability, realized ROI is -25.3% (P&L $-1260.98). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -25.5 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.205,
-  "roi": -0.2534,
-  "edge_vs_favorite_null": -0.2549,
-  "edge_vs_random_null": -0.126,
-  "brier_model": 0.135,
-  "brier_market": 0.1355,
-  "predictions_scored": 938,
-  "prediction_brier": 0.135,
-  "prediction_log_loss": 0.4226
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1361 beats the market's 0.1365. On profitability, realized ROI is -24.4% (P&L $-1216.19). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.1%, so our selection still loses to that baseline by -24.3 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.207,
+  "roi": -0.2436,
+  "edge_vs_favorite_null": -0.243,
+  "edge_vs_random_null": -0.1202,
+  "brier_model": 0.1361,
+  "brier_market": 0.1365,
+  "predictions_scored": 941,
+  "prediction_brier": 0.1361,
+  "prediction_log_loss": 0.4253
  },
  "null_baseline": {
-  "n": 938,
-  "realized_roi": -0.2534,
-  "favorite_roi": 0.0015,
-  "random_roi": -0.1275,
-  "edge_vs_favorite": -0.2549,
-  "edge_vs_random": -0.126,
-  "realized_pnl": -1257.54,
-  "favorite_pnl": 6.89,
-  "random_pnl": -617.72
+  "n": 941,
+  "realized_roi": -0.2436,
+  "favorite_roi": -0.0006,
+  "random_roi": -0.1235,
+  "edge_vs_favorite": -0.243,
+  "edge_vs_random": -0.1202,
+  "realized_pnl": -1212.75,
+  "favorite_pnl": -2.88,
+  "random_pnl": -600.21
  },
  "calibration": [
   {
    "predicted": 0.065,
    "realized": 0.041,
-   "n": 267,
+   "n": 268,
    "low_sample": false
   },
   {
    "predicted": 0.142,
-   "realized": 0.102,
-   "n": 216,
+   "realized": 0.11,
+   "n": 218,
    "low_sample": false
   },
   {
@@ -87,7 +87,7 @@
   {
    "predicted": 0.065,
    "realized": 0.04,
-   "n": 198,
+   "n": 199,
    "low_sample": false
   },
   {
@@ -134,8 +134,8 @@
   },
   {
    "predicted": 0.858,
-   "realized": 0.9,
-   "n": 70,
+   "realized": 0.875,
+   "n": 72,
    "low_sample": false
   },
   {
@@ -220,11 +220,11 @@
   },
   {
    "category": "Mentions",
-   "n": 161,
-   "win_rate": 0.23,
-   "brier_model": 0.1455,
-   "brier_market": 0.1447,
-   "pnl": -245.49,
+   "n": 162,
+   "win_rate": 0.235,
+   "brier_model": 0.1492,
+   "brier_market": 0.1484,
+   "pnl": -215.09,
    "beats_market": false
   },
   {
@@ -238,11 +238,11 @@
   },
   {
    "category": "Financials",
-   "n": 78,
-   "win_rate": 0.256,
-   "brier_model": 0.1714,
-   "brier_market": 0.1693,
-   "pnl": 39.32,
+   "n": 80,
+   "win_rate": 0.263,
+   "brier_model": 0.1757,
+   "brier_market": 0.1731,
+   "pnl": 53.71,
    "beats_market": false
   },
   {
@@ -44267,21 +44267,6 @@
    "placed_at": "2026-07-25T13:01:36.511291+00:00"
   },
   {
-   "ticker": "KXPLTR-26AUGCUST-P1100",
-   "title": "Palantir total customers in Q2 \u2014 Above 1100",
-   "category": "Financials",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.07,
-   "p_final": 0.061,
-   "edge": 0.011,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.05; faded 0.12 toward 0.5 \u2192 0.10. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:36.486851+00:00"
-  },
-  {
    "ticker": "KXSONGRELEASEDATEPC-26-NOV01",
    "title": "When will Playboi Carti release a new song? \u2014 Before November",
    "category": "Entertainment",
@@ -46275,21 +46260,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.07; faded 0.12 toward 0.5 \u2192 0.13. Category: Economics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T13:01:33.089420+00:00"
-  },
-  {
-   "ticker": "KXPLTR-26AUGCUST-P1060",
-   "title": "Palantir total customers in Q2 \u2014 Above 1060",
-   "category": "Financials",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.28,
-   "entry_price": 0.19999999999999996,
-   "p_final": 0.827,
-   "edge": 0.008,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.83; faded 0.12 toward 0.5 \u2192 0.80. Category: Financials. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T13:01:33.067578+00:00"
   },
   {
    "ticker": "KXROLEATEVENTCOACHELLA-27DEC31-DAF",
@@ -66107,21 +66077,6 @@
    "placed_at": "2026-07-25T12:51:45.060128+00:00"
   },
   {
-   "ticker": "KXEARNINGSMENTIONPLTR-26AUG03-WARP",
-   "title": "What will Palantir say during their next earnings call? \u2014 Warp Speed",
-   "category": "Mentions",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.14,
-   "p_final": 0.869,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.88; faded 0.12 toward 0.5 \u2192 0.83. Category: Mentions. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:45.053870+00:00"
-  },
-  {
    "ticker": "KXAISTREAMSERIES-27-DIS",
    "title": "Which companies will release a Fully AI-generated multi-episode scripted series  before 2027? \u2014 Disney",
    "category": "Companies",
@@ -71538,6 +71493,63 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXPLTR-26AUGCUST-P1100",
+   "title": "Palantir total customers in Q2 \u2014 Above 1100",
+   "category": "Financials",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.07,
+   "p_final": 0.061,
+   "edge": 0.011,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.05; faded 0.12 toward 0.5 \u2192 0.10. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:36.486851+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-08-03T22:37:32.720660+00:00"
+  },
+  {
+   "ticker": "KXPLTR-26AUGCUST-P1060",
+   "title": "Palantir total customers in Q2 \u2014 Above 1060",
+   "category": "Financials",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.28,
+   "entry_price": 0.19999999999999996,
+   "p_final": 0.827,
+   "edge": 0.008,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.83; faded 0.12 toward 0.5 \u2192 0.80. Category: Financials. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T13:01:33.067578+00:00",
+   "won": true,
+   "payout": 25.0,
+   "pnl": 19.72,
+   "settled_at": "2026-08-03T22:37:32.711427+00:00"
+  },
+  {
+   "ticker": "KXEARNINGSMENTIONPLTR-26AUG03-WARP",
+   "title": "What will Palantir say during their next earnings call? \u2014 Warp Speed",
+   "category": "Mentions",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.14,
+   "p_final": 0.869,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.88; faded 0.12 toward 0.5 \u2192 0.83. Category: Mentions. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:45.053870+00:00",
+   "won": true,
+   "payout": 35.71,
+   "pnl": 30.4,
+   "settled_at": "2026-08-03T22:37:32.687397+00:00"
+  },
   {
    "ticker": "KXALBUMRELEASEDATETRIPPIE-AUG01-26",
    "title": "When will Trippie Redd release a new album? \u2014 Before August",
