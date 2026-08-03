@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-03T01:03:11.989718+00:00",
+ "generated_at": "2026-08-03T01:28:35.788019+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1148.63,
+  "realized_pnl": -1153.94,
   "total_fees": 1627.38,
-  "open_count": 4782,
-  "open_stake": 25805.83,
-  "settled_count": 920,
+  "open_count": 4781,
+  "open_stake": 25800.52,
+  "settled_count": 921,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1360 beats the market's 0.1365. On profitability, realized ROI is -23.8% (P&L $-1148.63). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -24.1 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.209,
-  "roi": -0.2384,
-  "edge_vs_favorite_null": -0.2406,
-  "edge_vs_random_null": -0.1159,
-  "brier_model": 0.136,
-  "brier_market": 0.1365,
-  "predictions_scored": 908,
-  "prediction_brier": 0.136,
-  "prediction_log_loss": 0.4254
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1359 beats the market's 0.1364. On profitability, realized ROI is -23.9% (P&L $-1153.94). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.2%, so our selection still loses to that baseline by -24.2 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.208,
+  "roi": -0.2392,
+  "edge_vs_favorite_null": -0.2416,
+  "edge_vs_random_null": -0.1164,
+  "brier_model": 0.1359,
+  "brier_market": 0.1364,
+  "predictions_scored": 909,
+  "prediction_brier": 0.1359,
+  "prediction_log_loss": 0.4251
  },
  "null_baseline": {
-  "n": 908,
-  "realized_roi": -0.2384,
-  "favorite_roi": 0.0023,
-  "random_roi": -0.1225,
-  "edge_vs_favorite": -0.2406,
-  "edge_vs_random": -0.1159,
-  "realized_pnl": -1145.19,
-  "favorite_pnl": 10.35,
-  "random_pnl": -574.87
+  "n": 909,
+  "realized_roi": -0.2392,
+  "favorite_roi": 0.0024,
+  "random_roi": -0.1229,
+  "edge_vs_favorite": -0.2416,
+  "edge_vs_random": -0.1164,
+  "realized_pnl": -1150.5,
+  "favorite_pnl": 11.08,
+  "random_pnl": -577.16
  },
  "calibration": [
   {
@@ -42,8 +42,8 @@
   },
   {
    "predicted": 0.142,
-   "realized": 0.106,
-   "n": 208,
+   "realized": 0.105,
+   "n": 209,
    "low_sample": false
   },
   {
@@ -92,8 +92,8 @@
   },
   {
    "predicted": 0.143,
-   "realized": 0.106,
-   "n": 142,
+   "realized": 0.105,
+   "n": 143,
    "low_sample": false
   },
   {
@@ -175,11 +175,11 @@
   },
   {
    "category": "Sports",
-   "n": 311,
+   "n": 312,
    "win_rate": 0.26,
-   "brier_model": 0.1576,
-   "brier_market": 0.1589,
-   "pnl": -375.48,
+   "brier_model": 0.1571,
+   "brier_market": 0.1585,
+   "pnl": -380.79,
    "beats_market": true
   },
   {
@@ -900,21 +900,6 @@
    "confidence": 0.55,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.78; faded 0.12 toward 0.5 \u2192 0.74. Category: Economics. Exploration-tier calibration bet.",
    "placed_at": "2026-07-27T14:22:15.251651+00:00"
-  },
-  {
-   "ticker": "KXLIGAMXGAME-26AUG02AMESLA-SLA",
-   "title": "America vs Santos Laguna",
-   "category": "Sports",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.31,
-   "entry_price": 0.13,
-   "p_final": 0.136,
-   "edge": 0.011,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Sports. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-27T13:21:26.183260+00:00"
   },
   {
    "ticker": "KXCPI-26JUL-T0.3",
@@ -71988,6 +71973,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXLIGAMXGAME-26AUG02AMESLA-SLA",
+   "title": "America vs Santos Laguna",
+   "category": "Sports",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.31,
+   "entry_price": 0.13,
+   "p_final": 0.136,
+   "edge": 0.011,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.12; faded 0.12 toward 0.5 \u2192 0.17. Category: Sports. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-27T13:21:26.183260+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.31,
+   "settled_at": "2026-08-03T01:28:08.411016+00:00"
+  },
   {
    "ticker": "KXCDUCSULEAD-27JAN01-TFRE",
    "title": "Who will be the next CDU/CSU parliamentary leader? \u2014 Thorsten Frei",
