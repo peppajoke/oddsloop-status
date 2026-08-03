@@ -1,37 +1,37 @@
 {
- "generated_at": "2026-08-03T14:35:47.651613+00:00",
+ "generated_at": "2026-08-03T14:53:41.084428+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1159.25,
+  "realized_pnl": -1147.26,
   "total_fees": 1627.38,
-  "open_count": 4780,
-  "open_stake": 25795.21,
-  "settled_count": 922,
+  "open_count": 4779,
+  "open_stake": 25789.96,
+  "settled_count": 923,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1358 beats the market's 0.1362. On profitability, realized ROI is -24.0% (P&L $-1159.25). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.3%, so our selection still loses to that baseline by -24.3 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.208,
-  "roi": -0.2401,
-  "edge_vs_favorite_null": -0.2426,
-  "edge_vs_random_null": -0.1169,
-  "brier_model": 0.1358,
-  "brier_market": 0.1362,
-  "predictions_scored": 910,
-  "prediction_brier": 0.1358,
-  "prediction_log_loss": 0.4248
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1362 beats the market's 0.1366. On profitability, realized ROI is -23.7% (P&L $-1147.26). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns 0.1%, so our selection still loses to that baseline by -23.9 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.209,
+  "roi": -0.2373,
+  "edge_vs_favorite_null": -0.2388,
+  "edge_vs_random_null": -0.115,
+  "brier_model": 0.1362,
+  "brier_market": 0.1366,
+  "predictions_scored": 911,
+  "prediction_brier": 0.1362,
+  "prediction_log_loss": 0.4259
  },
  "null_baseline": {
-  "n": 910,
-  "realized_roi": -0.2401,
-  "favorite_roi": 0.0026,
-  "random_roi": -0.1232,
-  "edge_vs_favorite": -0.2426,
-  "edge_vs_random": -0.1169,
-  "realized_pnl": -1155.81,
-  "favorite_pnl": 11.86,
-  "random_pnl": -579.42
+  "n": 911,
+  "realized_roi": -0.2373,
+  "favorite_roi": 0.0015,
+  "random_roi": -0.1223,
+  "edge_vs_favorite": -0.2388,
+  "edge_vs_random": -0.115,
+  "realized_pnl": -1143.82,
+  "favorite_pnl": 6.78,
+  "random_pnl": -575.97
  },
  "calibration": [
   {
@@ -48,8 +48,8 @@
   },
   {
    "predicted": 0.25,
-   "realized": 0.19,
-   "n": 142,
+   "realized": 0.196,
+   "n": 143,
    "low_sample": false
   },
   {
@@ -128,8 +128,8 @@
   },
   {
    "predicted": 0.746,
-   "realized": 0.741,
-   "n": 58,
+   "realized": 0.729,
+   "n": 59,
    "low_sample": false
   },
   {
@@ -183,15 +183,6 @@
    "beats_market": true
   },
   {
-   "category": "Politics",
-   "n": 42,
-   "win_rate": 0.095,
-   "brier_model": 0.0844,
-   "brier_market": 0.0855,
-   "pnl": -45.71,
-   "beats_market": true
-  },
-  {
    "category": "Commodities",
    "n": 47,
    "win_rate": 0.277,
@@ -207,6 +198,15 @@
    "brier_model": 0.0782,
    "brier_market": 0.0785,
    "pnl": -279.41,
+   "beats_market": true
+  },
+  {
+   "category": "Politics",
+   "n": 43,
+   "win_rate": 0.116,
+   "brier_model": 0.0951,
+   "brier_market": 0.0952,
+   "pnl": -33.72,
    "beats_market": true
   },
   {
@@ -5775,21 +5775,6 @@
    "confidence": 0.47,
    "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.03; faded 0.12 toward 0.5 \u2192 0.09. Category: Sports. Exploration-tier calibration bet.",
    "placed_at": "2026-07-25T14:38:12.525086+00:00"
-  },
-  {
-   "ticker": "KXTRUMPMEET-26JUL-RDES",
-   "title": "Who will Donald Trump talk to in Jul 2026? \u2014 Ron DeSantis",
-   "category": "Politics",
-   "side": "no",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.25,
-   "entry_price": 0.29000000000000004,
-   "p_final": 0.739,
-   "edge": 0.006,
-   "confidence": 0.41,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Politics. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T14:38:11.917296+00:00"
   },
   {
    "ticker": "KXNFLCPOTY-27-MNABERS1",
@@ -71958,6 +71943,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXTRUMPMEET-26JUL-RDES",
+   "title": "Who will Donald Trump talk to in Jul 2026? \u2014 Ron DeSantis",
+   "category": "Politics",
+   "side": "no",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.25,
+   "entry_price": 0.29000000000000004,
+   "p_final": 0.739,
+   "edge": 0.006,
+   "confidence": 0.41,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.74; faded 0.12 toward 0.5 \u2192 0.72. Category: Politics. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T14:38:11.917296+00:00",
+   "won": true,
+   "payout": 17.24,
+   "pnl": 11.99,
+   "settled_at": "2026-08-03T14:53:14.109714+00:00"
+  },
   {
    "ticker": "KXLIGAMXGAME-26AUG02TOLNCX-NCX",
    "title": "Toluca vs Necaxa",
