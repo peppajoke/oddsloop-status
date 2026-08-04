@@ -1,43 +1,43 @@
 {
- "generated_at": "2026-08-03T23:42:54.107802+00:00",
+ "generated_at": "2026-08-04T00:10:48.050195+00:00",
  "summary": {
   "paper_mode": true,
   "bankroll_start": 50000.0,
-  "realized_pnl": -1216.19,
+  "realized_pnl": -1221.52,
   "total_fees": 1627.38,
-  "open_count": 4749,
-  "open_stake": 25631.59,
-  "settled_count": 953,
+  "open_count": 4748,
+  "open_stake": 25626.26,
+  "settled_count": 954,
   "m1_settled_gate": 500,
   "m1_progress": 1.0,
   "calibration_min_sample": 30,
-  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1361 beats the market's 0.1365. On profitability, realized ROI is -24.4% (P&L $-1216.19). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.1%, so our selection still loses to that baseline by -24.3 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
-  "win_rate": 0.207,
-  "roi": -0.2436,
-  "edge_vs_favorite_null": -0.243,
-  "edge_vs_random_null": -0.1202,
-  "brier_model": 0.1361,
-  "brier_market": 0.1365,
-  "predictions_scored": 941,
-  "prediction_brier": 0.1361,
-  "prediction_log_loss": 0.4253
+  "accuracy_vs_profitability": "Forecast accuracy and execution profitability are different things. On accuracy, our model Brier 0.1359 beats the market's 0.1364. On profitability, realized ROI is -24.4% (P&L $-1221.52). The gap is execution cost, not bad forecasting: these are deliberately tiny thin-edge exploration bets, so fees+spread ($1627.38 in fees across 5702 bets) swamp the small per-bet edge. Better calibration shows up in Brier first; it only reaches P&L once edge thresholds clear the fee hurdle. Scored honestly against its own null, not against zero: an always-take-the-market-favorite bettor on these same markets returns -0.1%, so our selection still loses to that baseline by -24.4 points. That delta, not the raw ROI, is the real scorecard for whether selection adds edge.",
+  "win_rate": 0.206,
+  "roi": -0.2444,
+  "edge_vs_favorite_null": -0.2439,
+  "edge_vs_random_null": -0.1206,
+  "brier_model": 0.1359,
+  "brier_market": 0.1364,
+  "predictions_scored": 942,
+  "prediction_brier": 0.1359,
+  "prediction_log_loss": 0.4249
  },
  "null_baseline": {
-  "n": 941,
-  "realized_roi": -0.2436,
-  "favorite_roi": -0.0006,
-  "random_roi": -0.1235,
-  "edge_vs_favorite": -0.243,
-  "edge_vs_random": -0.1202,
-  "realized_pnl": -1212.75,
-  "favorite_pnl": -2.88,
-  "random_pnl": -600.21
+  "n": 942,
+  "realized_roi": -0.2444,
+  "favorite_roi": -0.0005,
+  "random_roi": -0.1238,
+  "edge_vs_favorite": -0.2439,
+  "edge_vs_random": -0.1206,
+  "realized_pnl": -1218.08,
+  "favorite_pnl": -2.6,
+  "random_pnl": -602.74
  },
  "calibration": [
   {
    "predicted": 0.065,
    "realized": 0.041,
-   "n": 268,
+   "n": 269,
    "low_sample": false
   },
   {
@@ -87,7 +87,7 @@
   {
    "predicted": 0.065,
    "realized": 0.04,
-   "n": 199,
+   "n": 200,
    "low_sample": false
   },
   {
@@ -166,11 +166,11 @@
   },
   {
    "category": "Entertainment",
-   "n": 104,
-   "win_rate": 0.087,
-   "brier_model": 0.07,
-   "brier_market": 0.073,
-   "pnl": -306.72,
+   "n": 105,
+   "win_rate": 0.086,
+   "brier_model": 0.0693,
+   "brier_market": 0.0724,
+   "pnl": -312.05,
    "beats_market": true
   },
   {
@@ -70367,21 +70367,6 @@
    "placed_at": "2026-07-25T12:51:43.498821+00:00"
   },
   {
-   "ticker": "KXSPOTIFYNUM1USA-26AUG01-OLI-3",
-   "title": "Olivia Rodrigo: Days at #1 on Spotify Daily Top Songs USA in July 2026 \u2014 At least 3 days",
-   "category": "Entertainment",
-   "side": "yes",
-   "tier": "exploration",
-   "stake": 5.0,
-   "fee": 0.33,
-   "entry_price": 0.06,
-   "p_final": 0.053,
-   "edge": 0.013,
-   "confidence": 0.47,
-   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Entertainment. Exploration-tier calibration bet.",
-   "placed_at": "2026-07-25T12:51:43.369259+00:00"
-  },
-  {
    "ticker": "KXHORMUZPEAK-26JUL26-T15",
    "title": "Peak traffic through the Strait of Hormuz? (7/20 - 7/26) \u2014 Above 15",
    "category": "Politics",
@@ -71493,6 +71478,25 @@
   }
  ],
  "history": [
+  {
+   "ticker": "KXSPOTIFYNUM1USA-26AUG01-OLI-3",
+   "title": "Olivia Rodrigo: Days at #1 on Spotify Daily Top Songs USA in July 2026 \u2014 At least 3 days",
+   "category": "Entertainment",
+   "side": "yes",
+   "tier": "exploration",
+   "stake": 5.0,
+   "fee": 0.33,
+   "entry_price": 0.06,
+   "p_final": 0.053,
+   "edge": 0.013,
+   "confidence": 0.47,
+   "thesis": "Automated diverse-cycle (no LLM): favorite-longshot fade. Market mid 0.04; faded 0.12 toward 0.5 \u2192 0.10. Category: Entertainment. Exploration-tier calibration bet.",
+   "placed_at": "2026-07-25T12:51:43.369259+00:00",
+   "won": false,
+   "payout": 0.0,
+   "pnl": -5.33,
+   "settled_at": "2026-08-04T00:10:20.021361+00:00"
+  },
   {
    "ticker": "KXPLTR-26AUGCUST-P1100",
    "title": "Palantir total customers in Q2 \u2014 Above 1100",
